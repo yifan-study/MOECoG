@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moecog"
+version = "0.1.0"
+description = "Mother of All ECoG Benchmarks — MOABB-style benchmarking for ECoG motor decoding"
+readme = "README.md"
+license = "BSD-3-Clause"
+requires-python = ">=3.10"
+authors = [{name = "Yifan Yu", email = "yifanyu97@gmail.com"}]
+keywords = [
+    "ECoG", "electrocorticography", "BCI", "brain-computer interface",
+    "motor decoding", "benchmark", "neuroscience", "neural decoding",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+dependencies = [
+    "mne>=1.5",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "h5py>=3.8",
+    "pooch>=1.7",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+deep = [
+    "torch>=2.0",
+    "braindecode>=0.8",
+]
+nwb = [
+    "pynwb>=2.5",
+    "dandi>=0.55",
+]
+viz = [
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+]
+anatomy = [
+    "nilearn>=0.10",
+    "nibabel>=5.0",
+]
+dev = [
+    "moecog[deep,nwb,viz,anatomy]",
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+]
+all = ["moecog[deep,nwb,viz,anatomy]"]
+
+[project.urls]
+Homepage = "https://github.com/epyifany/MOECoG"
+Repository = "https://github.com/epyifany/MOECoG"
+Issues = "https://github.com/epyifany/MOECoG/issues"
+
+[tool.setuptools.packages.find]
+include = ["moecog*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests that download real data (deselect with '-m \"not slow\"')",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]

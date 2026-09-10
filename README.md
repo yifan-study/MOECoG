@@ -129,33 +129,64 @@ Motor-specific, public, well-documented.
 - **FingerFlex** — Convolutional encoder-decoder (Lomtev et al.)
 - **HTNet** — Transfer learning across subjects via Hilbert transform
 
+## Status (2026-09-09)
+
+| Layer | Implemented | Notes |
+|---|---|---|
+| Datasets | `MillerLibrary(experiment=...)` for all 16 Stanford/Miller experiments (204 files, 36 patients); `FakeECoGDataset` | Registry + data map in `docs/miller_library_map.md`; downloads from the Stanford Digital Repository with MD5 checks |
+| Paradigms | `EpochedClassification` (+ `MotorClassification`, `FingerClassification`, `FaceHouseClassification`, `VisualSearchClassification`, `NBackTargetClassification`), `FingerFlexionRegression`, `CursorRegression` | Trials come from cue-code annotations; regression uses causal windows |
+| Evaluations | `WithinSubjectCV` (chronological folds with purge for regression; contiguous or stratified-shuffled trial folds for classification) | Cross-session, cross-subject, temporal-stability still to do |
+| Pipelines | `LogBandPower`, `HighGammaPower`; `classification_baselines()`, `regression_baselines()` | Deep decoders (braindecode, PACE zoo) still to do |
+
+Everything above is covered by `pytest -m "not slow"` on synthetic data; the
+`slow` tests run against a local copy of the library
+(`MOECOG_MILLER_DIR=/path/to/library pytest -m slow`).
+
 ## Quick Start
 
 ```python
-import moecog
-from moecog.datasets import MillerFingerFlex
-from moecog.paradigms import FingerFlexionRegression
-from moecog.evaluations import WithinSubjectCV
-from moecog.pipelines.features import LogBandPower
-from sklearn.linear_model import Ridge
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
-# Define pipeline
+from moecog.datasets import MillerLibrary
+from moecog.evaluations import WithinSubjectCV
+from moecog.paradigms import MotorClassification
+from moecog.pipelines.features import HighGammaPower
+
+# hand vs tongue movement, 19 patients of the Miller library (downloads ~850 MB once)
+dataset = MillerLibrary("motor_basic")
+paradigm = MotorClassification(fmin=1, fmax=200, tmax=3.0)
 pipelines = {
-    "LogBandPower+Ridge": make_pipeline(LogBandPower(), Ridge(alpha=1.0))
+    "HighGamma+LDA": make_pipeline(HighGammaPower(sfreq=1000.0), StandardScaler(),
+                                   LinearDiscriminantAnalysis(solver="lsqr", shrinkage="auto"))
 }
-
-# Load data
-dataset = MillerFingerFlex()
-paradigm = FingerFlexionRegression(fmin=1, fmax=150)
 evaluation = WithinSubjectCV(paradigm=paradigm, datasets=[dataset], n_splits=5)
-
-# Run benchmark
-results = evaluation.process(pipelines)
-print(results.groupby("pipeline")["score"].mean())
+results = evaluation.process(pipelines, subjects=["bp", "jc"])
+print(results[results.metric == "accuracy"].groupby(["subject", "pipeline"]).score.mean())
 ```
 
+Continuous decoding uses the same four objects:
+
+```python
+from sklearn.linear_model import Ridge
+
+from moecog.paradigms import FingerFlexionRegression
+from moecog.pipelines.features import LogBandPower
+
+dataset = MillerLibrary("fingerflex")
+paradigm = FingerFlexionRegression(fmin=1, fmax=200, window_size=0.5, window_stride=0.05)
+pipelines = {"LogBandPower+Ridge": make_pipeline(LogBandPower(sfreq=1000.0), Ridge(alpha=1.0))}
+results = WithinSubjectCV(paradigm, [dataset], n_splits=5).process(pipelines, subjects=["bp"])
+print(results[results.metric == "pearson_r"].score.mean())
+```
+
+Set `MOECOG_MILLER_DIR` to an existing extracted copy of the library to skip
+the download (on FAU Athene: `/mnt/archive/home/yyu2024/PLaCT_data`).
+
 ## Installation
+
+Data are cached under `$MOECOG_DATA_DIR` (default `~/moecog_data`).
 
 ```bash
 pip install moecog

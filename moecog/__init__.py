@@ -3,4 +3,4 @@
 A MOABB-style benchmarking framework for electrocorticographic (ECoG) motor decoding.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0.dev0"

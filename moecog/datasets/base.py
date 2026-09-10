@@ -1,8 +1,7 @@
 """Base class for all ECoG datasets."""
 
 from abc import ABC, abstractmethod
-from dataclasses import dataclass, field
-from pathlib import Path
+from dataclasses import dataclass
 
 import numpy as np
 
@@ -14,9 +13,12 @@ class ElectrodeInfo:
     Parameters
     ----------
     positions : np.ndarray, shape (n_channels, 3)
-        Electrode coordinates (MNI or native space).
+        Electrode coordinates. The frame is given by ``coord_frame``.
     labels : list of str
         Channel names.
+    coord_frame : str
+        One of ``"mni"``, ``"talairach"``, ``"native"`` (patient surface space,
+        mm), or ``"voxel"`` (indices into the patient's MRI volume).
     hemisphere : list of str or None
         Hemisphere per electrode ("L" or "R").
     lobe : list of str or None
@@ -25,6 +27,10 @@ class ElectrodeInfo:
         Gyrus per electrode.
     brodmann_area : list of int or None
         Brodmann area per electrode.
+    region_code : list of int or None
+        Dataset-specific anatomical code per electrode (for example Miller's
+        ``elec_regions``: 1 dorsal M1, 3 dorsal S1, 4 ventral sensorimotor,
+        6 frontal, 7 parietal, 8 temporal, 9 occipital).
     grid_type : str
         Electrode array type: "grid", "strip", or "depth".
     spacing_mm : float
@@ -33,10 +39,12 @@ class ElectrodeInfo:
 
     positions: np.ndarray
     labels: list[str]
+    coord_frame: str = "mni"
     hemisphere: list[str] | None = None
     lobe: list[str] | None = None
     gyrus: list[str] | None = None
     brodmann_area: list[int] | None = None
+    region_code: list[int] | None = None
     grid_type: str = "grid"
     spacing_mm: float = 10.0
 
@@ -51,18 +59,23 @@ class BaseECoGDataset(ABC):
 
     Parameters
     ----------
-    subjects : list of int
-        Available subject IDs.
+    subjects : list of int or str
+        Available subject identifiers (MOABB uses integers; the Miller library
+        uses two-letter patient codes).
     sessions_per_subject : int
         Number of recording sessions per subject.
     events : dict or None
-        Mapping of event names to integer codes. None for pure regression datasets.
+        Mapping of event names to integer codes. None for pure regression or
+        resting-state datasets.
     code : str
         Unique dataset identifier string.
     paradigm : str
-        Paradigm type: "motor_regression", "motor_imagery", or "naturalistic".
+        Paradigm family, for example "motor_execution", "motor_imagery",
+        "motor_regression", "cursor_regression", "visual", "memory", "speech",
+        "rest", or "naturalistic".
     interval : list of float or None
-        Epoch window [tmin, tmax] in seconds. None for continuous data.
+        Default epoch window [tmin, tmax] in seconds relative to trial onset.
+        None for continuous data.
     sfreq : float
         Sampling frequency in Hz.
     doi : str or None
@@ -71,7 +84,7 @@ class BaseECoGDataset(ABC):
 
     def __init__(
         self,
-        subjects: list[int],
+        subjects: list,
         sessions_per_subject: int,
         events: dict[str, int] | None,
         code: str,
@@ -80,7 +93,7 @@ class BaseECoGDataset(ABC):
         sfreq: float,
         doi: str | None = None,
     ):
-        self.subject_list = subjects
+        self.subject_list = list(subjects)
         self.n_sessions = sessions_per_subject
         self.event_id = events
         self.code = code
@@ -94,28 +107,28 @@ class BaseECoGDataset(ABC):
 
         Parameters
         ----------
-        subjects : list of int or None
-            Subject IDs to load. If None, loads all subjects.
+        subjects : list or None
+            Subject identifiers to load. If None, loads all subjects.
 
         Returns
         -------
         dict
             Nested dict: ``{subject: {session: {run: mne.io.Raw}}}``.
         """
-        subjects = subjects or self.subject_list
+        subjects = subjects if subjects is not None else self.subject_list
         data = {}
         for subject in subjects:
+            if subject not in self.subject_list:
+                raise ValueError(
+                    f"Subject {subject!r} is not in dataset {self.code!r}; "
+                    f"available: {self.subject_list}"
+                )
             data[subject] = self._get_single_subject_data(subject)
         return data
 
     @abstractmethod
     def _get_single_subject_data(self, subject):
         """Load all sessions and runs for a single subject.
-
-        Parameters
-        ----------
-        subject : int
-            Subject identifier.
 
         Returns
         -------
@@ -127,11 +140,6 @@ class BaseECoGDataset(ABC):
     def data_path(self, subject):
         """Return local file paths for a subject's data, downloading if needed.
 
-        Parameters
-        ----------
-        subject : int
-            Subject identifier.
-
         Returns
         -------
         list of Path
@@ -141,11 +149,6 @@ class BaseECoGDataset(ABC):
     @abstractmethod
     def get_electrode_info(self, subject):
         """Return electrode metadata for a subject.
-
-        Parameters
-        ----------
-        subject : int
-            Subject identifier.
 
         Returns
         -------

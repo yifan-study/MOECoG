@@ -1,0 +1,34 @@
+{
+ "id": "ds005415",
+ "title": "Numbers",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:46:42",
+ "subjects_found": 1,
+ "subject_list": [
+  "72"
+ ],
+ "sessions": {
+  "0/numbers_1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 188,
+   "n_misc": 0,
+   "duration_s": 1448.999,
+   "n_annotations": 509,
+   "classes": {
+    "Cue": 146,
+    "Cue Start": 57,
+    "FixationOnset": 146,
+    "ISI Onset": 146,
+    "Response": 14
+   }
+  }
+ },
+ "electrodes": {
+  "n": 174,
+  "frame": "acpc"
+ },
+ "event_id": null,
+ "seconds": 77.4
+}

@@ -1,0 +1,28 @@
+{
+ "id": "ds006107",
+ "title": "iEEG_Neural_spatial_volatility",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:56:19",
+ "subjects_found": 1,
+ "subject_list": [
+  "100"
+ ],
+ "sessions": {
+  "01/sws_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 100,
+   "n_misc": 0,
+   "duration_s": 319.999,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 100,
+  "frame": "unknown"
+ },
+ "event_id": null,
+ "seconds": 16.4
+}

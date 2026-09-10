@@ -1,0 +1,33 @@
+{
+ "id": "ds005670",
+ "title": "SEEG Resting State Recording",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:52:28",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "0/rest": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 238,
+   "n_misc": 0,
+   "duration_s": 433.0235,
+   "n_annotations": 4,
+   "classes": {
+    "+0.000000": 1,
+    "+2.000000": 1,
+    "A1+A2 OFF": 1,
+    "Segment: REC START CBS-bipola": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 238,
+  "frame": "mni152lin"
+ },
+ "event_id": null,
+ "seconds": 51.6
+}

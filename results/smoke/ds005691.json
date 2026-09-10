@@ -1,0 +1,31 @@
+{
+ "id": "ds005691",
+ "title": "SpinalExpect_Invasive",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:53:20",
+ "subjects_found": 1,
+ "subject_list": [
+  "06"
+ ],
+ "sessions": {
+  "0/countingDeviants": {
+   "kind": "raw",
+   "sfreq": 2500.0,
+   "n_ecog": 7,
+   "n_misc": 0,
+   "duration_s": 1602.0796,
+   "n_annotations": 1205,
+   "classes": {
+    "1": 1,
+    "S  1": 4,
+    "S 70": 400,
+    "S 99": 363,
+    "S130": 437
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 8.9
+}

@@ -1,0 +1,109 @@
+{
+ "id": "ds006065",
+ "title": "TSS_iEEG",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:53:44",
+ "subjects_found": 1,
+ "subject_list": [
+  "p19"
+ ],
+ "sessions": {
+  "0/cl": {
+   "kind": "raw",
+   "sfreq": 499.66666662053075,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 1570.044696609277,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/clcontrol": {
+   "kind": "raw",
+   "sfreq": 499.66666662053075,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 1768.1767846862772,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/epcontrolpost": {
+   "kind": "raw",
+   "sfreq": 499.50000000049954,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 120.118118117998,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/epcontrolpre": {
+   "kind": "raw",
+   "sfreq": 499.50000000049954,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 120.118118117998,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/eppost": {
+   "kind": "raw",
+   "sfreq": 499.50000000049954,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 120.118118117998,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/eppre": {
+   "kind": "raw",
+   "sfreq": 499.50000000049954,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 120.118118117998,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/restcontrolpost": {
+   "kind": "raw",
+   "sfreq": 499.99830500574603,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 590.00000009322,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/restcontrolpre": {
+   "kind": "raw",
+   "sfreq": 499.99830500574603,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 590.00000009322,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/restpost": {
+   "kind": "raw",
+   "sfreq": 499.99811750708756,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 531.19399993788,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "0/restpre": {
+   "kind": "raw",
+   "sfreq": 499.99830500574603,
+   "n_ecog": 168,
+   "n_misc": 0,
+   "duration_s": 590.00000009322,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 168,
+  "frame": "mni152nlin2009casym"
+ },
+ "event_id": {},
+ "seconds": 154.9
+}

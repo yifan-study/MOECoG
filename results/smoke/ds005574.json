@@ -1,0 +1,28 @@
+{
+ "id": "ds005574",
+ "title": "The \"Podcast\" ECoG dataset for modeling neural activity during natural story listening",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:50:06",
+ "subjects_found": 1,
+ "subject_list": [
+  "08"
+ ],
+ "sessions": {
+  "0/podcast": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 82,
+   "n_misc": 7,
+   "duration_s": 1799.998046875,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 75,
+  "frame": "other"
+ },
+ "event_id": null,
+ "seconds": 21.9
+}

@@ -1,0 +1,52 @@
+{
+ "id": "ds005624",
+ "title": "Color Change Detection Task",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:50:28",
+ "subjects_found": 1,
+ "subject_list": [
+  "HUP133"
+ ],
+ "sessions": {
+  "0/CCDT": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 74,
+   "n_misc": 0,
+   "duration_s": 3279.501953125,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "1/CCDT": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 74,
+   "n_misc": 0,
+   "duration_s": 2129.201171875,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "2/CCDT": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 74,
+   "n_misc": 0,
+   "duration_s": 1791.232421875,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "3/CCDT": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 74,
+   "n_misc": 0,
+   "duration_s": 1384.865234375,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": {},
+ "seconds": 120.2
+}

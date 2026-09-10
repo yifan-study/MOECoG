@@ -1,0 +1,37 @@
+{
+ "id": "ds005953",
+ "title": "iEEG_visual",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:53:43",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "01/visual_01": {
+   "kind": "raw",
+   "sfreq": 3051.9999755840004,
+   "n_ecog": 118,
+   "n_misc": 0,
+   "duration_s": 233.62025088599998,
+   "n_annotations": 420,
+   "classes": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 210
+   }
+  }
+ },
+ "electrodes": {
+  "n": 118,
+  "frame": "acpc"
+ },
+ "event_id": null,
+ "seconds": 0.6
+}

@@ -236,6 +236,30 @@ class BIDSiEEGDataset(BaseECoGDataset):
             run = "_".join(x for x in (ent["task"], ent["run"], ent["acquisition"]) if x) or "0"
             out.setdefault(session, {})[run] = raw
         raws = [r for runs in out.values() for r in runs.values()]
+        # runs recorded with disjoint montages (monopolar vs bipolar exports, re-implantation) cannot
+        # be pooled: keep the montage family with the most runs (ties: most channels), drop the rest
+        if len(raws) > 1:
+            families = {}
+            for ses, runs in out.items():
+                for run, r in runs.items():
+                    key = frozenset(r.ch_names)
+                    best = None
+                    for fk in families:
+                        if len(fk & key) >= 0.5 * min(len(fk), len(key)):
+                            best = fk
+                            break
+                    families.setdefault(best if best is not None else key, []).append((ses, run))
+            if len(families) > 1:
+                import warnings
+
+                keep_fam = max(families, key=lambda k: (len(families[k]), len(k)))
+                dropped = [sr for fk, srs in families.items() if fk != keep_fam for sr in srs]
+                warnings.warn(f"{self.code}: {len(dropped)} run(s) use a different montage and were dropped: "
+                              f"{dropped[:4]}")
+                for ses, run in dropped:
+                    out[ses].pop(run)
+                out = {ses: runs for ses, runs in out.items() if runs}
+                raws = [r for runs in out.values() for r in runs.values()]
         # runs of one subject may differ in rejected channels: keep the common channels and give
         # every run the same channel types (a channel typed ECoG in any run is ECoG everywhere)
         if len(raws) > 1:

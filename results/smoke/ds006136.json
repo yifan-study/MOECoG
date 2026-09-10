@@ -1,0 +1,28 @@
+{
+ "id": "ds006136",
+ "title": "OWM-Dataset",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:56:35",
+ "subjects_found": 1,
+ "subject_list": [
+  "P3"
+ ],
+ "sessions": {
+  "0/OWM": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 8,
+   "n_misc": 0,
+   "duration_s": 1020.999,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 8,
+  "frame": "mni152lin"
+ },
+ "event_id": null,
+ "seconds": 5.0
+}

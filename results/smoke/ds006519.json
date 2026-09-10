@@ -1,0 +1,30 @@
+{
+ "id": "ds006519",
+ "title": "Dataset of intracranial EEG during cortical stimulations evoking negative motor responses",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:56:58",
+ "subjects_found": 1,
+ "subject_list": [
+  "18"
+ ],
+ "sessions": {
+  "01/dcs": {
+   "kind": "raw",
+   "sfreq": 4096.0,
+   "n_ecog": 63,
+   "n_misc": 0,
+   "duration_s": 29.999755859375,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  }
+ },
+ "electrodes": {
+  "n": 128,
+  "frame": "scanras"
+ },
+ "event_id": null,
+ "seconds": 7.3
+}

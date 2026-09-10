@@ -1,0 +1,9767 @@
+{
+ "id": "ds007095",
+ "title": "RNS_Epilepsy-iBIDS",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:57:05",
+ "subjects_found": 1,
+ "subject_list": [
+  "06"
+ ],
+ "sessions": {
+  "01/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "01/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "01/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "01/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "01/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "01/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "01/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "01/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "01/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "01/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "01/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "01/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "01/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "01/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "01/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "01/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "01/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "01/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "01/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "01/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "02/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "02/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "02/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "02/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "02/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "02/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "02/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "02/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "02/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 19,
+   "classes": {
+    "n/a": 19
+   }
+  },
+  "02/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "02/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "02/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "02/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "02/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "02/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "02/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "02/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "02/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "02/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "02/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "03/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "03/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "03/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "03/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "03/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "03/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "03/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "03/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "03/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "03/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "03/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "03/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "03/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "03/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "03/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "03/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "03/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "03/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "03/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "03/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "04/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 19,
+   "classes": {
+    "n/a": 19
+   }
+  },
+  "04/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 97.995,
+   "n_annotations": 23,
+   "classes": {
+    "n/a": 23
+   }
+  },
+  "04/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "04/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "04/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "04/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "04/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "04/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "04/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "04/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "04/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "04/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "04/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "04/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "04/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "04/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "04/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "04/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "04/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "04/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "04/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "04/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "04/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "05/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "05/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "05/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "05/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "05/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "05/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "05/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "05/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "05/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "05/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "05/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "05/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "05/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "05/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "05/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "05/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "05/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "05/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "05/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "05/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "06/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "06/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "06/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "06/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "06/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "06/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "06/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "06/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "06/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "06/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "06/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "06/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "06/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "06/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "06/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "06/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "06/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "06/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "06/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "06/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "07/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "07/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "07/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "07/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "07/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "07/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "07/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "07/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "07/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "07/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "07/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "07/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "07/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "07/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "07/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "07/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "07/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "07/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "07/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "07/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "08/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "08/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "08/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "08/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "08/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "08/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "08/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "08/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "08/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "08/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "08/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "08/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "08/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "08/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "08/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "08/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "08/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "08/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "08/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "08/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "08/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "08/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "08/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "09/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "09/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "09/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "09/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "09/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "09/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "09/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "09/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "09/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "09/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "09/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "09/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "09/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "09/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "09/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "09/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "09/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "09/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "09/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "09/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "10/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "10/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "10/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "10/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "10/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "10/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "10/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "10/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "10/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "10/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "10/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "10/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "10/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "10/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "10/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "10/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "10/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "10/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "10/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "10/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "11/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "11/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "11/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "11/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "11/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "11/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "11/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "11/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "11/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "11/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "11/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "11/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "11/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "11/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "11/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "11/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "11/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "11/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "11/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "11/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "12/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "12/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "12/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "12/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "12/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "12/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "12/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "12/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "12/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "12/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "12/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "12/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "12/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "12/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "12/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "12/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "12/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "12/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "12/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "12/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "13/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "13/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "13/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "13/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "13/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "13/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "13/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "13/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "13/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "13/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "13/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "13/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "13/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "13/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 16,
+   "classes": {
+    "n/a": 16
+   }
+  },
+  "13/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "13/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "13/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "13/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "13/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "13/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "14/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "14/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "14/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "14/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "14/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "14/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "14/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "14/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "14/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "14/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "14/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "14/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "14/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "14/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "14/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "14/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "14/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "14/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "14/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "14/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "14/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "14/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "14/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "14/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "14/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "15/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "15/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "15/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "15/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "15/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "15/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 16,
+   "classes": {
+    "n/a": 16
+   }
+  },
+  "15/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "15/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "15/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "15/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "15/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "15/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "15/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 16,
+   "classes": {
+    "n/a": 16
+   }
+  },
+  "15/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "15/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "15/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "15/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "15/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "15/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "15/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "16/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "16/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "16/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "16/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "16/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "16/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "16/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "16/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "16/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "16/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "16/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "16/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "16/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "16/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "16/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "16/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "16/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "16/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "16/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "16/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "16/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "16/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "16/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "16/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "16/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "16/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "16/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "16/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "17/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "17/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "17/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "17/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "17/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "17/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "17/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "17/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "17/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "17/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "17/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "17/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "17/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "17/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "17/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "17/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "17/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "17/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "17/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "17/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "18/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "18/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "18/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "18/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "18/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "18/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "18/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "18/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "18/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "18/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "18/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "18/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "18/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 16,
+   "classes": {
+    "n/a": 16
+   }
+  },
+  "18/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "18/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "18/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "18/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "18/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "18/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "18/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "19/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "19/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "19/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "19/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "19/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "19/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "19/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "19/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "19/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "19/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "19/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "19/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "19/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "19/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "19/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "19/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "19/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "19/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "19/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "19/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "19/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "19/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "19/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "19/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "19/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "19/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "19/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "19/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "19/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "19/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "20/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "20/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "20/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "20/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "20/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "20/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "20/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "20/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "20/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "20/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "20/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "20/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "20/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "20/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "20/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "20/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "20/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "20/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "20/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "20/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "20/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "20/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "20/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "20/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "20/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "20/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "20/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "20/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "20/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "20/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "21/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "21/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 89.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "21/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "21/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "21/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "21/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "21/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "21/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "21/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "21/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "21/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "21/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "21/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "21/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "21/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "21/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "21/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "21/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "21/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "21/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "21/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "21/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "22/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "22/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "22/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "22/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "22/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "22/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "22/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "22/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "22/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "22/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "22/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "22/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "22/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "22/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "22/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "22/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "22/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "22/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "22/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "22/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "22/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "22/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "22/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "22/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "22/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "23/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "23/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "23/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "23/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "23/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "23/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "23/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "23/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "23/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "23/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "23/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "23/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "23/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "23/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "23/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "23/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "23/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "23/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "23/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "23/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "24/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "24/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "24/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "24/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "24/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "24/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "24/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "24/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "24/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "24/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "24/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "24/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "24/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "24/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "24/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "24/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "24/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "24/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "24/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "24/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "24/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "24/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "24/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "24/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "24/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "24/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "24/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "24/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "24/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "24/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "25/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "25/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "25/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "25/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "25/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "25/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "25/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "25/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "25/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "25/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "25/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "25/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "25/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "25/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "25/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "25/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "25/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "25/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "25/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "25/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "25/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 97.995,
+   "n_annotations": 23,
+   "classes": {
+    "n/a": 23
+   }
+  },
+  "25/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "25/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 96.995,
+   "n_annotations": 22,
+   "classes": {
+    "n/a": 22
+   }
+  },
+  "25/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "25/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "25/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "25/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "25/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "25/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "25/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "25/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "25/seizure_41": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_42": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_43": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "25/seizure_44": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "25/seizure_45": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_46": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_47": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "25/seizure_48": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "25/seizure_49": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "25/seizure_50": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "26/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "26/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "26/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "26/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "26/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "26/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "26/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "26/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "26/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "26/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "26/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "26/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "26/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "26/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "26/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "26/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "26/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_41": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_42": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_43": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_44": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "26/seizure_45": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "26/seizure_46": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "26/seizure_47": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "26/seizure_48": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "26/seizure_49": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "26/seizure_50": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "27/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "27/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "27/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "27/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "27/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "27/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "27/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "27/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "27/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "27/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_41": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "27/seizure_42": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "27/seizure_43": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_44": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_45": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_46": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "27/seizure_47": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_48": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "27/seizure_49": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_50": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "27/seizure_51": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_52": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "27/seizure_53": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_54": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "27/seizure_55": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "27/seizure_56": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "28/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "28/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "28/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "28/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 17,
+   "classes": {
+    "n/a": 17
+   }
+  },
+  "28/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "28/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "28/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "28/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 15,
+   "classes": {
+    "n/a": 15
+   }
+  },
+  "28/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "28/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "28/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 96.995,
+   "n_annotations": 22,
+   "classes": {
+    "n/a": 22
+   }
+  },
+  "28/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 18,
+   "classes": {
+    "n/a": 18
+   }
+  },
+  "28/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 14,
+   "classes": {
+    "n/a": 14
+   }
+  },
+  "28/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "28/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "28/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "28/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "28/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "28/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "28/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "28/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "28/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "28/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "28/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "28/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "28/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "28/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "28/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "28/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "28/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "28/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_41": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "28/seizure_42": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_43": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_44": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "28/seizure_45": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_46": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "28/seizure_47": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_48": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "28/seizure_49": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "28/seizure_50": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "29/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "29/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "29/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "29/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "29/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "29/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "29/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "29/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "29/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "29/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "29/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "29/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "29/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 12,
+   "classes": {
+    "n/a": 12
+   }
+  },
+  "29/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "29/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "29/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "29/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "29/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "29/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "30/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "30/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "30/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "30/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "30/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "30/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "30/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 95.995,
+   "n_annotations": 16,
+   "classes": {
+    "n/a": 16
+   }
+  },
+  "30/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 11,
+   "classes": {
+    "n/a": 11
+   }
+  },
+  "30/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "30/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "30/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "30/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "30/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "30/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "30/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 8,
+   "classes": {
+    "n/a": 8
+   }
+  },
+  "30/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "30/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "30/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "30/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "30/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "30/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "30/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "30/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "30/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "30/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "30/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "31/seizure_01": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_02": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_03": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_04": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "31/seizure_05": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_06": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 9,
+   "classes": {
+    "n/a": 9
+   }
+  },
+  "31/seizure_07": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "31/seizure_08": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_09": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_10": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "31/seizure_11": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_12": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_13": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 94.995,
+   "n_annotations": 13,
+   "classes": {
+    "n/a": 13
+   }
+  },
+  "31/seizure_14": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_15": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 93.995,
+   "n_annotations": 10,
+   "classes": {
+    "n/a": 10
+   }
+  },
+  "31/seizure_16": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_17": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_18": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "31/seizure_19": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 6,
+   "classes": {
+    "n/a": 6
+   }
+  },
+  "31/seizure_20": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_21": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 1,
+   "classes": {
+    "n/a": 1
+   }
+  },
+  "31/seizure_22": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_23": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_24": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "31/seizure_25": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_26": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_27": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_28": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_29": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 92.995,
+   "n_annotations": 7,
+   "classes": {
+    "n/a": 7
+   }
+  },
+  "31/seizure_30": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_31": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 4,
+   "classes": {
+    "n/a": 4
+   }
+  },
+  "31/seizure_32": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "31/seizure_33": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_34": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  },
+  "31/seizure_35": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_36": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_37": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_38": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  },
+  "31/seizure_39": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 90.995,
+   "n_annotations": 2,
+   "classes": {
+    "n/a": 2
+   }
+  },
+  "31/seizure_40": {
+   "kind": "raw",
+   "sfreq": 200.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 91.995,
+   "n_annotations": 5,
+   "classes": {
+    "n/a": 5
+   }
+  }
+ },
+ "electrodes": {
+  "n": 2,
+  "frame": "acpc"
+ },
+ "event_id": {
+  "n/a": 1
+ },
+ "seconds": 86.3
+}

@@ -199,9 +199,14 @@ class BIDSiEEGDataset(BaseECoGDataset):
                       extension=path.suffix, **{k: v for k, v in ent.items() if v})
         with mne.utils.use_log_level("error"):
             try:
-                raw = read_raw_bids(bp, verbose=False, on_ch_mismatch="warn")
-            except TypeError:  # older mne-bids without the argument
-                raw = read_raw_bids(bp, verbose=False)
+                try:
+                    raw = read_raw_bids(bp, verbose=False, on_ch_mismatch="warn")
+                except TypeError:  # older mne-bids without the argument
+                    raw = read_raw_bids(bp, verbose=False)
+            except (IndexError, KeyError, ValueError) as err:
+                # mne-bids trips on empty events.tsv or odd sidecars: read the file directly
+                # and take channel types from channels.tsv when present
+                raw = self._read_plain(path, err)
         raw.load_data()
         types_now = dict(zip(raw.ch_names, raw.get_channel_types()))
         keep = [ch for ch, t in types_now.items() if t in self.channel_types or t in ("stim", "misc")]
@@ -224,6 +229,37 @@ class BIDSiEEGDataset(BaseECoGDataset):
             mask = np.array([d in keep_desc for d in ann.description], dtype=bool)
             raw.set_annotations(ann[mask] if len(ann) else ann)
         return raw, ent
+
+    def _read_plain(self, path, err):
+        import warnings
+
+        warnings.warn(f"{path.name}: mne-bids failed ({type(err).__name__}); reading the file directly")
+        raw = mne.io.read_raw(path, preload=True, verbose=False)
+        ch_tsv = list(path.parent.glob(path.name.split("_ieeg")[0] + "_channels.tsv"))
+        if ch_tsv:
+            import pandas as pd
+
+            df = pd.read_csv(ch_tsv[0], sep="\t")
+            if "name" in df.columns and "type" in df.columns:
+                mapping = {}
+                for name, typ in zip(df["name"].astype(str), df["type"].astype(str).str.lower()):
+                    if name in raw.ch_names and typ in ("ecog", "seeg", "dbs", "eeg", "misc", "stim"):
+                        mapping[name] = typ
+                if mapping:
+                    raw.set_channel_types(mapping, verbose=False)
+            if "status" in df.columns:
+                raw.info["bads"] = [n for n, st in zip(df["name"].astype(str), df["status"].astype(str))
+                                    if st == "bad" and n in raw.ch_names]
+        ev = list(path.parent.glob(path.name.split("_ieeg")[0] + "_events.tsv"))
+        if ev:
+            import pandas as pd
+
+            df = pd.read_csv(ev[0], sep="\t")
+            if len(df) and "onset" in df.columns:
+                col = self.event_column if self.event_column in df.columns else df.columns[-1]
+                dur = df["duration"].astype(float) if "duration" in df.columns else 0.0
+                raw.set_annotations(mne.Annotations(df["onset"].astype(float), dur, df[col].astype(str)))
+        return raw
 
     def _get_single_subject_data(self, subject):
         out = {}

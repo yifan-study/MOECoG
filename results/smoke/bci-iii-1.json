@@ -1,0 +1,40 @@
+{
+ "id": "bci-iii-1",
+ "title": "BCI Competition III dataset I (ECoG motor imagery)",
+ "source": "bbci",
+ "status": "ok",
+ "started": "2026-09-09 23:58:31",
+ "subjects_found": 1,
+ "subject_list": [
+  "1"
+ ],
+ "sessions": {
+  "train/0": {
+   "kind": "epochs",
+   "sfreq": 1000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 833.722,
+   "n_annotations": 278,
+   "classes": {
+    "pinky": 139,
+    "tongue": 139
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": {
+  "pinky": 1,
+  "tongue": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.7475887784348263,
+  "n_trials": 278,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 9.7
+}

@@ -235,9 +235,9 @@ class BIDSiEEGDataset(BaseECoGDataset):
             session = ent["session"] or "0"
             run = "_".join(x for x in (ent["task"], ent["run"], ent["acquisition"]) if x) or "0"
             out.setdefault(session, {})[run] = raw
+        raws = [r for runs in out.values() for r in runs.values()]
         # runs of one subject may differ in rejected channels: keep the common channels and give
         # every run the same channel types (a channel typed ECoG in any run is ECoG everywhere)
-        raws = [r for runs in out.values() for r in runs.values()]
         if len(raws) > 1:
             common = set(raws[0].ch_names)
             for r in raws[1:]:
@@ -264,14 +264,14 @@ class BIDSiEEGDataset(BaseECoGDataset):
                 r.drop_channels(drop)
             r.info["bads"] = []
         self._dropped_bads = sorted(bads)
-            if self._events is None:
-                # discover labels from annotations
-                labels = sorted(set(raw.annotations.description))
-                current = self.event_id or {}
-                for lab in labels:
+        if self._events is None:
+            # discover labels from annotations
+            current = self.event_id or {}
+            for r in raws:
+                for lab in sorted(set(r.annotations.description)):
                     if lab not in current:
                         current[lab] = len(current) + 1
-                self.event_id = current
+            self.event_id = current or None
         return out
 
     def get_electrode_info(self, subject):

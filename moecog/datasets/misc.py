@@ -275,16 +275,25 @@ class RogersMicroECoG(_SimpleDataset):
         return [_download(_figshare_url(self.FILES[subject]), self.root / f"{subject}_data.mat")]
 
     def _get_single_subject_data(self, subject):
-        import h5py
-
         path = self.data_path(subject)[0]
-        with h5py.File(path, "r") as f:
-            keys = list(f.keys())
-            arrays = {k: f[k] for k in keys if isinstance(f[k], h5py.Dataset)}
-            big = max(arrays, key=lambda k: np.prod(arrays[k].shape))
-            d = np.asarray(arrays[big][()], dtype=float)
-            sfreq = float(np.asarray(f["fs"][()]).ravel()[0]) if "fs" in f else 1000.0
-        d = np.squeeze(d)
+        arrays, sfreq = {}, 4000.0
+        try:
+            import scipy.io as sio
+
+            m = sio.loadmat(path)
+            arrays = {k: np.asarray(v) for k, v in m.items() if not k.startswith("__") and np.ndim(v) >= 2}
+            for k in ("fs", "Fs", "srate", "sample_rate"):
+                if k in m and np.size(m[k]) == 1:
+                    sfreq = float(np.asarray(m[k]).ravel()[0])
+        except (NotImplementedError, ValueError):
+            import h5py
+
+            with h5py.File(path, "r") as f:
+                arrays = {k: np.asarray(f[k][()]) for k in f.keys() if isinstance(f[k], h5py.Dataset)}
+                if "fs" in f:
+                    sfreq = float(np.asarray(f["fs"][()]).ravel()[0])
+        big = max(arrays, key=lambda k: np.prod(arrays[k].shape))
+        d = np.squeeze(np.asarray(arrays[big], dtype=float))
         if d.ndim == 3:  # (windows, ch, t) or (t, ch, windows)
             d = np.moveaxis(d, np.argmax(d.shape), 0)
             if d.shape[1] < d.shape[2]:

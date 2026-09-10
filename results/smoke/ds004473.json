@@ -1,0 +1,33 @@
+{
+ "id": "ds004473",
+ "title": "sEEG Forced Two-Choice Task",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:33:32",
+ "subjects_found": 1,
+ "subject_list": [
+  "1"
+ ],
+ "sessions": {
+  "0/SlowFast": {
+   "kind": "raw",
+   "sfreq": 999.4121105232217,
+   "n_ecog": 128,
+   "n_misc": 1,
+   "duration_s": 3646.1605394117646,
+   "n_annotations": 808,
+   "classes": {
+    "Fixation": 202,
+    "Go Cue": 202,
+    "ISI Onset": 202,
+    "Response": 202
+   }
+  }
+ },
+ "electrodes": {
+  "n": 119,
+  "frame": "acpc"
+ },
+ "event_id": null,
+ "seconds": 141.6
+}

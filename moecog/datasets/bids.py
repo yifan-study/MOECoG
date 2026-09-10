@@ -198,10 +198,20 @@ class BIDSiEEGDataset(BaseECoGDataset):
         bp = BIDSPath(root=self._root, datatype="ieeg", suffix="ieeg",
                       extension=path.suffix, **{k: v for k, v in ent.items() if v})
         with mne.utils.use_log_level("error"):
-            raw = read_raw_bids(bp, verbose=False)
+            try:
+                raw = read_raw_bids(bp, verbose=False, on_ch_mismatch="warn")
+            except TypeError:  # older mne-bids without the argument
+                raw = read_raw_bids(bp, verbose=False)
         raw.load_data()
-        keep = [ch for ch, t in zip(raw.ch_names, raw.get_channel_types())
-                if t in self.channel_types or t in ("stim", "misc")]
+        types_now = dict(zip(raw.ch_names, raw.get_channel_types()))
+        keep = [ch for ch, t in types_now.items() if t in self.channel_types or t in ("stim", "misc")]
+        if not any(types_now[ch] in self.channel_types for ch in keep):
+            # some datasets type their intracranial channels as EEG (or DBS): take those instead
+            fallback = [ch for ch, t in types_now.items() if t in ("eeg", "dbs", "ecog", "seeg")]
+            if not fallback:
+                raise ValueError(f"{path.name}: no intracranial channels (types {sorted(set(types_now.values()))})")
+            keep = fallback + [ch for ch, t in types_now.items() if t in ("stim", "misc")]
+            raw.set_channel_types({ch: "ecog" for ch in fallback}, verbose=False)
         raw.pick(keep)
         # rename non-ecog data channels to 'ecog' so paradigms see one data type
         types = {ch: "ecog" for ch, t in zip(raw.ch_names, raw.get_channel_types())
@@ -225,7 +235,8 @@ class BIDSiEEGDataset(BaseECoGDataset):
             session = ent["session"] or "0"
             run = "_".join(x for x in (ent["task"], ent["run"], ent["acquisition"]) if x) or "0"
             out.setdefault(session, {})[run] = raw
-        # runs of one subject may differ in rejected channels: keep the common ECoG channels
+        # runs of one subject may differ in rejected channels: keep the common channels and give
+        # every run the same channel types (a channel typed ECoG in any run is ECoG everywhere)
         raws = [r for runs in out.values() for r in runs.values()]
         if len(raws) > 1:
             common = set(raws[0].ch_names)
@@ -235,6 +246,14 @@ class BIDSiEEGDataset(BaseECoGDataset):
                 keep = [ch for ch in r.ch_names if ch in common]
                 if len(keep) < len(r.ch_names):
                     r.pick(keep)
+            ecog = set()
+            for r in raws:
+                ecog |= {ch for ch, t in zip(r.ch_names, r.get_channel_types()) if t == "ecog"}
+            for r in raws:
+                fix = {ch: "ecog" for ch, t in zip(r.ch_names, r.get_channel_types())
+                       if ch in ecog and t != "ecog"}
+                if fix:
+                    r.set_channel_types(fix, verbose=False)
             if self._events is None:
                 # discover labels from annotations
                 labels = sorted(set(raw.annotations.description))

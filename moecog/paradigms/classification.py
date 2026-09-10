@@ -23,9 +23,9 @@ class EpochedClassification(BaseClassificationParadigm):
     """
 
     def __init__(self, events=None, tmin=0.0, tmax=None, fmin=1.0, fmax=200.0,
-                 resample=None, channels=None, baseline=None, min_classes=2):
+                 resample=None, channels=None, baseline=None, min_classes=2, raw_steps=None):
         super().__init__(tmin=tmin, tmax=tmax, baseline=baseline, fmin=fmin, fmax=fmax,
-                         resample=resample, channels=channels)
+                         resample=resample, channels=channels, raw_steps=raw_steps)
         self.events = list(events) if events is not None else None
         self.min_classes = min_classes
 

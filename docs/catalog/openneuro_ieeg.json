@@ -1,0 +1,1339 @@
+[
+ {
+  "id": "ds002799",
+  "name": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
+  "modalities": [
+   "mri",
+   "ieeg"
+  ],
+  "n_subjects": 26,
+  "tasks": [
+   "es",
+   "rest"
+  ],
+  "size": 19940287452,
+  "license": "CC0",
+  "authors": [
+   "Thompson WH*",
+   "Nair R*",
+   "Oya H*"
+  ]
+ },
+ {
+  "id": "ds003029",
+  "name": "iEEG Fragility Epileptogenic Zone",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 35,
+  "tasks": [
+   "ictal"
+  ],
+  "size": 11083752416,
+  "license": "CC0",
+  "authors": [
+   "Adam Li",
+   "Sara Inati",
+   "Kareem Zaghloul"
+  ]
+ },
+ {
+  "id": "ds003078",
+  "name": "PROBE iEEG",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 6,
+  "tasks": [],
+  "size": 11761361020,
+  "license": "CC0",
+  "authors": [
+   "Philippe DOMENECH",
+   "Sylvain RHEIMS",
+   "Etienne KOECHLIN"
+  ]
+ },
+ {
+  "id": "ds003374",
+  "name": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 9,
+  "tasks": [
+   "jokeit"
+  ],
+  "size": 175461388,
+  "license": "CC0",
+  "authors": [
+   "Tommaso Fedele",
+   "Ece Boran",
+   "Valeri Chirkov"
+  ]
+ },
+ {
+  "id": "ds003498",
+  "name": "iEEG Interictal Asleep HFO Dataset",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 20,
+  "tasks": [],
+  "size": 48030875385,
+  "license": "CC0",
+  "authors": [
+   "Fedele T",
+   "Krayenb\u00fchl N",
+   "Hilfiker P"
+  ]
+ },
+ {
+  "id": "ds003688",
+  "name": "Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 63,
+  "tasks": [
+   "film",
+   "rest"
+  ],
+  "size": 16334721863,
+  "license": "CC0",
+  "authors": [
+   "Julia Berezutskaya",
+   "Mariska J. Vansteensel",
+   "Erik J. Aarnoutse"
+  ]
+ },
+ {
+  "id": "ds003708",
+  "name": "Basis profile curve identification to understand electrical stimulation effects in human brain networks",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 1,
+  "tasks": [
+   "rest"
+  ],
+  "size": 650274380,
+  "license": "CC0",
+  "authors": [
+   "Dora Hermes",
+   "Gabriella Ojeda",
+   "Kai J. Miller"
+  ]
+ },
+ {
+  "id": "ds003844",
+  "name": "RESPect",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 6,
+  "tasks": [
+   "task-acute"
+  ],
+  "size": 2795794610,
+  "license": "CC0",
+  "authors": [
+   "Zweiphenning W.",
+   "Demuru M.",
+   "van Blooijs D."
+  ]
+ },
+ {
+  "id": "ds003848",
+  "name": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 6,
+  "tasks": [
+   "task-SPESclin",
+   "task-Sleep",
+   "task-sleep",
+   "task-slawtrans",
+   "task-CHOCS1",
+   "task-Rest"
+  ],
+  "size": 69773848040,
+  "license": "CC0",
+  "authors": [
+   "van Blooijs D.",
+   "Demuru M.",
+   "Zweiphenning W"
+  ]
+ },
+ {
+  "id": "ds003876",
+  "name": "Epilepsy-iEEG-Interictal-Multicenter-Dataset",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 39,
+  "tasks": [
+   "interictal",
+   "interictalasleep",
+   "interictalawake"
+  ],
+  "size": 5368598177,
+  "license": "CC0",
+  "authors": [
+   "Gunnarsdottir, Kristin",
+   "Li, Adam",
+   "Smith, Rachel"
+  ]
+ },
+ {
+  "id": "ds004100",
+  "name": " ",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 57,
+  "tasks": [
+   "ictal",
+   "interictal"
+  ],
+  "size": 14196260504,
+  "license": "CC0",
+  "authors": [
+   "John M. Bernabei",
+   "Adam Li",
+   "Andrew Y. Revell"
+  ]
+ },
+ {
+  "id": "ds004127",
+  "name": "Somatosensory Cortex Rat DISC Data",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 8,
+  "tasks": [],
+  "size": 201353276068,
+  "license": "CC0",
+  "authors": [
+   "Amada Abrego",
+   "Wasif Khan",
+   "John P Seymour"
+  ]
+ },
+ {
+  "id": "ds004194",
+  "name": "Visual ECoG dataset",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 14,
+  "tasks": [
+   "soc",
+   "prf",
+   "temporalpattern",
+   "spatialpattern",
+   "n/a"
+  ],
+  "size": 8405758704,
+  "license": "CC0",
+  "authors": [
+   "Iris Groen",
+   "Kenichi Yuasa",
+   "Amber Brands"
+  ]
+ },
+ {
+  "id": "ds004080",
+  "name": "CCEP ECoG dataset across age 4-51",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 74,
+  "tasks": [
+   "task-SPESclin"
+  ],
+  "size": 288953106451,
+  "license": "CC0",
+  "authors": [
+   "D. van Blooijs",
+   "M.A. van den Boom",
+   "J.F. van der Aar"
+  ]
+ },
+ {
+  "id": "ds004370",
+  "name": "PRIOS",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 7,
+  "tasks": [
+   "task-SPESclin",
+   "task-SPESprop"
+  ],
+  "size": 29584367694,
+  "license": "CC0",
+  "authors": [
+   "van Blooijs D",
+   "Blok S",
+   "Huiskamp GJM"
+  ]
+ },
+ {
+  "id": "ds004457",
+  "name": "Electrical stimulation of temporal and limbic circuitry produces distinct responses in human ventral temporal cortex",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 5,
+  "tasks": [
+   "ccep task with annotations",
+   "ccep and movement task with annotations, downsampled"
+  ],
+  "size": 11705318065,
+  "license": "CC0",
+  "authors": [
+   "Harvey Huang",
+   "Nicholas M Gregg",
+   "Gabriela Ojeda Valencia"
+  ]
+ },
+ {
+  "id": "ds004473",
+  "name": "sEEG Forced Two-Choice Task",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 8,
+  "tasks": [
+   "SlowFast"
+  ],
+  "size": 6767566336,
+  "license": "CC0",
+  "authors": [
+   "Alexander P. Rockhill",
+   "Alessandra Mantovani",
+   "Brittany Stedelin"
+  ]
+ },
+ {
+  "id": "ds004551",
+  "name": "testMIproject",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 114,
+  "tasks": [
+   "sleep"
+  ],
+  "size": 74017379206,
+  "license": "CC0",
+  "authors": [
+   "Kazuki Sakakura",
+   "Naoto Kuroda",
+   "Masaki Sonoda"
+  ]
+ },
+ {
+  "id": "ds004624",
+  "name": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 3,
+  "tasks": [],
+  "size": 20739089774,
+  "license": "CC0",
+  "authors": [
+   "F. Mivalt",
+   "F. Lampert",
+   "M.A. van den Boom"
+  ]
+ },
+ {
+  "id": "ds004642",
+  "name": "Intraoperative recordings of medianus stimulation with low and high impedance ECoG",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 10,
+  "tasks": [
+   "lozHFO"
+  ],
+  "size": 1292805561,
+  "license": "CC0",
+  "authors": [
+   "Vasileios Dimakopoulos",
+   "Marian Neidert",
+   "Johannes Sarnthein"
+  ]
+ },
+ {
+  "id": "ds004696",
+  "name": "HAPwave_bids",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 8,
+  "tasks": [
+   "Cortico-Cortical Evoked Potentials -CCEPs"
+  ],
+  "size": 15212997823,
+  "license": "CC0",
+  "authors": [
+   "Ojeda Valencia, G.",
+   "Gregg, N.",
+   "Huang, H."
+  ]
+ },
+ {
+  "id": "ds004703",
+  "name": "PassiveListen",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 10,
+  "tasks": [
+   "PassiveListen"
+  ],
+  "size": 13278807157,
+  "license": "CC0",
+  "authors": [
+   "Anna Mai",
+   "Stephanie Ries",
+   "Sharona Ben-Haim"
+  ]
+ },
+ {
+  "id": "ds004752",
+  "name": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients performing a verbal working memory task",
+  "modalities": [
+   "ieeg",
+   "eeg"
+  ],
+  "n_subjects": 15,
+  "tasks": [
+   "verbalWM"
+  ],
+  "size": 10984448479,
+  "license": "CC0",
+  "authors": [
+   "Vasileios Dimakopoulos",
+   "Lennart Stieglitz",
+   "Lukas Imbach"
+  ]
+ },
+ {
+  "id": "ds004770",
+  "name": "iEEG on children during gameplay",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 10,
+  "tasks": [
+   "game"
+  ],
+  "size": 9325612810,
+  "license": "CC0",
+  "authors": [
+   "Riyo Ueda",
+   "Kazuki Sakakura",
+   "Takumi Mitsuhashi"
+  ]
+ },
+ {
+  "id": "ds004774",
+  "name": "Automatic Evoked Response Detection (ER-Detect) dataset",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 14,
+  "tasks": [
+   "CCEP",
+   "task-SPESclin"
+  ],
+  "size": 26608945134,
+  "license": "CC0",
+  "authors": [
+   "M.A. van den Boom",
+   "N.M. Gregg",
+   "G.O. Valencia"
+  ]
+ },
+ {
+  "id": "ds004789",
+  "name": "Delayed Free Recall of Word Lists",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 280,
+  "tasks": [
+   "FR1"
+  ],
+  "size": 618808962711,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds004809",
+  "name": "Categorized Free Recall: Delayed Free Recall of Word Lists Organized by Semantic Categories",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 258,
+  "tasks": [
+   "catFR1"
+  ],
+  "size": 512365835522,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds004819",
+  "name": "Flexible, Scalable, High Channel Count Stereo-Electrode for Recording in the Human Brain",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 1,
+  "tasks": [],
+  "size": 722127657,
+  "license": "CC0",
+  "authors": [
+   "Keundong Lee",
+   "Angelique C. Paulk",
+   "Yun Goo Ro"
+  ]
+ },
+ {
+  "id": "ds004859",
+  "name": "iEEG on children during Stroop task",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 7,
+  "tasks": [
+   "stroop"
+  ],
+  "size": 2435511071,
+  "license": "CC0",
+  "authors": [
+   "Kazuki Sakakura",
+   "Eishi Asano"
+  ]
+ },
+ {
+  "id": "ds004865",
+  "name": "pyFR: Delayed Free Recall of Word Lists, Preliminary Cognitive Electrophysiology Study",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 49,
+  "tasks": [
+   "pyFR"
+  ],
+  "size": 104999471870,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds004944",
+  "name": "Dataset of BCI2000-compatible intraoperative ECoG with neuromorphic encoding",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 22,
+  "tasks": [
+   "acute"
+  ],
+  "size": 473061643,
+  "license": "CC0",
+  "authors": [
+   "Filippo Costa",
+   "Niklaus Krayenb\u00fchl",
+   "Georgia Ramantani"
+  ]
+ },
+ {
+  "id": "ds004977",
+  "name": "CARLA: Adjusted common average referencing for cortico-cortical evoked potential data",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 4,
+  "tasks": [
+   "Cortico Cortical Evoked Potentials"
+  ],
+  "size": 1604950022,
+  "license": "CC0",
+  "authors": [
+   "Harvey Huang",
+   "Gabriela Ojeda Valencia",
+   "Nicholas M Gregg"
+  ]
+ },
+ {
+  "id": "ds004993",
+  "name": "WIRED ICM Sample Dataset - Workshop on Intracranial Recordings in Humans, Epilepsy, DBS",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 3,
+  "tasks": [
+   "movietrailers",
+   "timit5",
+   "timit4"
+  ],
+  "size": 319927247,
+  "license": "CC0",
+  "authors": [
+   "Liberty S. Hamilton",
+   "Maansi Desai",
+   "Alyssa Field"
+  ]
+ },
+ {
+  "id": "ds005007",
+  "name": "Auditory naming task with questions that begin or end with a wh-interrogative",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 40,
+  "tasks": [
+   "namingtask"
+  ],
+  "size": 8896470075,
+  "license": "CC0",
+  "authors": [
+   "Yu Kitazawa",
+   "Eishi Asano"
+  ]
+ },
+ {
+  "id": "ds005059",
+  "name": "Paired Associates Learning: Memory for Word Pairs in Cued Recall",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 72,
+  "tasks": [
+   "PAL1"
+  ],
+  "size": 179631838657,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005083",
+  "name": "Safety and Accuracy of Stereoelectroencephalography for Pediatric Patients with Prior Craniotomy",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 60,
+  "tasks": [],
+  "size": 288430,
+  "license": "CC0",
+  "authors": [
+   "Peter H Yang",
+   "Nathan Wulfekammer",
+   "Amanda V. Jenson"
+  ]
+ },
+ {
+  "id": "ds005169",
+  "name": "Dataset of intracranial EEG during cortical stimulation evoking visual effects",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 20,
+  "tasks": [
+   "dcs"
+  ],
+  "size": 4322721427,
+  "license": "CC0",
+  "authors": [
+   "Andrei Barborica",
+   "Felicia Mihai",
+   "Laurentiu Tofan"
+  ]
+ },
+ {
+  "id": "ds005398",
+  "name": "Open iEEG Dataset",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 185,
+  "tasks": [
+   "sleep"
+  ],
+  "size": 109729585717,
+  "license": "CC0",
+  "authors": [
+   "Yipeng Zhang",
+   "Atsuro Daida",
+   "Lawrence Liu"
+  ]
+ },
+ {
+  "id": "ds005411",
+  "name": "Free Recall of Word Lists with Repeated Items",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 48,
+  "tasks": [
+   "RepFR1"
+  ],
+  "size": 168961242901,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005415",
+  "name": "Numbers",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 13,
+  "tasks": [
+   "numbers"
+  ],
+  "size": 8015284412,
+  "license": "CC0",
+  "authors": [
+   "Alexander P. Rockhill",
+   "Ahmed M. Raslan"
+  ]
+ },
+ {
+  "id": "ds005448",
+  "name": "STReEF",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 13,
+  "tasks": [
+   "task-SPESclin"
+  ],
+  "size": 48025611704,
+  "license": "CC0",
+  "authors": [
+   "Jelsma S.B.",
+   "Zijlmans M.",
+   "Heijink I.B."
+  ]
+ },
+ {
+  "id": "ds005489",
+  "name": "Free Recall with Open-Loop Stimulation at Encoding",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 38,
+  "tasks": [
+   "FR2"
+  ],
+  "size": 69728763972,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005491",
+  "name": "Categorized Free Recall with Open-Loop Stimulation at Encoding",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 19,
+  "tasks": [
+   "catFR2"
+  ],
+  "size": 24202629465,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005494",
+  "name": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 20,
+  "tasks": [
+   "PAL2"
+  ],
+  "size": 28279607081,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005522",
+  "name": "Spatial Navigation Memory of Object Locations",
+  "modalities": [
+   "ieeg",
+   "beh"
+  ],
+  "n_subjects": 58,
+  "tasks": [
+   "YC1"
+  ],
+  "size": 115392336164,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005523",
+  "name": "Spatial Memory of Object Locations with Open-Loop Stimulation at Encoding",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 22,
+  "tasks": [
+   "YC2"
+  ],
+  "size": 74834541025,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005545",
+  "name": "auditory",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 106,
+  "tasks": [
+   "auditory"
+  ],
+  "size": 42905692557,
+  "license": "CC0",
+  "authors": [
+   "Aya Kanno",
+   "Ryuzaburo Kochi",
+   "Kazuki Sakakura"
+  ]
+ },
+ {
+  "id": "ds005557",
+  "name": "Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 18,
+  "tasks": [
+   "FR3"
+  ],
+  "size": 37243089880,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005558",
+  "name": "Categorized Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 9,
+  "tasks": [
+   "catFR3"
+  ],
+  "size": 13091493612,
+  "license": "CC0",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ]
+ },
+ {
+  "id": "ds005574",
+  "name": "The \"Podcast\" ECoG dataset for modeling neural activity during natural story listening",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 9,
+  "tasks": [
+   "podcast"
+  ],
+  "size": 3483284760,
+  "license": "CC0",
+  "authors": [
+   "Zaid Zada",
+   "Samuel A. Nastase",
+   "Bobbi Aubrey"
+  ]
+ },
+ {
+  "id": "ds005592",
+  "name": null,
+  "modalities": null,
+  "n_subjects": 0,
+  "tasks": null,
+  "size": null,
+  "license": null,
+  "authors": []
+ },
+ {
+  "id": "ds005624",
+  "name": "Color Change Detection Task",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 24,
+  "tasks": [
+   "CCDT"
+  ],
+  "size": 14768426442,
+  "license": "CC0",
+  "authors": [
+   "[Unspecified]"
+  ]
+ },
+ {
+  "id": "ds005670",
+  "name": "SEEG Resting State Recording",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 2,
+  "tasks": [
+   "rest"
+  ],
+  "size": 743242149,
+  "license": "CC0",
+  "authors": [
+   "Prof. Pengfei Xu"
+  ]
+ },
+ {
+  "id": "ds005691",
+  "name": "SpinalExpect_Invasive",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 8,
+  "tasks": [
+   "countingDeviants"
+  ],
+  "size": 758159062,
+  "license": "CC0",
+  "authors": [
+   "Max-Philipp Stenner",
+   "Cindy Marquez Nossa",
+   "Tino Zaehle"
+  ]
+ },
+ {
+  "id": "ds005931",
+  "name": "Visuomotor_task",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 8,
+  "tasks": [
+   "game"
+  ],
+  "size": 857380965,
+  "license": "CC0",
+  "authors": [
+   "Riyo Ueda",
+   "Eishi Asano"
+  ]
+ },
+ {
+  "id": "ds005953",
+  "name": "iEEG_visual",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 2,
+  "tasks": [
+   "visual"
+  ],
+  "size": 605346653,
+  "license": "CC0",
+  "authors": [
+   "Jonathan Winawer",
+   "Dora Hermes"
+  ]
+ },
+ {
+  "id": "ds006065",
+  "name": "TSS_iEEG",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 7,
+  "tasks": [
+   "restcontrolpre",
+   "eppre",
+   "clcontrol",
+   "eppost",
+   "epcontrolpre",
+   "epcontrolpost",
+   "cl",
+   "restpost",
+   "restpre",
+   "restcontrolpost"
+  ],
+  "size": 10343281171,
+  "license": "CC0",
+  "authors": [
+   "James Kragel",
+   "Joel Voss"
+  ]
+ },
+ {
+  "id": "ds006107",
+  "name": "iEEG_Neural_spatial_volatility",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 166,
+  "tasks": [
+   "sws"
+  ],
+  "size": 12778446176,
+  "license": "CC0",
+  "authors": [
+   "Naoto Kuroda",
+   "Eishi Asano",
+   "Nobukazu Nakasato"
+  ]
+ },
+ {
+  "id": "ds006136",
+  "name": "OWM-Dataset",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 13,
+  "tasks": [
+   "Object Working Memory"
+  ],
+  "size": 299778229,
+  "license": "CC0",
+  "authors": [
+   "Vladimir Omelyusik",
+   "Tyler S. Davis",
+   "Satish S. Nair"
+  ]
+ },
+ {
+  "id": "ds006233",
+  "name": "Picture naming",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 108,
+  "tasks": [
+   "picture"
+  ],
+  "size": 18579703387,
+  "license": "CC0",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds006234",
+  "name": "Auditory naming",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 119,
+  "tasks": [
+   "auditory"
+  ],
+  "size": 47167316634,
+  "license": "CC0",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds006253",
+  "name": "MetaRDK",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 21,
+  "tasks": [],
+  "size": 671939,
+  "license": "CC0",
+  "authors": [
+   "Dorian Goueytes",
+   "Francois Stockart",
+   "Alexis Robin"
+  ]
+ },
+ {
+  "id": "ds006254",
+  "name": "IEEG CCEP Recording",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 30,
+  "tasks": [
+   "CCEP_OnASM"
+  ],
+  "size": 168302849862,
+  "license": "CC0",
+  "authors": [
+   "Benjamin Cox MD"
+  ]
+ },
+ {
+  "id": "ds006392",
+  "name": "HED schema library for SCORE annotations example",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 1,
+  "tasks": [
+   "photicstim"
+  ],
+  "size": 33603727,
+  "license": "CC0",
+  "authors": [
+   "Tal Pal Attia",
+   "Kay Robbins",
+   "Dora Hermes"
+  ]
+ },
+ {
+  "id": "ds006519",
+  "name": "Dataset of intracranial EEG during cortical stimulations evoking negative motor responses",
+  "modalities": [
+   "ieeg",
+   "mri"
+  ],
+  "n_subjects": 21,
+  "tasks": [
+   "dcs"
+  ],
+  "size": 1118742821,
+  "license": "CC0",
+  "authors": [
+   "Andrei Barborica",
+   "Cristina Ghita",
+   "Laurentiu Tofan"
+  ]
+ },
+ {
+  "id": "ds006890",
+  "name": "Longitudinal Multitask Wireless ECoG Data from Two Fully Implanted Macaca fuscata",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 2,
+  "tasks": [
+   "rest",
+   "sep",
+   "pressing",
+   "listening",
+   "reaching"
+  ],
+  "size": 44207054000,
+  "license": "CC0",
+  "authors": [
+   "Huixiang Yang",
+   "Ryohei Fukuma",
+   "Tomoyuki Namima"
+  ]
+ },
+ {
+  "id": "ds006910",
+  "name": "Auditory Naming",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 121,
+  "tasks": [
+   "auditory",
+   "picture"
+  ],
+  "size": 47891802796,
+  "license": "CC0",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds006914",
+  "name": "Picture naming",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 110,
+  "tasks": [
+   "picture"
+  ],
+  "size": 18843484223,
+  "license": "CC0",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds007095",
+  "name": "RNS_Epilepsy-iBIDS",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 8,
+  "tasks": [
+   "seizure"
+  ],
+  "size": 521941815,
+  "license": "CC0",
+  "authors": [
+   "Chen Feng",
+   "Haoqi Ni",
+   "Zhoule Zhu"
+  ]
+ },
+ {
+  "id": "ds007118",
+  "name": "iEEG_comprehensive_HFA_model_part1",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 65,
+  "tasks": [
+   "sleep"
+  ],
+  "size": 36317646610,
+  "license": "CC0",
+  "authors": [
+   "Keisuke Hatano",
+   "Naoto Kuroda",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds007119",
+  "name": "iEEG_comprehensive_HFA_model_part3",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 103,
+  "tasks": [
+   "sleep"
+  ],
+  "size": 34981740938,
+  "license": "CC0",
+  "authors": [
+   "Keisuke Hatano",
+   "Naoto Kuroda",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds007120",
+  "name": "iEEG_comprehensive_HFA_model_part2",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 65,
+  "tasks": [
+   "sleep"
+  ],
+  "size": 35448518496,
+  "license": "CC0",
+  "authors": [
+   "Keisuke Hatano",
+   "Naoto Kuroda",
+   "Hiroshi Uda"
+  ]
+ },
+ {
+  "id": "ds007703",
+  "name": "Single pulse electrical stimulation in white matter modulates iEEG visual responses in human early visual cortex",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 2,
+  "tasks": [
+   "Visual stimuli + CCEPs",
+   "Cortico-cortical evoked potentials - CCEPs",
+   "Cortico cortical Evoked Potentials, CCEPs",
+   "Cortico Cortical Evoked Potentials"
+  ],
+  "size": 12294429866,
+  "license": "CC0",
+  "authors": [
+   "Harvey Huang",
+   "Kendrick N Kay",
+   "Nicholas M Gregg"
+  ]
+ },
+ {
+  "id": "ds008610",
+  "name": "FUS and Tactile Neuromodulation in NHP VPL - Electrophysiology",
+  "modalities": [
+   "ieeg"
+  ],
+  "n_subjects": 2,
+  "tasks": [
+   "FUS",
+   "Tactile"
+  ],
+  "size": 5440782216,
+  "license": "CC0",
+  "authors": [
+   "Ning Zheng",
+   "Pai-Feng Yang",
+   "M. Anthony Phipps"
+  ]
+ }
+]

@@ -20,9 +20,9 @@ class FingerFlexionRegression(BaseRegressionParadigm):
     """
 
     def __init__(self, fmin=1.0, fmax=200.0, window_size=0.5, window_stride=0.05,
-                 fingers=FINGERS, resample=None, channels=None):
+                 fingers=FINGERS, resample=None, channels=None, raw_steps=None):
         super().__init__(window_size=window_size, window_stride=window_stride, fmin=fmin,
-                         fmax=fmax, resample=resample, channels=channels)
+                         fmax=fmax, resample=resample, channels=channels, raw_steps=raw_steps)
         self.fingers = list(fingers)
 
     headline_metric = "pearson_r"
@@ -63,9 +63,10 @@ class CursorRegression(BaseRegressionParadigm):
     """
 
     def __init__(self, target="velocity", smooth_ms=31.0, fmin=1.0, fmax=200.0,
-                 window_size=0.5, window_stride=0.05, resample=None, channels=None):
+                 window_size=0.5, window_stride=0.05, resample=None, channels=None,
+                 raw_steps=None):
         super().__init__(window_size=window_size, window_stride=window_stride, fmin=fmin,
-                         fmax=fmax, resample=resample, channels=channels)
+                         fmax=fmax, resample=resample, channels=channels, raw_steps=raw_steps)
         if target not in ("velocity", "position"):
             raise ValueError("target must be 'velocity' or 'position'")
         self.target = target

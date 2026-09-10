@@ -137,6 +137,9 @@ Motor-specific, public, well-documented.
 | Paradigms | `EpochedClassification` (+ `MotorClassification`, `FingerClassification`, `FaceHouseClassification`, `VisualSearchClassification`, `NBackTargetClassification`), `FingerFlexionRegression`, `CursorRegression` | Trials come from cue-code annotations; regression uses causal windows |
 | Evaluations | `WithinSubjectCV` (chronological folds with purge for regression; contiguous or stratified-shuffled trial folds for classification) | Cross-session, cross-subject, temporal-stability still to do |
 | Pipelines | `LogBandPower`, `HighGammaPower`; `classification_baselines()`, `regression_baselines()` | Deep decoders (braindecode, PACE zoo) still to do |
+| Preprocessing | `CommonAverageReference`, `NotchFilter`, `HilbertEnvelope`, `chang_high_gamma()`; paradigms take `raw_steps=[...]` | Survey of the field's pipelines in `docs/preprocessing_catalog.md` |
+| Other datasets | `BIDSiEEGDataset` (any BIDS-iEEG / OpenNeuro dataset, download via openneuro-py) with named entries `HermesVisualECoG`, `PodcastECoG`, `FilmIEEG`, `VisualECoG` | Catalog of ~90 obtainable datasets in `docs/dataset_catalog.md`; NWB loader next |
+| Results | `results/*.csv` + `scripts/build_leaderboard.py` -> `docs/leaderboard.md` | first Miller baselines posted |
 
 Everything above is covered by `pytest -m "not slow"` on synthetic data; the
 `slow` tests run against a local copy of the library

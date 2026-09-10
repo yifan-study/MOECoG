@@ -45,6 +45,10 @@ class BaseParadigm(ABC):
         Target sampling rate in Hz. None keeps the original rate.
     channels : list of str or None
         Channel names to select. None uses all ECoG channels.
+    raw_steps : list or None
+        Raw-level preprocessing steps (:mod:`moecog.preprocessing`, for
+        example ``[CommonAverageReference(), NotchFilter()]``) applied before
+        the band-pass, channel selection and resampling.
     """
 
     def __init__(
@@ -53,11 +57,13 @@ class BaseParadigm(ABC):
         fmax: float | None = 200.0,
         resample: float | None = None,
         channels: list[str] | None = None,
+        raw_steps=None,
     ):
         self.fmin = fmin
         self.fmax = fmax
         self.resample = resample
         self.channels = channels
+        self.raw_steps = list(raw_steps) if raw_steps else []
 
     @abstractmethod
     def get_data(self, dataset, subjects=None):
@@ -79,6 +85,10 @@ class BaseParadigm(ABC):
     def _preprocess_raw(self, raw):
         """Band-pass the ECoG channels, select channels, resample."""
         raw = raw.copy()
+        if self.raw_steps:
+            from moecog.preprocessing import apply_raw_steps
+
+            raw = apply_raw_steps(raw, self.raw_steps)
         nyq = raw.info["sfreq"] / 2.0
         h_freq = self.fmax if (self.fmax is not None and self.fmax < nyq) else None
         l_freq = self.fmin if (self.fmin is not None and self.fmin > 0) else None

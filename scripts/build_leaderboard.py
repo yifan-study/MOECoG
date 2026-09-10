@@ -68,11 +68,11 @@ def main():
     for dataset, g in summ.groupby("dataset"):
         lines.append(f"## {dataset}")
         lines.append("")
-        metrics = [m for m in ORDER if m in g.columns]
+        metrics = [m for m in ORDER if m in g.columns and g[m].notna().any()]
         lines.append("| session | pipeline | n | " + " | ".join(metrics) + " | folds |")
         lines.append("|---|---|---|" + "---|" * len(metrics) + "---|")
         for _, r in g.sort_values(["session", "pipeline"]).iterrows():
-            vals = " | ".join(str(r.get(m, "")) for m in metrics)
+            vals = " | ".join("" if pd.isna(r.get(m)) else str(r.get(m)) for m in metrics)
             lines.append(
                 f"| {r.session} | {r.pipeline} | {r.n_subjects} | {vals} | {r.fold_policy} |"
             )

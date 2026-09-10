@@ -100,7 +100,7 @@ TEMPLATE = r"""<title>MOECoG Dataset Atlas</title>
 <header>
   <div class="eyebrow">MOECoG · catalog registry, smoke sweep of __DATE__</div>
   <h1>MOECoG Dataset Atlas</h1>
-  <p class="lede">Every ECoG and intracranial dataset the catalog knows, with what was recorded, how much of it there is, what a decoder can predict from it, and whether MOECoG loads it today. Channels and rate describe the first subject's first run as loaded, not the whole deposit.</p>
+  <p class="lede">Every ECoG and intracranial dataset the catalog knows, with what was recorded, how much of it there is, what a decoder can predict from it, and whether MOECoG loads it today. Modality is measured from the channel types of the downloaded subset where one is on disk (ECoG = at least 80 % ECOG channels, sEEG = at least 80 % depth channels); channels and rate describe the first subject's first run as loaded, not the whole deposit.</p>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -118,6 +118,7 @@ TEMPLATE = r"""<title>MOECoG Dataset Atlas</title>
     <button class="tog" data-status="unsupported" aria-pressed="true">unsupported</button>
     <button class="tog" data-status="blocked" aria-pressed="true">blocked</button>
   </div>
+  <div class="group" id="mods"><span class="lbl">modality</span></div>
   <div class="group"><span class="lbl">view</span>
     <button class="tog" id="grouped" aria-pressed="true">grouped by family</button>
   </div>
@@ -154,7 +155,9 @@ const FAM_ORDER = ["motor","bci","speech","auditory","visual","memory","naturali
 const FAM_TITLE = {motor:"Motor (movement, kinematics, force)", bci:"Brain-computer interface control", speech:"Speech production and naming",
   auditory:"Auditory and language perception", visual:"Visual stimuli", memory:"Memory and cognition", naturalistic:"Naturalistic, long-term",
   animal:"Non-human", stimulation:"Electrical stimulation", clinical:"Clinical (seizures, HFO, artefacts)", rest_sleep:"Rest and sleep (unlabeled)", other:"Other"};
-const state = {q:"", fams:new Set(), fits:new Set(), statuses:new Set(["ok","unsupported","blocked"]), grouped:true, sort:{k:null, dir:1}};
+const state = {q:"", fams:new Set(), fits:new Set(), mods:new Set(), statuses:new Set(["ok","unsupported","blocked"]), grouped:true, sort:{k:null, dir:1}};
+const MOD_ORDER = ["ECoG","mixed","sEEG","uECoG","features","LFP+ECoG","unverified"];
+const MOD_TITLE = {ECoG:"subdural ECoG", mixed:"ECoG + sEEG", sEEG:"sEEG (depth)", uECoG:"µECoG", features:"features only", "LFP+ECoG":"ECoG + DBS LFP", unverified:"unverified"};
 
 function fmtSize(gb){ if(gb==null) return ""; if(gb>=1000) return (gb/1000).toFixed(1)+" TB"; if(gb>=1) return gb.toFixed(1)+" GB"; return Math.round(gb*1000)+" MB"; }
 function fmtRun(r){ if(r.channels==="" || r.channels==null) return ""; return `${r.channels} ch @ ${Math.round(r.sfreq)} Hz · ${Math.round(r.duration_s)} s`; }
@@ -166,6 +169,7 @@ function filtered(){
   return ROWS.filter(r => {
     if(!state.statuses.has(statusOf(r))) return false;
     if(state.fams.size && !state.fams.has(r.family)) return false;
+    if(state.mods.size && !state.mods.has(r.modality)) return false;
     if(state.fits.size){ const f = (r.fit||"").split(" "); if(![...state.fits].every(x => f.includes(x))) return false; }
     if(q){ const hay = [r.id, r.title, r.target, r.tasks, r.note, r.modality, r.licence, r.catalog_notes].join(" ").toLowerCase(); if(!hay.includes(q)) return false; }
     return true;
@@ -192,7 +196,8 @@ function render(){
       const st = statusOf(r);
       const kappa = r.quick_kappa ? `<span class="kappa" title="quick kappa, LogBandPower+LDA, 3 folds">κ ${r.quick_kappa}</span>` : "";
       const fits = (r.fit||"").split(" ").filter(Boolean).map(f=>`<span class="chip fit${f}">${f}</span>`).join("");
-      tr.innerHTML = `<td class="id">${esc(r.id)}</td><td class="title">${esc(r.title)}</td><td>${esc(r.modality)}</td>
+      const modCell = r.ecog_pct==null ? esc(r.modality) : `${esc(r.modality)} <span class="kappa" title="channel types in the downloaded subset's channels.tsv">${r.ecog_pct}% ECoG · ${r.seeg_pct}% sEEG</span>`;
+      tr.innerHTML = `<td class="id">${esc(r.id)}</td><td class="title">${esc(r.title)}</td><td>${modCell}</td>
         <td class="num">${esc(r.n_subjects)}</td><td>${esc(fmtRun(r))}</td><td class="num">${fmtSize(r.size_gb)}</td>
         <td>${esc(r.licence)}</td><td class="target">${esc(r.target)}</td><td>${esc(r.kind)}</td><td>${fits}</td>
         <td><span class="pill ${st}">${st==="ok"?"loads":st}</span>${kappa}</td>`;
@@ -213,10 +218,20 @@ function render(){
   const all = ROWS, ok = all.filter(r=>r.status==="ok");
   const tb_ = all.reduce((s,r)=>s+(r.size_gb||0),0), tbok = ok.reduce((s,r)=>s+(r.size_gb||0),0);
   const subj = ok.reduce((s,r)=>s+(+r.n_subjects||0),0);
+  const ecogTB = all.filter(r=>r.modality==="ECoG").reduce((s,r)=>s+(r.size_gb||0),0);
+  const seegTB = all.filter(r=>r.modality==="sEEG").reduce((s,r)=>s+(r.size_gb||0),0);
   document.getElementById("stats").innerHTML = [
     [all.length, "catalog entries"], [ok.length, "load in MOECoG today"], [fmtSize(tbok)+" of "+fmtSize(tb_), "public data behind loadable entries"],
+    [fmtSize(ecogTB), "of it subdural ECoG"], [fmtSize(seegTB), "sEEG (4.6 TB is the SWEC clinical archive)"],
     [subj.toLocaleString(), "subjects across loadable entries"], [rows.length, "shown with these filters"]
   ].map(([b,s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+}
+function modButtons(){
+  const host = document.getElementById("mods");
+  for(const m of MOD_ORDER){ if(!ROWS.some(r=>r.modality===m)) continue;
+    const b = document.createElement("button"); b.className="tog"; b.textContent = MOD_TITLE[m] || m; b.setAttribute("aria-pressed","false");
+    b.addEventListener("click", () => { state.mods.has(m) ? state.mods.delete(m) : state.mods.add(m); b.setAttribute("aria-pressed", String(state.mods.has(m))); render(); });
+    host.appendChild(b); }
 }
 function famButtons(){
   const host = document.getElementById("fams");
@@ -234,7 +249,7 @@ document.querySelectorAll("thead th").forEach(th => th.addEventListener("click",
   document.querySelectorAll("thead th").forEach(t => t.removeAttribute("aria-sort"));
   if(state.sort.k) th.setAttribute("aria-sort", state.sort.dir===1 ? "ascending" : "descending");
   render(); }));
-famButtons(); render();
+famButtons(); modButtons(); render();
 </script>
 """
 

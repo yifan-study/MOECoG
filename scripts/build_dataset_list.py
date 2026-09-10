@@ -205,6 +205,39 @@ FIT_TEXT = {"R": "regression (PACE/TRACE finger-flexion line)", "C": "trial clas
             "S": "speech/audio decoding", "P": "pretraining / self-supervised"}
 
 
+def _measured_modality(eid):
+    """ECoG / sEEG channel shares from the channels.tsv files of a downloaded subset, when present."""
+    import csv
+    import glob
+    import os
+
+    root = os.environ.get("MOECOG_DATA_DIR") or os.path.expanduser("~/moecog_data")
+    files = glob.glob(f"{root}/openneuro/{eid}/sub-*/**/ieeg/*_channels.tsv", recursive=True)
+    if not files:
+        return None
+    ecog = seeg = total = 0
+    for f in files[:8]:
+        with open(f, encoding="utf-8", errors="replace") as fh:
+            for line in csv.DictReader(fh, delimiter="\t"):
+                t = (line.get("type") or "").upper()
+                total += 1
+                ecog += t == "ECOG"
+                seeg += t in ("SEEG", "DBS")
+    if not total:
+        return None
+    return round(100 * ecog / total), round(100 * seeg / total)
+
+
+def _modality_label(ecog_pct, seeg_pct):
+    if ecog_pct >= 80:
+        return "ECoG"
+    if seeg_pct >= 80:
+        return "sEEG"
+    if ecog_pct + seeg_pct < 40:
+        return "unverified"  # channels typed EEG/other; the loader falls back to those
+    return "mixed"
+
+
 def _guess(entry, tasks):
     """Task family for entries without curated notes, from task names and titles."""
     text = " ".join([entry.title] + list(tasks) + list(entry.tags or ())).lower()
@@ -283,10 +316,18 @@ def main():
         qb = r.get("quick_baseline") or {}
         score = qb.get("score")
         kappa = "" if score is None or score != score else f"{score:.2f}"
+        mod_source = "curated" if cur and cur.get("mod") else "guess"
+        ecog_pct = seeg_pct = None
+        if eid.startswith("ds"):
+            measured = _measured_modality(eid)
+            if measured:
+                ecog_pct, seeg_pct = measured
+                mod, mod_source = _modality_label(ecog_pct, seeg_pct), "channels.tsv"
         if not mod:
-            mod = "mixed" if "seeg" in (e.notes or "").lower() or eid.startswith("ds") else "ECoG"
+            mod = "unverified" if eid.startswith("ds") else "ECoG"
         rows.append({
             "id": eid, "title": e.title, "source": e.source, "family": fam, "modality": mod,
+            "modality_source": mod_source, "ecog_pct": ecog_pct, "seeg_pct": seeg_pct,
             "n_subjects": n_sub, "channels": first.get("n_ecog", ""), "sfreq": first.get("sfreq", ""),
             "duration_s": first.get("duration_s", ""), "size_gb": _size_gb(e, on_meta, dandi_sizes),
             "licence": meta.get("license", ""), "tasks": ", ".join(str(t) for t in tasks[:5]),
@@ -303,6 +344,12 @@ def main():
 
     total_gb = sum(x["size_gb"] or 0 for x in rows)
     ok = [x for x in rows if x["status"] == "ok"]
+    by_mod = {}
+    for x in rows:
+        b = by_mod.setdefault(x["modality"], [0, 0.0, 0])
+        b[0] += 1
+        b[1] += x["size_gb"] or 0
+        b[2] += x["status"] == "ok"
     lines = [
         "# Decodable ECoG / iEEG datasets",
         "",
@@ -314,6 +361,20 @@ def main():
         "",
         f"{len(rows)} entries, {len(ok)} load today, about {total_gb / 1e3:.1f} TB of public deposits in total "
         f"({sum((x['size_gb'] or 0) for x in ok) / 1e3:.1f} TB behind the entries that load).",
+        "",
+        "## Size by modality", "",
+        "Not all of it is subdural ECoG. *modality* comes from the channel types in the downloaded subset's "
+        "channels.tsv (ECoG = at least 80 % ECOG channels, sEEG = at least 80 % SEEG/DBS, mixed = both, unverified = "
+        "channels typed EEG/other) where a subset is on this machine, otherwise from the curated notes; 'features' "
+        "and 'µECoG' are curated.", "",
+        "| modality | entries | load | total size |", "|---|---|---|---|",
+    ] + [f"| {m} | {b[0]} | {b[2]} | {b[1] / 1e3:.2f} TB |"
+         for m, b in sorted(by_mod.items(), key=lambda kv: -kv[1][1])] + [
+        "",
+        "One archive dominates the total: SWEC-ETHZ long-term clinical sEEG on Hugging Face (4.6 TB). The RAM memory "
+        "sets (depth electrodes with some grids and strips, 1.5 TB across the family) and AJILE12 (0.85 TB of "
+        "continuous subdural ECoG) are the next largest; the motor-decoding sets our regression line targets are "
+        "small in bytes (the whole Miller library is 7.5 GB, BCI IV-4 is 220 MB).",
         "",
     ]
     for fam in FAMILY_ORDER:
@@ -329,7 +390,10 @@ def main():
                 run = f"{x['channels']} @ {float(x['sfreq']):.0f}, {float(x['duration_s']):.0f} s"
             size = "" if x["size_gb"] is None else (f"{x['size_gb'] * 1e3:.0f} MB" if x["size_gb"] < 1 else f"{x['size_gb']:.1f} GB")
             note = (x["note"] or "").replace("|", "/")
-            lines.append(f"| {x['id']} | {x['title'][:70].replace('|', '/')} | {x['modality']} | {x['n_subjects']} | {run} | {size} | "
+            mod_cell = x["modality"]
+            if x.get("ecog_pct") is not None:
+                mod_cell += f" ({x['ecog_pct']} % ECoG, {x['seeg_pct']} % sEEG)"
+            lines.append(f"| {x['id']} | {x['title'][:70].replace('|', '/')} | {mod_cell} | {x['n_subjects']} | {run} | {size} | "
                          f"{x['licence']} | {x['target'].replace('|', '/')} | {x['kind']} | {x['fit']} | {x['status']} | {x['quick_kappa']} | {note} |")
         lines.append("")
     lines += ["## Reading the table", "",

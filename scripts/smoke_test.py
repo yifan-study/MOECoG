@@ -38,13 +38,24 @@ def run_entry(entry, out_dir: Path, quick=True):
         sessions = {}
         for ses, runs in data.items():
             for run, raw in runs.items():
+                import mne
+
                 types = raw.get_channel_types()
-                ann = list(raw.annotations.description)
+                if isinstance(raw, mne.BaseEpochs):
+                    inv = {v: k for k, v in raw.event_id.items()}
+                    ann = [inv.get(e, str(e)) for e in raw.events[:, 2]]
+                    duration = float(len(raw) * (raw.tmax - raw.tmin))
+                    kind = "epochs"
+                else:
+                    ann = list(raw.annotations.description)
+                    duration = float(raw.times[-1])
+                    kind = "raw"
                 sessions[f"{ses}/{run}"] = {
+                    "kind": kind,
                     "sfreq": float(raw.info["sfreq"]),
                     "n_ecog": int(sum(t == "ecog" for t in types)),
                     "n_misc": int(sum(t == "misc" for t in types)),
-                    "duration_s": float(raw.times[-1]),
+                    "duration_s": duration,
                     "n_annotations": len(ann),
                     "classes": {k: ann.count(k) for k in sorted(set(ann))[:15]},
                 }
@@ -69,17 +80,22 @@ def run_entry(entry, out_dir: Path, quick=True):
                 pipes = {"LogBandPower+LDA": make_pipeline(
                     LogBandPower(sfreq=paradigm.resample or first_raw.info["sfreq"]),
                     StandardScaler(), LinearDiscriminantAnalysis(solver="lsqr", shrinkage="auto"))}
-                res = WithinSubjectCV(paradigm, [ds], n_splits=min(5, 3)).process(pipes, subjects=[subject])
+                res = WithinSubjectCV(paradigm, [ds], n_splits=3).process(pipes, subjects=[subject])
                 head = getattr(paradigm, "headline_metric", "kappa")
-                rec["quick_baseline"] = {
-                    "paradigm": type(paradigm).__name__, "metric": head,
-                    "score": float(res[res.metric == head].score.mean()),
-                    "n_trials": int(res.n_train.iloc[0] + res.n_test.iloc[0]),
-                    "fold_policy": sorted(res.fold_policy.unique().tolist()),
-                }
+                if len(res) == 0:
+                    rec["quick_baseline"] = {"paradigm": type(paradigm).__name__,
+                                             "note": "no scorable session (fewer than two classes per session)"}
+                else:
+                    rec["quick_baseline"] = {
+                        "paradigm": type(paradigm).__name__, "metric": head,
+                        "score": float(res[res.metric == head].score.mean()),
+                        "n_trials": int(res.n_train.iloc[0] + res.n_test.iloc[0]),
+                        "fold_policy": sorted(res.fold_policy.unique().tolist()),
+                    }
     except Exception as e:  # noqa: BLE001
-        rec["status"] = "error"
-        rec["error"] = f"{type(e).__name__}: {str(e)[:300]}"
+        msg = str(e)
+        rec["status"] = "unsupported" if ("No ElectricalSeries" in msg or "MEF3" in msg) else "error"
+        rec["error"] = f"{type(e).__name__}: {msg[:300]}"
         rec["traceback"] = traceback.format_exc()[-1500:]
     rec["seconds"] = round(time.time() - t0, 1)
     out_dir.mkdir(parents=True, exist_ok=True)

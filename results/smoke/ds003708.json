@@ -1,0 +1,14 @@
+{
+ "id": "ds003708",
+ "title": "Basis profile curve identification to understand electrical stimulation effects in human b",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-09 23:27:36",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "error": "RuntimeError: For reading MEF3 files to work, the module pymef is needed, but it could not be imported. Use the following installation method appropriate for your environment:\n\n    pip install pymef\n    conda install -c conda-forge pymef",
+ "traceback": "e-packages/mne_bids/read.py\", line 1411, in read_raw_bids\n    raw = _read_raw(\n          ^^^^^^^^^^\n  File \"<decorator-gen-358>\", line 10, in _read_raw\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 107, in _read_raw\n    raw = reader[ext](raw_path, verbose=verbose, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<decorator-gen-249>\", line 10, in read_raw_mef\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/io/mef/mef.py\", line 304, in read_raw_mef\n    return RawMEF(fname, password=password, preload=preload, verbose=verbose)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<decorator-gen-248>\", line 10, in __init__\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/io/mef/mef.py\", line 48, in __init__\n    pymef = _soft_import(\"pymef\", \"reading MEF3 files\", strict=True)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/utils/check.py\", line 473, in _soft_import\n    raise RuntimeError(\nRuntimeError: For reading MEF3 files to work, the module pymef is needed, but it could not be imported. Use the following installation method appropriate for your environment:\n\n    pip install pymef\n    conda install -c conda-forge pymef\n",
+ "seconds": 46.8
+}

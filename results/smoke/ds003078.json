@@ -1,0 +1,10 @@
+{
+ "id": "ds003078",
+ "title": "PROBE iEEG",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-09 23:27:27",
+ "error": "RuntimeError: Could not find path in the dataset:\n- *.tsv\nThere were no similar filenames found in the metadata. Please check your includes.",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/catalog.py\", line 62, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 82, in __init__\n    self._ensure_downloaded()\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 112, in _ensure_downloaded\n    openneuro.download(dataset=self.openneuro_id, target_dir=self._root,\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 1202, in download\n    raise RuntimeError(\nRuntimeError: Could not find path in the dataset:\n- *.tsv\nThere were no similar filenames found in the metadata. Please check your includes.\n",
+ "seconds": 1.1
+}

@@ -82,10 +82,7 @@ _DANDI = [
     ("000019", "Bouchard/Chang CV syllables (sub-EC9 B15)", r"sub-EC9_ses-EC9-B15", 1.0, "speech"),
     ("001193", "Shao IFG syntax/semantics high gamma", None, 0.1, "language"),
     ("000623", "Keles/Rutishauser movie watching (CS62)", r"sub-CS62_ses-P62CSR2", 1.0, "naturalistic"),
-    ("000469", "Rutishauser Sternberg WM", None, 0.1, "memory"),
     ("000574", "Rutishauser verbal WM + iEEG (sub-05 ses-01)", r"sub-05_ses-01", 1.5, "memory"),
-    ("000004", "Rutishauser declarative memory (NWB pipeline)", None, 0.1, "memory"),
-    ("001616", "SUMMER movie single-neuron", None, 0.1, "naturalistic"),
     ("000576", "Rutishauser amygdala aversive stimuli", None, 0.05, "visual"),
     ("001535", "Natraj/Ganguly long-term ECoG BCI", None, 5.0, "motor_imagery"),
     ("000055", "AJILE12 (sub-04 ses-3)", r"sub-04_ses-3", 9.0, "naturalistic"),
@@ -104,6 +101,10 @@ for _d, _t, _inc, _gb, _tag in _DANDI:
 
     _add(Entry(id=f"dandi-{_d}", title=_t, source="dandi", build=_build, paradigm=_par, tags=(_tag,)))
 
+for _d, _t in [("000469", "Rutishauser Sternberg WM"), ("000004", "Rutishauser declarative memory"),
+               ("001616", "SUMMER movie single-neuron")]:
+    _add(Entry(id=f"dandi-{_d}", title=_t, source="dandi",
+               blocked="NWB files hold spike times only (no ElectricalSeries)"))
 _add(Entry(id="dandi-000571", title="Mayo CorTec BrainInterchange (MEF3)", source="dandi",
            blocked="MEF3 format needs pymef; not supported yet"))
 _add(Entry(id="dandi-001638", title="Cogan µECoG pseudoword repetition", source="dandi",

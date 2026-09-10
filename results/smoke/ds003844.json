@@ -1,0 +1,10 @@
+{
+ "id": "ds003844",
+ "title": "RESPect",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-09 23:28:23",
+ "error": "RuntimeError: Failed to download 1 file. Re-run this command to retry; already-downloaded files will be skipped.",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/catalog.py\", line 62, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 82, in __init__\n    self._ensure_downloaded()\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 112, in _ensure_downloaded\n    openneuro.download(dataset=self.openneuro_id, target_dir=self._root,\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 1238, in download\n    _print_download_failures(failures)\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 977, in _print_download_failures\n    raise RuntimeError(\nRuntimeError: Failed to download 1 file. Re-run this command to retry; already-downloaded files will be skipped.\n",
+ "seconds": 55.1
+}

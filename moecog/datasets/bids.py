@@ -101,28 +101,51 @@ class BIDSiEEGDataset(BaseECoGDataset):
     def root(self) -> Path:
         return self._root
 
+    _TOP_FILES = ("dataset_description.json", "participants.tsv", "participants.json", "README",
+                  "README.md", "CHANGES")
+
     def _ensure_downloaded(self):
-        if (self._root / "dataset_description.json").is_file():
+        if (self._root / "dataset_description.json").is_file() and any(self._root.glob("sub-*")):
             return
         if not self.download or not self.openneuro_id:
             raise FileNotFoundError(f"No BIDS dataset at {self._root}")
         import openneuro
 
         self._root.mkdir(parents=True, exist_ok=True)
-        openneuro.download(dataset=self.openneuro_id, target_dir=self._root,
-                           include=self.include)
+        include = self.include
+        if include:
+            # directories download recursively; top-level metadata is fetched file by file
+            dirs = [i.rstrip("/*") for i in include if i.startswith("sub-")]
+            for attempt in range(2):
+                try:
+                    openneuro.download(dataset=self.openneuro_id, target_dir=self._root, include=dirs or None)
+                    break
+                except Exception:  # noqa: BLE001
+                    if attempt == 1:
+                        raise
+            for name in self._TOP_FILES:
+                if (self._root / name).exists():
+                    continue
+                try:
+                    openneuro.download(dataset=self.openneuro_id, target_dir=self._root, include=[name])
+                except Exception:  # noqa: BLE001
+                    pass
+        else:
+            openneuro.download(dataset=self.openneuro_id, target_dir=self._root)
+        if not (self._root / "dataset_description.json").is_file():
+            (self._root / "dataset_description.json").write_text(
+                '{"Name": "%s", "BIDSVersion": "1.7.0"}' % self.openneuro_id)
 
     def _list_subjects(self):
         subs = sorted(p.name[4:] for p in self._root.glob("sub-*") if p.is_dir())
         return [s for s in subs if self._ieeg_files(s)]
 
+    _EXT = (".vhdr", ".edf", ".set", ".fif", ".nwb", ".bdf", ".mefd")
+
     def _ieeg_files(self, subject):
         pattern = f"sub-{subject}_*_ieeg.*"
         files = [f for f in self._root.glob(f"sub-{subject}/**/ieeg/{pattern}")
-                 if f.suffix in (".vhdr", ".edf", ".set", ".fif", ".nwb", ".mefd", ".bdf")
-                 or f.suffix == ".eeg" and False]
-        files = [f for f in files if not f.name.endswith(("_events.tsv", "_channels.tsv",
-                                                          "_electrodes.tsv", ".json"))]
+                 if f.suffix.lower() in self._EXT]
         if self.task:
             files = [f for f in files if f"_task-{self.task}_" in f.name]
         return sorted(files)
@@ -149,6 +172,21 @@ class BIDSiEEGDataset(BaseECoGDataset):
             m = re.search(pat, path.name)
             if m:
                 ent[key] = m.group(1)
+        if path.suffix.lower() == ".nwb":
+            from .nwb import read_nwb_raw
+
+            raw, _, _ = read_nwb_raw(path, channel_types=("ecog", "seeg", "ieeg"))
+            ev = list(path.parent.glob(path.name.replace("_ieeg.nwb", "_events.tsv")))
+            if ev:
+                import pandas as pd
+
+                df = pd.read_csv(ev[0], sep="\t")
+                col = self.event_column if self.event_column in df.columns else df.columns[-1]
+                raw.set_annotations(mne.Annotations(df["onset"].astype(float), df["duration"].astype(float),
+                                                    df[col].astype(str)))
+            return raw, ent
+        if path.suffix.lower() == ".mefd":
+            raise NotImplementedError("MEF3 (.mefd) needs pymef; not supported")
         bp = BIDSPath(root=self._root, datatype="ieeg", suffix="ieeg",
                       extension=path.suffix, **{k: v for k, v in ent.items() if v})
         with mne.utils.use_log_level("error"):
@@ -171,11 +209,24 @@ class BIDSiEEGDataset(BaseECoGDataset):
 
     def _get_single_subject_data(self, subject):
         out = {}
-        for f in self._ieeg_files(subject):
+        files = self._ieeg_files(subject)
+        if not files:
+            raise FileNotFoundError(f"sub-{subject}: no readable ieeg files under {self._root}")
+        for f in files:
             raw, ent = self._load_file(f)
             session = ent["session"] or "0"
             run = "_".join(x for x in (ent["task"], ent["run"], ent["acquisition"]) if x) or "0"
             out.setdefault(session, {})[run] = raw
+        # runs of one subject may differ in rejected channels: keep the common ECoG channels
+        raws = [r for runs in out.values() for r in runs.values()]
+        if len(raws) > 1:
+            common = set(raws[0].ch_names)
+            for r in raws[1:]:
+                common &= set(r.ch_names)
+            for r in raws:
+                keep = [ch for ch in r.ch_names if ch in common]
+                if len(keep) < len(r.ch_names):
+                    r.pick(keep)
             if self._events is None:
                 # discover labels from annotations
                 labels = sorted(set(raw.annotations.description))

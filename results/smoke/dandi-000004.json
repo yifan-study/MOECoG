@@ -1,0 +1,33 @@
+{
+ "id": "dandi-000004",
+ "title": "Rutishauser declarative memory (NWB pipeline)",
+ "source": "dandi",
+ "status": "error",
+ "started": "2026-09-09 23:25:08",
+ "subjects_found": 59,
+ "subject_list": [
+  "P10HMH",
+  "P11HMH",
+  "P14HMH",
+  "P15HMH",
+  "P16HMH",
+  "P17HMH",
+  "P18HMH",
+  "P19HMH",
+  "P21HMH",
+  "P23HMH",
+  "P24CS",
+  "P25CS",
+  "P26CS",
+  "P27CS",
+  "P27HMH",
+  "P28HMH",
+  "P29CS",
+  "P29HMH",
+  "P31CS",
+  "P31HMH"
+ ],
+ "error": "ValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/000004/sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 38, in run_entry\n    sessions = {}\n           ^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 256, in _get_single_subject_data\n    raw, meta, einfo = read_nwb_raw(\n                       ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 107, in read_nwb_raw\n    raise ValueError(f\"No ElectricalSeries in {path}\")\nValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/000004/sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb\n",
+ "seconds": 8.7
+}

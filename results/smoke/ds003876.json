@@ -1,0 +1,14 @@
+{
+ "id": "ds003876",
+ "title": "Epilepsy-iEEG-Interictal-Multicenter-Dataset",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-09 23:29:18",
+ "subjects_found": 1,
+ "subject_list": [
+  "NIH1"
+ ],
+ "error": "RuntimeError: Channel mismatch between /Users/johnsmith/moecog_data/openneuro/ds003876/sub-NIH1/ses-extraoperative/ieeg/sub-NIH1_ses-extraoperative_task-interictal_run-01_channels.tsv and the raw data file detected.Either align channel names in channels.tsv with the raw file, or call read_raw_bids(on_ch_mismatch=",
+ "traceback": "^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 175, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 155, in _load_file\n    raw = read_raw_bids(bp, verbose=False)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<decorator-gen-360>\", line 10, in read_raw_bids\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 1448, in read_raw_bids\n    raw = _handle_channels_reading(\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 1166, in _handle_channels_reading\n    if orig_names != ch_names_tsv and _handle_channel_mismatch(\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 1013, in _handle_channel_mismatch\n    raise RuntimeError(\nRuntimeError: Channel mismatch between /Users/johnsmith/moecog_data/openneuro/ds003876/sub-NIH1/ses-extraoperative/ieeg/sub-NIH1_ses-extraoperative_task-interictal_run-01_channels.tsv and the raw data file detected.Either align channel names in channels.tsv with the raw file, or call read_raw_bids(on_ch_mismatch='reorder'|'rename'|'warn') to proceed.\n",
+ "seconds": 31.4
+}

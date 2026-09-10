@@ -1,0 +1,33 @@
+{
+ "id": "dandi-001616",
+ "title": "SUMMER movie single-neuron",
+ "source": "dandi",
+ "status": "error",
+ "started": "2026-09-09 23:25:17",
+ "subjects_found": 29,
+ "subject_list": [
+  "1",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27"
+ ],
+ "error": "ValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/001616/sub-1/sub-1_ses-sub1_ecephys.nwb",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 38, in run_entry\n    sessions = {}\n           ^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 256, in _get_single_subject_data\n    raw, meta, einfo = read_nwb_raw(\n                       ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 107, in read_nwb_raw\n    raise ValueError(f\"No ElectricalSeries in {path}\")\nValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/001616/sub-1/sub-1_ses-sub1_ecephys.nwb\n",
+ "seconds": 8.5
+}

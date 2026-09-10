@@ -191,7 +191,12 @@ class PetersonMoveRest(_SimpleDataset):
         # dims are (events, channels, time) in the figshare description
         if arr.ndim != 3:
             raise ValueError(f"unexpected dims {da.dims}")
-        labels = arr[:, -1, 0]
+        lab = np.nanmedian(arr[:, -1, :], axis=1)
+        vals = np.unique(lab[~np.isnan(lab)])
+        if len(vals) == 2:
+            labels = (lab == vals[1]).astype(float)  # higher value = move
+        else:
+            labels = (lab > np.nanmedian(lab)).astype(float)
         X = arr[:, :-1, :]
         times = np.asarray(da.coords[da.dims[-1]].values, dtype=float)
         sfreq = float(round(1.0 / np.median(np.diff(times)))) if len(times) > 1 else 500.0
@@ -292,6 +297,22 @@ class RogersMicroECoG(_SimpleDataset):
                 arrays = {k: np.asarray(f[k][()]) for k in f.keys() if isinstance(f[k], h5py.Dataset)}
                 if "fs" in f:
                     sfreq = float(np.asarray(f["fs"][()]).ravel()[0])
+        # MATLAB structs (dtype with field names): descend into the largest numeric field
+        flat = {}
+        for k, v in arrays.items():
+            if v.dtype.names:
+                el = v.flat[0]
+                for name in v.dtype.names:
+                    fv = np.asarray(el[name])
+                    if fv.dtype.kind in "fiu" and fv.size > 1000:
+                        flat[f"{k}.{name}"] = fv
+                    if name == "fs" and fv.size == 1:
+                        sfreq = float(fv.ravel()[0])
+                    if name == "fsds" and fv.size == 1:
+                        sfreq = float(fv.ravel()[0])
+            elif v.dtype.kind in "fiu":
+                flat[k] = v
+        arrays = flat
         big = max(arrays, key=lambda k: np.prod(arrays[k].shape))
         d = np.squeeze(np.asarray(arrays[big], dtype=float))
         if d.ndim == 3:  # (windows, ch, t) or (t, ch, windows)

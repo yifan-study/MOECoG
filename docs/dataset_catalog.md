@@ -126,6 +126,27 @@ Tiers:
 | Cogitate experiment 2 (video game) | forthcoming | wait | |
 | Precision Neuroscience, Synchron, Paradromics | commercial | unlikely | |
 
+## Additions from the code-hosting sweep (GitHub, Hugging Face; 2026-09-10)
+
+| Dataset | Where / ID | Access | Patients, electrodes | Task | Size, format | Notes | MOECoG plan |
+|---|---|---|---|---|---|---|---|
+| Tonal speech perception ECoG (Li lab) | github.com/yuanningli/ECoG_Tonal_Speech_Perception, data on Zenodo (record to locate) | public | 4 awake-craniotomy participants, 128-256-ch grids | listening to continuous Mandarin sentences (ASCCD corpus); word/syllable/tone/prosody annotations | NWB (BIDS-iEEG), high gamma 70-150 Hz at 400 Hz | described as a decoding benchmark; no paper located yet | wave 2 (NWB loader) |
+| SWEC iEEG on Hugging Face | huggingface.co/datasets/NeuroTec/SWEC_iEEG_Dataset | public, CDLA-Permissive-2.0 (research only) | 68 patients, 64 ch, 512/1024 Hz, 9,328 h, 704 seizures | long-term clinical iEEG | 4.6 TB HDF5 (about 10 GB parts) | used to pretrain MVPFormer (Carzaniga 2025) | smoke test one part; clinical tier |
+| Omni-iEEG | huggingface.co/datasets/Omni-iEEG/Omni-iEEG (+ Dadaism6/Omni-iEEG-Raw-Event-EDF) | public | multi-centre; 36k HFO waveform rows; 55 ten-minute EDF clips | HFO / spike / artefact labels | 159 GB parquet + EDF | BIDS-like derivatives with anatomical mapping and a train/test split | smoke test one EDF; clinical tier |
+| iEEG Natural Scenes derivatives (mindeye_ieeg) | huggingface.co/datasets/rishab-iyer1/mindeye_ieeg | public | 12 patients (JOV 2024), 92 visually responsive electrodes | 1000 NSD images; high-frequency broadband per image | 12 GB npy + CLIP embeddings | the processed form of the iEEG NSD dataset the catalog could not locate | loader reads channel/stimulus tables; array optional |
+| Cogan lab µECoG pseudoword repetition | DANDI 001638 | public licence declared, no assets yet | (Duraivel 2023 style µECoG) | speech repetition | empty on 2026-09-09 | re-check monthly | waiting |
+| Du-IN, Verwoert mirrors | huggingface.co/datasets/liulab-repository/Du-IN (CC-BY-4.0, 184 files, about 1 GB per run); Terrycz/SEEG-singlewordDutch (unzipped Verwoert iBIDS) | public | | | | Du-IN files are pickled DotDict objects (shim in `moecog.datasets.misc`) | loaders written |
+| Brain Treebank direct files | braintreebank.dev/data/subject_data/sub_N/trialNNN/sub_N_trialNNN.h5.zip + metadata zips | public, CC-BY-4.0 | 10 subjects | | one zip per movie viewing | | loader written; smoke test one trial |
+| BR41N.IO hackathon ECoG sets (g.tec) | br41n.io (video watching; hand pose BCI) | on request to organisers | 1 patient each | visual features; hand pose | | | outreach list |
+| Brunton lab AJILE12 NWB tools | github.com/BruntonUWBio/ajile12-nwb-data | code | | | | reference for the NWB loader | |
+| insight-neuro/ieeg-data (brainsets) | github.com/insight-neuro/ieeg-data | code | | converts several iEEG datasets to the temporaldata format | | install currently broken by a brainsets deprecation (2026-09-10) | cross-check their roster later |
+
+Search terms used: repositories "ECoG dataset", "electrocorticography dataset", "intracranial EEG dataset",
+"sEEG dataset", "iEEG benchmark", "ECoG decoding", "ECoG BCI", "micro-ECoG", "AJILE12", "brain treebank",
+"ECoG speech decoding"; topics ecog, electrocorticography, ieeg, intracranial-eeg, seeg; Hugging Face
+dataset search ecog, electrocorticography, ieeg, intracranial, seeg. Papers with Code's dataset API did
+not answer.
+
 ## Loader strategy
 
 Three generic loaders cover most of this catalog:

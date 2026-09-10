@@ -1,0 +1,50 @@
+{
+ "id": "dandi-000576",
+ "title": "Rutishauser amygdala aversive stimuli",
+ "source": "dandi",
+ "status": "ok",
+ "started": "2026-09-09 23:25:25",
+ "subjects_found": 9,
+ "subject_list": [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09"
+ ],
+ "sessions": {
+  "20140828T132700/0": {
+   "sfreq": 2000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 441.9995,
+   "n_annotations": 17,
+   "classes": {
+    "trials/Aversive": 8,
+    "trials/Neutral": 9
+   }
+  }
+ },
+ "electrodes": {
+  "n": 2,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "trials/Aversive": 1,
+  "trials/Neutral": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": -0.25396825396825395,
+  "n_trials": 17,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 8.0
+}

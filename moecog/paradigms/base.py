@@ -129,7 +129,29 @@ class BaseClassificationParadigm(BaseParadigm):
     def used_events(self, dataset) -> dict[str, int]:
         """Return the ``{name: id}`` subset of ``dataset.event_id`` this paradigm uses."""
 
+    def _epochs_from_epochs(self, epochs, dataset, subject, session_id, run_id):
+        """Datasets distributed as trials (``mne.Epochs``) skip the annotation step."""
+        used = self.used_events(dataset)
+        epochs = epochs.copy()
+        keep = [k for k in epochs.event_id if k in used]
+        if len(keep) < 1:
+            return None
+        epochs = epochs[keep]
+        tmax = self.tmax if self.tmax is not None else epochs.tmax
+        epochs.crop(max(self.tmin, epochs.tmin), min(tmax, epochs.tmax))
+        picks = mne.pick_types(epochs.info, ecog=True)
+        X = epochs.get_data(picks=picks, copy=False)
+        inv = {v: k for k, v in epochs.event_id.items()}
+        y = np.array([inv[e] for e in epochs.events[:, 2]])
+        meta = pd.DataFrame({
+            "subject": subject, "session": session_id, "run": run_id,
+            "trial": np.arange(len(y)), "onset": epochs.events[:, 0] / epochs.info["sfreq"],
+        })
+        return X, y, meta
+
     def _epoch_run(self, raw, dataset, subject, session_id, run_id):
+        if isinstance(raw, mne.BaseEpochs):
+            return self._epochs_from_epochs(raw, dataset, subject, session_id, run_id)
         used = self.used_events(dataset)
         raw = self._preprocess_raw(raw)
         try:

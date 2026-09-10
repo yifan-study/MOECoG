@@ -71,6 +71,9 @@ Issues = "https://github.com/epyifany/MOECoG/issues"
 [tool.setuptools.packages.find]
 include = ["moecog*"]
 
+[tool.setuptools.package-data]
+moecog = ["data/*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [
@@ -78,7 +81,7 @@ markers = [
 ]
 
 [tool.ruff]
-line-length = 100
+line-length = 120
 target-version = "py310"
 
 [tool.ruff.lint]

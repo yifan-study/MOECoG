@@ -297,21 +297,31 @@ class RogersMicroECoG(_SimpleDataset):
                 arrays = {k: np.asarray(f[k][()]) for k in f.keys() if isinstance(f[k], h5py.Dataset)}
                 if "fs" in f:
                     sfreq = float(np.asarray(f["fs"][()]).ravel()[0])
-        # MATLAB structs (dtype with field names): descend into the largest numeric field
-        flat = {}
+        # MATLAB structs (dtype with field names): the windows live in a cell array 'epoch'
+        flat, epochs_cell = {}, None
         for k, v in arrays.items():
             if v.dtype.names:
                 el = v.flat[0]
                 for name in v.dtype.names:
                     fv = np.asarray(el[name])
-                    if fv.dtype.kind in "fiu" and fv.size > 1000:
+                    if name in ("fs", "fsds") and fv.size == 1:
+                        sfreq = float(fv.ravel()[0])
+                    if fv.dtype == object and fv.size > 1:
+                        epochs_cell = fv
+                    elif fv.dtype.kind in "fiu" and fv.size > 1000:
                         flat[f"{k}.{name}"] = fv
-                    if name == "fs" and fv.size == 1:
-                        sfreq = float(fv.ravel()[0])
-                    if name == "fsds" and fv.size == 1:
-                        sfreq = float(fv.ravel()[0])
             elif v.dtype.kind in "fiu":
                 flat[k] = v
+        if epochs_cell is not None:
+            wins = [np.asarray(w, dtype=float) for w in epochs_cell.ravel()]
+            n_ch = min(w.shape[0] for w in wins)
+            n_t = min(w.shape[1] for w in wins)
+            X = np.stack([w[:n_ch, :n_t] for w in wins]) * 1e-6
+            events = np.column_stack([np.arange(len(X)) * n_t, np.zeros(len(X), int), np.ones(len(X), int)])
+            info = mne.create_info([f"E{i + 1:03d}" for i in range(n_ch)], sfreq, ["ecog"] * n_ch)
+            epochs = mne.EpochsArray(X, info, events=events, event_id={"window": 1}, tmin=0.0, verbose=False)
+            self.event_id = {"window": 1}
+            return {"0": {"0": epochs}}
         arrays = flat
         big = max(arrays, key=lambda k: np.prod(arrays[k].shape))
         d = np.squeeze(np.asarray(arrays[big], dtype=float))

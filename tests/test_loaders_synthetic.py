@@ -85,10 +85,7 @@ def test_duin_pickle_shim(tmp_path):
     from moecog.datasets.misc import DuIN
 
     mod = types.ModuleType("utils")
-
-    class DotDict(dict):
-        pass
-
+    DotDict = type("DotDict", (dict,), {"__module__": "utils"})
     mod.DotDict = DotDict
     sys.modules["utils"] = mod
     try:

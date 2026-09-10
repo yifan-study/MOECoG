@@ -83,9 +83,17 @@ class BIDSiEEGDataset(BaseECoGDataset):
         subs = self._list_subjects()
         if subjects is not None:
             missing = [s for s in subjects if s not in subs]
-            if missing:
-                raise ValueError(f"Subjects {missing} not in {self._root}")
-            subs = list(subjects)
+            if missing and subs:
+                # the accession's subject list and the folder names can disagree (ds002799):
+                # fall back to what was actually downloaded
+                import warnings
+
+                warnings.warn(f"{self.code or openneuro_id}: subjects {missing} not found; using {subs[:1]}")
+                subs = subs[:1]
+            elif missing:
+                raise ValueError(f"Subjects {missing} not in {self._root} and nothing else readable")
+            else:
+                subs = list(subjects)
         super().__init__(
             subjects=subs,
             sessions_per_subject=max(1, max((len(self._sessions(s)) for s in subs), default=1)),

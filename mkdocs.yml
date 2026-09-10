@@ -28,6 +28,7 @@ plugins:
 nav:
   - Home: index.md
   - Contributing: contributing.md
+  - Code of conduct: code_of_conduct.md
   - Roadmap: roadmap.md
   - Changelog: changelog.md
   - Datasets:

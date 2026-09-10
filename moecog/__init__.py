@@ -3,7 +3,7 @@
 A MOABB-style benchmarking framework for electrocorticographic (ECoG) motor decoding.
 """
 
-__version__ = "0.2.0.dev0"
+__version__ = "0.2.0"
 
 
 def benchmark(*args, **kwargs):

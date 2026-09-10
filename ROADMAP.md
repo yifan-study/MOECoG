@@ -33,7 +33,7 @@ catalog and smoke sweep of 130 public deposits (106 load).
 | chunk | definition of done | owner | Jira |
 |---|---|---|---|
 | Contribution path | `CONTRIBUTING.md`, code of conduct, issue and PR templates, `CITATION.cff`, pre-commit | done 2026-09-10 | PRSNL-78 |
-| CI | GitHub Actions runs ruff and the synthetic test suite on Python 3.10-3.12 for every PR; badge in README | workflow committed, first run pending | PRSNL-69 |
+| CI | GitHub Actions runs ruff and the synthetic test suite on Python 3.10-3.12 for every PR; badge in README | done 2026-09-10, first run green on all four jobs | PRSNL-69 |
 | YAML pipelines + one-call benchmark | `pipelines/*.yml`, `moecog.pipelines.load_pipelines`, `moecog.benchmark(...)` reproduces `results/*.csv` | done 2026-09-10 | PRSNL-79 |
 | 0.2.0 on PyPI | `pip install moecog` works in a clean environment; release notes from CHANGELOG; GitHub release tagged `v0.2.0` | needs Yifan's go | PRSNL-69 |
 | Docs site | MkDocs (material) built by Actions to GitHub Pages: install, quickstart, datasets table, smoke table, leaderboard, atlas | | PRSNL-80 |

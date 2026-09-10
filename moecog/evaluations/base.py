@@ -25,6 +25,11 @@ class BaseEvaluation(ABC):
         Random seed for reproducibility.
     """
 
+    #: Load and evaluate one subject at a time. ECoG grids are patient-specific,
+    #: so subjects cannot be pooled into one array; cross-subject evaluations
+    #: set this to False and align channels themselves.
+    per_subject = True
+
     def __init__(self, paradigm, datasets, n_splits=5, random_state=42):
         self.paradigm = paradigm
         self.datasets = [d for d in datasets if paradigm.is_valid(d)]
@@ -50,13 +55,15 @@ class BaseEvaluation(ABC):
         """
         all_results = []
         for dataset in self.datasets:
-            subs = None
+            subs = dataset.subject_list
             if subjects is not None:
                 subs = [s for s in subjects if s in dataset.subject_list]
                 if not subs:
                     continue
-            X, y, metadata = self.paradigm.get_data(dataset, subjects=subs)
-            all_results.extend(self._evaluate(dataset, X, y, metadata, pipelines))
+            groups = [[s] for s in subs] if self.per_subject else [subs]
+            for group in groups:
+                X, y, metadata = self.paradigm.get_data(dataset, subjects=group)
+                all_results.extend(self._evaluate(dataset, X, y, metadata, pipelines))
         return pd.DataFrame(all_results)
 
     @abstractmethod

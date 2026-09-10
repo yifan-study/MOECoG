@@ -74,3 +74,17 @@ def test_compute_metric():
     assert np.isnan(compute_metric("pearson_r", np.ones(5), np.arange(5)))
     with pytest.raises(ValueError):
         compute_metric("f1", y, y)
+
+
+def test_per_subject_channel_counts():
+    """Patient-specific grids: subjects are never pooled into one array."""
+    from moecog.datasets import FakeECoGDataset
+
+    ds = FakeECoGDataset(n_subjects=2, n_channels={1: 6, 2: 9}, sfreq=250.0,
+                         n_trials_per_class=8, isi=0.5, seed=4)
+    paradigm = MotorClassification(fmin=1.0, fmax=100.0, tmax=1.0)
+    with pytest.raises(ValueError, match="different channel counts"):
+        paradigm.get_data(ds)
+    res = WithinSubjectCV(paradigm, [ds], n_splits=2).process(
+        {"lbp+lda": make_pipeline(LogBandPower(sfreq=250.0), LinearDiscriminantAnalysis())})
+    assert set(res.groupby("subject")["n_channels"].first()) == {6, 9}

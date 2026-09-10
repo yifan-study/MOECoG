@@ -10,6 +10,24 @@ import numpy as np
 import pandas as pd
 
 
+def _stack_subjects(all_X, all_y, all_meta, dataset):
+    """Concatenate per-run arrays, refusing ragged channel counts across subjects."""
+    n_ch = {int(x.shape[1]) for x in all_X}
+    if len(n_ch) > 1:
+        raise ValueError(
+            f"{dataset.code}: subjects have different channel counts {sorted(n_ch)}; "
+            "ECoG montages are patient-specific, so load one subject at a time "
+            "(evaluations do this by default) or align channels first."
+        )
+    n_times = min(x.shape[2] for x in all_X)
+    all_X = [x[:, :, :n_times] for x in all_X]
+    return (
+        np.concatenate(all_X),
+        np.concatenate(all_y),
+        pd.concat(all_meta).reset_index(drop=True),
+    )
+
+
 class BaseParadigm(ABC):
     """Base class for all paradigms.
 
@@ -151,13 +169,7 @@ class BaseClassificationParadigm(BaseParadigm):
             raise ValueError(
                 f"No trials found in {dataset.code} for events {list(self.used_events(dataset))}"
             )
-        n_times = min(x.shape[2] for x in all_X)
-        all_X = [x[:, :, :n_times] for x in all_X]
-        return (
-            np.concatenate(all_X),
-            np.concatenate(all_y),
-            pd.concat(all_meta).reset_index(drop=True),
-        )
+        return _stack_subjects(all_X, all_y, all_meta, dataset)
 
 
 class BaseRegressionParadigm(BaseParadigm):
@@ -221,8 +233,4 @@ class BaseRegressionParadigm(BaseParadigm):
 
         if not all_X:
             raise ValueError(f"No windows produced for {dataset.code}")
-        return (
-            np.concatenate(all_X),
-            np.concatenate(all_y),
-            pd.concat(all_meta).reset_index(drop=True),
-        )
+        return _stack_subjects(all_X, all_y, all_meta, dataset)

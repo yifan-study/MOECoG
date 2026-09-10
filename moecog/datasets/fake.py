@@ -27,7 +27,9 @@ class FakeECoGDataset(BaseECoGDataset):
     Parameters
     ----------
     n_subjects, n_sessions, n_runs : int
-    n_channels : int
+    n_channels : int or dict
+        Channels per subject; a ``{subject: n}`` dict gives every patient its
+        own grid size, as in real ECoG.
     sfreq : float
     paradigm : str
     events : dict or None
@@ -64,7 +66,8 @@ class FakeECoGDataset(BaseECoGDataset):
         self.is_regression = paradigm in REGRESSION_PARADIGMS
         if events is None:
             events = None if self.is_regression else {"hand": 1, "tongue": 2}
-        self.n_channels = n_channels
+        self._n_channels = n_channels
+        self.n_channels = n_channels if isinstance(n_channels, int) else max(n_channels.values())
         self.n_runs = n_runs
         self.n_trials_per_class = n_trials_per_class
         self.trial_duration = trial_duration
@@ -95,7 +98,12 @@ class FakeECoGDataset(BaseECoGDataset):
         # mild 1/f colouring
         return white + 0.5 * np.cumsum(white, axis=1) / np.sqrt(np.arange(1, n_times + 1))
 
-    def _classification_raw(self, rng):
+    def _n_ch(self, subject):
+        if isinstance(self._n_channels, dict):
+            return int(self._n_channels[subject])
+        return int(self._n_channels)
+
+    def _classification_raw(self, rng, n_ch):
         sf = self.sfreq
         names = list(self.event_id)
         n_cls = len(names)
@@ -104,10 +112,10 @@ class FakeECoGDataset(BaseECoGDataset):
         trial_n = int(self.trial_duration * sf)
         isi_n = int(self.isi * sf)
         n_times = isi_n + len(order) * (trial_n + isi_n)
-        data = self._noise(rng, self.n_channels, n_times)
+        data = self._noise(rng, n_ch, n_times)
         codes = np.zeros(n_times, dtype=int)
         t = np.arange(trial_n) / sf
-        chans_per_class = max(1, self.n_channels // n_cls)
+        chans_per_class = max(1, n_ch // n_cls)
         pos = isi_n
         for k in order:
             codes[pos : pos + trial_n] = self.event_id[names[k]]
@@ -117,8 +125,8 @@ class FakeECoGDataset(BaseECoGDataset):
             data[chans, pos : pos + trial_n] += burst
             pos += trial_n + isi_n
         data *= 1e-5  # volts
-        ch_names = [f"E{i + 1:03d}" for i in range(self.n_channels)] + ["STI"]
-        ch_types = ["ecog"] * self.n_channels + ["stim"]
+        ch_names = [f"E{i + 1:03d}" for i in range(n_ch)] + ["STI"]
+        ch_types = ["ecog"] * n_ch + ["stim"]
         info = mne.create_info(ch_names, sf, ch_types)
         raw = mne.io.RawArray(np.vstack([data, codes[None, :]]), info, verbose=False)
         raw.set_annotations(
@@ -126,7 +134,7 @@ class FakeECoGDataset(BaseECoGDataset):
         )
         return raw
 
-    def _regression_raw(self, rng):
+    def _regression_raw(self, rng, n_ch):
         sf = self.sfreq
         n_times = int(self.duration * sf)
         t = np.arange(n_times) / sf
@@ -136,9 +144,9 @@ class FakeECoGDataset(BaseECoGDataset):
         kernel /= kernel.sum()
         targets = np.stack([np.convolve(x, kernel, mode="same") for x in targets])
         targets /= targets.std(axis=1, keepdims=True)
-        data = self._noise(rng, self.n_channels, n_times)
+        data = self._noise(rng, n_ch, n_times)
         carrier = np.sin(2 * np.pi * 70.0 * t)
-        for ch in range(self.n_channels):
+        for ch in range(n_ch):
             k = ch % self.n_targets
             data[ch] += self.snr * (1.0 + 0.8 * np.tanh(targets[k])) * carrier
         data *= 1e-5
@@ -148,8 +156,8 @@ class FakeECoGDataset(BaseECoGDataset):
             tnames = ["CursorPosX", "CursorPosY"]
         else:
             tnames = [f"target_{i}" for i in range(self.n_targets)]
-        ch_names = [f"E{i + 1:03d}" for i in range(self.n_channels)] + tnames
-        ch_types = ["ecog"] * self.n_channels + ["misc"] * self.n_targets
+        ch_names = [f"E{i + 1:03d}" for i in range(n_ch)] + tnames
+        ch_types = ["ecog"] * n_ch + ["misc"] * self.n_targets
         info = mne.create_info(ch_names, sf, ch_types)
         return mne.io.RawArray(np.vstack([data, targets]), info, verbose=False)
 
@@ -160,10 +168,11 @@ class FakeECoGDataset(BaseECoGDataset):
             out[str(session)] = {}
             for run in range(self.n_runs):
                 rng = self._rng(subject, session, run)
+                n_ch = self._n_ch(subject)
                 if self.is_regression:
-                    raw = self._regression_raw(rng)
+                    raw = self._regression_raw(rng, n_ch)
                 else:
-                    raw = self._classification_raw(rng)
+                    raw = self._classification_raw(rng, n_ch)
                 raw.info["description"] = f"FakeECoG/{subject}/{session}/{run}"
                 out[str(session)][str(run)] = raw
         return out
@@ -172,7 +181,7 @@ class FakeECoGDataset(BaseECoGDataset):
         return []
 
     def get_electrode_info(self, subject):
-        n = self.n_channels
+        n = self._n_ch(subject)
         cols = int(np.ceil(np.sqrt(n)))
         idx = np.arange(n)
         pos = np.stack([10.0 * (idx % cols), 10.0 * (idx // cols), np.zeros(n)], axis=1)

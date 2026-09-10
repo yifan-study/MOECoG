@@ -28,6 +28,8 @@ def test_classification_cv_beats_chance(fake_cls):
                                       LinearDiscriminantAnalysis())}
     res = ev.process(pipes)
     assert set(res["metric"]) == {"accuracy", "balanced_accuracy", "kappa"}
+    assert set(res["fold_policy"]) == {"chronological"}
+    assert paradigm.headline_metric == "kappa" and paradigm.scoring()[0] == "kappa"
     assert set(res["subject"]) == {1, 2}
     acc = res[res["metric"] == "accuracy"].groupby("subject")["score"].mean()
     assert (acc > 0.8).all(), acc
@@ -88,3 +90,22 @@ def test_per_subject_channel_counts():
     res = WithinSubjectCV(paradigm, [ds], n_splits=2).process(
         {"lbp+lda": make_pipeline(LogBandPower(sfreq=250.0), LinearDiscriminantAnalysis())})
     assert set(res.groupby("subject")["n_channels"].first()) == {6, 9}
+
+
+def test_blocked_cues_fall_back_to_stratified():
+    from moecog.datasets import FakeECoGDataset
+
+    blocked = FakeECoGDataset(n_subjects=1, n_channels=6, sfreq=250.0, n_trials_per_class=10,
+                              isi=0.5, seed=6, cue_order="blocked")
+    paradigm = MotorClassification(fmin=1.0, fmax=100.0, tmax=1.0)
+    pipes = {"lbp+lda": make_pipeline(LogBandPower(sfreq=250.0), LinearDiscriminantAnalysis())}
+    with pytest.warns(UserWarning, match="block-ordered"):
+        res = WithinSubjectCV(paradigm, [blocked], n_splits=5).process(pipes)
+    assert set(res["fold_policy"]) == {"stratified_fallback"}
+    assert res[res["metric"] == "kappa"]["score"].notna().all()
+    strict = WithinSubjectCV(paradigm, [blocked], n_splits=5, fallback=None)
+    with pytest.warns(UserWarning):
+        res2 = strict.process(pipes)
+    assert set(res2["fold_policy"]) == {"chronological"}
+    with pytest.raises(ValueError):
+        WithinSubjectCV(paradigm, [blocked], fallback="random")

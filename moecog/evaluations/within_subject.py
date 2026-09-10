@@ -42,13 +42,23 @@ class WithinSubjectCV(BaseEvaluation):
         Number of windows dropped from the training set on each side of the
         test block (regression). None derives it from the paradigm's window
         overlap: ``ceil(window_size / window_stride) - 1``.
+    fallback : {"stratified", None}
+        What to do when a classification file is block-ordered so that
+        chronological folds leave a class out of a training set or a test set
+        with a single class: ``"stratified"`` (default) switches that
+        (subject, session) to stratified shuffled folds and marks the rows
+        ``fold_policy="stratified_fallback"``; None keeps the chronological
+        folds and lets kappa be undefined there. Decision PRSNL-67 (2026-09-09).
     """
 
     def __init__(self, paradigm, datasets, n_splits=5, shuffle=False, random_state=42,
-                 purge=None):
+                 purge=None, fallback="stratified"):
         super().__init__(paradigm, datasets, n_splits=n_splits, random_state=random_state)
         self.shuffle = shuffle
         self.purge = purge
+        if fallback not in ("stratified", None):
+            raise ValueError("fallback must be 'stratified' or None")
+        self.fallback = fallback
 
     @property
     def is_regression(self):
@@ -61,13 +71,25 @@ class WithinSubjectCV(BaseEvaluation):
             return max(0, math.ceil(self.paradigm.window_size / self.paradigm.window_stride) - 1)
         return 0
 
+    def _stratified(self, y):
+        skf = StratifiedKFold(self.n_splits, shuffle=True, random_state=self.random_state)
+        return list(skf.split(np.zeros(len(y)), y))
+
     def _folds(self, y):
+        """Return ``(policy, [(train, test), ...])`` for one (subject, session)."""
         n = len(y)
-        if self.is_regression or not self.shuffle:
-            yield from contiguous_folds(n, self.n_splits)
-        else:
-            skf = StratifiedKFold(self.n_splits, shuffle=True, random_state=self.random_state)
-            yield from skf.split(np.zeros(n), y)
+        if self.is_regression:
+            return "chronological", list(contiguous_folds(n, self.n_splits))
+        if self.shuffle:
+            return "stratified", self._stratified(y)
+        folds = list(contiguous_folds(n, self.n_splits))
+        classes = set(np.unique(y))
+        balanced = all(
+            set(np.unique(y[tr])) == classes and len(np.unique(y[te])) >= 2 for tr, te in folds
+        )
+        if balanced or self.fallback is None:
+            return "chronological", folds
+        return "stratified_fallback", self._stratified(y)
 
     def _evaluate(self, dataset, X, y, metadata, pipelines):
         results = []
@@ -81,7 +103,13 @@ class WithinSubjectCV(BaseEvaluation):
                     f"{dataset.code} {subject}/{session}: only {len(idx)} samples, skipped"
                 )
                 continue
-            for fold, (train, test) in enumerate(self._folds(y_s)):
+            policy, folds = self._folds(y_s)
+            if policy == "stratified_fallback":
+                warnings.warn(
+                    f"{dataset.code} {subject}/{session}: block-ordered cues, "
+                    "using stratified shuffled folds"
+                )
+            for fold, (train, test) in enumerate(folds):
                 if purge > 0:
                     lo, hi = test.min() - purge, test.max() + purge
                     train = train[(train < lo) | (train > hi)]
@@ -103,6 +131,7 @@ class WithinSubjectCV(BaseEvaluation):
                             "metric": metric,
                             "score": score,
                             "fold": fold,
+                            "fold_policy": policy,
                             "n_train": len(train),
                             "n_test": len(test),
                             "n_channels": X_s.shape[1],

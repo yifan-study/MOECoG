@@ -13,6 +13,8 @@ from .base import BaseRegressionParadigm
 class FingerFlexionRegression(BaseRegressionParadigm):
     """Predict dataglove finger flexion from ECoG windows.
 
+    Headline metric: Pearson r averaged over fingers (the BCI-IV convention).
+
     Targets are the ``flex_<finger>`` misc channels (Miller fingerflex) or
     ``dg_<finger>`` (gestures). Metrics: Pearson r (mean over fingers), R^2.
     """
@@ -22,6 +24,8 @@ class FingerFlexionRegression(BaseRegressionParadigm):
         super().__init__(window_size=window_size, window_stride=window_stride, fmin=fmin,
                          fmax=fmax, resample=resample, channels=channels)
         self.fingers = list(fingers)
+
+    headline_metric = "pearson_r"
 
     def _target_names(self, raw):
         for prefix in ("flex", "dg"):
@@ -66,6 +70,8 @@ class CursorRegression(BaseRegressionParadigm):
             raise ValueError("target must be 'velocity' or 'position'")
         self.target = target
         self.smooth_ms = smooth_ms
+
+    headline_metric = "pearson_r"
 
     def _extract_targets(self, raw, dataset):
         pos = raw.get_data(picks=["CursorPosX", "CursorPosY"]).T

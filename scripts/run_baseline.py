@@ -71,11 +71,19 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     res.to_csv(out, index=False)
 
-    table = (res.groupby(["pipeline", "metric", "subject"])["score"].mean()
+    headline = getattr(paradigm, "headline_metric", None)
+    if headline is not None:
+        order = [headline] + [m for m in res["metric"].unique() if m != headline]
+        res["metric"] = res["metric"].astype("category").cat.set_categories(order, ordered=True)
+    table = (res.groupby(["pipeline", "metric", "subject"], observed=True)["score"].mean()
              .unstack("subject").round(3))
     print(table.to_string())
-    print("\nmean over subjects:")
-    print(res.groupby(["pipeline", "metric"])["score"].mean().round(3).to_string())
+    print("\nmean over subjects (headline first):")
+    print(res.groupby(["pipeline", "metric"], observed=True)["score"].mean().round(3).to_string())
+    fb = res[res["fold_policy"] != "chronological"][["subject", "session", "fold_policy"]]
+    if len(fb):
+        print("\nfold policy fallbacks:")
+        print(fb.drop_duplicates().to_string(index=False))
     print(f"\n{len(res)} rows -> {out} ({time.time() - t0:.0f} s)")
 
 

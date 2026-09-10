@@ -43,6 +43,9 @@ class FakeECoGDataset(BaseECoGDataset):
         Number of regression targets (5 -> finger names, 2 -> cursor names).
     snr : float
         Amplitude of the class/target signal relative to the noise std.
+    cue_order : {"interleaved", "blocked"}
+        Blocked presents all trials of a class before the next class, as a
+        few library files do.
     seed : int
     """
 
@@ -62,6 +65,7 @@ class FakeECoGDataset(BaseECoGDataset):
         n_targets=5,
         snr=2.0,
         seed=0,
+        cue_order="interleaved",
     ):
         self.is_regression = paradigm in REGRESSION_PARADIGMS
         if events is None:
@@ -76,6 +80,9 @@ class FakeECoGDataset(BaseECoGDataset):
         self.n_targets = n_targets
         self.snr = snr
         self.seed = seed
+        if cue_order not in ("interleaved", "blocked"):
+            raise ValueError("cue_order must be 'interleaved' or 'blocked'")
+        self.cue_order = cue_order
         self.class_freqs = [12.0, 30.0, 45.0, 70.0, 90.0, 20.0, 55.0, 80.0]
         interval = None if self.is_regression else [0.0, trial_duration]
         super().__init__(
@@ -108,7 +115,8 @@ class FakeECoGDataset(BaseECoGDataset):
         names = list(self.event_id)
         n_cls = len(names)
         order = np.repeat(np.arange(n_cls), self.n_trials_per_class)
-        rng.shuffle(order)
+        if self.cue_order == "interleaved":
+            rng.shuffle(order)
         trial_n = int(self.trial_duration * sf)
         isi_n = int(self.isi * sf)
         n_times = isi_n + len(order) * (trial_n + isi_n)

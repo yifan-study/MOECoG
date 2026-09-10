@@ -39,8 +39,12 @@ class EpochedClassification(BaseClassificationParadigm):
     def is_valid(self, dataset):
         return dataset.interval is not None and len(self.used_events(dataset)) >= self.min_classes
 
+    #: Headline metric (decision PRSNL-67): kappa is chance-corrected and stays
+    #: honest on the imbalanced (n-back) and multi-class (finger, visual) tasks.
+    headline_metric = "kappa"
+
     def scoring(self):
-        return ["accuracy", "balanced_accuracy", "kappa"]
+        return ["kappa", "accuracy", "balanced_accuracy"]
 
     @property
     def datasets(self):

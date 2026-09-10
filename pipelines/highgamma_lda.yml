@@ -1,0 +1,13 @@
+name: HighGamma + LDA
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+citations:
+  - https://doi.org/10.1523/JNEUROSCI.3886-06.2007
+pipeline:
+  - name: HighGammaPower
+    from: moecog.pipelines.features
+    parameters: {sfreq: $sfreq}
+  - name: StandardScaler
+    from: sklearn.preprocessing
+  - name: LinearDiscriminantAnalysis
+    from: sklearn.discriminant_analysis
+    parameters: {solver: lsqr, shrinkage: auto}

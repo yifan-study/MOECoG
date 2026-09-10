@@ -1,0 +1,13 @@
+name: LogBandPower + LogReg
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+citations:
+  - https://doi.org/10.1088/1741-2552/aadea0
+pipeline:
+  - name: LogBandPower
+    from: moecog.pipelines.features
+    parameters: {sfreq: $sfreq}
+  - name: StandardScaler
+    from: sklearn.preprocessing
+  - name: LogisticRegression
+    from: sklearn.linear_model
+    parameters: {max_iter: 2000}

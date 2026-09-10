@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use MOECoG, please cite it as below and cite the datasets you benchmark on."
+title: "MOECoG: Mother of all ECoG Benchmarks"
+version: 0.2.0
+date-released: 2026-09-10
+license: BSD-3-Clause
+repository-code: "https://github.com/yifan-study/MOECoG"
+authors:
+  - family-names: "Yu"
+    given-names: "Yifan"
+keywords:
+  - electrocorticography
+  - ECoG
+  - intracranial EEG
+  - benchmark
+  - neural decoding
+  - reproducibility

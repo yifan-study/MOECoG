@@ -8,6 +8,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 from .features import HighGammaPower, LogBandPower
+from .registry import describe_pipelines, load_pipeline_file, load_pipelines
 
 
 def _shrinkage_lda():
@@ -41,4 +42,5 @@ def regression_baselines(sfreq=1000.0):
     }
 
 
-__all__ = ["LogBandPower", "HighGammaPower", "classification_baselines", "regression_baselines"]
+__all__ = ["LogBandPower", "HighGammaPower", "classification_baselines", "regression_baselines",
+           "load_pipelines", "load_pipeline_file", "describe_pipelines"]

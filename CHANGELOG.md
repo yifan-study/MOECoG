@@ -33,6 +33,13 @@ widening to every obtainable intracranial dataset (2026-09-10).
   metadata-only OpenNeuro snapshots, one deleted dataset. Blocked: account or
   DUA sources, two OpenNeuro sets whose files return HTTP 403 (ds006254,
   ds007703).
+- Package and contribution path, following MOABB (2026-09-10, Yifan: "start
+  MoEcog as a package and a contribution guideline"): `CONTRIBUTING.md`,
+  `CODE_OF_CONDUCT.md`, `CITATION.cff`, issue and PR templates, pre-commit,
+  GitHub Actions CI (ruff + synthetic tests on 3.10-3.12), `docs/moabb_lessons.md`,
+  `ROADMAP.md` rewritten as milestones with definitions of done and a monthly
+  re-evaluation. Pipelines as YAML (`pipelines/*.yml`,
+  `moecog.pipelines.load_pipelines`) and a one-call `moecog.benchmark(...)`.
 - Second pass on the unsupported and blocked entries (2026-09-10): MEF3 via
   `pymef` (seven OpenNeuro sets), GET-only OpenNeuro downloads through the
   GraphQL file tree (ds006254), BRAVO neural-feature trials (DANDI 001535),

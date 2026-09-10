@@ -36,6 +36,7 @@ dependencies = [
     "h5py>=3.8",
     "pooch>=1.7",
     "tqdm>=4.65",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
@@ -72,9 +73,9 @@ dev = [
 all = ["moecog[deep,nwb,loaders,viz,anatomy]"]
 
 [project.urls]
-Homepage = "https://github.com/epyifany/MOECoG"
-Repository = "https://github.com/epyifany/MOECoG"
-Issues = "https://github.com/epyifany/MOECoG/issues"
+Homepage = "https://github.com/yifan-study/MOECoG"
+Repository = "https://github.com/yifan-study/MOECoG"
+Issues = "https://github.com/yifan-study/MOECoG/issues"
 
 [tool.setuptools.packages.find]
 include = ["moecog*"]

@@ -1,0 +1,13 @@
+name: LogBandPower + Ridge
+paradigms: [FingerFlexionRegression, CursorRegression]
+citations:
+  - https://doi.org/10.1088/1741-2560/6/6/066001
+pipeline:
+  - name: LogBandPower
+    from: moecog.pipelines.features
+    parameters: {sfreq: $sfreq}
+  - name: StandardScaler
+    from: sklearn.preprocessing
+  - name: Ridge
+    from: sklearn.linear_model
+    parameters: {alpha: 1.0}

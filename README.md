@@ -1,6 +1,7 @@
 # MOECoG — Mother of All ECoG Benchmarks
 
 [![CI](https://github.com/yifan-study/MOECoG/actions/workflows/ci.yml/badge.svg)](https://github.com/yifan-study/MOECoG/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/moecog?color=blue)](https://pypi.org/project/moecog/)
 [![License: BSD-3](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 

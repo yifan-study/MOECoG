@@ -2,6 +2,8 @@
 
 ## 0.2.0 (2026-09-10)
 
+Published to PyPI (`pip install moecog`) and tagged `v0.2.0` on yifan-study/MOECoG.
+
 The classification tier that PACE (paper #2) cut on 2026-07-17, plus the
 widening to every obtainable intracranial dataset (2026-09-10).
 

@@ -6,7 +6,8 @@ or continuous targets, evaluations split the data per patient, pipelines are sci
 reference pipelines ship in the package), and results are tidy CSV files that scripts turn into tables.
 
 ```bash
-pip install -e ".[nwb,loaders]"
+pip install "moecog[nwb,loaders]"      # from PyPI
+pip install -e ".[nwb,loaders,dev]"   # from a clone
 ```
 
 ```python

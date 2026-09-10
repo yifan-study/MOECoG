@@ -147,6 +147,10 @@ Search terms used: repositories "ECoG dataset", "electrocorticography dataset", 
 dataset search ecog, electrocorticography, ieeg, intracranial, seeg. Papers with Code's dataset API did
 not answer.
 
+## Smoke-test status
+
+Every entry that can be reached without an account is exercised by `scripts/smoke_test.py` (one subject or one file each); the outcome table is `docs/smoke_tests.md`, regenerated with `scripts/build_smoke_table.py`.
+
 ## Loader strategy
 
 Three generic loaders cover most of this catalog:

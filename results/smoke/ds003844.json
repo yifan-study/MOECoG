@@ -2,8 +2,8 @@
  "id": "ds003844",
  "title": "RESPect",
  "source": "openneuro",
- "status": "error",
- "started": "2026-09-09 23:37:45",
+ "status": "ok",
+ "started": "2026-09-09 23:59:08",
  "subjects_found": 1,
  "subject_list": [
   "RESP0059"
@@ -75,9 +75,17 @@
  },
  "event_id": {
   "artefact": 1,
-  "good data segment": 2
+  "good data segment": 2,
+  "odd behavior": 3
  },
- "error": "ValueError: ds003844: subjects have different channel counts [10, 18, 19, 24, 25]; ECoG montages are patient-specific, so load one subject at a time (evaluations do this by default) or align channels first.",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 83, in run_entry\n    res = WithinSubjectCV(paradigm, [ds], n_splits=3).process(pipes, subjects=[subject])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/evaluations/base.py\", line 65, in process\n    X, y, metadata = self.paradigm.get_data(dataset, subjects=group)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/paradigms/base.py\", line 204, in get_data\n    return _stack_subjects(all_X, all_y, all_meta, dataset)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/paradigms/base.py\", line 17, in _stack_subjects\n    raise ValueError(\nValueError: ds003844: subjects have different channel counts [10, 18, 19, 24, 25]; ECoG montages are patient-specific, so load one subject at a time (evaluations do this by default) or align channels first.\n",
- "seconds": 10.9
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.0,
+  "n_trials": 8,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 11.2
 }

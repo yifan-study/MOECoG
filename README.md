@@ -140,6 +140,8 @@ Motor-specific, public, well-documented.
 | Preprocessing | `CommonAverageReference`, `NotchFilter`, `HilbertEnvelope`, `chang_high_gamma()`; paradigms take `raw_steps=[...]` | Survey of the field's pipelines in `docs/preprocessing_catalog.md` |
 | Other datasets | `BIDSiEEGDataset` (any BIDS-iEEG / OpenNeuro dataset, download via openneuro-py) with named entries `HermesVisualECoG`, `PodcastECoG`, `FilmIEEG`, `VisualECoG` | Catalog of ~90 obtainable datasets in `docs/dataset_catalog.md`; NWB loader next |
 | Results | `results/*.csv` + `scripts/build_leaderboard.py` -> `docs/leaderboard.md` | first Miller baselines posted |
+| Catalog registry | `moecog.catalog.ENTRIES` (about 120 entries: every OpenNeuro iEEG dataset with a one-subject subset, DANDI dandisets, Miller experiments, BCI competitions, figshare, OSF, Dataverse, Hugging Face, Brain Treebank, plus blocked entries with the access reason) | `scripts/smoke_test.py` downloads, loads and scores each entry; `docs/smoke_tests.md` is the outcome table |
+| More loaders | `DANDIDataset`/`read_nwb_raw` (NWB), `BCICompIV4`, `BCICompIII1`, `PetersonMoveRest`/`PetersonReach`/`PetersonPose`, `RogersMicroECoG`, `VerwoertSpeech`, `MerkGripForce`, `DuIN`, `SWEC`, `OmniEDF`, `MindEyeIEEG`, `BrainTreebank` | datasets may deliver `mne.Epochs` instead of `Raw` |
 
 Everything above is covered by `pytest -m "not slow"` on synthetic data; the
 `slow` tests run against a local copy of the library

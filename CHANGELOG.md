@@ -16,6 +16,17 @@ widening to every obtainable intracranial dataset (2026-09-10).
 - `WithinSubjectCV` fold policy (PRSNL-67): chronological folds with a
   stratified fallback for block-ordered files; kappa is the headline metric.
 - `results/` + `scripts/build_leaderboard.py` -> `docs/leaderboard.md`.
+- Catalog registry (`moecog.catalog`) and smoke sweep (`scripts/smoke_test.py`,
+  `scripts/build_smoke_table.py`, `docs/smoke_tests.md`): every reachable catalog
+  entry is downloaded as a one-subject subset, loaded and scored (2026-09-10).
+- Loaders: `DANDIDataset`/`read_nwb_raw`; BCI Competition IV-4 and III-1; Peterson
+  naturalistic sets; Rogers µECoG; Verwoert iBIDS; Merk Dataverse (BIDS rebuild);
+  Du-IN; SWEC; Omni-iEEG EDF; mindeye iEEG NSD derivatives; Brain Treebank.
+- BIDS loader hardening from the sweep: recursive subject downloads, NWB inside
+  BIDS, EEG-typed intracranial channels, channels.tsv mismatches, disjoint
+  montages per run, union of bad channels per subject, direct reading when
+  mne-bids fails; paradigms pick ECoG channels without the implicit bad-channel
+  exclusion; datasets may deliver `mne.Epochs`.
 
 - `MillerLibrary(experiment=...)`: registry-driven loader for all 16
   Stanford/Miller experiments (204 files). Cue codes become MNE annotations;

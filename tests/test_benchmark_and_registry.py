@@ -1,7 +1,5 @@
 """One-call benchmark and YAML pipeline registry on synthetic data."""
 
-from pathlib import Path
-
 import pytest
 
 from moecog import benchmark
@@ -9,19 +7,17 @@ from moecog.datasets import FakeECoGDataset
 from moecog.paradigms import EpochedClassification
 from moecog.pipelines import describe_pipelines, load_pipelines
 
-PIPELINES = Path(__file__).resolve().parents[1] / "pipelines"
-
 
 def test_yaml_registry_builds_every_shipped_pipeline():
-    pipes = load_pipelines(PIPELINES, sfreq=250.0)
+    pipes = load_pipelines(sfreq=250.0)
     names = set(pipes)
     assert {"LogBandPower + LDA", "HighGamma + Ridge"} <= names
     for p in pipes.values():
         assert hasattr(p, "fit") and len(p.steps) >= 2
-    clf = load_pipelines(PIPELINES, sfreq=250.0, paradigm="EpochedClassification")
-    reg = load_pipelines(PIPELINES, sfreq=250.0, paradigm="FingerFlexionRegression")
+    clf = load_pipelines(sfreq=250.0, paradigm="EpochedClassification")
+    reg = load_pipelines(sfreq=250.0, paradigm="FingerFlexionRegression")
     assert clf and reg and not (set(clf) & set(reg))
-    descs = describe_pipelines(PIPELINES)
+    descs = describe_pipelines()
     assert all(d.get("citations") for d in descs)
 
 
@@ -34,12 +30,29 @@ def test_sfreq_placeholder_requires_value(tmp_path):
         load_pipelines(tmp_path)
 
 
-def test_benchmark_one_call(tmp_path):
-    ds = FakeECoGDataset(n_subjects=2, n_channels=6, sfreq=200.0, n_trials_per_class=8, seed=0)
+def test_benchmark_one_call_and_incremental_store(tmp_path):
+    ds = FakeECoGDataset(n_subjects=2, n_sessions=2, n_channels=6, sfreq=200.0, n_trials_per_class=8, seed=0)
     par = EpochedClassification(tmin=0.0, tmax=1.0, fmin=1.0, fmax=90.0)
     out = tmp_path / "res.csv"
-    df = benchmark(ds, par, pipelines=PIPELINES, n_splits=3, out=out, sfreq=200.0)
+    df = benchmark(ds, par, n_splits=3, out=out, sfreq=200.0, evaluations=("within_subject", "cross_session"))
     assert len(df) > 0 and out.is_file()
-    assert {"pipeline", "subject", "metric", "score", "moecog_version"} <= set(df.columns)
-    assert df["pipeline"].nunique() == 3  # the three classification YAMLs
+    expected = {"pipeline", "subject", "metric", "score", "moecog_version", "pipeline_digest", "evaluation"}
+    assert expected <= set(df.columns)
+    assert set(df["evaluation"]) == {"within_subject", "cross_session"}
+    assert df["pipeline"].nunique() == 3  # the three classification baselines
     assert (df[df.metric == "kappa"].score.abs() <= 1).all()
+    n = len(df)
+    again = benchmark(ds, par, n_splits=3, out=out, sfreq=200.0, evaluations=("within_subject", "cross_session"))
+    assert len(again) == n  # everything was already computed: nothing appended
+    more = benchmark(ds, par, n_splits=3, out=out, sfreq=200.0, overwrite=True)
+    assert len(more) == n  # within-subject rows replaced in place, cross-session rows kept
+    assert (more[more.evaluation == "cross_session"]["computed_at"].to_numpy()
+            == df[df.evaluation == "cross_session"]["computed_at"].to_numpy()).all()
+
+
+def test_benchmark_paradigm_by_name_with_context(tmp_path):
+    ds = FakeECoGDataset(n_subjects=1, n_channels=4, sfreq=200.0, n_trials_per_class=6, seed=4)
+    df = benchmark(ds, "EpochedClassification", contexts={"EpochedClassification": {"tmin": 0.0, "tmax": 1.0,
+                                                                                    "fmin": 1.0, "fmax": 90.0}},
+                   n_splits=3, sfreq=200.0, out=tmp_path / "r.csv")
+    assert len(df) > 0 and "skipped" in df.attrs

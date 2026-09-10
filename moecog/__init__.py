@@ -13,4 +13,6 @@ def benchmark(*args, **kwargs):
     return _benchmark(*args, **kwargs)
 
 
-__all__ = ["__version__", "benchmark"]
+from .utils import get_data_dir, set_data_dir, set_log_level  # noqa: E402
+
+__all__ = ["__version__", "benchmark", "get_data_dir", "set_data_dir", "set_log_level"]

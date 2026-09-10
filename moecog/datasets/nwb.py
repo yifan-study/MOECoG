@@ -14,7 +14,6 @@ pattern and can be capped by size so smoke tests stay cheap.
 from __future__ import annotations
 
 import json
-import os
 import re
 import urllib.request
 from pathlib import Path
@@ -28,7 +27,9 @@ DANDI_API = "https://api.dandiarchive.org/api"
 
 
 def _data_dir() -> Path:
-    return Path(os.environ.get("MOECOG_DATA_DIR", "~/moecog_data")).expanduser()
+    from ..utils import get_data_dir
+
+    return get_data_dir()
 
 
 def _get_json(url):

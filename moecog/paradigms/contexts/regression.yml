@@ -1,0 +1,2 @@
+FingerFlexionRegression: {window_size: 0.5, window_stride: 0.05, fmin: 1.0, fmax: 200.0}
+CursorRegression: {window_size: 0.5, window_stride: 0.05, target: velocity}

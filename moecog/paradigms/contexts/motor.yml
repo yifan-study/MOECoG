@@ -1,0 +1,4 @@
+# Paradigm parameters for the Miller motor tasks; keys are paradigm class names (MOABB "contexts").
+MotorClassification: {tmin: 0.0, tmax: 1.0, fmin: 1.0, fmax: 200.0}
+FingerClassification: {tmin: 0.0, tmax: 1.0, fmin: 1.0, fmax: 200.0}
+EpochedClassification: {tmin: 0.0, tmax: 1.0, fmin: 1.0, fmax: 150.0, resample: 250.0}

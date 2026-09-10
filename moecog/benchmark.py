@@ -1,23 +1,41 @@
-"""One-call benchmark: datasets x paradigm x pipelines with within-subject evaluation, results to CSV.
+"""One-call benchmark: datasets x paradigm x pipelines under one or more evaluations, results appended to a store.
 
     from moecog import benchmark
     from moecog.datasets import MillerLibrary
     from moecog.paradigms import MotorClassification
 
-    df = benchmark([MillerLibrary("motor_basic")], MotorClassification(), pipelines="pipelines",
-                   out="results/motor_basic_motor.csv")
+    df = benchmark([MillerLibrary("motor_basic")], MotorClassification(), out="results/motor_basic_motor.csv")
 
-``pipelines`` may be a directory or file of YAML descriptions (see :mod:`moecog.pipelines.registry`), a dict of
-named scikit-learn estimators, or None for the package baselines matching the paradigm.
+``datasets`` may hold dataset objects or catalog entry ids; ``paradigm`` a paradigm object or a class name
+resolved with parameters from a context YAML (``moecog/paradigms/contexts/*.yml`` or your own);
+``pipelines`` a YAML directory/file, a dict of estimators, or None for the reference pipelines shipped in the
+package. Rows already present in ``out`` (same dataset, subject, pipeline parameters, paradigm parameters and
+evaluation) are skipped unless ``overwrite=True``, and every (dataset, pipeline) pair that cannot run is
+reported with its reason instead of being dropped silently.
 """
 
 from __future__ import annotations
 
 from pathlib import Path
 
-import pandas as pd
+EVALUATIONS = {"within_subject": "WithinSubjectCV", "cross_session": "CrossSessionEvaluation"}
 
-from . import __version__
+
+def _resolve_paradigm(paradigm, contexts):
+    if not isinstance(paradigm, str):
+        return paradigm
+    import moecog.paradigms as P
+
+    cls = getattr(P, paradigm)
+    kwargs = {}
+    if contexts:
+        if isinstance(contexts, dict):
+            kwargs = dict(contexts.get(paradigm, contexts))
+        else:
+            import yaml
+
+            kwargs = dict((yaml.safe_load(Path(contexts).read_text()) or {}).get(paradigm, {}))
+    return cls(**kwargs)
 
 
 def _default_pipelines(paradigm, sfreq):
@@ -29,32 +47,39 @@ def _default_pipelines(paradigm, sfreq):
     return classification_baselines(sfreq)
 
 
-def benchmark(datasets, paradigm, pipelines=None, n_splits=5, subjects=None, shuffle=False, random_state=42,
-              out=None, sfreq=None, overwrite=True):
-    """Evaluate pipelines on datasets under one paradigm and return the per-fold results.
+def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",), n_splits=5, subjects=None,
+              shuffle=False, random_state=42, out=None, sfreq=None, overwrite=False, contexts=None,
+              verbose=True):
+    """Evaluate pipelines on datasets and return every stored row (see the module docstring).
 
     Parameters
     ----------
-    datasets : dataset or list of datasets
-        MOECoG dataset objects (or catalog entry ids, resolved through ``moecog.catalog.ENTRIES``).
-    paradigm : BaseParadigm
-        Classification or regression paradigm.
+    datasets : dataset, catalog id, or list of them
+    paradigm : BaseParadigm or str
+        Object, or class name from :mod:`moecog.paradigms` instantiated with ``contexts``.
     pipelines : str, Path, dict or None
-        YAML directory/file, ``{name: estimator}``, or None for the built-in baselines.
+    evaluations : sequence of {"within_subject", "cross_session"}
     n_splits, subjects, shuffle, random_state
-        Passed to :class:`moecog.evaluations.WithinSubjectCV`.
+        Passed to the within-subject evaluation.
     out : str or Path or None
-        CSV to write (appended to unless ``overwrite``); a ``moecog_version`` column is added.
+        Results CSV (a :class:`moecog.analysis.ResultsStore`); None keeps results in memory only.
     sfreq : float or None
-        Sampling rate used to instantiate feature extractors; defaults to the paradigm's ``resample`` or the
-        first dataset's ``sfreq``.
+        Sampling rate for feature extractors; defaults to the paradigm's ``resample`` or the first dataset's.
+    overwrite : bool
+        Recompute the requested rows and replace them in ``out`` (other rows stay); use a new ``out`` path for
+        a fresh file.
+    contexts : dict, str or Path or None
+        Paradigm parameters keyed by class name (used when ``paradigm`` is a name).
 
     Returns
     -------
     pandas.DataFrame
-        One row per (dataset, subject, session, pipeline, fold) with the metrics of the paradigm.
+        All rows in the store after this run (including earlier runs when ``out`` existed).
     """
-    from .evaluations import WithinSubjectCV
+    import tempfile
+
+    from . import evaluations as E
+    from .analysis import ResultsStore
 
     if not isinstance(datasets, (list, tuple)):
         datasets = [datasets]
@@ -66,8 +91,11 @@ def benchmark(datasets, paradigm, pipelines=None, n_splits=5, subjects=None, shu
             resolved.append(ENTRIES[d].build())
         else:
             resolved.append(d)
+    paradigm = _resolve_paradigm(paradigm, contexts)
     if sfreq is None:
         sfreq = getattr(paradigm, "resample", None) or getattr(resolved[0], "sfreq", None) or 1000.0
+        if not sfreq or sfreq != sfreq:  # NaN
+            sfreq = 1000.0
     if pipelines is None:
         pipes = _default_pipelines(paradigm, sfreq)
     elif isinstance(pipelines, dict):
@@ -78,13 +106,37 @@ def benchmark(datasets, paradigm, pipelines=None, n_splits=5, subjects=None, shu
         pipes = load_pipelines(pipelines, sfreq=sfreq, paradigm=type(paradigm).__name__)
         if not pipes:
             raise ValueError(f"no pipeline in {pipelines} lists paradigm {type(paradigm).__name__}")
-    ev = WithinSubjectCV(paradigm, resolved, n_splits=n_splits, shuffle=shuffle, random_state=random_state)
-    df = ev.process(pipes, subjects=subjects)
-    df["moecog_version"] = __version__
-    if out:
-        out = Path(out)
-        out.parent.mkdir(parents=True, exist_ok=True)
-        if out.is_file() and not overwrite:
-            df = pd.concat([pd.read_csv(out), df], ignore_index=True)
-        df.to_csv(out, index=False)
+    store = ResultsStore(out if out else Path(tempfile.mkdtemp()) / "results.csv")
+    skipped = []
+    for ev_name in evaluations:
+        if ev_name not in EVALUATIONS:
+            raise ValueError(f"unknown evaluation {ev_name!r}; choose from {sorted(EVALUATIONS)}")
+        cls = getattr(E, EVALUATIONS[ev_name])
+        kwargs = dict(random_state=random_state)
+        if ev_name == "within_subject":
+            kwargs.update(n_splits=n_splits, shuffle=shuffle)
+        try:
+            ev = cls(paradigm, resolved, **kwargs)
+        except ValueError as err:
+            skipped.append((ev_name, "*", str(err)))
+            continue
+        for code, reason in ev.skipped.items():
+            skipped.append((ev_name, code, reason))
+        for ds in ev.datasets:
+            subs = ds.subject_list if subjects is None else [s for s in subjects if s in ds.subject_list]
+            for subject in subs:
+                todo = pipes if overwrite else store.not_yet_computed(pipes, ds.code, subject, paradigm, ev_name)
+                if not todo:
+                    continue
+                try:
+                    rows = ev.process(todo, subjects=[subject])
+                except Exception as err:  # noqa: BLE001
+                    skipped.append((ev_name, f"{ds.code}/{subject}", f"{type(err).__name__}: {err}"))
+                    continue
+                store.add(rows, todo, paradigm, ev_name, replace=overwrite)
+    if verbose and skipped:
+        for ev_name, where, reason in skipped:
+            print(f"[skipped] {ev_name} {where}: {reason}")
+    df = store.to_dataframe()
+    df.attrs["skipped"] = skipped
     return df

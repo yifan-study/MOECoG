@@ -1,0 +1,45 @@
+site_name: MOECoG
+site_description: Mother of all ECoG Benchmarks
+repo_url: https://github.com/yifan-study/MOECoG
+edit_uri: edit/main/docs/
+docs_dir: docs
+theme:
+  name: material
+  features: [navigation.sections, navigation.top, content.code.copy, search.suggest]
+  palette:
+    - scheme: default
+      primary: teal
+      toggle: {icon: material/weather-night, name: dark}
+    - scheme: slate
+      primary: teal
+      toggle: {icon: material/weather-sunny, name: light}
+markdown_extensions:
+  - admonition
+  - tables
+  - toc: {permalink: true}
+  - pymdownx.snippets: {base_path: ["."], check_paths: true}
+  - pymdownx.superfences
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options: {docstring_style: numpy, show_source: false, members_order: source}
+nav:
+  - Home: index.md
+  - Contributing: contributing.md
+  - Roadmap: roadmap.md
+  - Changelog: changelog.md
+  - Datasets:
+      - Catalog: dataset_catalog.md
+      - Decodable datasets: decodable_datasets.md
+      - Smoke tests: smoke_tests.md
+      - Miller library map: miller_library_map.md
+      - Preprocessing catalog: preprocessing_catalog.md
+  - Results:
+      - Leaderboard: leaderboard.md
+      - Baselines: baselines.md
+  - MOABB:
+      - Lessons: moabb_lessons.md
+      - Review and decisions: moabb_review.md
+  - API: api.md

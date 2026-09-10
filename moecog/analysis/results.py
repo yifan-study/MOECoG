@@ -1,0 +1,120 @@
+"""Results bookkeeping: one tidy CSV per store, rows keyed by digests so reruns skip what exists.
+
+MOABB keeps an HDF5 file keyed by a hash of the pipeline's ``repr``; a cosmetic change reruns everything and the
+file needs locks on shared filesystems. Here a row carries ``pipeline_digest`` (hash of the estimator's
+``get_params``), ``paradigm_digest`` (hash of the paradigm's parameters), ``evaluation``, ``moecog_version`` and
+``computed_at``, and the store is a plain CSV that git can diff.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import time
+from pathlib import Path
+
+import pandas as pd
+
+from .. import __version__
+
+KEY_COLUMNS = ["dataset", "subject", "session", "pipeline", "pipeline_digest", "paradigm_digest", "evaluation"]
+
+
+def _jsonable(value):
+    if hasattr(value, "get_params"):
+        return {"__class__": type(value).__name__, "params": _jsonable(value.get_params(deep=False))}
+    if isinstance(value, dict):
+        return {str(k): _jsonable(v) for k, v in sorted(value.items())}
+    if isinstance(value, (list, tuple)):
+        return [_jsonable(v) for v in value]
+    if isinstance(value, (int, float, str, bool)) or value is None:
+        return value
+    if hasattr(value, "tolist"):
+        return value.tolist()
+    return repr(value)
+
+
+def digest(obj, n: int = 12) -> str:
+    """Stable short hash of a JSON-able description of ``obj``."""
+    payload = json.dumps(_jsonable(obj), sort_keys=True, default=repr).encode()
+    return hashlib.sha1(payload).hexdigest()[:n]
+
+
+def pipeline_digest(pipeline) -> str:
+    """Hash of the pipeline's parameters (not its repr), so cosmetic changes do not invalidate results."""
+    return digest(pipeline.get_params(deep=True) if hasattr(pipeline, "get_params") else pipeline)
+
+
+def paradigm_digest(paradigm) -> str:
+    """Hash of the paradigm class name and its public attributes."""
+    attrs = {k: v for k, v in vars(paradigm).items() if not k.startswith("_")}
+    return digest({"class": type(paradigm).__name__, "attrs": attrs})
+
+
+class ResultsStore:
+    """Append-only CSV of evaluation rows with digests, plus ``not_yet_computed`` queries.
+
+    Parameters
+    ----------
+    path : str or Path
+        CSV file; created on the first ``add``.
+    overwrite : bool
+        Ignore (and on the next ``add`` replace) an existing file.
+    """
+
+    def __init__(self, path, overwrite: bool = False):
+        self.path = Path(path)
+        self.overwrite = overwrite
+        if self.path.is_file() and not overwrite:
+            self.df = pd.read_csv(self.path)
+        else:
+            self.df = pd.DataFrame()
+
+    # -- queries --------------------------------------------------------------------
+    def _done(self, dataset_code, subject, session, pipeline_dig, paradigm_dig, evaluation) -> bool:
+        if self.df.empty:
+            return False
+        d = self.df
+        m = (d["dataset"] == dataset_code) & (d["subject"].astype(str) == str(subject)) \
+            & (d["pipeline_digest"] == pipeline_dig) & (d["paradigm_digest"] == paradigm_dig) \
+            & (d["evaluation"] == evaluation)
+        if session is not None:
+            m &= d["session"].astype(str) == str(session)
+        return bool(m.any())
+
+    def not_yet_computed(self, pipelines: dict, dataset_code: str, subject, paradigm, evaluation: str,
+                         session=None) -> dict:
+        """Subset of ``pipelines`` with no stored rows for this (dataset, subject[, session])."""
+        pdig = paradigm_digest(paradigm)
+        return {name: p for name, p in pipelines.items()
+                if not self._done(dataset_code, subject, session, pipeline_digest(p), pdig, evaluation)}
+
+    # -- writes ---------------------------------------------------------------------
+    def add(self, rows, pipelines: dict, paradigm, evaluation: str, replace: bool = False) -> pd.DataFrame:
+        """Append rows (list of dicts or DataFrame from an evaluation) and write the CSV.
+
+        With ``replace=True`` the stored rows sharing (dataset, subject, session, pipeline, paradigm, evaluation)
+        with the new ones are dropped first, so a recomputation replaces exactly what it recomputed.
+        """
+        new = pd.DataFrame(rows) if not isinstance(rows, pd.DataFrame) else rows.copy()
+        if new.empty:
+            return new
+        digests = {name: pipeline_digest(p) for name, p in pipelines.items()}
+        new["pipeline_digest"] = new["pipeline"].map(digests)
+        new["paradigm_digest"] = paradigm_digest(paradigm)
+        new["evaluation"] = evaluation
+        new["moecog_version"] = __version__
+        new["computed_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+        if replace and not self.df.empty:
+            keys = ["dataset", "subject", "session", "pipeline_digest", "paradigm_digest", "evaluation"]
+            old_keys = self.df[keys].astype(str).agg("|".join, axis=1)
+            new_keys = set(new[keys].astype(str).agg("|".join, axis=1))
+            self.df = self.df[~old_keys.isin(new_keys)]
+        self.df = pd.concat([self.df, new], ignore_index=True) if not self.df.empty else new
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.df.to_csv(self.path, index=False)
+        self.overwrite = False
+        return new
+
+    def to_dataframe(self) -> pd.DataFrame:
+        return self.df.copy()

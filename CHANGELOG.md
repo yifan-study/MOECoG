@@ -33,6 +33,20 @@ widening to every obtainable intracranial dataset (2026-09-10).
   metadata-only OpenNeuro snapshots, one deleted dataset. Blocked: account or
   DUA sources, two OpenNeuro sets whose files return HTTP 403 (ds006254,
   ds007703).
+- MOABB parity, batch 1 (2026-09-10, Yifan: "copy everything that moabb did
+  but try to make them better"): `docs/moabb_review.md` (component-by-component
+  decisions); `moecog.analysis` (`ResultsStore` CSV keyed by parameter digests
+  with `not_yet_computed`; paired Wilcoxon with the tail from the signed-rank
+  statistic, permutation tests, effect sizes, Stouffer combination,
+  `find_significant_differences`, `rank_pipelines`; `score_plot`, `paired_plot`,
+  `summary_plot`, `ranking_plot`); `CrossSessionEvaluation` (leave one session
+  out, chronological) and `incompatibility_reason` on every evaluation;
+  `moecog.benchmark` with several evaluations, paradigms by name with context
+  YAML, incremental storage and loud skips; reference pipelines and contexts
+  ship inside the wheel (`moecog/pipelines/configs`, `moecog/paradigms/contexts`);
+  `moecog.set_data_dir` / `get_data_dir` / `set_log_level`; MkDocs site with
+  API pages and workflows for docs, changelog check, link check and a monthly
+  download test; `examples/`.
 - Package and contribution path, following MOABB (2026-09-10, Yifan: "start
   MoEcog as a package and a contribution guideline"): `CONTRIBUTING.md`,
   `CODE_OF_CONDUCT.md`, `CITATION.cff`, issue and PR templates, pre-commit,

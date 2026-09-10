@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import time
+import warnings
 from abc import ABC, abstractmethod
 
 import numpy as np
@@ -32,11 +33,27 @@ class BaseEvaluation(ABC):
 
     def __init__(self, paradigm, datasets, n_splits=5, random_state=42):
         self.paradigm = paradigm
-        self.datasets = [d for d in datasets if paradigm.is_valid(d)]
-        if not self.datasets:
-            raise ValueError("None of the datasets is valid for this paradigm")
         self.n_splits = n_splits
         self.random_state = random_state
+        self.skipped = {}  # dataset code -> reason, for datasets this evaluation cannot use
+        kept = []
+        for d in datasets:
+            reason = self.incompatibility_reason(d)
+            if reason:
+                self.skipped[d.code] = reason
+                warnings.warn(f"{type(self).__name__} skips {d.code}: {reason}")
+            else:
+                kept.append(d)
+        self.datasets = kept
+        if not self.datasets:
+            raise ValueError("None of the datasets is valid for this evaluation: " + "; ".join(self.skipped.values()))
+
+    def incompatibility_reason(self, dataset):
+        """Why ``dataset`` cannot be used here, or None. Subclasses add their own conditions."""
+        if not self.paradigm.is_valid(dataset):
+            return (f"{dataset.code}: paradigm {type(self.paradigm).__name__} does not apply "
+                    f"(dataset paradigm '{getattr(dataset, 'paradigm', None)}')")
+        return None
 
     def process(self, pipelines, subjects=None):
         """Run all pipelines on all compatible datasets.

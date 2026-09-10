@@ -25,7 +25,9 @@ from .base import BaseECoGDataset
 
 
 def _data_dir() -> Path:
-    return Path(os.environ.get("MOECOG_DATA_DIR", "~/moecog_data")).expanduser()
+    from ..utils import get_data_dir
+
+    return get_data_dir()
 
 
 def _download(url: str, dest: Path, expected_size=None, retries: int = 3) -> Path:

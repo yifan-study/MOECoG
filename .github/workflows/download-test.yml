@@ -1,0 +1,26 @@
+name: Download test
+
+# Monthly: does a small public deposit still download and load end to end? (MOABB runs the same check.)
+on:
+  schedule:
+    - cron: "17 7 1 * *"
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[nwb,loaders,dev]"
+      - name: Smoke-test two small deposits (OpenNeuro ds005953, BCI Competition III-1)
+        run: |
+          python scripts/smoke_test.py --ids ds005953 bci-iii-1 --out /tmp/smoke
+          python - <<'PY'
+          import json, glob, sys
+          bad = [f for f in glob.glob('/tmp/smoke/*.json') if json.load(open(f))['status'] != 'ok']
+          print('non-ok:', bad); sys.exit(1 if bad else 0)
+          PY

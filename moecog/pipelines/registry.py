@@ -53,13 +53,17 @@ def load_pipeline_file(path, sfreq: float | None = None):
     return name, Pipeline(steps), desc
 
 
-def load_pipelines(path="pipelines", sfreq: float | None = None, paradigm: str | None = None):
+CONFIG_DIR = Path(__file__).resolve().parent / "configs"
+
+
+def load_pipelines(path=None, sfreq: float | None = None, paradigm: str | None = None):
     """Build every pipeline described under ``path`` (a directory or one file).
 
     Parameters
     ----------
-    path : str or Path
-        Directory of ``*.yml`` / ``*.yaml`` files, or one file.
+    path : str or Path or None
+        Directory of ``*.yml`` / ``*.yaml`` files, or one file. None means the reference pipelines shipped
+        inside the package (``moecog/pipelines/configs``).
     sfreq : float or None
         Fills ``"$sfreq"`` placeholders (feature extractors need the sampling rate).
     paradigm : str or None
@@ -69,7 +73,7 @@ def load_pipelines(path="pipelines", sfreq: float | None = None, paradigm: str |
     -------
     dict of str to sklearn.pipeline.Pipeline
     """
-    path = Path(path)
+    path = CONFIG_DIR if path is None else Path(path)
     files = sorted(path.glob("*.y*ml")) if path.is_dir() else [path]
     out = {}
     for f in files:
@@ -80,10 +84,10 @@ def load_pipelines(path="pipelines", sfreq: float | None = None, paradigm: str |
     return out
 
 
-def describe_pipelines(path="pipelines"):
+def describe_pipelines(path=None):
     """Return the YAML descriptions (name, paradigms, citations, steps) without building them."""
     import yaml
 
-    path = Path(path)
+    path = CONFIG_DIR if path is None else Path(path)
     files = sorted(path.glob("*.y*ml")) if path.is_dir() else [path]
     return [dict(file=str(f), **yaml.safe_load(f.read_text())) for f in files]

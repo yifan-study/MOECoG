@@ -36,7 +36,8 @@ catalog and smoke sweep of 130 public deposits (106 load).
 | CI | GitHub Actions runs ruff and the synthetic test suite on Python 3.10-3.12 for every PR; badge in README | done 2026-09-10, first run green on all four jobs | PRSNL-69 |
 | YAML pipelines + one-call benchmark | `pipelines/*.yml`, `moecog.pipelines.load_pipelines`, `moecog.benchmark(...)` reproduces `results/*.csv` | done 2026-09-10 | PRSNL-79 |
 | 0.2.0 on PyPI | `pip install moecog` works in a clean environment; release notes from CHANGELOG; GitHub release tagged `v0.2.0` | needs Yifan's go | PRSNL-69 |
-| Docs site | MkDocs (material) built by Actions to GitHub Pages: install, quickstart, datasets table, smoke table, leaderboard, atlas | | PRSNL-80 |
+| Docs site | MkDocs (material) built by Actions to GitHub Pages: install, quickstart, datasets table, smoke table, leaderboard, atlas, API | site and workflow committed 2026-09-10; Pages setting needs Yifan | PRSNL-80 |
+| MOABB parity batch 1 | `docs/moabb_review.md` decisions implemented: results store with digests, cross-session evaluation, meta-analysis and plots, pipelines and contexts inside the wheel, config helpers, changelog/link/download workflows, examples | done 2026-09-10 | PRSNL-81 |
 | Zenodo DOI | GitHub release archived on Zenodo; DOI in README and CITATION | after 0.2.0 | PRSNL-80 |
 
 ### M2. Reference benchmark on the Miller tier (target 2026-10-31)
@@ -81,5 +82,6 @@ loading of hour-long runs, CodeCarbon, optuna. They come back when a milestone n
 
 ## Re-evaluation log
 
+- 2026-09-10 (later): "copy everything MOABB did, better": `docs/moabb_review.md` is the component-by-component decision list; batch 1 of it shipped the same day (analysis, cross-session, store, docs site); cross-subject with an explicit aligner stays in M4, learning curves in M2.
 - 2026-09-10: pivot from "test everything" to "package + contribution path + chunks". The catalog sweep stays as
   the map. Dropped from the near term: the remaining blocked sources, the non-human tier, lazy loading.

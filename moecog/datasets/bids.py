@@ -14,7 +14,6 @@ where datasets are cached (``<data_dir>/openneuro/<dataset_id>``).
 
 from __future__ import annotations
 
-import os
 import re
 import warnings
 from pathlib import Path
@@ -28,7 +27,9 @@ _IEEG_TYPES = ("ecog", "seeg", "dbs")
 
 
 def _data_dir() -> Path:
-    return Path(os.environ.get("MOECOG_DATA_DIR", "~/moecog_data")).expanduser()
+    from ..utils import get_data_dir
+
+    return get_data_dir()
 
 
 class BIDSiEEGDataset(BaseECoGDataset):

@@ -14,8 +14,8 @@ By participating you agree to the [code of conduct](CODE_OF_CONDUCT.md).
 |---|---|---|---|
 | dataset | a loader for a public ECoG/iEEG deposit | `moecog/datasets/`, entry in `moecog/catalog.py` | smoke test passes (`scripts/smoke_test.py --ids <id>`), row in `docs/smoke_tests.md`, licence and access noted |
 | paradigm | a way of turning recordings into labelled trials or targets | `moecog/paradigms/` | works on `FakeECoGDataset`, documented `headline_metric`, test in `tests/` |
-| pipeline | a scikit-learn pipeline (features + estimator), optionally a braindecode model | `pipelines/*.yml` or `moecog/pipelines/` | YAML parses with `moecog.pipelines.load_pipelines`, cites its paper, runs on one real dataset |
-| result | numbers from `scripts/run_baseline.py` | `results/*.csv`, regenerated `docs/leaderboard.md` | seeds, folds and package version recorded in the CSV; no data under a DUA |
+| pipeline | a scikit-learn pipeline (features + estimator), optionally a braindecode model | `moecog/pipelines/configs/*.yml` (shipped in the wheel) or `moecog/pipelines/` | YAML parses with `moecog.pipelines.load_pipelines`, cites its paper, runs on one real dataset |
+| result | numbers from `moecog.benchmark(...)` or `scripts/run_baseline.py` | `results/*.csv` (a `ResultsStore`: digests, version, timestamp per row), regenerated `docs/leaderboard.md` | seeds, folds and package version recorded in the CSV; no data under a DUA |
 | fix or docs | anything that makes the above clearer or truer | | tests still pass |
 
 Things we will not merge: data files (loaders download from the source), credentials, results on datasets whose
@@ -82,8 +82,10 @@ pipeline:
     parameters: {solver: lsqr, shrinkage: auto}
 ```
 
-Put the file in `pipelines/`, check `moecog.pipelines.load_pipelines("pipelines")` builds it, and run it on one dataset
-with `scripts/run_baseline.py`. Deep models go through braindecode (`moecog[deep]`) and must run on CPU for the tests.
+Put the file in `moecog/pipelines/configs/` (they ship inside the package, so `load_pipelines()` with no argument
+returns them), check `moecog.pipelines.load_pipelines()` builds it, and run it on one dataset with
+`moecog.benchmark(...)` or `scripts/run_baseline.py`. Grid search belongs inside the pipeline (`GridSearchCV` as a
+step), never in the evaluation. Deep models go through braindecode (`moecog[deep]`) and must run on CPU for the tests.
 
 ## Adding results
 

@@ -60,6 +60,18 @@ def test_annotations_from_codes():
     np.testing.assert_allclose(ann.duration, [0.3, 0.2, 0.1])
     with_rest = annotations_from_codes(codes, 10.0, {11: "tongue", 12: "hand"}, include_rest=True)
     assert list(with_rest.description).count("rest") == 3
+    # back-to-back trials of one class stay separate when segmented on trial ids
+    trial_ids = np.array([0, 1, 1, 2, 2, 3, 3, 0])
+    classes = np.array([0, 2, 2, 2, 2, 1, 1, 0])
+    merged = annotations_from_codes(classes, 10.0, {1: "house", 2: "face"})
+    split = annotations_from_codes(classes, 10.0, {1: "house", 2: "face"}, block_codes=trial_ids)
+    assert len(merged) == 2 and len(split) == 3
+    # glitch removal
+    glitch = np.array([0, 12, 0, 0, 12, 12, 12, 12, 0])
+    kept = annotations_from_codes(glitch, 10.0, {12: "hand"}, min_duration=0.15)
+    assert len(kept) == 1 and kept.onset[0] == 0.4
+    with pytest.raises(ValueError):
+        annotations_from_codes(classes, 10.0, {}, block_codes=trial_ids[:3])
 
 
 def test_code_maps():

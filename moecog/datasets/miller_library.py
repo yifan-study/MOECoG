@@ -497,7 +497,8 @@ def _blocks(codes: np.ndarray):
         yield int(s), int(e), int(codes[s])
 
 
-def annotations_from_codes(codes, sfreq, code_to_name, include_rest=False):
+def annotations_from_codes(codes, sfreq, code_to_name, include_rest=False, block_codes=None,
+                           min_duration=0.0):
     """Build :class:`mne.Annotations` from a sample-wise cue-code channel.
 
     Parameters
@@ -509,11 +510,24 @@ def annotations_from_codes(codes, sfreq, code_to_name, include_rest=False):
         ``{code: name}``. Unknown nonzero codes become ``"code_<k>"``.
     include_rest : bool
         Also annotate the zero blocks as ``"rest"``.
+    block_codes : array-like or None
+        Codes used to find block boundaries when they are finer than the
+        class codes (for example a per-trial index): consecutive trials of the
+        same class then stay separate. Defaults to ``codes``.
+    min_duration : float
+        Drop blocks shorter than this many seconds (BCI2000 cue glitches of one
+        40 ms state block occur in a few library files).
     """
     codes = np.asarray(codes).ravel().astype(int)
+    seg = codes if block_codes is None else np.asarray(block_codes).ravel().astype(int)
+    if seg.shape != codes.shape:
+        raise ValueError("block_codes must have the same length as codes")
     onsets, durations, descs = [], [], []
-    for s, e, c in _blocks(codes):
+    for s, e, _ in _blocks(seg):
+        c = int(codes[s])
         if c == 0 and not include_rest:
+            continue
+        if (e - s) / sfreq < min_duration:
             continue
         onsets.append(s / sfreq)
         durations.append((e - s) / sfreq)
@@ -550,10 +564,13 @@ class MillerLibrary(BaseECoGDataset):
         to ``event_id`` (for cue-vs-rest paradigms).
     scale : float
         Multiplier applied to the raw amplifier units to get volts.
+    min_block_s : float
+        Cue blocks shorter than this are dropped (one-sample BCI2000 glitches
+        of 40 ms exist in motor_basic de/gf and gestures de).
     """
 
     def __init__(self, experiment="motor_basic", root=None, download=True,
-                 include_rest=False, scale=AMPLIFIER_UNIT_VOLTS):
+                 include_rest=False, scale=AMPLIFIER_UNIT_VOLTS, min_block_s=0.1):
         if experiment not in EXPERIMENTS:
             raise ValueError(f"Unknown experiment {experiment!r}; choose from {list(EXPERIMENTS)}")
         self.spec = EXPERIMENTS[experiment]
@@ -561,6 +578,7 @@ class MillerLibrary(BaseECoGDataset):
         self.download = download
         self.include_rest = include_rest
         self.scale = scale
+        self.min_block_s = min_block_s
         self._root = Path(root).expanduser() if root else None
         events = self.spec.event_id
         if include_rest and events is not None:
@@ -655,7 +673,10 @@ class MillerLibrary(BaseECoGDataset):
             ch_types.append("stim")
             arrays.append(raw_codes[None, :].astype(float))
             code_to_name = {v: k for k, v in spec.events.items()}
-            annotations = annotations_from_codes(codes, sfreq, code_to_name, self.include_rest)
+            annotations = annotations_from_codes(
+                codes, sfreq, code_to_name, self.include_rest,
+                block_codes=raw_codes, min_duration=self.min_block_s,
+            )
 
         for var, prefix in spec.misc.items():
             if var not in mat:
@@ -696,7 +717,7 @@ class MillerLibrary(BaseECoGDataset):
             return
         ecog_names = [raw.ch_names[i] for i in mne.pick_types(raw.info, ecog=True)]
         ch_pos = {n: einfo.positions[i] / 1000.0 for i, n in enumerate(ecog_names)}
-        with warnings.catch_warnings():
+        with warnings.catch_warnings(), mne.utils.use_log_level("error"):
             warnings.simplefilter("ignore")
             montage = mne.channels.make_dig_montage(ch_pos=ch_pos, coord_frame="mni_tal")
             raw.set_montage(montage, on_missing="ignore", verbose=False)

@@ -2,7 +2,7 @@
 
 Generated 2026-09-10 by `scripts/build_dataset_list.py` from the catalog registry, the smoke-test records and the OpenNeuro metadata snapshots. One row per catalog entry; channels, rate and duration are those of the first subject's first run as loaded by MOECoG (a subset, not the whole dataset). Sizes are the full deposits. 'Fit' says which of our decoder lines apply: R = continuous regression (finger flexion, cursor, force, audio), C = trial classification, S = speech/audio decoding, P = pretraining / self-supervised only.
 
-130 entries, 105 load today, about 10.0 TB of public deposits in total (9.4 TB behind the entries that load).
+130 entries, 106 load today, about 10.0 TB of public deposits in total (9.4 TB behind the entries that load).
 
 ## Motor (movement, kinematics, force) (11)
 
@@ -51,11 +51,11 @@ Generated 2026-09-10 by `scripts/build_dataset_list.py` from the catalog registr
 | entry | dataset | modality | subjects | first run: ch @ Hz, s | size | licence | decoding target | kind | fit | MOECoG status | quick kappa | notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | ds004703 | PassiveListen | sEEG | 10 | 110 @ 1024, 1044 s | 13.3 GB | CC0 | natural speech (passive listening) | continuous | S R | ok |  | licence forbids ML training: check before use |
+| tonal-speech | Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceD | ECoG | 4 | 128 @ 400, 182 s | 6.1 GB |  | tone/syllable/word features of heard Mandarin | continuous | S R | ok |  |  |
 | ds005574 | The "Podcast" ECoG dataset for modeling neural activity during natural | mixed | 9 | 82 @ 512, 1800 s | 3.5 GB | CC0 | linguistic features of a 30-min podcast (encoding/decoding) | continuous | S R P | ok |  |  |
 | ds005691 | SpinalExpect_Invasive | sEEG | 8 | 7 @ 2500, 1602 s | 758 MB | CC0 | auditory deviant counting (oddball) | classification | C | ok |  |  |
 | bellier-music | Bellier music reconstruction HFA, 29 patients (Zenodo 7876019) | features | 29 | 64 @ 100, 191 s | 400 MB |  | 32-band song spectrogram from HFA | regression | R S | ok |  | preprocessed HFA at 100 Hz, 29 patients |
 | ds004993 | WIRED ICM Sample Dataset - Workshop on Intracranial Recordings in Huma | mixed | 3 | 148 @ 512, 68 s | 320 MB | CC0 | TIMIT sentences, movie trailers | continuous | S R | ok |  |  |
-| tonal-speech | Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceD | ECoG | 4 |  | 6.1 GB |  | tone/syllable/word features of heard Mandarin | continuous | S R | blocked |  | hosted on ScienceDB (scidb.cn dataSetId c4d82d65ad5c4db88d712e68e199b6aa), a JavaScript-only site whose file API is undocumented; BIDS-iEEG/NWB once downloaded, so BIDSiEEGDataset(root=...) will read it |
 
 ## Visual stimuli (11)
 

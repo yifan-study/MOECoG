@@ -1,0 +1,28 @@
+{
+ "id": "tonal-speech",
+ "title": "Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceDB 27618)",
+ "source": "scidb",
+ "status": "ok",
+ "started": "2026-09-10 10:57:54",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "01/audio": {
+   "kind": "raw",
+   "sfreq": 400.0,
+   "n_ecog": 128,
+   "n_misc": 0,
+   "duration_s": 181.9975,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 128,
+  "frame": "mni152lin"
+ },
+ "event_id": null,
+ "seconds": 1.5
+}

@@ -2,7 +2,7 @@
 
 Generated 2026-09-10 by `scripts/build_smoke_table.py` from `results/smoke/*.json`. Each entry downloads a one-subject (or one-file) subset, loads it through the MOECoG loader, reports what it found, and, when a trial-classification paradigm applies, scores LogBandPower+LDA with 3 chronological folds on the first subject. Numbers are sanity checks, not benchmark results.
 
-Status: 105 ok, 2 error, 3 unsupported, 20 blocked, 0 pending out of 130 entries.
+Status: 106 ok, 2 error, 3 unsupported, 19 blocked, 0 pending out of 130 entries.
 
 | entry | source | title | status | what was found / why not | s |
 |---|---|---|---|---|---|
@@ -124,7 +124,7 @@ Status: 105 ok, 2 error, 3 unsupported, 20 blocked, 0 pending out of 130 entries
 | braintreebank | braintreebank | Brain Treebank (sub_1 trial000) | ok | 1 subj; 1 file(s); 156 ch @ 2048 Hz; 600 s; 0 events in 0 classes; electrodes none;  | 105.2 |
 | stolk-sensorimotor | osf | Stolk sensorimotor alpha/beta, high-density ECoG (OSF z4hfm) | ok | 1 subj; 1 file(s); 120 ch @ 512 Hz; 196 s; 49 events in 2 classes; electrodes 120 (unknown); kappa 0.18 (n=49) | 3.6 |
 | bellier-music | zenodo | Bellier music reconstruction HFA, 29 patients (Zenodo 787601 | ok | 1 subj; 1 file(s); 64 ch @ 100 Hz; 191 s; 0 events in 0 classes; electrodes 64 (mni);  | 0.7 |
-| tonal-speech | scidb | Li tonal speech perception ECoG, 4 awake-craniotomy patients | blocked | hosted on ScienceDB (scidb.cn dataSetId c4d82d65ad5c4db88d712e68e199b6aa), a JavaScript-only site whose file API is undocumented; BIDS-iEEG/NWB once downloaded, so BIDSiEEGDataset(root=...) will read it |  |
+| tonal-speech | scidb | Li tonal speech perception ECoG, 4 awake-craniotomy patients | ok | 1 subj; 1 file(s); 128 ch @ 400 Hz; 182 s; 0 events in 0 classes; electrodes 128 (mni152lin);  | 1.5 |
 | cogitate | blocked | Cogitate iEEG release 1 | blocked | portal registration + terms |  |
 | dabi-* | blocked | DABI public projects (MGH stimulation/conversation, UTSW mot | blocked | DABI account required to download |  |
 | ebrains-* | blocked | EBRAINS memory+pupillometry, EEG+stimulation | blocked | EBRAINS account |  |

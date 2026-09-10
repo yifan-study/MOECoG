@@ -209,10 +209,19 @@ _add(Entry(id="bellier-music", title="Bellier music reconstruction HFA, 29 patie
            source="zenodo", build=_misc("BellierMusic", subjects=("P1",)),
            notes="CC-BY; 70-150 Hz envelopes at 100 Hz, 190.7 s of song per patient; 32-band spectrogram as misc "
                  "target channels; regression paradigm to come; ~400 MB for all 29", tags=("auditory", "features")))
-_add(Entry(id="tonal-speech", title="Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceDB)",
-           source="scidb", blocked="hosted on ScienceDB (scidb.cn dataSetId c4d82d65ad5c4db88d712e68e199b6aa), a "
-                                   "JavaScript-only site whose file API is undocumented; BIDS-iEEG/NWB once "
-                                   "downloaded, so BIDSiEEGDataset(root=...) will read it"))
+
+
+def _tonal():
+    from moecog.datasets.scidb import TonalSpeechECoG
+
+    return TonalSpeechECoG(subjects=("01",), sessions=("01",))
+
+
+_add(Entry(id="tonal-speech", title="Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceDB 27618)",
+           source="scidb", build=_tonal,
+           notes="CC-BY-4.0, 6.1 GB, 346 files; BIDS-iEEG with NWB recordings (128-256-ch grids, high gamma at 400 Hz "
+                 "in derivatives); sentence listening (ASCCD corpus); 6 sessions per patient; downloads through "
+                 "the ScienceDB file API", tags=("auditory", "speech")))
 
 # ---------------------------------------------------------------- needs account / agreement
 for _i, _t, _why in [

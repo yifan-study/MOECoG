@@ -149,22 +149,35 @@ not answer.
 
 ## Smoke-test status
 
-Every entry that can be reached without an account is exercised by `scripts/smoke_test.py` (one subject or one file each); the outcome table is `docs/smoke_tests.md`, regenerated with `scripts/build_smoke_table.py`. Sweep of 2026-09-10 (Mac + Athene CPU nodes): 96 ok, 0 error, 12 unsupported, 22 blocked, 0 pending of 130 entries.
+Every entry that can be reached without an account is exercised by `scripts/smoke_test.py` (one subject or one file each); the outcome table is `docs/smoke_tests.md`, regenerated with `scripts/build_smoke_table.py`. Second pass of 2026-09-10 (after the "try harder" round on unsupported and blocked entries): 106 ok, 2 error, 3 unsupported, 19 blocked, 0 pending of 130 entries.
 
-What the non-ok statuses mean, and what would change them:
+What changed in the second pass:
+
+| entry | before | now | how |
+|---|---|---|---|
+| ds003708, ds004457, ds004624, ds004696, ds004774, ds004977, ds006392 | unsupported (MEF3) | ok | `pymef` reader in `BIDSiEEGDataset` (`max_seconds` reads a window of hour-long sessions) |
+| ds006254 | blocked (HTTP 403) | ok, kappa 0.14 | OpenNeuro refuses HEAD but serves GET: the loader walks the GraphQL file tree and streams the files itself |
+| dandi-001535 (BRAVO1) | unsupported (no voltage) | ok, kappa 0.39 | `BRAVOFeatures`: 9737 feature trials (256 = high-gamma + low-frequency streams) labelled by target id |
+| bellier-music | blocked (Zenodo) | ok | `BellierMusic`: 29 patients of HFA at 100 Hz with the 32-band song spectrogram as target channels |
+| stolk-sensorimotor | blocked (no loader) | ok, kappa 0.18 | `StolkSensorimotor`: FieldTrip trials (v5 .mat), 120-ch grids, condition code from trialinfo |
+| tonal-speech | blocked (record not located) | ok (128 ch @ 400 Hz, 182 s for sub-01 ses-01) | the data live on ScienceDB (DOI 10.57760/sciencedb.27618); `TonalSpeechECoG` downloads through the file-tree API and rebuilds the BIDS layout |
+| ds005592 | unsupported (deleted) | blocked, documented | OpenNeuro deleted it as a duplicate of ds006107, which loads |
+| gin-usz | blocked (git-annex) | blocked, documented | duplicate of ds004944, which loads |
+
+What still cannot be loaded, and why:
 
 | status | entries | cause | way forward |
 |---|---|---|---|
-| unsupported | ds003708, ds004457, ds004624, ds004696, ds004774, ds004977, ds006392 | MEF3 (`.mefd`) recordings; MNE has no reader | add a `pymef`-backed reader (PRSNL-76) |
-| unsupported | dandi-000004, dandi-000469, dandi-001616 | NWB files hold sorted spikes only, no `ElectricalSeries` | out of scope (single units) |
-| unsupported | dandi-001535 | BRAVO speech-neuroprosthesis NWB holds decoded features, no raw `ElectricalSeries` | out of scope unless raw is released |
-| unsupported | ds002799, ds005083, ds006253 | OpenNeuro snapshot ships sidecars (channels, electrodes, MRI) but no iEEG recordings | ask the authors; ds002799 is listed for outreach |
-| unsupported | ds005592 | dataset deleted by its owners | none |
-| blocked | ds006254, ds007703 | OpenNeuro answers HTTP 403 for every file (embargo or S3 export pending) | re-check the URLs; contact OpenNeuro if still locked |
-| blocked | Cogitate, DABI, EBRAINS, Kaggle, MNI atlas, Neurotycho, ieeg.org, CRCNS, EPILEPSIAE, Metzger 2023, GIN-USZ | registration, DUA or committee approval | Yifan registers (PRSNL-77) |
-| blocked | stolk-sensorimotor, bellier-music, tonal-speech | loader not written / Zenodo API unreliable during the sweep | next loader batch |
+| unsupported | dandi-000004, dandi-000469, dandi-001616 | NWB files hold sorted spikes only; opened and checked, no field potentials | out of scope (single units) |
+| unsupported | ds002799, ds005083, ds006253 | the OpenNeuro snapshots ship sidecars and MRI but no iEEG recordings (file trees checked through GraphQL) | ask the authors; ds002799 is on the outreach list |
+| blocked | ds007703 | snapshot lists sidecars only and refuses HEAD | re-check for a new snapshot |
+| blocked | dandi-000571 | MEF3 stored as directory trees on DANDI; the reader exists, the folder fetcher does not | next loader batch |
+| blocked | dandi-001638, dandi-001613 | dandisets without data assets yet | re-check monthly |
+| blocked | Cogitate, DABI, EBRAINS, Kaggle, MNI atlas (HTTP 401), Neurotycho (download table behind login), ieeg.org, CRCNS, EPILEPSIAE, Metzger 2023 | registration, DUA or committee approval; checked again on 2026-09-10 without credentials | Yifan registers (PRSNL-77) |
 
-Memory note: subjects of the RAM family (ds005489-ds005558) carry several hour-long 1 kHz runs; the smoke sweep loads two runs per session (`--max-runs 2`), and a full-subject evaluation needs a node with more than 48 GB or the lazy-loading path on the roadmap.
+Memory note: subjects of the RAM family (ds005489-ds005558) carry several hour-long 1 kHz runs; the smoke sweep loads two runs per session (`--max-runs 2`), and a full-subject evaluation needs a node with more than 48 GB or the lazy-loading path on the roadmap. MEF3 sessions are read with `--max-seconds 600` for the same reason.
+
+The decoder-oriented view of the same catalog (what each dataset lets us predict, its size, and which of our decoder lines apply) is `docs/decodable_datasets.md`, built by `scripts/build_dataset_list.py`, with a filterable page in `docs/decodable_datasets.html`.
 
 ## Loader strategy
 

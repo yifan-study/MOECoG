@@ -33,6 +33,15 @@ widening to every obtainable intracranial dataset (2026-09-10).
   metadata-only OpenNeuro snapshots, one deleted dataset. Blocked: account or
   DUA sources, two OpenNeuro sets whose files return HTTP 403 (ds006254,
   ds007703).
+- Second pass on the unsupported and blocked entries (2026-09-10): MEF3 via
+  `pymef` (seven OpenNeuro sets), GET-only OpenNeuro downloads through the
+  GraphQL file tree (ds006254), BRAVO neural-feature trials (DANDI 001535),
+  Bellier music HFA (Zenodo), Stolk sensorimotor trials (OSF), the Li tonal
+  speech set from ScienceDB (`moecog.datasets.scidb`); 106 ok, 2 error, 3 unsupported, 19 blocked, 0 pending of 130 entries.
+- `docs/decodable_datasets.md` / `.json` / `.html` (`scripts/build_dataset_list.py`,
+  `scripts/build_dataset_page.py`): every catalog entry with size, subjects,
+  first-run channels and rate, licence, decoding target, label kind, which of
+  our decoder lines apply, and load status; grouped by task family.
 - Loader fixes found only on real files: Du-IN pickles (`utils.DotDict`),
   Blosc-compressed SWEC HDF5 (`hdf5plugin`, new `loaders` extra), the Verwoert
   OSF archive (direct file download; the project-level zip export nests the

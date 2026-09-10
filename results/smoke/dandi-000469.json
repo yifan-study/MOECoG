@@ -1,0 +1,19 @@
+{
+ "id": "dandi-000469",
+ "title": "Rutishauser Sternberg WM",
+ "source": "dandi",
+ "status": "error",
+ "started": "2026-09-09 23:25:01",
+ "subjects_found": 6,
+ "subject_list": [
+  "12",
+  "17",
+  "19",
+  "20",
+  "21",
+  "7"
+ ],
+ "error": "ValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/000469/sub-12/sub-12_ses-1_ecephys+image.nwb",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 38, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 256, in _get_single_subject_data\n    raw, meta, einfo = read_nwb_raw(\n                       ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/nwb.py\", line 107, in read_nwb_raw\n    raise ValueError(f\"No ElectricalSeries in {path}\")\nValueError: No ElectricalSeries in /Users/johnsmith/moecog_data/dandi/000469/sub-12/sub-12_ses-1_ecephys+image.nwb\n",
+ "seconds": 7.3
+}

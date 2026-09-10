@@ -1,0 +1,33 @@
+{
+ "id": "dandi-001193",
+ "title": "Shao IFG syntax/semantics high gamma",
+ "source": "dandi",
+ "status": "ok",
+ "started": "2026-09-09 23:24:43",
+ "subjects_found": 10,
+ "subject_list": [
+  "TC12",
+  "TC16",
+  "TC17",
+  "TC18",
+  "TC19",
+  "TC20",
+  "TC5",
+  "TC6",
+  "TC7",
+  "TC9"
+ ],
+ "sessions": {
+  "20190528/0": {
+   "sfreq": 400.0,
+   "n_ecog": 256,
+   "n_misc": 0,
+   "duration_s": 74.4625,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 17.7
+}

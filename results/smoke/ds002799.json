@@ -3,8 +3,8 @@
  "title": "Human es-fMRI Resource: Concurrent deep-brain stimulation and whole-brain functional MRI",
  "source": "openneuro",
  "status": "unsupported",
- "started": "2026-09-10 05:15:25",
- "error": "ValueError: Subjects ['292'] not in /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799 and nothing else readable",
- "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/catalog.py\", line 79, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 97, in __init__\n    folders = sorted(p.name for p in self._root.glob(\"sub-*\") if p.is_dir())\nValueError: Subjects ['292'] not in /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799 and nothing else readable\n",
- "seconds": 0.2
+ "started": "2026-09-10 05:22:18",
+ "error": "ValueError: /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799: 26 sub-* folder(s) but no iEEG recordings, only sidecars/MRI (metadata-only snapshot); nothing else readable",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/catalog.py\", line 79, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 101, in __init__\n    raise ValueError(f\"{self._root}: {len(folders)} sub-* folder(s) but no iEEG recordings, only \"\nValueError: /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799: 26 sub-* folder(s) but no iEEG recordings, only sidecars/MRI (metadata-only snapshot); nothing else readable\n",
+ "seconds": 0.1
 }

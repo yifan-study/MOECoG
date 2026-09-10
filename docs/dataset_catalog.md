@@ -149,7 +149,22 @@ not answer.
 
 ## Smoke-test status
 
-Every entry that can be reached without an account is exercised by `scripts/smoke_test.py` (one subject or one file each); the outcome table is `docs/smoke_tests.md`, regenerated with `scripts/build_smoke_table.py`.
+Every entry that can be reached without an account is exercised by `scripts/smoke_test.py` (one subject or one file each); the outcome table is `docs/smoke_tests.md`, regenerated with `scripts/build_smoke_table.py`. Sweep of 2026-09-10 (Mac + Athene CPU nodes): 96 ok, 0 error, 12 unsupported, 22 blocked, 0 pending of 130 entries.
+
+What the non-ok statuses mean, and what would change them:
+
+| status | entries | cause | way forward |
+|---|---|---|---|
+| unsupported | ds003708, ds004457, ds004624, ds004696, ds004774, ds004977, ds006392 | MEF3 (`.mefd`) recordings; MNE has no reader | add a `pymef`-backed reader (PRSNL-76) |
+| unsupported | dandi-000004, dandi-000469, dandi-001616 | NWB files hold sorted spikes only, no `ElectricalSeries` | out of scope (single units) |
+| unsupported | dandi-001535 | BRAVO speech-neuroprosthesis NWB holds decoded features, no raw `ElectricalSeries` | out of scope unless raw is released |
+| unsupported | ds002799, ds005083, ds006253 | OpenNeuro snapshot ships sidecars (channels, electrodes, MRI) but no iEEG recordings | ask the authors; ds002799 is listed for outreach |
+| unsupported | ds005592 | dataset deleted by its owners | none |
+| blocked | ds006254, ds007703 | OpenNeuro answers HTTP 403 for every file (embargo or S3 export pending) | re-check the URLs; contact OpenNeuro if still locked |
+| blocked | Cogitate, DABI, EBRAINS, Kaggle, MNI atlas, Neurotycho, ieeg.org, CRCNS, EPILEPSIAE, Metzger 2023, GIN-USZ | registration, DUA or committee approval | Yifan registers (PRSNL-77) |
+| blocked | stolk-sensorimotor, bellier-music, tonal-speech | loader not written / Zenodo API unreliable during the sweep | next loader batch |
+
+Memory note: subjects of the RAM family (ds005489-ds005558) carry several hour-long 1 kHz runs; the smoke sweep loads two runs per session (`--max-runs 2`), and a full-subject evaluation needs a node with more than 48 GB or the lazy-loading path on the roadmap.
 
 ## Loader strategy
 

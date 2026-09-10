@@ -103,12 +103,25 @@ def read_nwb_raw(path, series=None, channel_types=("ecog", "seeg", "ieeg"), tria
                 elif obj.__class__.__name__ == "LFP":
                     for n2, es in obj.electrical_series.items():
                         candidates[f"{mod.name}/{name}/{n2}"] = es
+        series_type = "ElectricalSeries"
+        if not candidates:
+            # some deposits (Verwoert 2022 single-word production) store the voltage as a plain 2-D
+            # TimeSeries named e.g. "iEEG" with no electrodes table; accept those before giving up
+            plain = {}
+            for name, obj in getattr(nwb.acquisition, "items", lambda: [])():
+                if obj.__class__.__name__ == "TimeSeries" and getattr(obj.data, "ndim", 0) == 2:
+                    plain[name] = obj
+            named = {k: v for k, v in plain.items()
+                     if re.search(r"ieeg|ecog|seeg|lfp|eeg|neural|voltage|raw", k, re.IGNORECASE)}
+            candidates = named or (plain if series in plain else {})
+            series_type = "TimeSeries"
         if not candidates:
             raise ValueError(f"No ElectricalSeries in {path}")
         if series is None:
             series = max(candidates, key=lambda k: int(np.prod(candidates[k].data.shape)))
         es = candidates[series]
         meta["series"] = series
+        meta["series_type"] = series_type
         meta["all_series"] = list(candidates)
         rate = es.rate
         if rate is None:
@@ -120,10 +133,10 @@ def read_nwb_raw(path, series=None, channel_types=("ecog", "seeg", "ieeg"), tria
         data = np.asarray(es.data[:n_times, :], dtype=float).T  # (n_ch, n_times)
         conv = getattr(es, "conversion", 1.0) or 1.0
         data *= conv
-        # electrodes
-        elec = es.electrodes
+        # electrodes (a plain TimeSeries has none)
+        elec = getattr(es, "electrodes", None)
         try:
-            edf = elec.to_dataframe()
+            edf = elec.to_dataframe() if elec is not None else None
         except Exception:
             edf = None
         names, types, pos = [], [], None

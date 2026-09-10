@@ -27,6 +27,18 @@ widening to every obtainable intracranial dataset (2026-09-10).
   montages per run, union of bad channels per subject, direct reading when
   mne-bids fails; paradigms pick ECoG channels without the implicit bad-channel
   exclusion; datasets may deliver `mne.Epochs`.
+- Sweep outcome (96 ok, 0 error, 12 unsupported, 22 blocked, 0 pending of 130 entries): the errors that remain are documented per entry
+  in `docs/smoke_tests.md`. Unsupported: MEF3 (`.mefd`, needs pymef), NWB sets
+  that hold sorted spikes or features without an `ElectricalSeries`,
+  metadata-only OpenNeuro snapshots, one deleted dataset. Blocked: account or
+  DUA sources, two OpenNeuro sets whose files return HTTP 403 (ds006254,
+  ds007703).
+- Loader fixes found only on real files: Du-IN pickles (`utils.DotDict`),
+  Blosc-compressed SWEC HDF5 (`hdf5plugin`, new `loaders` extra), the Verwoert
+  OSF archive (direct file download; the project-level zip export nests the
+  archive under its own name), resumable `_download` with size checks,
+  `BIDSiEEGDataset(max_runs=N)` so hour-long multi-run subjects (RAM ds0055xx)
+  fit in memory, session-level subsets for longitudinal sets (ds006890).
 
 - `MillerLibrary(experiment=...)`: registry-driven loader for all 16
   Stanford/Miller experiments (204 files). Cue codes become MNE annotations;

@@ -34,7 +34,10 @@ def main():
                 first = next(iter(ses.values()), {})
                 cls = first.get("classes", {})
                 qb = r.get("quick_baseline") or {}
-                if "score" in qb:
+                if "score" in qb and qb["score"] != qb["score"]:  # NaN: every fold had a single-class test set
+                    score = (f"{qb['metric']} undefined ({qb.get('n_undefined_folds', '?')}/{qb.get('n_folds', '?')} "
+                             f"folds single-class, n={qb['n_trials']})")
+                elif "score" in qb:
                     score = f"{qb['metric']} {qb['score']:.2f} (n={qb['n_trials']})"
                 else:
                     score = qb.get("note", "")

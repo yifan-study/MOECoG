@@ -2,11 +2,11 @@
 
 Generated 2026-09-10 by `scripts/build_smoke_table.py` from `results/smoke/*.json`. Each entry downloads a one-subject (or one-file) subset, loads it through the MOECoG loader, reports what it found, and, when a trial-classification paradigm applies, scores LogBandPower+LDA with 3 chronological folds on the first subject. Numbers are sanity checks, not benchmark results.
 
-Status: 93 ok, 3 error, 12 unsupported, 22 blocked, 0 pending out of 130 entries.
+Status: 96 ok, 0 error, 12 unsupported, 22 blocked, 0 pending out of 130 entries.
 
 | entry | source | title | status | what was found / why not | s |
 |---|---|---|---|---|---|
-| ds002799 | openneuro | Human es-fMRI Resource: Concurrent deep-brain stimulation an | unsupported | ValueError: Subjects ['292'] not in /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799 and nothing else readable | 0.2 |
+| ds002799 | openneuro | Human es-fMRI Resource: Concurrent deep-brain stimulation an | unsupported | ValueError: /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799: 26 sub-* folder(s) but no iEEG recordings, only sidecars/MRI (metadata-only snapshot); not | 0.1 |
 | ds003029 | openneuro | iEEG Fragility Epileptogenic Zone | ok | 1 subj; 4 file(s); 126 ch @ 1000 Hz; 142 s; 21 events in 15 classes; electrodes none;  | 2.1 |
 | ds003078 | openneuro | PROBE iEEG | ok | 1 subj; 12 file(s); 130 ch @ 512 Hz; 584 s; 662 events in 14 classes; electrodes none;  | 5.5 |
 | ds003374 | openneuro | Dataset of neurons and intracranial EEG from human amygdala  | ok | 1 subj; 1 file(s); 4 ch @ 2000 Hz; 522 s; 17 events in 2 classes; electrodes 4 (other);  | 0.1 |
@@ -82,7 +82,7 @@ Status: 93 ok, 3 error, 12 unsupported, 22 blocked, 0 pending out of 130 entries
 | ds008610 | openneuro | FUS and Tactile Neuromodulation in NHP VPL - Electrophysiolo | ok | 1 subj; 31 file(s); 32 ch @ 1000 Hz; 71 s; 5 events in 1 classes; electrodes 96 (other); no scorable session (fewer than two classes per session) | 50.3 |
 | dandi-000019 | dandi | Bouchard/Chang CV syllables (sub-EC9 B15) | ok | 1 subj; 1 file(s); 256 ch @ 3052 Hz; 195 s; 96 events in 15 classes; electrodes 256 (unknown); kappa -0.04 (n=96) | 24.5 |
 | dandi-001193 | dandi | Shao IFG syntax/semantics high gamma | ok | 10 subj; 1 file(s); 256 ch @ 400 Hz; 74 s; 0 events in 0 classes; electrodes none;  | 17.7 |
-| dandi-000623 | dandi | Keles/Rutishauser movie watching (CS62) | ok | 1 subj; 1 file(s); 56 ch @ 1000 Hz; 600 s; 19 events in 2 classes; electrodes 56 (unknown); kappa nan (n=18) | 54.6 |
+| dandi-000623 | dandi | Keles/Rutishauser movie watching (CS62) | ok | 1 subj; 1 file(s); 56 ch @ 1000 Hz; 600 s; 19 events in 2 classes; electrodes 56 (unknown); kappa undefined (2/2 folds single-class, n=18) | 7.9 |
 | dandi-000574 | dandi | Rutishauser verbal WM + iEEG (sub-05 ses-01) | ok | 1 subj; 1 file(s); 32 ch @ 32000 Hz; 400 s; 150 events in 15 classes; electrodes 32 (unknown); kappa 0.02 (n=120) | 64.4 |
 | dandi-000576 | dandi | Rutishauser amygdala aversive stimuli | ok | 9 subj; 1 file(s); 2 ch @ 2000 Hz; 442 s; 17 events in 2 classes; electrodes 2 (unknown); kappa -0.25 (n=17) | 8.0 |
 | dandi-001535 | dandi | Natraj/Ganguly long-term ECoG BCI | unsupported | ValueError: No ElectricalSeries in /mnt/archive/home/yyu2024/moecog_data/dandi/001535/sub-BRAVO1/sub-BRAVO1.nwb | 67.4 |
@@ -115,10 +115,10 @@ Status: 93 ok, 3 error, 12 unsupported, 22 blocked, 0 pending out of 130 entries
 | peterson-reach | figshare | Peterson naturalistic reach epochs (subj 01 day 3) | ok | 1 subj; 1 file(s); 94 ch @ 500 Hz; 1716 s; 156 events in 1 classes; electrodes none;  | 0.8 |
 | peterson-pose | figshare | Peterson ECoG + arm pose (EC02) | ok | 1 subj; 1 file(s); 87 ch @ 250 Hz; 1672 s; 418 events in 1 classes; electrodes none;  | 0.6 |
 | rogers-uecog | figshare | Rogers submillimeter µECoG windows (S2) | ok | 1 subj; 1 file(s); 44 ch @ 4000 Hz; 652 s; 326 events in 1 classes; electrodes none;  | 10.5 |
-| verwoert-speech | osf | Verwoert single-word production sEEG (iBIDS) | error | BadZipFile: File is not a zip file | 0.6 |
+| verwoert-speech | osf | Verwoert single-word production sEEG (iBIDS) | ok | 10 subj; 1 file(s); 127 ch @ 1024 Hz; 300 s; 199 events in 2 classes; electrodes none; kappa 0.53 (n=199) | 12.1 |
 | merk-gripforce | dataverse | Merk grip-force ECoG + STN (Dataverse) | ok | 16 subj; 4 file(s); 10 ch @ 1000 Hz; 130 s; 0 events in 0 classes; electrodes none;  | 25.3 |
-| duin | huggingface | Du-IN Mandarin word sEEG (sub 001 run 1) | error | ModuleNotFoundError: No module named 'utils.DotDict'; 'utils' is not a package | 0.0 |
-| swec | huggingface | SWEC long-term iEEG (ID01 part 1) | error | OSError: Can't synchronously read data (can't open directory (/usr/local/hdf5/lib/plugin). Please verify its existence) | 0.1 |
+| duin | huggingface | Du-IN Mandarin word sEEG (sub 001 run 1) | ok | 1 subj; 1 file(s); 104 ch @ 1000 Hz; 1257 s; 419 events in 15 classes; electrodes none; kappa 0.02 (n=419) | 20.9 |
+| swec | huggingface | SWEC long-term iEEG (ID01 part 1) | ok | 1 subj; 1 file(s); 88 ch @ 512 Hz; 600 s; 0 events in 0 classes; electrodes none;  | 0.7 |
 | omni-edf | huggingface | Omni-iEEG raw EDF (Pt1) | ok | 1 subj; 1 file(s); 38 ch @ 2000 Hz; 601 s; 3 events in 3 classes; electrodes none;  | 0.5 |
 | mindeye-ieeg | huggingface | mindeye iEEG NSD high-frequency broadband | ok | 1 subj; 1 file(s); 130 ch @ 1 Hz; 9 s; 0 events in 0 classes; electrodes none;  | 2.1 |
 | braintreebank | braintreebank | Brain Treebank (sub_1 trial000) | ok | 1 subj; 1 file(s); 156 ch @ 2048 Hz; 600 s; 0 events in 0 classes; electrodes none;  | 105.2 |

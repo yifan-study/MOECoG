@@ -429,6 +429,18 @@ class VerwoertSpeech(_SimpleDataset):
         out = {}
         for path in self.data_path(subject):
             raw, meta, einfo = read_nwb_raw(path, channel_types=("ecog", "seeg", "ieeg"))
+            chans = list(path.parent.glob(f"sub-{subject}*_channels.tsv"))
+            if chans and meta.get("series_type") == "TimeSeries":
+                # the NWB carries no electrodes table: take names and types from the BIDS sidecar
+                import pandas as pd
+
+                cdf = pd.read_csv(chans[0], sep="\t")
+                if len(cdf) == len(raw.ch_names) and "name" in cdf.columns:
+                    names = [str(n) for n in cdf["name"]]
+                    raw.rename_channels(dict(zip(raw.ch_names, names)))
+                    if "type" in cdf.columns:
+                        raw.set_channel_types({n: ("ecog" if str(t).upper() in ("ECOG", "SEEG", "IEEG") else "misc")
+                                               for n, t in zip(names, cdf["type"])}, verbose=False)
             ev = list(path.parent.glob(f"sub-{subject}*_events.tsv"))
             if ev:
                 import pandas as pd

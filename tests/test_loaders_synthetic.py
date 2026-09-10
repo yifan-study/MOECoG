@@ -141,3 +141,25 @@ def test_download_helper_file_url_and_size_check(tmp_path):
     # a size mismatch is reported after the retries are exhausted
     with pytest.raises(OSError, match="failed after"):
         _download(url, tmp_path / "bad.bin", expected_size=1, retries=2)
+
+
+def test_read_nwb_raw_plain_timeseries(tmp_path):
+    """Deposits like Verwoert 2022 store the voltage as a 2-D TimeSeries named iEEG, without electrodes."""
+    pytest.importorskip("pynwb")
+    from datetime import datetime, timezone
+
+    from pynwb import NWBHDF5IO, NWBFile, TimeSeries
+
+    from moecog.datasets.nwb import read_nwb_raw
+
+    nwb = NWBFile(session_description="plain", identifier="ts1", session_start_time=datetime.now(timezone.utc))
+    data = np.random.default_rng(0).standard_normal((500, 5))
+    nwb.add_acquisition(TimeSeries(name="iEEG", data=data, unit="uV", rate=250.0, description="sEEG data"))
+    nwb.add_acquisition(TimeSeries(name="Audio", data=np.zeros(4000), unit="a.u.", rate=2000.0))
+    path = tmp_path / "plain.nwb"
+    with NWBHDF5IO(str(path), "w") as io:
+        io.write(nwb)
+    raw, meta, einfo = read_nwb_raw(path)
+    assert meta["series"] == "iEEG" and meta["series_type"] == "TimeSeries"
+    assert raw.get_data().shape == (5, 500) and raw.info["sfreq"] == 250.0
+    assert raw.get_channel_types() == ["ecog"] * 5

@@ -129,7 +129,7 @@ Motor-specific, public, well-documented.
 - **FingerFlex** — Convolutional encoder-decoder (Lomtev et al.)
 - **HTNet** — Transfer learning across subjects via Hilbert transform
 
-## Status (2026-09-09)
+## Status (2026-09-10)
 
 | Layer | Implemented | Notes |
 |---|---|---|
@@ -138,9 +138,9 @@ Motor-specific, public, well-documented.
 | Evaluations | `WithinSubjectCV` (chronological folds with purge for regression; contiguous or stratified-shuffled trial folds for classification) | Cross-session, cross-subject, temporal-stability still to do |
 | Pipelines | `LogBandPower`, `HighGammaPower`; `classification_baselines()`, `regression_baselines()` | Deep decoders (braindecode, PACE zoo) still to do |
 | Preprocessing | `CommonAverageReference`, `NotchFilter`, `HilbertEnvelope`, `chang_high_gamma()`; paradigms take `raw_steps=[...]` | Survey of the field's pipelines in `docs/preprocessing_catalog.md` |
-| Other datasets | `BIDSiEEGDataset` (any BIDS-iEEG / OpenNeuro dataset, download via openneuro-py) with named entries `HermesVisualECoG`, `PodcastECoG`, `FilmIEEG`, `VisualECoG` | Catalog of ~90 obtainable datasets in `docs/dataset_catalog.md`; NWB loader next |
+| Other datasets | `BIDSiEEGDataset` (any BIDS-iEEG / OpenNeuro dataset, download via openneuro-py, `max_runs` memory guard) with named entries `HermesVisualECoG`, `PodcastECoG`, `FilmIEEG`, `VisualECoG` | Catalog of ~90 obtainable datasets in `docs/dataset_catalog.md` |
 | Results | `results/*.csv` + `scripts/build_leaderboard.py` -> `docs/leaderboard.md` | first Miller baselines posted |
-| Catalog registry | `moecog.catalog.ENTRIES` (about 120 entries: every OpenNeuro iEEG dataset with a one-subject subset, DANDI dandisets, Miller experiments, BCI competitions, figshare, OSF, Dataverse, Hugging Face, Brain Treebank, plus blocked entries with the access reason) | `scripts/smoke_test.py` downloads, loads and scores each entry; `docs/smoke_tests.md` is the outcome table |
+| Catalog registry | `moecog.catalog.ENTRIES` (130 entries: every OpenNeuro iEEG dataset with a one-subject subset, DANDI dandisets, Miller experiments, BCI competitions, figshare, OSF, Dataverse, Hugging Face, Brain Treebank, plus blocked entries with the access reason) | `scripts/smoke_test.py` downloads, loads and scores each entry; `docs/smoke_tests.md` is the outcome table (96 ok, 0 error, 12 unsupported, 22 blocked, 0 pending of 130 entries) |
 | More loaders | `DANDIDataset`/`read_nwb_raw` (NWB), `BCICompIV4`, `BCICompIII1`, `PetersonMoveRest`/`PetersonReach`/`PetersonPose`, `RogersMicroECoG`, `VerwoertSpeech`, `MerkGripForce`, `DuIN`, `SWEC`, `OmniEDF`, `MindEyeIEEG`, `BrainTreebank` | datasets may deliver `mne.Epochs` instead of `Raw` |
 
 Everything above is covered by `pytest -m "not slow"` on synthetic data; the

@@ -94,7 +94,9 @@ def run_entry(entry, out_dir: Path, quick=True):
                     }
     except Exception as e:  # noqa: BLE001
         msg = str(e)
-        rec["status"] = "unsupported" if ("No ElectricalSeries" in msg or "MEF3" in msg) else "error"
+        unsupported_markers = ("No ElectricalSeries", "MEF3", "nothing else readable", "no readable ieeg files",
+                               "no intracranial channels")
+        rec["status"] = "unsupported" if any(m in msg for m in unsupported_markers) else "error"
         rec["error"] = f"{type(e).__name__}: {msg[:300]}"
         rec["traceback"] = traceback.format_exc()[-1500:]
     rec["seconds"] = round(time.time() - t0, 1)

@@ -1,0 +1,27 @@
+{
+ "id": "ds004703",
+ "title": "PassiveListen",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:38:02",
+ "subjects_found": 1,
+ "subject_list": [
+  "SD010"
+ ],
+ "sessions": {
+  "01/PassiveListen": {
+   "kind": "raw",
+   "sfreq": 1024.0,
+   "n_ecog": 110,
+   "n_misc": 140,
+   "duration_s": 1043.6240234375,
+   "n_annotations": 4531,
+   "classes": {
+    "n/a": 4531
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 3.6
+}

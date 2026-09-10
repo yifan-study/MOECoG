@@ -1,0 +1,30 @@
+{
+ "id": "ds005169",
+ "title": "Dataset of intracranial EEG during cortical stimulation evoking visual effects",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:46:36",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "01/dcs": {
+   "kind": "raw",
+   "sfreq": 4096.0,
+   "n_ecog": 29,
+   "n_misc": 0,
+   "duration_s": 21.000244140625,
+   "n_annotations": 3,
+   "classes": {
+    "n/a": 3
+   }
+  }
+ },
+ "electrodes": {
+  "n": 67,
+  "frame": "scanras"
+ },
+ "event_id": null,
+ "seconds": 6.2
+}

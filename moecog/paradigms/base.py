@@ -139,7 +139,7 @@ class BaseClassificationParadigm(BaseParadigm):
         epochs = epochs[keep]
         tmax = self.tmax if self.tmax is not None else epochs.tmax
         epochs.crop(max(self.tmin, epochs.tmin), min(tmax, epochs.tmax))
-        picks = mne.pick_types(epochs.info, ecog=True)
+        picks = mne.pick_types(epochs.info, ecog=True, exclude=[])
         X = epochs.get_data(picks=picks, copy=False)
         inv = {v: k for k, v in epochs.event_id.items()}
         y = np.array([inv[e] for e in epochs.events[:, 2]])
@@ -161,7 +161,7 @@ class BaseClassificationParadigm(BaseParadigm):
         if len(events) == 0:
             return None
         tmax = self.tmax if self.tmax is not None else dataset.interval[1]
-        picks = mne.pick_types(raw.info, ecog=True)
+        picks = mne.pick_types(raw.info, ecog=True, exclude=[])
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
             epochs = mne.Epochs(
@@ -241,7 +241,7 @@ class BaseRegressionParadigm(BaseParadigm):
                         targets = targets[:, None]
 
                     sfreq = raw.info["sfreq"]
-                    data = raw.get_data(picks="ecog")
+                    data = raw.get_data(picks=mne.pick_types(raw.info, ecog=True, exclude=[]))
                     win = int(round(self.window_size * sfreq))
                     stride = max(1, int(round(self.window_stride * sfreq)))
                     n_windows = (data.shape[1] - win) // stride + 1

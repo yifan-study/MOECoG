@@ -1,0 +1,109 @@
+{
+ "id": "ds004819",
+ "title": "Flexible, Scalable, High Channel Count Stereo-Electrode for Recording in the Human Brain",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:42:33",
+ "subjects_found": 1,
+ "subject_list": [
+  "SS01MicrosEEG"
+ ],
+ "sessions": {
+  "postimp/BaselineandStimRecordingRAWEDF_01": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 24.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_02": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 23.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_03": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 24.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_04": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 24.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_05": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 22.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_06": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 23.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_07": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 22.999966666666666,
+   "n_annotations": 20,
+   "classes": {
+    "n/a": 20
+   }
+  },
+  "postimp/BaselineandStimRecordingRAWEDF_08": {
+   "kind": "raw",
+   "sfreq": 30000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 18.999966666666666,
+   "n_annotations": 19,
+   "classes": {
+    "n/a": 19
+   }
+  }
+ },
+ "electrodes": {
+  "n": 64,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "n/a": 1
+ },
+ "seconds": 54.8
+}

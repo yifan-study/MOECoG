@@ -1,0 +1,83 @@
+{
+ "id": "ds004770",
+ "title": "iEEG on children during gameplay",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:38:32",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "base/game_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 126,
+   "n_misc": 0,
+   "duration_s": 3755.02,
+   "n_annotations": 62,
+   "classes": {
+    "Marker: 2 hr review": 1,
+    "Marker: 601": 60,
+    "Marker: A1+A2 OFF": 1
+   }
+  },
+  "task/game_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 126,
+   "n_misc": 0,
+   "duration_s": 1898.115,
+   "n_annotations": 342,
+   "classes": {
+    "Marker: 101": 58,
+    "Marker: 201": 29,
+    "Marker: 301": 28,
+    "Marker: 401": 166,
+    "Marker: 501": 50,
+    "Marker: A1+A2 OFF": 1,
+    "Marker: P_COMMENT": 1,
+    "Marker: ebb ": 1,
+    "Marker: f1": 1,
+    "Marker: flaker 3": 1,
+    "Marker: memory m1": 1,
+    "Marker: speed": 1,
+    "Marker: speed3": 1,
+    "Marker: trial 2": 1,
+    "Marker: trial 4": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 97,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "Marker: 101": 1,
+  "Marker: 201": 2,
+  "Marker: 301": 3,
+  "Marker: 401": 4,
+  "Marker: 501": 5,
+  "Marker: A1+A2 OFF": 6,
+  "Marker: P_COMMENT": 7,
+  "Marker: ebb ": 8,
+  "Marker: f1": 9,
+  "Marker: flaker 3": 10,
+  "Marker: memory m1": 11,
+  "Marker: speed": 12,
+  "Marker: speed3": 13,
+  "Marker: trial 2": 14,
+  "Marker: trial 4": 15,
+  "Marker: trial 5": 16
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.40121599549200493,
+  "n_trials": 342,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 241.8
+}

@@ -254,6 +254,16 @@ class BIDSiEEGDataset(BaseECoGDataset):
                        if ch in ecog and t != "ecog"}
                 if fix:
                     r.set_channel_types(fix, verbose=False)
+        # channels marked bad in any run (channels.tsv status) are dropped from every run
+        bads = set()
+        for r in raws:
+            bads |= set(r.info["bads"])
+        for r in raws:
+            drop = [ch for ch in r.ch_names if ch in bads]
+            if drop and len(drop) < len(r.ch_names):
+                r.drop_channels(drop)
+            r.info["bads"] = []
+        self._dropped_bads = sorted(bads)
             if self._events is None:
                 # discover labels from annotations
                 labels = sorted(set(raw.annotations.description))

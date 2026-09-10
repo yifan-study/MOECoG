@@ -1,0 +1,44 @@
+{
+ "id": "ds004859",
+ "title": "iEEG on children during Stroop task",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:43:28",
+ "subjects_found": 1,
+ "subject_list": [
+  "001"
+ ],
+ "sessions": {
+  "01/stroop_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 108,
+   "n_misc": 0,
+   "duration_s": 1039.999,
+   "n_annotations": 264,
+   "classes": {
+    "101                 ": 40,
+    "102                 ": 40,
+    "201                 ": 40,
+    "202                 ": 40,
+    "301                 ": 40,
+    "302                 ": 40,
+    "A1+A2 OFF           ": 1,
+    "Blue?, OK, DO NOT RE": 1,
+    "DO NOT READ         ": 1,
+    "Lets practice togeth": 1,
+    "Next is the last one": 1,
+    "OK, thats good      ": 1,
+    "REC START 128 grd EE": 1,
+    "Tired?-No, the last ": 1,
+    "all right           ": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 108,
+  "frame": "unknown"
+ },
+ "event_id": null,
+ "seconds": 31.6
+}

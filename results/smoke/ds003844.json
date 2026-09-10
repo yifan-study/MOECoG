@@ -3,7 +3,7 @@
  "title": "RESPect",
  "source": "openneuro",
  "status": "error",
- "started": "2026-09-09 23:33:20",
+ "started": "2026-09-09 23:37:45",
  "subjects_found": 1,
  "subject_list": [
   "RESP0059"
@@ -12,8 +12,8 @@
   "SITUATION1A/acute": {
    "kind": "raw",
    "sfreq": 2048.0002097152214,
-   "n_ecog": 26,
-   "n_misc": 5,
+   "n_ecog": 31,
+   "n_misc": 0,
    "duration_s": 324.9931307832,
    "n_annotations": 20,
    "classes": {
@@ -24,8 +24,8 @@
   "SITUATION1B/acute": {
    "kind": "raw",
    "sfreq": 2048.0002097152214,
-   "n_ecog": 26,
-   "n_misc": 5,
+   "n_ecog": 31,
+   "n_misc": 0,
    "duration_s": 312.490202376,
    "n_annotations": 2,
    "classes": {
@@ -35,8 +35,8 @@
   "SITUATION2A/acute": {
    "kind": "raw",
    "sfreq": 2048.0002097152214,
-   "n_ecog": 11,
-   "n_misc": 20,
+   "n_ecog": 31,
+   "n_misc": 0,
    "duration_s": 387.65328061680003,
    "n_annotations": 27,
    "classes": {
@@ -47,8 +47,8 @@
   "SITUATION3A/acute": {
    "kind": "raw",
    "sfreq": 2048.0002097152214,
-   "n_ecog": 20,
-   "n_misc": 11,
+   "n_ecog": 31,
+   "n_misc": 0,
    "duration_s": 779.0814631908,
    "n_annotations": 6,
    "classes": {
@@ -59,8 +59,8 @@
   "SITUATION4A/acute": {
    "kind": "raw",
    "sfreq": 2048.0002097152214,
-   "n_ecog": 20,
-   "n_misc": 11,
+   "n_ecog": 31,
+   "n_misc": 0,
    "duration_s": 594.6088258308,
    "n_annotations": 13,
    "classes": {
@@ -79,5 +79,5 @@
  },
  "error": "ValueError: ds003844: subjects have different channel counts [10, 18, 19, 24, 25]; ECoG montages are patient-specific, so load one subject at a time (evaluations do this by default) or align channels first.",
  "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 83, in run_entry\n    res = WithinSubjectCV(paradigm, [ds], n_splits=3).process(pipes, subjects=[subject])\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/evaluations/base.py\", line 65, in process\n    X, y, metadata = self.paradigm.get_data(dataset, subjects=group)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/paradigms/base.py\", line 204, in get_data\n    return _stack_subjects(all_X, all_y, all_meta, dataset)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/paradigms/base.py\", line 17, in _stack_subjects\n    raise ValueError(\nValueError: ds003844: subjects have different channel counts [10, 18, 19, 24, 25]; ECoG montages are patient-specific, so load one subject at a time (evaluations do this by default) or align channels first.\n",
- "seconds": 11.6
+ "seconds": 10.9
 }

@@ -1,0 +1,14 @@
+{
+ "id": "ds004944",
+ "title": "Dataset of BCI2000-compatible intraoperative ECoG with neuromorphic encoding",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-09 23:44:00",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "error": "IndexError: index 0 is out of bounds for axis 0 with size 0",
+ "traceback": "ith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 234, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 202, in _load_file\n    raw = read_raw_bids(bp, verbose=False, on_ch_mismatch=\"warn\")\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<decorator-gen-360>\", line 10, in read_raw_bids\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 1435, in read_raw_bids\n    raw, event_id = _handle_events_reading(\n                    ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 971, in _handle_events_reading\n    annotations_info, filtered_events_dict = _make_annotation_kwargs(\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne_bids/read.py\", line 700, in _make_annotation_kwargs\n    event_id = {descrs[0]: 1}\n                ~~~~~~^^^\nIndexError: index 0 is out of bounds for axis 0 with size 0\n",
+ "seconds": 8.3
+}

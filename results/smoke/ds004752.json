@@ -1,0 +1,65 @@
+{
+ "id": "ds004752",
+ "title": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients perf",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:38:05",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "01/verbalWM_01": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 399.9995,
+   "n_annotations": 50,
+   "classes": {
+    "n/a": 50
+   }
+  },
+  "02/verbalWM_01": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 399.9995,
+   "n_annotations": 50,
+   "classes": {
+    "n/a": 50
+   }
+  },
+  "03/verbalWM_01": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 399.9995,
+   "n_annotations": 50,
+   "classes": {
+    "n/a": 50
+   }
+  },
+  "04/verbalWM_01": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 399.9995,
+   "n_annotations": 50,
+   "classes": {
+    "n/a": 50
+   }
+  }
+ },
+ "electrodes": {
+  "n": 48,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "n/a": 1
+ },
+ "seconds": 26.3
+}

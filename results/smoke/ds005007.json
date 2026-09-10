@@ -1,0 +1,44 @@
+{
+ "id": "ds005007",
+ "title": "Auditory naming task with questions that begin or end with a wh-interrogative",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-09 23:46:09",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "01/namingtask_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 83,
+   "n_misc": 0,
+   "duration_s": 880.014,
+   "n_annotations": 443,
+   "classes": {
+    "502": 1,
+    "811": 32,
+    "812": 32,
+    "999": 95,
+    "A1+A2 OFF": 1,
+    "E101": 16,
+    "E302": 16,
+    "E401": 12,
+    "E501": 16,
+    "E702": 16,
+    "E801": 15,
+    "N101": 16,
+    "N302": 16,
+    "N401": 16,
+    "N501": 16
+   }
+  }
+ },
+ "electrodes": {
+  "n": 64,
+  "frame": "unknown"
+ },
+ "event_id": null,
+ "seconds": 22.6
+}

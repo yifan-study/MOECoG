@@ -1,0 +1,2506 @@
+{
+ "id": "ds006890",
+ "title": "Longitudinal Multitask Wireless ECoG Data from Two Fully Implanted Macaca fuscata",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:54:33",
+ "max_runs": 2,
+ "subjects_found": 1,
+ "subject_list": [
+  "monkeyc"
+ ],
+ "sessions": {
+  "day05/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 717.999,
+   "n_annotations": 53,
+   "classes": {
+    "movement_done": 53
+   }
+  },
+  "day05/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 296.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day06/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 302.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day06/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 101.999,
+   "n_annotations": 272,
+   "classes": {
+    "ssep_stim": 272
+   }
+  },
+  "day08/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 302.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day102/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 183.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day105/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day105/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 299.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day110/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day113/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day117/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 183.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day120/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day123/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day123/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 191.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day13/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 9.999,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "day13/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 294.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day130/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 104.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day130/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day138/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 188.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day141/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day141/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 340.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day147/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 188.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day152/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day159/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 366.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day159/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 363.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day162/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 367.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day162/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 363.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day166/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 364.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day166/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 356.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day169/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 363.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day169/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 362.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day174/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day174/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 186.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day180/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 365.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day180/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 352.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day183/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 216.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day183/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day187/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 20.999,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "day19/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 94.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day190/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 121.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day190/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day195/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 154.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day197/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 674.999,
+   "n_annotations": 41,
+   "classes": {
+    "movement_start": 41
+   }
+  },
+  "day197/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 790.999,
+   "n_annotations": 47,
+   "classes": {
+    "movement_start": 47
+   }
+  },
+  "day208/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 671.999,
+   "n_annotations": 28,
+   "classes": {
+    "movement_start": 28
+   }
+  },
+  "day208/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 790.999,
+   "n_annotations": 44,
+   "classes": {
+    "movement_start": 44
+   }
+  },
+  "day211/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1127.999,
+   "n_annotations": 77,
+   "classes": {
+    "movement_start": 77
+   }
+  },
+  "day211/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 682.999,
+   "n_annotations": 44,
+   "classes": {
+    "movement_start": 44
+   }
+  },
+  "day218/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1056.999,
+   "n_annotations": 75,
+   "classes": {
+    "movement_start": 75
+   }
+  },
+  "day218/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1256.999,
+   "n_annotations": 96,
+   "classes": {
+    "movement_start": 96
+   }
+  },
+  "day22/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 148.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day225/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 359.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day225/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 354.999,
+   "n_annotations": 30,
+   "classes": {
+    "stimulus_on": 30
+   }
+  },
+  "day229/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 578.999,
+   "n_annotations": 30,
+   "classes": {
+    "movement_start": 30
+   }
+  },
+  "day229/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 492.999,
+   "n_annotations": 34,
+   "classes": {
+    "movement_start": 34
+   }
+  },
+  "day237/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 730.999,
+   "n_annotations": 29,
+   "classes": {
+    "movement_start": 29
+   }
+  },
+  "day237/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 193.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day244/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1550.999,
+   "n_annotations": 105,
+   "classes": {
+    "movement_start": 105
+   }
+  },
+  "day244/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day246/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 468.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day246/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 467.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day250/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 187.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day250/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day253/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1498.999,
+   "n_annotations": 75,
+   "classes": {
+    "movement_start": 75
+   }
+  },
+  "day253/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day257/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day257/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 125.999,
+   "n_annotations": 199,
+   "classes": {
+    "ssep_stim": 199
+   }
+  },
+  "day26/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 98.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day260/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 411.999,
+   "n_annotations": 27,
+   "classes": {
+    "movement_start": 27
+   }
+  },
+  "day260/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 372.999,
+   "n_annotations": 30,
+   "classes": {
+    "movement_start": 30
+   }
+  },
+  "day265/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 496.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day265/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 517.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day267/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1643.999,
+   "n_annotations": 80,
+   "classes": {
+    "movement_start": 80
+   }
+  },
+  "day267/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day274/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 998.999,
+   "n_annotations": 53,
+   "classes": {
+    "movement_start": 53
+   }
+  },
+  "day274/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 286.999,
+   "n_annotations": 16,
+   "classes": {
+    "movement_start": 16
+   }
+  },
+  "day277/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1526.999,
+   "n_annotations": 57,
+   "classes": {
+    "movement_start": 57
+   }
+  },
+  "day277/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 208.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day279/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 735.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day279/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 488.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day281/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 366.999,
+   "n_annotations": 14,
+   "classes": {
+    "movement_start": 14
+   }
+  },
+  "day281/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 744.999,
+   "n_annotations": 28,
+   "classes": {
+    "movement_start": 28
+   }
+  },
+  "day284/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 611.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day284/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 286.999,
+   "n_annotations": 23,
+   "classes": {
+    "stimulus_on": 23
+   }
+  },
+  "day286/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 2480.999,
+   "n_annotations": 131,
+   "classes": {
+    "movement_start": 131
+   }
+  },
+  "day286/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 300.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day288/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day293/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 468.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day293/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 261.999,
+   "n_annotations": 21,
+   "classes": {
+    "stimulus_on": 21
+   }
+  },
+  "day295/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 332.999,
+   "n_annotations": 16,
+   "classes": {
+    "movement_start": 16
+   }
+  },
+  "day295/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1075.999,
+   "n_annotations": 54,
+   "classes": {
+    "movement_start": 54
+   }
+  },
+  "day298/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1370.999,
+   "n_annotations": 91,
+   "classes": {
+    "movement_start": 91
+   }
+  },
+  "day298/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 249.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day300/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day300/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 72.999,
+   "n_annotations": 218,
+   "classes": {
+    "ssep_stim": 218
+   }
+  },
+  "day301/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 464.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day301/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 632.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day305/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 274.999,
+   "n_annotations": 12,
+   "classes": {
+    "movement_start": 12
+   }
+  },
+  "day305/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1744.999,
+   "n_annotations": 80,
+   "classes": {
+    "movement_start": 80
+   }
+  },
+  "day307/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 474.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day307/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 475.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day308/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1735.999,
+   "n_annotations": 102,
+   "classes": {
+    "movement_start": 102
+   }
+  },
+  "day308/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 202.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day312/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1162.999,
+   "n_annotations": 80,
+   "classes": {
+    "movement_start": 80
+   }
+  },
+  "day312/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 794.999,
+   "n_annotations": 46,
+   "classes": {
+    "movement_start": 46
+   }
+  },
+  "day315/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 491.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day315/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 468.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day319/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1565.999,
+   "n_annotations": 94,
+   "classes": {
+    "movement_start": 94
+   }
+  },
+  "day319/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 256.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day321/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 455.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day321/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 487.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day322/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 320.999,
+   "n_annotations": 15,
+   "classes": {
+    "movement_start": 15
+   }
+  },
+  "day322/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 870.999,
+   "n_annotations": 35,
+   "classes": {
+    "movement_start": 35
+   }
+  },
+  "day326/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1271.999,
+   "n_annotations": 86,
+   "classes": {
+    "movement_start": 86
+   }
+  },
+  "day326/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 205.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day328/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 614.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day328/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 463.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day33/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 372.999,
+   "n_annotations": 45,
+   "classes": {
+    "movement_done": 45
+   }
+  },
+  "day33/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 325.999,
+   "n_annotations": 41,
+   "classes": {
+    "movement_done": 41
+   }
+  },
+  "day333/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 186.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day334/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 509.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day334/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 491.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day335/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day335/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 69.999,
+   "n_annotations": 225,
+   "classes": {
+    "ssep_stim": 225
+   }
+  },
+  "day341/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1220.999,
+   "n_annotations": 119,
+   "classes": {
+    "movement_start": 119
+   }
+  },
+  "day341/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1345.999,
+   "n_annotations": 101,
+   "classes": {
+    "movement_start": 101
+   }
+  },
+  "day342/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 498.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day342/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 482.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day343/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1355.999,
+   "n_annotations": 111,
+   "classes": {
+    "movement_start": 111
+   }
+  },
+  "day343/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 247.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day348/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 504.999,
+   "n_annotations": 47,
+   "classes": {
+    "movement_start": 47
+   }
+  },
+  "day348/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 861.999,
+   "n_annotations": 48,
+   "classes": {
+    "movement_start": 48
+   }
+  },
+  "day350/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 483.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day350/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 481.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day355/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 474.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day355/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 469.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day356/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 524.999,
+   "n_annotations": 33,
+   "classes": {
+    "movement_start": 33
+   }
+  },
+  "day356/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 299.999,
+   "n_annotations": 29,
+   "classes": {
+    "movement_start": 29
+   }
+  },
+  "day36/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 148.999,
+   "n_annotations": 18,
+   "classes": {
+    "movement_done": 18
+   }
+  },
+  "day36/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 372.999,
+   "n_annotations": 41,
+   "classes": {
+    "movement_done": 41
+   }
+  },
+  "day362/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day362/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 63.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day365/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 567.999,
+   "n_annotations": 31,
+   "classes": {
+    "movement_start": 31
+   }
+  },
+  "day365/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 750.999,
+   "n_annotations": 22,
+   "classes": {
+    "movement_start": 22
+   }
+  },
+  "day368/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1942.999,
+   "n_annotations": 150,
+   "classes": {
+    "movement_start": 150
+   }
+  },
+  "day368/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 903.999,
+   "n_annotations": 43,
+   "classes": {
+    "movement_start": 43
+   }
+  },
+  "day369/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 379.999,
+   "n_annotations": 37,
+   "classes": {
+    "movement_start": 37
+   }
+  },
+  "day369/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 528.999,
+   "n_annotations": 42,
+   "classes": {
+    "movement_start": 42
+   }
+  },
+  "day371/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day371/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 72.999,
+   "n_annotations": 224,
+   "classes": {
+    "ssep_stim": 224
+   }
+  },
+  "day378/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day379/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day383/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day384/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day385/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 449.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day385/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 631.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day386/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day389/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day39/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 279.999,
+   "n_annotations": 17,
+   "classes": {
+    "movement_done": 17
+   }
+  },
+  "day39/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 293.999,
+   "n_annotations": 28,
+   "classes": {
+    "movement_done": 28
+   }
+  },
+  "day393/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day396/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 410.999,
+   "n_annotations": 36,
+   "classes": {
+    "movement_start": 36
+   }
+  },
+  "day396/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 601.999,
+   "n_annotations": 36,
+   "classes": {
+    "movement_start": 36
+   }
+  },
+  "day397/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 455.999,
+   "n_annotations": 19,
+   "classes": {
+    "movement_start": 19
+   }
+  },
+  "day397/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 604.999,
+   "n_annotations": 31,
+   "classes": {
+    "movement_start": 31
+   }
+  },
+  "day400/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 171.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day403/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1815.999,
+   "n_annotations": 69,
+   "classes": {
+    "movement_start": 69
+   }
+  },
+  "day403/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1034.999,
+   "n_annotations": 45,
+   "classes": {
+    "movement_start": 45
+   }
+  },
+  "day404/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 240.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day404/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 216.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day407/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1737.999,
+   "n_annotations": 38,
+   "classes": {
+    "movement_start": 38
+   }
+  },
+  "day407/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 729.999,
+   "n_annotations": 24,
+   "classes": {
+    "movement_start": 24
+   }
+  },
+  "day41/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 378.999,
+   "n_annotations": 40,
+   "classes": {
+    "movement_done": 40
+   }
+  },
+  "day41/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 349.999,
+   "n_annotations": 40,
+   "classes": {
+    "movement_done": 40
+   }
+  },
+  "day410/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day410/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 66.999,
+   "n_annotations": 232,
+   "classes": {
+    "ssep_stim": 232
+   }
+  },
+  "day413/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 552.999,
+   "n_annotations": 42,
+   "classes": {
+    "movement_start": 42
+   }
+  },
+  "day413/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 612.999,
+   "n_annotations": 43,
+   "classes": {
+    "movement_start": 43
+   }
+  },
+  "day418/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 547.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day418/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 480.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day420/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 178.999,
+   "n_annotations": 5,
+   "classes": {
+    "movement_start": 5
+   }
+  },
+  "day420/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 2808.999,
+   "n_annotations": 111,
+   "classes": {
+    "movement_start": 111
+   }
+  },
+  "day426/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 2822.999,
+   "n_annotations": 99,
+   "classes": {
+    "movement_start": 99
+   }
+  },
+  "day426/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 647.999,
+   "n_annotations": 44,
+   "classes": {
+    "movement_start": 44
+   }
+  },
+  "day427/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 182.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day432/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 461.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day432/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 464.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day433/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 697.999,
+   "n_annotations": 32,
+   "classes": {
+    "movement_start": 32
+   }
+  },
+  "day433/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 752.999,
+   "n_annotations": 37,
+   "classes": {
+    "movement_start": 37
+   }
+  },
+  "day439/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1595.999,
+   "n_annotations": 110,
+   "classes": {
+    "movement_start": 110
+   }
+  },
+  "day439/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 632.999,
+   "n_annotations": 34,
+   "classes": {
+    "movement_start": 34
+   }
+  },
+  "day441/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day446/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 467.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day446/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 473.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day452/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1421.999,
+   "n_annotations": 117,
+   "classes": {
+    "movement_start": 117
+   }
+  },
+  "day452/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 968.999,
+   "n_annotations": 38,
+   "classes": {
+    "movement_start": 38
+   }
+  },
+  "day453/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 463.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day453/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 469.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day461/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day462/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 1144.999,
+   "n_annotations": 63,
+   "classes": {
+    "movement_start": 63
+   }
+  },
+  "day462/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 237.999,
+   "n_annotations": 13,
+   "classes": {
+    "movement_start": 13
+   }
+  },
+  "day466/listening_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 511.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day466/listening_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 532.999,
+   "n_annotations": 40,
+   "classes": {
+    "stimulus_on": 40
+   }
+  },
+  "day469/reaching_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 622.999,
+   "n_annotations": 37,
+   "classes": {
+    "movement_start": 37
+   }
+  },
+  "day469/reaching_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 638.999,
+   "n_annotations": 37,
+   "classes": {
+    "movement_start": 37
+   }
+  },
+  "day476/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 180.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day476/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 84.999,
+   "n_annotations": 223,
+   "classes": {
+    "ssep_stim": 223
+   }
+  },
+  "day48/sep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 63.999,
+   "n_annotations": 209,
+   "classes": {
+    "ssep_stim": 209
+   }
+  },
+  "day48/sep_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 38.999,
+   "n_annotations": 205,
+   "classes": {
+    "ssep_stim": 205
+   }
+  },
+  "day53/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 648.999,
+   "n_annotations": 57,
+   "classes": {
+    "movement_done": 57
+   }
+  },
+  "day53/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 529.999,
+   "n_annotations": 42,
+   "classes": {
+    "movement_done": 42
+   }
+  },
+  "day57/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 443.999,
+   "n_annotations": 49,
+   "classes": {
+    "movement_done": 49
+   }
+  },
+  "day57/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 698.999,
+   "n_annotations": 74,
+   "classes": {
+    "movement_done": 74
+   }
+  },
+  "day75/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 508.999,
+   "n_annotations": 40,
+   "classes": {
+    "movement_done": 40
+   }
+  },
+  "day75/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 341.999,
+   "n_annotations": 26,
+   "classes": {
+    "movement_done": 26
+   }
+  },
+  "day77/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day77/rest_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 184.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day82/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 577.999,
+   "n_annotations": 60,
+   "classes": {
+    "movement_done": 60
+   }
+  },
+  "day82/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 122.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day85/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  },
+  "day91/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 900.999,
+   "n_annotations": 86,
+   "classes": {
+    "movement_done": 86
+   }
+  },
+  "day91/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 539.999,
+   "n_annotations": 44,
+   "classes": {
+    "movement_done": 44
+   }
+  },
+  "day95/pressing_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 121.999,
+   "n_annotations": 11,
+   "classes": {
+    "movement_done": 11
+   }
+  },
+  "day95/pressing_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 887.999,
+   "n_annotations": 93,
+   "classes": {
+    "movement_done": 93
+   }
+  },
+  "day98/rest_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 31,
+   "n_misc": 2,
+   "duration_s": 181.999,
+   "n_annotations": 1,
+   "classes": {
+    "rest_start": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 32,
+  "frame": "other"
+ },
+ "event_id": {
+  "movement_done": 1,
+  "rest_start": 2,
+  "ssep_stim": 3,
+  "stimulus_on": 4,
+  "movement_start": 5
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.0,
+  "n_trials": 54,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 1220.4
+}

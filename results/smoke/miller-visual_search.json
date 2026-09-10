@@ -1,0 +1,46 @@
+{
+ "id": "miller-visual_search",
+ "title": "Miller library visual_search",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:15",
+ "subjects_found": 1,
+ "subject_list": [
+  "jm"
+ ],
+ "sessions": {
+  "0/vissearch": {
+   "sfreq": 1000.0,
+   "n_ecog": 8,
+   "n_misc": 0,
+   "duration_s": 510.399,
+   "n_annotations": 120,
+   "classes": {
+    "down": 30,
+    "left": 30,
+    "right": 30,
+    "up": 30
+   }
+  }
+ },
+ "electrodes": {
+  "n": 8,
+  "frame": "native"
+ },
+ "event_id": {
+  "right": 1,
+  "left": 2,
+  "down": 3,
+  "up": 4
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.15555555555555553,
+  "n_trials": 120,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 1.8
+}

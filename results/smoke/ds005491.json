@@ -1,0 +1,75 @@
+{
+ "id": "ds005491",
+ "title": "Categorized Free Recall with Open-Loop Stimulation at Encoding",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:08:57",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1016M"
+ ],
+ "sessions": {
+  "0/catFR2_bipolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 177,
+   "n_misc": 0,
+   "duration_s": 3498.998,
+   "n_annotations": 767,
+   "classes": {
+    "COUNTDOWN_END": 24,
+    "COUNTDOWN_START": 24,
+    "DISTRACT_END": 22,
+    "DISTRACT_START": 22,
+    "ORIENT": 23,
+    "PRACTICE_DISTRACT_END": 1,
+    "PRACTICE_DISTRACT_START": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_WORD": 12,
+    "PROB": 44,
+    "REC_END": 22,
+    "REC_START": 22,
+    "REC_WORD": 146,
+    "REC_WORD_VV": 2
+   }
+  }
+ },
+ "electrodes": {
+  "n": 128,
+  "frame": "talairach"
+ },
+ "event_id": {
+  "COUNTDOWN_END": 1,
+  "COUNTDOWN_START": 2,
+  "DISTRACT_END": 3,
+  "DISTRACT_START": 4,
+  "ORIENT": 5,
+  "PRACTICE_DISTRACT_END": 6,
+  "PRACTICE_DISTRACT_START": 7,
+  "PRACTICE_REC_END": 8,
+  "PRACTICE_REC_START": 9,
+  "PRACTICE_WORD": 10,
+  "PROB": 11,
+  "REC_END": 12,
+  "REC_START": 13,
+  "REC_WORD": 14,
+  "REC_WORD_VV": 15,
+  "SESS_START": 16,
+  "START": 17,
+  "STIM_ON": 18,
+  "STOP": 19,
+  "TRIAL": 20,
+  "WORD": 21
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.26539432797062185,
+  "n_trials": 723,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 31.6
+}

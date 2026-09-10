@@ -1,0 +1,14 @@
+{
+ "id": "dandi-001535",
+ "title": "Natraj/Ganguly long-term ECoG BCI",
+ "source": "dandi",
+ "status": "unsupported",
+ "started": "2026-09-10 04:22:00",
+ "subjects_found": 1,
+ "subject_list": [
+  "BRAVO1"
+ ],
+ "error": "ValueError: No ElectricalSeries in /mnt/archive/home/yyu2024/moecog_data/dandi/001535/sub-BRAVO1/sub-BRAVO1.nwb",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/nwb.py\", line 256, in _get_single_subject_data\n    raw, meta, einfo = read_nwb_raw(\n                       ^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/nwb.py\", line 107, in read_nwb_raw\n    raise ValueError(f\"No ElectricalSeries in {path}\")\nValueError: No ElectricalSeries in /mnt/archive/home/yyu2024/moecog_data/dandi/001535/sub-BRAVO1/sub-BRAVO1.nwb\n",
+ "seconds": 67.4
+}

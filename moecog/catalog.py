@@ -54,6 +54,13 @@ _ON_LOCKED = {
 }
 
 
+# smoke subsets narrower than "first subject, everything": longitudinal sets where one subject spans
+# hundreds of sessions (ds006890: two macaques, 127 daily sessions each, 22 GB per animal).
+_ON_INCLUDE = {
+    "ds006890": ["sub-monkeyc/ses-day05/*", "sub-monkeyc/ses-day06/*"],  # pressing + rest, rest + SEP
+}
+
+
 def _openneuro_entry(meta):
     did = meta["id"]
     subj = _ON_SUBJ.get(did, {})
@@ -62,7 +69,7 @@ def _openneuro_entry(meta):
     first = subjects[0] if subjects else None
     include = None
     if first:
-        include = [f"sub-{first}/*", "*.json", "*.tsv", "README*", "CHANGES", "participants*"]
+        include = _ON_INCLUDE.get(did, [f"sub-{first}/*"]) + ["*.json", "*.tsv", "README*", "CHANGES", "participants*"]
     n_sub = len(subjects) or meta.get("n_subjects") or 0
     epoched = any(t.lower() not in _NO_TASK for t in tasks) if tasks else False
 

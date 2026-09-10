@@ -1,0 +1,40 @@
+{
+ "id": "peterson-moverest",
+ "title": "Peterson naturalistic move vs rest (EC09)",
+ "source": "figshare",
+ "status": "ok",
+ "started": "2026-09-10 03:31:11",
+ "subjects_found": 1,
+ "subject_list": [
+  "EC09"
+ ],
+ "sessions": {
+  "0/0": {
+   "kind": "epochs",
+   "sfreq": 250.0,
+   "n_ecog": 126,
+   "n_misc": 0,
+   "duration_s": 1208.0,
+   "n_annotations": 302,
+   "classes": {
+    "move": 151,
+    "rest": 151
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": {
+  "rest": 1,
+  "move": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.4553537019824671,
+  "n_trials": 302,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 7.9
+}

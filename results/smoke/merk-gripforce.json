@@ -1,0 +1,67 @@
+{
+ "id": "merk-gripforce",
+ "title": "Merk grip-force ECoG + STN (Dataverse)",
+ "source": "dataverse",
+ "status": "ok",
+ "started": "2026-09-10 04:10:51",
+ "subjects_found": 16,
+ "subject_list": [
+  "000",
+  "001",
+  "002",
+  "003",
+  "004",
+  "005",
+  "006",
+  "007",
+  "008",
+  "009",
+  "010",
+  "011",
+  "012",
+  "013",
+  "014",
+  "015"
+ ],
+ "sessions": {
+  "right/0": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 10,
+   "n_misc": 0,
+   "duration_s": 130.0,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "right/1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 10,
+   "n_misc": 0,
+   "duration_s": 278.999,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "right/2": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 10,
+   "n_misc": 0,
+   "duration_s": 70.0,
+   "n_annotations": 0,
+   "classes": {}
+  },
+  "right/3": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 10,
+   "n_misc": 3,
+   "duration_s": 281.999,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 25.3
+}

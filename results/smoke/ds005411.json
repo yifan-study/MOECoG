@@ -1,0 +1,79 @@
+{
+ "id": "ds005411",
+ "title": "Free Recall of Word Lists with Repeated Items",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:06:28",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1204T"
+ ],
+ "sessions": {
+  "0/RepFR1_monopolar": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 118,
+   "n_misc": 0,
+   "duration_s": 4212.999,
+   "n_annotations": 799,
+   "classes": {
+    "COUNTDOWN": 21,
+    "REC_END": 21,
+    "REC_START": 21,
+    "REC_WORD": 64,
+    "REC_WORD_VV": 80,
+    "SESS_END": 2,
+    "SESS_START": 1,
+    "START": 1,
+    "TRIAL_START": 21,
+    "WORD": 567
+   }
+  },
+  "2/RepFR1_monopolar": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 118,
+   "n_misc": 0,
+   "duration_s": 3015.999,
+   "n_annotations": 888,
+   "classes": {
+    "COUNTDOWN": 21,
+    "REC_END": 21,
+    "REC_START": 21,
+    "REC_WORD": 131,
+    "REC_WORD_VV": 102,
+    "SESS_END": 2,
+    "SESS_START": 1,
+    "START": 1,
+    "TRIAL_START": 21,
+    "WORD": 567
+   }
+  }
+ },
+ "electrodes": {
+  "n": 118,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "COUNTDOWN": 1,
+  "REC_END": 2,
+  "REC_START": 3,
+  "REC_WORD": 4,
+  "REC_WORD_VV": 5,
+  "SESS_END": 6,
+  "SESS_START": 7,
+  "START": 8,
+  "TRIAL_START": 9,
+  "WORD": 10
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.18214246513746524,
+  "n_trials": 799,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 96.7
+}

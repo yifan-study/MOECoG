@@ -1,0 +1,41 @@
+{
+ "id": "miller-fingerflex",
+ "title": "Miller library fingerflex",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:10",
+ "subjects_found": 1,
+ "subject_list": [
+  "bp"
+ ],
+ "sessions": {
+  "0/fingerflex": {
+   "sfreq": 1000.0,
+   "n_ecog": 46,
+   "n_misc": 6,
+   "duration_s": 610.039,
+   "n_annotations": 439,
+   "classes": {
+    "code_-1": 289,
+    "code_-2": 2,
+    "index": 30,
+    "little": 28,
+    "middle": 31,
+    "ring": 29,
+    "thumb": 30
+   }
+  }
+ },
+ "electrodes": {
+  "n": 46,
+  "frame": "native"
+ },
+ "event_id": {
+  "thumb": 1,
+  "index": 2,
+  "middle": 3,
+  "ring": 4,
+  "little": 5
+ },
+ "seconds": 5.0
+}

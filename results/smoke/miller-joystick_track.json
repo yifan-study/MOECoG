@@ -1,0 +1,27 @@
+{
+ "id": "miller-joystick_track",
+ "title": "Miller library joystick_track",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:26:09",
+ "subjects_found": 1,
+ "subject_list": [
+  "fp"
+ ],
+ "sessions": {
+  "0/joystick": {
+   "sfreq": 1000.0,
+   "n_ecog": 60,
+   "n_misc": 4,
+   "duration_s": 372.759,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 60,
+  "frame": "talairach"
+ },
+ "event_id": null,
+ "seconds": 1.7
+}

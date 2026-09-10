@@ -94,6 +94,12 @@ class BIDSiEEGDataset(BaseECoGDataset):
                 warnings.warn(f"{self.code or openneuro_id}: subjects {missing} not found; using {subs[:1]}")
                 subs = subs[:1]
             elif missing:
+                folders = sorted(p.name for p in self._root.glob("sub-*") if p.is_dir())
+                if folders:
+                    # e.g. ds002799: sub-* folders carry MRI and iEEG sidecars (channels, electrodes) but no
+                    # recordings; the snapshot is metadata-only as far as iEEG goes
+                    raise ValueError(f"{self._root}: {len(folders)} sub-* folder(s) but no iEEG recordings, only "
+                                     "sidecars/MRI (metadata-only snapshot); nothing else readable")
                 raise ValueError(f"Subjects {missing} not in {self._root} and nothing else readable")
             else:
                 subs = list(subjects)

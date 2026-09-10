@@ -1,0 +1,25 @@
+{
+ "id": "mindeye-ieeg",
+ "title": "mindeye iEEG NSD high-frequency broadband",
+ "source": "huggingface",
+ "status": "ok",
+ "started": "2026-09-10 04:19:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "all"
+ ],
+ "sessions": {
+  "0/0": {
+   "kind": "raw",
+   "sfreq": 1.0,
+   "n_ecog": 130,
+   "n_misc": 0,
+   "duration_s": 9.0,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 2.1
+}

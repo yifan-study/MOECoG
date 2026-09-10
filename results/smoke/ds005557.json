@@ -1,0 +1,110 @@
+{
+ "id": "ds005557",
+ "title": "Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:52:13",
+ "max_runs": 2,
+ "subjects_found": 1,
+ "subject_list": [
+  "R1124J"
+ ],
+ "sessions": {
+  "0/FR3_monopolar": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 120,
+   "n_misc": 0,
+   "duration_s": 3070.999,
+   "n_annotations": 1290,
+   "classes": {
+    "COUNTDOWN_END": 26,
+    "COUNTDOWN_START": 26,
+    "DISTRACT_END": 25,
+    "DISTRACT_START": 25,
+    "INSTRUCT_END": 1,
+    "INSTRUCT_START": 1,
+    "MIC_TEST": 1,
+    "ORIENT": 25,
+    "ORIENT_OFF": 25,
+    "PRACTICE_ORIENT": 1,
+    "PRACTICE_ORIENT_OFF": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_TRIAL": 1,
+    "PRACTICE_WORD": 12
+   }
+  },
+  "1/FR3_monopolar": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 120,
+   "n_misc": 0,
+   "duration_s": 2945.999,
+   "n_annotations": 1089,
+   "classes": {
+    "COUNTDOWN_END": 24,
+    "COUNTDOWN_START": 24,
+    "DISTRACT_END": 23,
+    "DISTRACT_START": 23,
+    "INSTRUCT_END": 1,
+    "INSTRUCT_START": 1,
+    "MIC_TEST": 1,
+    "ORIENT": 23,
+    "ORIENT_OFF": 23,
+    "PRACTICE_ORIENT": 1,
+    "PRACTICE_ORIENT_OFF": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_TRIAL": 1,
+    "PRACTICE_WORD": 12
+   }
+  }
+ },
+ "electrodes": {
+  "n": 120,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "COUNTDOWN_END": 1,
+  "COUNTDOWN_START": 2,
+  "DISTRACT_END": 3,
+  "DISTRACT_START": 4,
+  "INSTRUCT_END": 5,
+  "INSTRUCT_START": 6,
+  "MIC_TEST": 7,
+  "ORIENT": 8,
+  "ORIENT_OFF": 9,
+  "PRACTICE_ORIENT": 10,
+  "PRACTICE_ORIENT_OFF": 11,
+  "PRACTICE_REC_END": 12,
+  "PRACTICE_REC_START": 13,
+  "PRACTICE_TRIAL": 14,
+  "PRACTICE_WORD": 15,
+  "PRACTICE_WORD_OFF": 16,
+  "PROB": 17,
+  "REC_END": 18,
+  "REC_START": 19,
+  "REC_WORD": 20,
+  "REC_WORD_VV": 21,
+  "RETRIEVAL_ORIENT": 22,
+  "SESS_START": 23,
+  "START": 24,
+  "STIM_OFF": 25,
+  "STIM_ON": 26,
+  "STOP": 27,
+  "TRIAL": 28,
+  "WORD": 29,
+  "WORD_OFF": 30
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.03725790786992065,
+  "n_trials": 1237,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 137.0
+}

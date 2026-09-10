@@ -1,0 +1,27 @@
+{
+ "id": "miller-fixation_pwrlaw",
+ "title": "Miller library fixation_pwrlaw",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:26:13",
+ "subjects_found": 1,
+ "subject_list": [
+  "al"
+ ],
+ "sessions": {
+  "0/base": {
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 130.079,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 32,
+  "frame": "talairach"
+ },
+ "event_id": null,
+ "seconds": 0.5
+}

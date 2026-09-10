@@ -1,0 +1,14 @@
+{
+ "id": "duin",
+ "title": "Du-IN Mandarin word sEEG (sub 001 run 1)",
+ "source": "huggingface",
+ "status": "error",
+ "started": "2026-09-10 04:19:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "001"
+ ],
+ "error": "ModuleNotFoundError: No module named 'utils.DotDict'; 'utils' is not a package",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/misc.py\", line 517, in _get_single_subject_data\n    info = self._load_pickle(info_p)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/misc.py\", line 504, in _load_pickle\n    return pickle.load(fh)\n           ^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'utils.DotDict'; 'utils' is not a package\n",
+ "seconds": 0.0
+}

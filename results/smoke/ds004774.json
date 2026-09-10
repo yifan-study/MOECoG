@@ -1,0 +1,15 @@
+{
+ "id": "ds004774",
+ "title": "Automatic Evoked Response Detection (ER-Detect) dataset",
+ "source": "openneuro",
+ "status": "unsupported",
+ "started": "2026-09-10 04:32:02",
+ "max_runs": 2,
+ "subjects_found": 1,
+ "subject_list": [
+  "MAYO01"
+ ],
+ "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 40, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 279, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 200, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
+ "seconds": 0.3
+}

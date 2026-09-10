@@ -1,0 +1,51 @@
+{
+ "id": "ds004370",
+ "title": "PRIOS",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:34:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "PRIOS01"
+ ],
+ "sessions": {
+  "1/SPESclin_021358": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 48,
+   "n_misc": 16,
+   "duration_s": 2358.7492701828,
+   "n_annotations": 372,
+   "classes": {
+    "artefact": 10,
+    "electrical_stimulation": 361,
+    "stimulation": 1
+   }
+  },
+  "1/SPESprop_080807": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 48,
+   "n_misc": 16,
+   "duration_s": 3160.749188058,
+   "n_annotations": 368,
+   "classes": {
+    "artefact": 30,
+    "electrical_stimulation": 335,
+    "seizure": 2,
+    "stimulation": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 68,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "artefact": 1,
+  "electrical_stimulation": 2,
+  "seizure": 3,
+  "stimulation": 4
+ },
+ "seconds": 19.0
+}

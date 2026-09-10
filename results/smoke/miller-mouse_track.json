@@ -1,0 +1,27 @@
+{
+ "id": "miller-mouse_track",
+ "title": "Miller library mouse_track",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:26:10",
+ "subjects_found": 1,
+ "subject_list": [
+  "fp"
+ ],
+ "sessions": {
+  "0/mouse": {
+   "sfreq": 1000.0,
+   "n_ecog": 61,
+   "n_misc": 4,
+   "duration_s": 248.479,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 61,
+  "frame": "talairach"
+ },
+ "event_id": null,
+ "seconds": 1.3
+}

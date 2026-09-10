@@ -1,0 +1,28 @@
+{
+ "id": "ds007118",
+ "title": "iEEG_comprehensive_HFA_model_part1",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:52:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "026"
+ ],
+ "sessions": {
+  "01/sleep_01_A": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 106,
+   "n_misc": 0,
+   "duration_s": 2268.999,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 104,
+  "frame": "fsaverage"
+ },
+ "event_id": null,
+ "seconds": 17.5
+}

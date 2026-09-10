@@ -1,0 +1,27 @@
+{
+ "id": "miller-fixation_PAC",
+ "title": "Miller library fixation_PAC",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:26:12",
+ "subjects_found": 1,
+ "subject_list": [
+  "bp"
+ ],
+ "sessions": {
+  "0/base": {
+   "sfreq": 1000.0,
+   "n_ecog": 46,
+   "n_misc": 0,
+   "duration_s": 130.039,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 46,
+  "frame": "native"
+ },
+ "event_id": null,
+ "seconds": 1.3
+}

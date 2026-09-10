@@ -1,0 +1,29 @@
+{
+ "id": "peterson-reach",
+ "title": "Peterson naturalistic reach epochs (subj 01 day 3)",
+ "source": "figshare",
+ "status": "ok",
+ "started": "2026-09-10 03:31:18",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "day3/0": {
+   "kind": "epochs",
+   "sfreq": 500.0,
+   "n_ecog": 94,
+   "n_misc": 0,
+   "duration_s": 1716.0,
+   "n_annotations": 156,
+   "classes": {
+    "move": 156
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": {
+  "move": 2
+ },
+ "seconds": 0.8
+}

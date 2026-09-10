@@ -1,0 +1,74 @@
+{
+ "id": "ds005523",
+ "title": "Spatial Memory of Object Locations with Open-Loop Stimulation at Encoding",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:39:06",
+ "max_runs": 2,
+ "subjects_found": 1,
+ "subject_list": [
+  "R1006P"
+ ],
+ "sessions": {
+  "0/YC2_bipolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 133,
+   "n_misc": 0,
+   "duration_s": 3420.998,
+   "n_annotations": 43216,
+   "classes": {
+    "NAV_LEARN": 96,
+    "NAV_PRACTICE_LEARN": 4,
+    "NAV_PRACTICE_TEST": 2,
+    "NAV_TEST": 48,
+    "TRAVEL_LEARN": 23196,
+    "TRAVEL_PRACTICE_LEARN": 966,
+    "TRAVEL_PRACTICE_TEST": 1258,
+    "TRAVEL_TEST": 17646
+   }
+  },
+  "1/YC2_bipolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 133,
+   "n_misc": 0,
+   "duration_s": 5286.998,
+   "n_annotations": 46074,
+   "classes": {
+    "NAV_LEARN": 96,
+    "NAV_PRACTICE_LEARN": 4,
+    "NAV_PRACTICE_TEST": 2,
+    "NAV_TEST": 48,
+    "TRAVEL_LEARN": 23190,
+    "TRAVEL_PRACTICE_LEARN": 966,
+    "TRAVEL_PRACTICE_TEST": 697,
+    "TRAVEL_TEST": 21071
+   }
+  }
+ },
+ "electrodes": {
+  "n": 123,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "NAV_LEARN": 1,
+  "NAV_PRACTICE_LEARN": 2,
+  "NAV_PRACTICE_TEST": 3,
+  "NAV_TEST": 4,
+  "TRAVEL_LEARN": 5,
+  "TRAVEL_PRACTICE_LEARN": 6,
+  "TRAVEL_PRACTICE_TEST": 7,
+  "TRAVEL_TEST": 8
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.592281268579988,
+  "n_trials": 43216,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 786.5
+}

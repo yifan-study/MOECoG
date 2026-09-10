@@ -1,0 +1,53 @@
+{
+ "id": "miller-faces_noise",
+ "title": "Miller library faces_noise",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:43",
+ "subjects_found": 1,
+ "subject_list": [
+  "ap"
+ ],
+ "sessions": {
+  "faceshouses/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 41,
+   "n_misc": 0,
+   "duration_s": 268.399,
+   "n_annotations": 300,
+   "classes": {
+    "face": 150,
+    "house": 150
+   }
+  },
+  "fhnoisy/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 41,
+   "n_misc": 2,
+   "duration_s": 666.239,
+   "n_annotations": 630,
+   "classes": {
+    "face": 315,
+    "house": 315
+   }
+  }
+ },
+ "electrodes": {
+  "n": 41,
+  "frame": "voxel"
+ },
+ "event_id": {
+  "house": 1,
+  "face": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.4108426761694259,
+  "n_trials": 300,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 9.9
+}

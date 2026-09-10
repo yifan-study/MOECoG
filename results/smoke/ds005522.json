@@ -1,0 +1,56 @@
+{
+ "id": "ds005522",
+ "title": "Spatial Navigation Memory of Object Locations",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:32:03",
+ "max_runs": 2,
+ "subjects_found": 1,
+ "subject_list": [
+  "R1056M"
+ ],
+ "sessions": {
+  "0/YC1_monopolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 120,
+   "n_misc": 0,
+   "duration_s": 2360.998,
+   "n_annotations": 58159,
+   "classes": {
+    "NAV_LEARN": 96,
+    "NAV_PRACTICE_LEARN": 4,
+    "NAV_PRACTICE_TEST": 2,
+    "NAV_TEST": 48,
+    "TRAVEL_LEARN": 23207,
+    "TRAVEL_PRACTICE_LEARN": 967,
+    "TRAVEL_PRACTICE_TEST": 2229,
+    "TRAVEL_TEST": 31606
+   }
+  }
+ },
+ "electrodes": {
+  "n": 120,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "NAV_LEARN": 1,
+  "NAV_PRACTICE_LEARN": 2,
+  "NAV_PRACTICE_TEST": 3,
+  "NAV_TEST": 4,
+  "TRAVEL_LEARN": 5,
+  "TRAVEL_PRACTICE_LEARN": 6,
+  "TRAVEL_PRACTICE_TEST": 7,
+  "TRAVEL_TEST": 8
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.4985152455645476,
+  "n_trials": 58159,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 423.4
+}

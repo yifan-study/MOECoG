@@ -1,0 +1,27 @@
+{
+ "id": "peterson-pose",
+ "title": "Peterson ECoG + arm pose (EC02)",
+ "source": "figshare",
+ "status": "ok",
+ "started": "2026-09-10 03:31:19",
+ "subjects_found": 1,
+ "subject_list": [
+  "EC02"
+ ],
+ "sessions": {
+  "0/0": {
+   "kind": "epochs",
+   "sfreq": 250.0,
+   "n_ecog": 87,
+   "n_misc": 0,
+   "duration_s": 1672.0,
+   "n_annotations": 418,
+   "classes": {
+    "event": 418
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 0.6
+}

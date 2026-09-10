@@ -1,0 +1,28 @@
+{
+ "id": "ds005398",
+ "title": "Open iEEG Dataset",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:40:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "Detroit109"
+ ],
+ "sessions": {
+  "01/sleep": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 56,
+   "n_misc": 0,
+   "duration_s": 303.999,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 56,
+  "frame": "mni152lin"
+ },
+ "event_id": null,
+ "seconds": 12.4
+}

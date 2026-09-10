@@ -1,0 +1,37 @@
+{
+ "id": "miller-speech_basic",
+ "title": "Miller library speech_basic",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:31:27",
+ "subjects_found": 1,
+ "subject_list": [
+  "bp"
+ ],
+ "sessions": {
+  "verbs/0": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 544.719,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  }
+ },
+ "electrodes": {
+  "n": 48,
+  "frame": "native"
+ },
+ "event_id": {
+  "generate_verb": 1,
+  "read_noun": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "note": "no scorable session (fewer than two classes per session)"
+ },
+ "seconds": 2.1
+}

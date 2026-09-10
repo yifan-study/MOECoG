@@ -1,0 +1,117 @@
+{
+ "id": "ds004127",
+ "title": "Somatosensory Cortex Rat DISC Data",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:00:43",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "0/B1": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/B2": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 449,
+   "classes": {
+    "Stimulus/1": 449
+   }
+  },
+  "0/Beta": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/C1": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/C2": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/D1": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/D2": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  },
+  "0/Delta": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 449,
+   "classes": {
+    "Stimulus/1": 449
+   }
+  },
+  "0/gamma": {
+   "kind": "raw",
+   "sfreq": 20000.0,
+   "n_ecog": 104,
+   "n_misc": 0,
+   "duration_s": 300.02395,
+   "n_annotations": 450,
+   "classes": {
+    "Stimulus/1": 450
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": {
+  "Stimulus/1": 1
+ },
+ "seconds": 64.3
+}

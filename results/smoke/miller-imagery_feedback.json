@@ -1,0 +1,70 @@
+{
+ "id": "miller-imagery_feedback",
+ "title": "Miller library imagery_feedback",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:38",
+ "subjects_found": 1,
+ "subject_list": [
+  "al"
+ ],
+ "sessions": {
+  "fb_shrug/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 40,
+   "n_misc": 3,
+   "duration_s": 180.119,
+   "n_annotations": 27,
+   "classes": {
+    "target_A": 14,
+    "target_B": 13
+   }
+  },
+  "im_ih_shrug/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 40,
+   "n_misc": 0,
+   "duration_s": 390.679,
+   "n_annotations": 60,
+   "classes": {
+    "hand_ipsi": 30,
+    "shrug": 30
+   }
+  },
+  "mot_ih_shrug/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 40,
+   "n_misc": 0,
+   "duration_s": 390.639,
+   "n_annotations": 60,
+   "classes": {
+    "hand_ipsi": 30,
+    "shrug": 30
+   }
+  }
+ },
+ "electrodes": {
+  "n": 40,
+  "frame": "talairach"
+ },
+ "event_id": {
+  "target_A": 1,
+  "target_B": 2,
+  "hand_ipsi": 3,
+  "shrug": 4,
+  "tongue": 5,
+  "hand": 6,
+  "say_move": 7,
+  "hip": 8
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.4568972145284642,
+  "n_trials": 27,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 5.7
+}

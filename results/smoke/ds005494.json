@@ -1,0 +1,96 @@
+{
+ "id": "ds005494",
+ "title": "Cued Recall of Paired Associates with Open-Loop Stimulation at Encoding or Retrieval",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:09:28",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1003P"
+ ],
+ "sessions": {
+  "0/PAL2_bipolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 114,
+   "n_misc": 0,
+   "duration_s": 2462.998,
+   "n_annotations": 1018,
+   "classes": {
+    "ENCODING_START": 18,
+    "MATH_END": 18,
+    "MATH_START": 18,
+    "PROB": 109,
+    "REC_END": 108,
+    "REC_EVENT": 108,
+    "REC_START": 108,
+    "SESS_START": 1,
+    "START": 19,
+    "STIM_ON": 42,
+    "STOP": 19,
+    "STUDY_ORIENT": 108,
+    "STUDY_PAIR": 108,
+    "TEST_ORIENT": 108,
+    "TEST_PROBE": 108
+   }
+  },
+  "1/PAL2_bipolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 114,
+   "n_misc": 0,
+   "duration_s": 4236.998,
+   "n_annotations": 1432,
+   "classes": {
+    "ENCODING_START": 25,
+    "MATH_END": 25,
+    "MATH_START": 25,
+    "PROB": 168,
+    "REC_END": 150,
+    "REC_EVENT": 150,
+    "REC_START": 150,
+    "SESS_START": 2,
+    "START": 26,
+    "STIM_ON": 60,
+    "STOP": 26,
+    "STUDY_ORIENT": 150,
+    "STUDY_PAIR": 150,
+    "TEST_ORIENT": 150,
+    "TEST_PROBE": 150
+   }
+  }
+ },
+ "electrodes": {
+  "n": 100,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "ENCODING_START": 1,
+  "MATH_END": 2,
+  "MATH_START": 3,
+  "PROB": 4,
+  "REC_END": 5,
+  "REC_EVENT": 6,
+  "REC_START": 7,
+  "SESS_START": 8,
+  "START": 9,
+  "STIM_ON": 10,
+  "STOP": 11,
+  "STUDY_ORIENT": 12,
+  "STUDY_PAIR": 13,
+  "TEST_ORIENT": 14,
+  "TEST_PROBE": 15,
+  "TEST_START": 16
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.029531258451422886,
+  "n_trials": 889,
+  "fold_policy": [
+   "chronological",
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 54.2
+}

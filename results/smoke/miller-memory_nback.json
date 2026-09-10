@@ -1,0 +1,42 @@
+{
+ "id": "miller-memory_nback",
+ "title": "Miller library memory_nback",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:16",
+ "subjects_found": 1,
+ "subject_list": [
+  "al"
+ ],
+ "sessions": {
+  "0/nback": {
+   "sfreq": 1000.0,
+   "n_ecog": 40,
+   "n_misc": 2,
+   "duration_s": 360.119,
+   "n_annotations": 150,
+   "classes": {
+    "nontarget": 119,
+    "target": 31
+   }
+  }
+ },
+ "electrodes": {
+  "n": 40,
+  "frame": "talairach"
+ },
+ "event_id": {
+  "nontarget": 1,
+  "target": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.177989227494178,
+  "n_trials": 150,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 2.4
+}

@@ -47,6 +47,14 @@ nwb = [
     "pynwb>=2.5",
     "dandi>=0.55",
 ]
+loaders = [
+    # everything the catalog loaders need beyond the core: BIDS/OpenNeuro, netCDF (Peterson), Blosc HDF5 (SWEC)
+    "mne-bids>=0.15",
+    "openneuro-py>=2023.1",
+    "xarray>=2023.1",
+    "netCDF4>=1.6",
+    "hdf5plugin>=4.0",
+]
 viz = [
     "matplotlib>=3.7",
     "seaborn>=0.12",
@@ -56,12 +64,12 @@ anatomy = [
     "nibabel>=5.0",
 ]
 dev = [
-    "moecog[deep,nwb,viz,anatomy]",
+    "moecog[deep,nwb,loaders,viz,anatomy]",
     "pytest>=7.4",
     "pytest-cov>=4.1",
     "ruff>=0.1",
 ]
-all = ["moecog[deep,nwb,viz,anatomy]"]
+all = ["moecog[deep,nwb,loaders,viz,anatomy]"]
 
 [project.urls]
 Homepage = "https://github.com/epyifany/MOECoG"

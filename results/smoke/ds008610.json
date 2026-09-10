@@ -1,0 +1,367 @@
+{
+ "id": "ds008610",
+ "title": "FUS and Tactile Neuromodulation in NHP VPL - Electrophysiology",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:55:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "ieeg01/FUS_005_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 71.118,
+   "n_annotations": 5,
+   "classes": {
+    "FUS_pulse": 5
+   }
+  },
+  "ieeg01/FUS_01_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 141.433,
+   "n_annotations": 25,
+   "classes": {
+    "FUS_pulse": 25
+   }
+  },
+  "ieeg01/FUS_02_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 171.26,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_03_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 186.003,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_04_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 187.982,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_05_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 170.916,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_06_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 180.964,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_07_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 172.184,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_08_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 173.316,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg01/FUS_09_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 249.618,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_005_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 71.118,
+   "n_annotations": 5,
+   "classes": {
+    "FUS_pulse": 5
+   }
+  },
+  "ieeg02/FUS_01_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 141.433,
+   "n_annotations": 25,
+   "classes": {
+    "FUS_pulse": 25
+   }
+  },
+  "ieeg02/FUS_02_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 176.324,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_03_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 171.26,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_04_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 186.003,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_05_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 187.982,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_06_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 170.916,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_07_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 169.974,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_08_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 180.964,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_09_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 176.115,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_10_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 172.184,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_11_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 173.316,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_12_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 186.135,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_13_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 192.736,
+   "n_annotations": 20,
+   "classes": {
+    "FUS_pulse": 20
+   }
+  },
+  "ieeg02/FUS_14_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 181.156,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg02/FUS_15_VPL": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 181.08,
+   "n_annotations": 30,
+   "classes": {
+    "FUS_pulse": 30
+   }
+  },
+  "ieeg03/Tactile_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 416.312,
+   "n_annotations": 50,
+   "classes": {
+    "Tactile": 50
+   }
+  },
+  "ieeg03/Tactile_02": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 296.232,
+   "n_annotations": 50,
+   "classes": {
+    "Tactile": 50
+   }
+  },
+  "ieeg03/Tactile_03": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 298.692,
+   "n_annotations": 50,
+   "classes": {
+    "Tactile": 50
+   }
+  },
+  "ieeg03/Tactile_04": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 292.363,
+   "n_annotations": 50,
+   "classes": {
+    "Tactile": 50
+   }
+  },
+  "ieeg03/Tactile_05": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 288.195,
+   "n_annotations": 50,
+   "classes": {
+    "Tactile": 50
+   }
+  }
+ },
+ "electrodes": {
+  "n": 96,
+  "frame": "other"
+ },
+ "event_id": {
+  "FUS_pulse": 1,
+  "Tactile": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "note": "no scorable session (fewer than two classes per session)"
+ },
+ "seconds": 50.3
+}

@@ -1,0 +1,74 @@
+{
+ "id": "ds004809",
+ "title": "Categorized Free Recall: Delayed Free Recall of Word Lists Organized by Semantic Categorie",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:02:42",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1004D"
+ ],
+ "sessions": {
+  "0/catFR1_bipolar": {
+   "kind": "raw",
+   "sfreq": 1600.0,
+   "n_ecog": 162,
+   "n_misc": 0,
+   "duration_s": 5399.999375,
+   "n_annotations": 739,
+   "classes": {
+    "COUNTDOWN_END": 26,
+    "COUNTDOWN_START": 26,
+    "DISTRACT_END": 25,
+    "DISTRACT_START": 25,
+    "ORIENT": 25,
+    "PRACTICE_DISTRACT_END": 1,
+    "PRACTICE_DISTRACT_START": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_WORD": 12,
+    "PROB": 33,
+    "REC_END": 25,
+    "REC_START": 25,
+    "REC_WORD": 24,
+    "REC_WORD_VV": 111
+   }
+  }
+ },
+ "electrodes": {
+  "n": 120,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "COUNTDOWN_END": 1,
+  "COUNTDOWN_START": 2,
+  "DISTRACT_END": 3,
+  "DISTRACT_START": 4,
+  "ORIENT": 5,
+  "PRACTICE_DISTRACT_END": 6,
+  "PRACTICE_DISTRACT_START": 7,
+  "PRACTICE_REC_END": 8,
+  "PRACTICE_REC_START": 9,
+  "PRACTICE_WORD": 10,
+  "PROB": 11,
+  "REC_END": 12,
+  "REC_START": 13,
+  "REC_WORD": 14,
+  "REC_WORD_VV": 15,
+  "SESS_START": 16,
+  "START": 17,
+  "STOP": 18,
+  "TRIAL": 19,
+  "WORD": 20
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.08229431936715015,
+  "n_trials": 697,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 176.6
+}

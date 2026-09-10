@@ -1,0 +1,40 @@
+{
+ "id": "ds004551",
+ "title": "testMIproject",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:01:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "001"
+ ],
+ "sessions": {
+  "01/sleep_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 117,
+   "n_misc": 0,
+   "duration_s": 1925.039,
+   "n_annotations": 5,
+   "classes": {
+    "+0.000000": 1,
+    "+1652.795000": 1,
+    "A1+A2 OFF": 1,
+    "Segment: REC START HERZING EEG": 1,
+    "sleep": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 94,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "+0.000000": 1,
+  "+1652.795000": 2,
+  "A1+A2 OFF": 3,
+  "Segment: REC START HERZING EEG": 4,
+  "sleep": 5
+ },
+ "seconds": 2.4
+}

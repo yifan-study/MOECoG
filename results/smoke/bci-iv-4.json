@@ -1,0 +1,29 @@
+{
+ "id": "bci-iv-4",
+ "title": "BCI Competition IV dataset 4 (finger flexion)",
+ "source": "bbci",
+ "status": "ok",
+ "started": "2026-09-10 03:24:57",
+ "subjects_found": 3,
+ "subject_list": [
+  "1",
+  "2",
+  "3"
+ ],
+ "sessions": {
+  "0/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 62,
+   "n_misc": 5,
+   "duration_s": 599.999,
+   "n_annotations": 2,
+   "classes": {
+    "test": 1,
+    "train": 1
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 1.9
+}

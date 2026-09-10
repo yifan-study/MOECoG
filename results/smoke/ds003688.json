@@ -1,0 +1,59 @@
+{
+ "id": "ds003688",
+ "title": "Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual f",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:58:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "01"
+ ],
+ "sessions": {
+  "iemu/film_1_clinical": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 101,
+   "n_misc": 1,
+   "duration_s": 420.04541015625,
+   "n_annotations": 15,
+   "classes": {
+    "end task": 1,
+    "music": 7,
+    "speech": 6,
+    "start task": 1
+   }
+  },
+  "iemu/rest_1_clinical": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 101,
+   "n_misc": 1,
+   "duration_s": 196.7734375,
+   "n_annotations": 2,
+   "classes": {
+    "end task": 1,
+    "start task": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 103,
+  "frame": "acpc"
+ },
+ "event_id": {
+  "end task": 1,
+  "music": 2,
+  "speech": 3,
+  "start task": 4
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.09551198257080606,
+  "n_trials": 17,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 13.1
+}

@@ -1,0 +1,25 @@
+{
+ "id": "braintreebank",
+ "title": "Brain Treebank (sub_1 trial000)",
+ "source": "braintreebank",
+ "status": "ok",
+ "started": "2026-09-10 04:19:51",
+ "subjects_found": 1,
+ "subject_list": [
+  "1"
+ ],
+ "sessions": {
+  "0/sub_1_trial000": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 156,
+   "n_misc": 0,
+   "duration_s": 599.99951171875,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 105.2
+}

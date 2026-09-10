@@ -89,9 +89,14 @@ def run_entry(entry, out_dir: Path, quick=True, max_runs=None):
                     rec["quick_baseline"] = {"paradigm": type(paradigm).__name__,
                                              "note": "no scorable session (fewer than two classes per session)"}
                 else:
+                    import numpy as np
+
+                    scores = res[res.metric == head].score.to_numpy(dtype=float)
                     rec["quick_baseline"] = {
                         "paradigm": type(paradigm).__name__, "metric": head,
-                        "score": float(res[res.metric == head].score.mean()),
+                        # a fold whose test set holds one class has an undefined kappa: average the others
+                        "score": float(np.nanmean(scores)) if np.isfinite(scores).any() else float("nan"),
+                        "n_folds": int(len(scores)), "n_undefined_folds": int(np.isnan(scores).sum()),
                         "n_trials": int(res.n_train.iloc[0] + res.n_test.iloc[0]),
                         "fold_policy": sorted(res.fold_policy.unique().tolist()),
                     }

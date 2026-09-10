@@ -1,0 +1,52 @@
+{
+ "id": "ds005448",
+ "title": "STReEF",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:43:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "STREEF01"
+ ],
+ "sessions": {
+  "1/SPESclin_021250": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 112,
+   "n_misc": 15,
+   "duration_s": 3244.8741794436,
+   "n_annotations": 571,
+   "classes": {
+    "artefact": 6,
+    "electrical_stimulation": 560,
+    "eyes": 4,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_021448": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 112,
+   "n_misc": 15,
+   "duration_s": 1895.4055676292,
+   "n_annotations": 331,
+   "classes": {
+    "artefact": 8,
+    "electrical_stimulation": 318,
+    "eyes": 4,
+    "stimulation": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 133,
+  "frame": "other"
+ },
+ "event_id": {
+  "artefact": 1,
+  "electrical_stimulation": 2,
+  "eyes": 3,
+  "stimulation": 4
+ },
+ "seconds": 85.9
+}

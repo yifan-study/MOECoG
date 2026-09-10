@@ -1,0 +1,10 @@
+{
+ "id": "verwoert-speech",
+ "title": "Verwoert single-word production sEEG (iBIDS)",
+ "source": "osf",
+ "status": "error",
+ "started": "2026-09-10 04:19:48",
+ "error": "BadZipFile: File is not a zip file",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/catalog.py\", line 141, in build\n    return getattr(misc, name)(**kw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/misc.py\", line 349, in __init__\n    self._ensure()\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/misc.py\", line 364, in _ensure\n    with zipfile.ZipFile(z) as zf:\n         ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/beegfs/home/yyu2024/miniconda3/envs/pytorch_ml/lib/python3.11/zipfile.py\", line 1329, in __init__\n    self._RealGetContents()\n  File \"/mnt/beegfs/home/yyu2024/miniconda3/envs/pytorch_ml/lib/python3.11/zipfile.py\", line 1396, in _RealGetContents\n    raise BadZipFile(\"File is not a zip file\")\nzipfile.BadZipFile: File is not a zip file\n",
+ "seconds": 0.6
+}

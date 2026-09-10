@@ -1,0 +1,100 @@
+{
+ "id": "ds004789",
+ "title": "Delayed Free Recall of Word Lists",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:01:57",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1001P"
+ ],
+ "sessions": {
+  "0/FR1_monopolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 88,
+   "n_misc": 0,
+   "duration_s": 4698.998,
+   "n_annotations": 756,
+   "classes": {
+    "COUNTDOWN_END": 26,
+    "COUNTDOWN_START": 26,
+    "DISTRACT_END": 25,
+    "DISTRACT_START": 25,
+    "ORIENT": 25,
+    "PRACTICE_DISTRACT_END": 1,
+    "PRACTICE_DISTRACT_START": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_WORD": 12,
+    "PROB": 44,
+    "REC_END": 25,
+    "REC_START": 25,
+    "REC_WORD": 108,
+    "REC_WORD_VV": 32
+   }
+  },
+  "1/FR1_monopolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 88,
+   "n_misc": 0,
+   "duration_s": 3070.998,
+   "n_annotations": 718,
+   "classes": {
+    "COUNTDOWN_END": 26,
+    "COUNTDOWN_START": 26,
+    "DISTRACT_END": 25,
+    "DISTRACT_START": 25,
+    "ORIENT": 25,
+    "PRACTICE_DISTRACT_END": 1,
+    "PRACTICE_DISTRACT_START": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_WORD": 12,
+    "PROB": 45,
+    "REC_END": 25,
+    "REC_START": 25,
+    "REC_WORD": 99,
+    "REC_WORD_VV": 2
+   }
+  }
+ },
+ "electrodes": {
+  "n": 88,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "COUNTDOWN_END": 1,
+  "COUNTDOWN_START": 2,
+  "DISTRACT_END": 3,
+  "DISTRACT_START": 4,
+  "ORIENT": 5,
+  "PRACTICE_DISTRACT_END": 6,
+  "PRACTICE_DISTRACT_START": 7,
+  "PRACTICE_REC_END": 8,
+  "PRACTICE_REC_START": 9,
+  "PRACTICE_WORD": 10,
+  "PROB": 11,
+  "REC_END": 12,
+  "REC_START": 13,
+  "REC_WORD": 14,
+  "REC_WORD_VV": 15,
+  "SESS_END": 16,
+  "SESS_START": 17,
+  "START": 18,
+  "STOP": 19,
+  "TRIAL": 20,
+  "WORD": 21
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.12382576913809841,
+  "n_trials": 713,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 44.5
+}

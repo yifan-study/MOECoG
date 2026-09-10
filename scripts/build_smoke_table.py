@@ -23,7 +23,8 @@ def main():
     for eid, e in ENTRIES.items():
         r = recs.get(eid)
         if e.blocked:
-            status, detail = "blocked", e.blocked
+            # Entry.blocked is either a reason string or True with the reason carried in Entry.notes
+            status, detail = "blocked", e.blocked if isinstance(e.blocked, str) else (e.notes or "blocked")
         elif r is None:
             status, detail = "pending", ""
         else:

@@ -1,0 +1,14 @@
+{
+ "id": "swec",
+ "title": "SWEC long-term iEEG (ID01 part 1)",
+ "source": "huggingface",
+ "status": "error",
+ "started": "2026-09-10 04:19:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "ID01"
+ ],
+ "error": "OSError: Can't synchronously read data (can't open directory (/usr/local/hdf5/lib/plugin). Please verify its existence)",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/misc.py\", line 574, in _get_single_subject_data\n    arr = np.asarray(d[:n, :] if d.shape[0] > d.shape[-1] else d[:, :n], dtype=float)\n                                                               ~^^^^^^^\n  File \"h5py/_objects.pyx\", line 54, in h5py._objects.with_phil.wrapper\n  File \"h5py/_objects.pyx\", line 55, in h5py._objects.with_phil.wrapper\n  File \"/mnt/beegfs/home/yyu2024/miniconda3/envs/pytorch_ml/lib/python3.11/site-packages/h5py/_hl/dataset.py\", line 840, in __getitem__\n    return self._fast_reader.read(args)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"h5py/_selector.pyx\", line 375, in h5py._selector.Reader.read\nOSError: Can't synchronously read data (can't open directory (/usr/local/hdf5/lib/plugin). Please verify its existence)\n",
+ "seconds": 0.1
+}

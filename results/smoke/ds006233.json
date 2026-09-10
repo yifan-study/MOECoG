@@ -1,0 +1,67 @@
+{
+ "id": "ds006233",
+ "title": "Picture naming",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:46:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "100"
+ ],
+ "sessions": {
+  "1/picture": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 777.399,
+   "n_annotations": 120,
+   "classes": {
+    "Trigger-401": 60,
+    "Trigger-501": 60
+   }
+  },
+  "2/picture": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 777.225,
+   "n_annotations": 120,
+   "classes": {
+    "Trigger-401": 60,
+    "Trigger-501": 60
+   }
+  },
+  "3/picture": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 777.323,
+   "n_annotations": 120,
+   "classes": {
+    "Trigger-401": 60,
+    "Trigger-501": 60
+   }
+  }
+ },
+ "electrodes": {
+  "n": 128,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "Trigger-401": 1,
+  "Trigger-501": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.1722222222222222,
+  "n_trials": 120,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 15.5
+}

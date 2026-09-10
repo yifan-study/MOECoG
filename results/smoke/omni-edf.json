@@ -1,0 +1,29 @@
+{
+ "id": "omni-edf",
+ "title": "Omni-iEEG raw EDF (Pt1)",
+ "source": "huggingface",
+ "status": "ok",
+ "started": "2026-09-10 04:11:17",
+ "subjects_found": 1,
+ "subject_list": [
+  "Pt1"
+ ],
+ "sessions": {
+  "0/Pt1_AR_original_mne_griddep_10min": {
+   "kind": "raw",
+   "sfreq": 2000.0,
+   "n_ecog": 38,
+   "n_misc": 0,
+   "duration_s": 600.9995,
+   "n_annotations": 3,
+   "classes": {
+    "+0.000000": 1,
+    "A1+A2 OFF": 1,
+    "Segment: REC START PH2  EEG": 1
+   }
+  }
+ },
+ "electrodes": "none (FileNotFoundError)",
+ "event_id": null,
+ "seconds": 0.5
+}

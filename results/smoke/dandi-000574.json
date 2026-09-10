@@ -1,0 +1,88 @@
+{
+ "id": "dandi-000574",
+ "title": "Rutishauser verbal WM + iEEG (sub-05 ses-01)",
+ "source": "dandi",
+ "status": "ok",
+ "started": "2026-09-10 04:23:10",
+ "subjects_found": 1,
+ "subject_list": [
+  "05"
+ ],
+ "sessions": {
+  "01/0": {
+   "kind": "raw",
+   "sfreq": 31999.999999847205,
+   "n_ecog": 32,
+   "n_misc": 0,
+   "duration_s": 399.99996875190993,
+   "n_annotations": 150,
+   "classes": {
+    "trials/4": 10,
+    "trials/6": 9,
+    "trials/8": 11,
+    "ttl_stage/0": 3,
+    "ttl_stage/1": 4,
+    "ttl_stage/10": 4,
+    "ttl_stage/11": 4,
+    "ttl_stage/12": 4,
+    "ttl_stage/13": 4,
+    "ttl_stage/14": 4,
+    "ttl_stage/15": 4,
+    "ttl_stage/16": 4,
+    "ttl_stage/17": 4,
+    "ttl_stage/18": 4,
+    "ttl_stage/19": 4
+   }
+  }
+ },
+ "electrodes": {
+  "n": 32,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "trials/4": 1,
+  "trials/6": 2,
+  "trials/8": 3,
+  "ttl_stage/0": 4,
+  "ttl_stage/1": 5,
+  "ttl_stage/10": 6,
+  "ttl_stage/11": 7,
+  "ttl_stage/12": 8,
+  "ttl_stage/13": 9,
+  "ttl_stage/14": 10,
+  "ttl_stage/15": 11,
+  "ttl_stage/16": 12,
+  "ttl_stage/17": 13,
+  "ttl_stage/18": 14,
+  "ttl_stage/19": 15,
+  "ttl_stage/2": 16,
+  "ttl_stage/20": 17,
+  "ttl_stage/21": 18,
+  "ttl_stage/22": 19,
+  "ttl_stage/23": 20,
+  "ttl_stage/24": 21,
+  "ttl_stage/25": 22,
+  "ttl_stage/26": 23,
+  "ttl_stage/27": 24,
+  "ttl_stage/28": 25,
+  "ttl_stage/29": 26,
+  "ttl_stage/3": 27,
+  "ttl_stage/30": 28,
+  "ttl_stage/4": 29,
+  "ttl_stage/5": 30,
+  "ttl_stage/6": 31,
+  "ttl_stage/7": 32,
+  "ttl_stage/8": 33,
+  "ttl_stage/9": 34
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.022716902835111852,
+  "n_trials": 120,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 64.4
+}

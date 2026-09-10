@@ -1,0 +1,45 @@
+{
+ "id": "ds006910",
+ "title": "Auditory Naming",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:49:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "065"
+ ],
+ "sessions": {
+  "1/auditory": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 1175.001,
+   "n_annotations": 150,
+   "classes": {
+    "Trigger-401": 50,
+    "Trigger-402": 50,
+    "Trigger-501": 50
+   }
+  }
+ },
+ "electrodes": {
+  "n": 58,
+  "frame": "other"
+ },
+ "event_id": {
+  "Trigger-401": 1,
+  "Trigger-402": 2,
+  "Trigger-501": 3
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.8900758985367677,
+  "n_trials": 150,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 17.9
+}

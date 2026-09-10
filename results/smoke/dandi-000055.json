@@ -1,0 +1,32 @@
+{
+ "id": "dandi-000055",
+ "title": "AJILE12 (sub-04 ses-3)",
+ "source": "dandi",
+ "status": "ok",
+ "started": "2026-09-10 04:23:08",
+ "subjects_found": 1,
+ "subject_list": [
+  "04"
+ ],
+ "sessions": {
+  "3/0": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 84,
+   "n_misc": 0,
+   "duration_s": 599.998,
+   "n_annotations": 1,
+   "classes": {
+    "epochs/Blocklist (Data break)": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 84,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "epochs/Blocklist (Data break)": 1
+ },
+ "seconds": 1.9
+}

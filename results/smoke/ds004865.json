@@ -1,0 +1,57 @@
+{
+ "id": "ds004865",
+ "title": "pyFR: Delayed Free Recall of Word Lists, Preliminary Cognitive Electrophysiology Study",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:05:38",
+ "subjects_found": 1,
+ "subject_list": [
+  "TJ005"
+ ],
+ "sessions": {
+  "5/pyFR_monopolar": {
+   "kind": "raw",
+   "sfreq": 400.0,
+   "n_ecog": 94,
+   "n_misc": 0,
+   "duration_s": 3101.9975,
+   "n_annotations": 367,
+   "classes": {
+    "B": 1,
+    "E": 1,
+    "ORIENT": 16,
+    "REC_START": 16,
+    "REC_WORD": 75,
+    "SESS_END": 1,
+    "SESS_START": 1,
+    "TRIAL": 16,
+    "WORD": 240
+   }
+  }
+ },
+ "electrodes": {
+  "n": 94,
+  "frame": "talairach"
+ },
+ "event_id": {
+  "B": 1,
+  "E": 2,
+  "ORIENT": 3,
+  "REC_START": 4,
+  "REC_WORD": 5,
+  "SESS_END": 6,
+  "SESS_START": 7,
+  "TRIAL": 8,
+  "WORD": 9
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.11785051375656545,
+  "n_trials": 365,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 13.9
+}

@@ -1,0 +1,81 @@
+{
+ "id": "ds003848",
+ "title": "Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iEEG",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:59:01",
+ "subjects_found": 1,
+ "subject_list": [
+  "RESP0521"
+ ],
+ "sessions": {
+  "1/SPESclin_021231": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 54,
+   "n_misc": 0,
+   "duration_s": 3186.7491853956,
+   "n_annotations": 588,
+   "classes": {
+    "artefact": 16,
+    "electrical_stimulation": 571,
+    "stimulation": 1
+   }
+  },
+  "1/Sleep_030344": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 54,
+   "n_misc": 0,
+   "duration_s": 3600.124143066,
+   "n_annotations": 22,
+   "classes": {
+    "artefact": 2,
+    "eyes": 12,
+    "rem selection": 1,
+    "sleep": 5,
+    "sleep-wake transition": 2
+   }
+  },
+  "1/Sleep_060307": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 54,
+   "n_misc": 0,
+   "duration_s": 3600.091796875,
+   "n_annotations": 7,
+   "classes": {
+    "EI selection": 1,
+    "artefact": 3,
+    "seizure": 1,
+    "sleep": 1,
+    "sleep-wake transition": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 133,
+  "frame": "other"
+ },
+ "event_id": {
+  "artefact": 1,
+  "electrical_stimulation": 2,
+  "stimulation": 3,
+  "eyes": 4,
+  "rem selection": 5,
+  "sleep": 6,
+  "sleep-wake transition": 7,
+  "EI selection": 8,
+  "seizure": 9
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.4842434601686372,
+  "n_trials": 617,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 101.4
+}

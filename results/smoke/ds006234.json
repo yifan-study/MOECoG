@@ -1,0 +1,71 @@
+{
+ "id": "ds006234",
+ "title": "Auditory naming",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:49:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "111"
+ ],
+ "sessions": {
+  "1/auditory": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 3442.373,
+   "n_annotations": 402,
+   "classes": {
+    "Trigger-401": 134,
+    "Trigger-402": 134,
+    "Trigger-501": 134
+   }
+  },
+  "2/auditory": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 3442.327,
+   "n_annotations": 402,
+   "classes": {
+    "Trigger-401": 134,
+    "Trigger-402": 134,
+    "Trigger-501": 134
+   }
+  },
+  "3/auditory": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 2,
+   "n_misc": 0,
+   "duration_s": 3441.999,
+   "n_annotations": 402,
+   "classes": {
+    "Trigger-401": 134,
+    "Trigger-402": 134,
+    "Trigger-501": 134
+   }
+  }
+ },
+ "electrodes": {
+  "n": 100,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "Trigger-401": 1,
+  "Trigger-402": 2,
+  "Trigger-501": 3
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.6381317233437174,
+  "n_trials": 402,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 50.9
+}

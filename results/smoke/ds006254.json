@@ -1,0 +1,10 @@
+{
+ "id": "ds006254",
+ "title": "IEEG CCEP Recording",
+ "source": "openneuro",
+ "status": "error",
+ "started": "2026-09-10 04:54:30",
+ "error": "RuntimeError: Failed to download 9 files. Re-run this command to retry; already-downloaded files will be skipped.",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/catalog.py\", line 79, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 85, in __init__\n    self._ensure_downloaded()\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 132, in _ensure_downloaded\n    include = self.include\n                ^^^^^^^^^^^\n  File \"/mnt/beegfs/home/yyu2024/moecog-venv/lib/python3.11/site-packages/openneuro/_download.py\", line 1238, in download\n    _print_download_failures(failures)\n  File \"/mnt/beegfs/home/yyu2024/moecog-venv/lib/python3.11/site-packages/openneuro/_download.py\", line 977, in _print_download_failures\n    raise RuntimeError(\nRuntimeError: Failed to download 9 files. Re-run this command to retry; already-downloaded files will be skipped.\n",
+ "seconds": 3.5
+}

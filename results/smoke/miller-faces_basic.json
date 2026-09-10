@@ -1,0 +1,42 @@
+{
+ "id": "miller-faces_basic",
+ "title": "Miller library faces_basic",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:07",
+ "subjects_found": 1,
+ "subject_list": [
+  "aa"
+ ],
+ "sessions": {
+  "faceshouses/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 46,
+   "n_misc": 0,
+   "duration_s": 271.399,
+   "n_annotations": 300,
+   "classes": {
+    "face": 150,
+    "house": 150
+   }
+  }
+ },
+ "electrodes": {
+  "n": 46,
+  "frame": "voxel"
+ },
+ "event_id": {
+  "house": 1,
+  "face": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.26666666666666666,
+  "n_trials": 300,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 2.6
+}

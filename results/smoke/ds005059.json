@@ -1,0 +1,94 @@
+{
+ "id": "ds005059",
+ "title": "Paired Associates Learning: Memory for Word Pairs in Cued Recall",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 04:05:52",
+ "subjects_found": 1,
+ "subject_list": [
+  "R1001P"
+ ],
+ "sessions": {
+  "0/PAL1_monopolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 88,
+   "n_misc": 0,
+   "duration_s": 3646.998,
+   "n_annotations": 1279,
+   "classes": {
+    "ENCODING_START": 25,
+    "MATH_END": 25,
+    "MATH_START": 25,
+    "PROB": 56,
+    "REC_END": 150,
+    "REC_EVENT": 170,
+    "REC_START": 150,
+    "SESS_START": 1,
+    "START": 26,
+    "STOP": 26,
+    "STUDY_ORIENT": 150,
+    "STUDY_PAIR": 150,
+    "TEST_ORIENT": 150,
+    "TEST_PROBE": 150,
+    "TEST_START": 25
+   }
+  },
+  "1/PAL1_monopolar": {
+   "kind": "raw",
+   "sfreq": 500.0,
+   "n_ecog": 88,
+   "n_misc": 0,
+   "duration_s": 2908.998,
+   "n_annotations": 1268,
+   "classes": {
+    "ENCODING_START": 25,
+    "MATH_END": 25,
+    "MATH_START": 25,
+    "PROB": 63,
+    "REC_END": 150,
+    "REC_EVENT": 152,
+    "REC_START": 150,
+    "SESS_START": 1,
+    "START": 26,
+    "STOP": 26,
+    "STUDY_ORIENT": 150,
+    "STUDY_PAIR": 150,
+    "TEST_ORIENT": 150,
+    "TEST_PROBE": 150,
+    "TEST_START": 25
+   }
+  }
+ },
+ "electrodes": {
+  "n": 88,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "ENCODING_START": 1,
+  "MATH_END": 2,
+  "MATH_START": 3,
+  "PROB": 4,
+  "REC_END": 5,
+  "REC_EVENT": 6,
+  "REC_START": 7,
+  "SESS_START": 8,
+  "START": 9,
+  "STOP": 10,
+  "STUDY_ORIENT": 11,
+  "STUDY_PAIR": 12,
+  "TEST_ORIENT": 13,
+  "TEST_PROBE": 14,
+  "TEST_START": 15
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": -0.0026706268678131084,
+  "n_trials": 1088,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 35.5
+}

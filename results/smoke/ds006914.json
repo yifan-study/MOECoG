@@ -1,0 +1,67 @@
+{
+ "id": "ds006914",
+ "title": "Picture naming",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:49:53",
+ "subjects_found": 1,
+ "subject_list": [
+  "065"
+ ],
+ "sessions": {
+  "1/picture": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 291.089,
+   "n_annotations": 240,
+   "classes": {
+    "Trigger-401": 60,
+    "Trigger-501": 60,
+    "Trigger-811": 10,
+    "Trigger-821": 10,
+    "Trigger-831": 10,
+    "Trigger-841": 10,
+    "Trigger-851": 10,
+    "Trigger-861": 10,
+    "Trigger-911": 10,
+    "Trigger-921": 10,
+    "Trigger-931": 10,
+    "Trigger-941": 10,
+    "Trigger-951": 10,
+    "Trigger-961": 10
+   }
+  }
+ },
+ "electrodes": {
+  "n": 58,
+  "frame": "other"
+ },
+ "event_id": {
+  "Trigger-401": 1,
+  "Trigger-501": 2,
+  "Trigger-811": 3,
+  "Trigger-821": 4,
+  "Trigger-831": 5,
+  "Trigger-841": 6,
+  "Trigger-851": 7,
+  "Trigger-861": 8,
+  "Trigger-911": 9,
+  "Trigger-921": 10,
+  "Trigger-931": 11,
+  "Trigger-941": 12,
+  "Trigger-951": 13,
+  "Trigger-961": 14
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.22607565632414747,
+  "n_trials": 119,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 9.3
+}

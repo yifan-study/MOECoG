@@ -1,0 +1,53 @@
+{
+ "id": "miller-imagery_basic",
+ "title": "Miller library imagery_basic",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:25:02",
+ "subjects_found": 1,
+ "subject_list": [
+  "bp"
+ ],
+ "sessions": {
+  "mot/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 46,
+   "n_misc": 0,
+   "duration_s": 376.399,
+   "n_annotations": 60,
+   "classes": {
+    "hand": 30,
+    "tongue": 30
+   }
+  },
+  "im/0": {
+   "sfreq": 1000.0,
+   "n_ecog": 46,
+   "n_misc": 0,
+   "duration_s": 376.599,
+   "n_annotations": 60,
+   "classes": {
+    "hand": 30,
+    "tongue": 30
+   }
+  }
+ },
+ "electrodes": {
+  "n": 46,
+  "frame": "talairach"
+ },
+ "event_id": {
+  "tongue": 1,
+  "hand": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.5092941498826212,
+  "n_trials": 60,
+  "fold_policy": [
+   "chronological"
+  ]
+ },
+ "seconds": 5.3
+}

@@ -1,0 +1,167 @@
+{
+ "id": "miller-speech_lists",
+ "title": "Miller library speech_lists",
+ "source": "miller",
+ "status": "ok",
+ "started": "2026-09-10 03:31:29",
+ "subjects_found": 1,
+ "subject_list": [
+  "jc"
+ ],
+ "sessions": {
+  "nouns_L1/R1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 137.679,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "nouns_L1/R2": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.239,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "nouns_L1/R3": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.079,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "verbs_L1/R1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.279,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "verbs_L1/R2": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.239,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "verbs_L1/R3": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 137.879,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "nouns_L2/R1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.119,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "nouns_L2/R2": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.199,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "nouns_L2/R3": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.279,
+   "n_annotations": 40,
+   "classes": {
+    "read_noun": 40
+   }
+  },
+  "verbs_L2/R1": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 137.839,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "verbs_L2/R2": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.239,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "verbs_L2/R3": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 138.159,
+   "n_annotations": 40,
+   "classes": {
+    "generate_verb": 40
+   }
+  },
+  "base/0": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 48,
+   "n_misc": 0,
+   "duration_s": 190.039,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 48,
+  "frame": "native"
+ },
+ "event_id": {
+  "read_noun": 1,
+  "generate_verb": 2
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "note": "no scorable session (fewer than two classes per session)"
+ },
+ "seconds": 11.1
+}

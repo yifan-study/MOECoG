@@ -1,0 +1,128 @@
+{
+ "id": "ds004080",
+ "title": "CCEP ECoG dataset across age 4-51",
+ "source": "openneuro",
+ "status": "ok",
+ "started": "2026-09-10 03:34:48",
+ "subjects_found": 1,
+ "subject_list": [
+  "ccepAgeUMCU01"
+ ],
+ "sessions": {
+  "1/SPESclin_021448": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 7200.154296875,
+   "n_annotations": 517,
+   "classes": {
+    "artefact": 56,
+    "electrical_stimulation": 460,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_031422": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 2731.248046875,
+   "n_annotations": 345,
+   "classes": {
+    "artefact": 30,
+    "electrical_stimulation": 314,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_041224": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 5788.279296875,
+   "n_annotations": 195,
+   "classes": {
+    "artefact": 53,
+    "electrical_stimulation": 141,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_041550": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 7200.154296875,
+   "n_annotations": 141,
+   "classes": {
+    "artefact": 99,
+    "electrical_stimulation": 40,
+    "seizure": 1,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_041750": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 3199.623046875,
+   "n_annotations": 403,
+   "classes": {
+    "artefact": 22,
+    "electrical_stimulation": 380,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_061233": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 3840.12411849,
+   "n_annotations": 543,
+   "classes": {
+    "artefact": 7,
+    "electrical_stimulation": 535,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_061337": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 306.843230298,
+   "n_annotations": 28,
+   "classes": {
+    "artefact": 2,
+    "electrical_stimulation": 25,
+    "stimulation": 1
+   }
+  },
+  "1/SPESclin_061343": {
+   "kind": "raw",
+   "sfreq": 2048.0002097152214,
+   "n_ecog": 96,
+   "n_misc": 3,
+   "duration_s": 1436.721044286,
+   "n_annotations": 200,
+   "classes": {
+    "artefact": 7,
+    "electrical_stimulation": 192,
+    "stimulation": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 133,
+  "frame": "fsaverage"
+ },
+ "event_id": {
+  "artefact": 1,
+  "electrical_stimulation": 2,
+  "stimulation": 3
+ },
+ "seconds": 42.5
+}

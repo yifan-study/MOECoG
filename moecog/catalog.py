@@ -44,6 +44,16 @@ _NO_TASK = ("rest", "sleep", "sws", "seizure", "ictal", "interictal", "acute", "
             "ccep", "task-spesclin", "task-spesprop", "dcs", "lozhfo", "photicstim")
 
 
+# datasets whose files OpenNeuro refuses to serve (HTTP 403 on every file URL and on the S3 mirror);
+# probably embargoed or not yet exported to S3. Re-check occasionally with
+# `curl -sI -L https://openneuro.org/crn/datasets/<id>/snapshots/<tag>/files/participants.tsv`.
+_ON_LOCKED = {
+    "ds006254": "OpenNeuro returns HTTP 403 for every file of snapshot 1.0.0 (checked 2026-09-10)",
+    "ds007703": "OpenNeuro returns HTTP 403 for every file of snapshot 1.0.0 and the snapshot lists only "
+                "sidecar files, no ieeg recordings (checked 2026-09-10)",
+}
+
+
 def _openneuro_entry(meta):
     did = meta["id"]
     subj = _ON_SUBJ.get(did, {})
@@ -68,10 +78,11 @@ def _openneuro_entry(meta):
 
         return EpochedClassification(tmin=0.0, tmax=1.0, fmin=1.0, fmax=150.0, resample=250.0)
 
+    notes = f"{n_sub} subjects; tasks {','.join(tasks[:4])}; {(meta.get('size') or 0) / 1e9:.1f} GB"
+    if did in _ON_LOCKED:
+        notes += f"; BLOCKED: {_ON_LOCKED[did]}"
     return Entry(id=did, title=(meta.get("name") or did).strip()[:90] or did, source="openneuro", build=build,
-                 paradigm=paradigm if epoched else None,
-                 notes=f"{n_sub} subjects; tasks {','.join(tasks[:4])}; {(meta.get('size') or 0) / 1e9:.1f} GB",
-                 tags=("bids",))
+                 paradigm=paradigm if epoched else None, blocked=did in _ON_LOCKED, notes=notes, tags=("bids",))
 
 
 for _m in _ON_META:

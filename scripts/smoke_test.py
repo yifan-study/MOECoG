@@ -25,12 +25,15 @@ from pathlib import Path
 warnings.filterwarnings("ignore")
 
 
-def run_entry(entry, out_dir: Path, quick=True):
+def run_entry(entry, out_dir: Path, quick=True, max_runs=None):
     t0 = time.time()
     rec = {"id": entry.id, "title": entry.title, "source": entry.source, "status": "ok",
            "started": time.strftime("%Y-%m-%d %H:%M:%S")}
     try:
         ds = entry.build()
+        if max_runs is not None and hasattr(ds, "max_runs"):
+            ds.max_runs = max_runs
+            rec["max_runs"] = max_runs
         rec["subjects_found"] = len(ds.subject_list)
         rec["subject_list"] = [str(s) for s in ds.subject_list[:20]]
         subject = ds.subject_list[0]
@@ -115,6 +118,8 @@ def main():
     ap.add_argument("--out", default="results/smoke")
     ap.add_argument("--no-baseline", action="store_true")
     ap.add_argument("--skip-done", action="store_true", help="skip ids with an existing ok JSON")
+    ap.add_argument("--max-runs", type=int, default=None,
+                    help="load at most N runs per session for loaders that support it (memory guard)")
     args = ap.parse_args()
     entries = list(ENTRIES.values()) if args.all else [ENTRIES[i] for i in (args.ids or [])]
     if args.tier:
@@ -125,7 +130,7 @@ def main():
         if args.skip_done and f.is_file() and json.loads(f.read_text()).get("status") == "ok":
             print(f"skip {e.id}")
             continue
-        rec = run_entry(e, out, quick=not args.no_baseline)
+        rec = run_entry(e, out, quick=not args.no_baseline, max_runs=args.max_runs)
         status = rec["status"]
         extra = rec.get("error", "") if status != "ok" else json.dumps(rec.get("quick_baseline", {}))[:100]
         print(f"[{status}] {e.id} ({rec['seconds']}s) {extra}")

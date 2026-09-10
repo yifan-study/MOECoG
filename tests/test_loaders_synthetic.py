@@ -84,10 +84,15 @@ def test_duin_pickle_shim(tmp_path):
     """Du-IN files pickle a utils.DotDict; the loader must unpickle them without that module."""
     from moecog.datasets.misc import DuIN
 
+    # the real files were written with ``from utils.DotDict import DotDict`` -> module path "utils.DotDict"
     mod = types.ModuleType("utils")
-    DotDict = type("DotDict", (dict,), {"__module__": "utils"})
-    mod.DotDict = DotDict
+    mod.__path__ = []
+    sub = types.ModuleType("utils.DotDict")
+    DotDict = type("DotDict", (dict,), {"__module__": "utils.DotDict"})
+    sub.DotDict = DotDict
+    mod.DotDict = sub
     sys.modules["utils"] = mod
+    sys.modules["utils.DotDict"] = sub
     try:
         info = DotDict(ch_names=["A1", "A2"], sfreq=100.0)
         trials = [DotDict(name="word%d" % (k % 2), data_s=np.random.default_rng(k).standard_normal((2, 100)))
@@ -96,6 +101,7 @@ def test_duin_pickle_shim(tmp_path):
         (tmp_path / "001_run1_data").write_bytes(pickle.dumps(trials))
     finally:
         del sys.modules["utils"]
+        del sys.modules["utils.DotDict"]
     ds = DuIN(subjects=["001"], runs=[1], root=tmp_path)
     ds.data_path = lambda subject: [tmp_path / "001_run1_data", tmp_path / "001_run1_info"]
     data = ds.get_data(subjects=["001"])["001"]["0"]["run1"]
@@ -116,3 +122,22 @@ def test_peterson_moverest_netcdf(tmp_path):
     ep = ds.get_data(subjects=["EC09"])["EC09"]["0"]["0"]
     assert isinstance(ep, mne.BaseEpochs) and ep.info["sfreq"] == 250.0 and len(ep) == 8
     assert sorted(ep.event_id) == ["move", "rest"] and ep.get_data().shape[1] == 4
+
+
+def test_download_helper_file_url_and_size_check(tmp_path):
+    """_download streams to a .part file, validates expected_size and reuses complete files."""
+    from moecog.datasets.misc import _download
+
+    src = tmp_path / "src.bin"
+    src.write_bytes(b"x" * 5000)
+    url = src.resolve().as_uri()
+    dest = tmp_path / "out" / "dst.bin"
+    assert _download(url, dest, expected_size=5000) == dest
+    assert dest.stat().st_size == 5000 and not dest.with_name("dst.bin.part").exists()
+    # an existing complete file is returned without touching it
+    mtime = dest.stat().st_mtime_ns
+    _download("file:///nonexistent/never-fetched", dest, expected_size=5000)
+    assert dest.stat().st_mtime_ns == mtime
+    # a size mismatch is reported after the retries are exhausted
+    with pytest.raises(OSError, match="failed after"):
+        _download(url, tmp_path / "bad.bin", expected_size=1, retries=2)

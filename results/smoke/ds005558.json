@@ -2,13 +2,85 @@
  "id": "ds005558",
  "title": "Categorized Free Recall with Closed-Loop Stimulation at Encoding (Encoding Classifier)",
  "source": "openneuro",
- "status": "error",
- "started": "2026-09-09 23:47:59",
+ "status": "ok",
+ "started": "2026-09-09 23:59:20",
  "subjects_found": 1,
  "subject_list": [
   "R1226D"
  ],
- "error": "ValueError: No appropriate channels found for the given picks ([])",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 248, in _get_single_subject_data\n    r.pick(keep)\n  File \"<decorator-gen-95>\", line 12, in pick\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/channels/channels.py\", line 501, in pick\n    picks = _picks_to_idx(self.info, picks, \"all\", exclude, allow_empty=False)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/_fiff/pick.py\", line 1362, in _picks_to_idx\n    raise ValueError(\nValueError: No appropriate channels found for the given picks ([])\n",
- "seconds": 126.6
+ "sessions": {
+  "0/catFR3_bipolar": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 122,
+   "n_misc": 0,
+   "duration_s": 3003.999,
+   "n_annotations": 1320,
+   "classes": {
+    "COUNTDOWN_END": 26,
+    "COUNTDOWN_START": 26,
+    "DISTRACT_END": 26,
+    "DISTRACT_START": 26,
+    "ENCODING_END": 26,
+    "INSTRUCT_END": 1,
+    "INSTRUCT_START": 1,
+    "MIC_TEST": 1,
+    "ORIENT": 25,
+    "ORIENT_OFF": 25,
+    "PRACTICE_ORIENT": 1,
+    "PRACTICE_ORIENT_OFF": 1,
+    "PRACTICE_REC_END": 1,
+    "PRACTICE_REC_START": 1,
+    "PRACTICE_TRIAL": 1
+   }
+  }
+ },
+ "electrodes": {
+  "n": 90,
+  "frame": "mni152nlin6asym"
+ },
+ "event_id": {
+  "COUNTDOWN_END": 1,
+  "COUNTDOWN_START": 2,
+  "DISTRACT_END": 3,
+  "DISTRACT_START": 4,
+  "ENCODING_END": 5,
+  "INSTRUCT_END": 6,
+  "INSTRUCT_START": 7,
+  "MIC_TEST": 8,
+  "ORIENT": 9,
+  "ORIENT_OFF": 10,
+  "PRACTICE_ORIENT": 11,
+  "PRACTICE_ORIENT_OFF": 12,
+  "PRACTICE_REC_END": 13,
+  "PRACTICE_REC_START": 14,
+  "PRACTICE_TRIAL": 15,
+  "PRACTICE_WORD": 16,
+  "PRACTICE_WORD_OFF": 17,
+  "PROB": 18,
+  "REC_END": 19,
+  "REC_START": 20,
+  "REC_WORD": 21,
+  "REC_WORD_VV": 22,
+  "RETRIEVAL_ORIENT": 23,
+  "SESS_END": 24,
+  "SESS_START": 25,
+  "START": 26,
+  "STIM_OFF": 27,
+  "STIM_ON": 28,
+  "STOP": 29,
+  "TRIAL": 30,
+  "WORD": 31,
+  "WORD_OFF": 32
+ },
+ "quick_baseline": {
+  "paradigm": "EpochedClassification",
+  "metric": "kappa",
+  "score": 0.10537726580927469,
+  "n_trials": 1263,
+  "fold_policy": [
+   "stratified_fallback"
+  ]
+ },
+ "seconds": 50.5
 }

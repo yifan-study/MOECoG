@@ -2,9 +2,9 @@
  "id": "ds006253",
  "title": "MetaRDK",
  "source": "openneuro",
- "status": "error",
- "started": "2026-09-09 23:56:40",
+ "status": "unsupported",
+ "started": "2026-09-10 00:00:12",
  "error": "ValueError: Subjects ['10'] not in /Users/johnsmith/moecog_data/openneuro/ds006253 and nothing else readable",
  "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 33, in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/catalog.py\", line 62, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 94, in __init__\n    raise ValueError(f\"Subjects {missing} not in {self._root} and nothing else readable\")\nValueError: Subjects ['10'] not in /Users/johnsmith/moecog_data/openneuro/ds006253 and nothing else readable\n",
- "seconds": 1.4
+ "seconds": 0.0
 }

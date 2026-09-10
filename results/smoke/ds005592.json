@@ -2,9 +2,9 @@
  "id": "ds005592",
  "title": "ds005592",
  "source": "openneuro",
- "status": "error",
- "started": "2026-09-09 23:50:28",
+ "status": "unsupported",
+ "started": "2026-09-10 00:00:10",
  "error": "RuntimeError: Query failed when retrieving metadata for ds005592: \"Dataset ds005592 has been deleted. Reason: duplicate dataset.\"",
  "traceback": " in run_entry\n    ds = entry.build()\n         ^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/catalog.py\", line 62, in build\n    return BIDSiEEGDataset(openneuro_id=did, include=include, subjects=[first] if first else None,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 82, in __init__\n    self._ensure_downloaded()\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 142, in _ensure_downloaded\n    openneuro.download(dataset=self.openneuro_id, target_dir=self._root)\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 1129, in download\n    metadata = _get_download_metadata(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 304, in _get_download_metadata\n    response_json = _retry_request(\n                    ^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/openneuro/_download.py\", line 382, in _retry_request\n    raise RuntimeError(f'Query failed when {what}: \"{error_message}\"')\nRuntimeError: Query failed when retrieving metadata for ds005592: \"Dataset ds005592 has been deleted. Reason: duplicate dataset.\"\n",
- "seconds": 0.3
+ "seconds": 1.3
 }

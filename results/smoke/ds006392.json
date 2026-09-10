@@ -3,12 +3,12 @@
  "title": "HED schema library for SCORE annotations example",
  "source": "openneuro",
  "status": "unsupported",
- "started": "2026-09-09 23:56:42",
+ "started": "2026-09-10 00:00:12",
  "subjects_found": 1,
  "subject_list": [
   "ieegModulator"
  ],
  "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 234, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 197, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 16.0
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 270, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 197, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
+ "seconds": 0.1
 }

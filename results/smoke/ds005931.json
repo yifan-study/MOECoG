@@ -2,13 +2,31 @@
  "id": "ds005931",
  "title": "Visuomotor_task",
  "source": "openneuro",
- "status": "error",
- "started": "2026-09-09 23:53:29",
+ "status": "ok",
+ "started": "2026-09-10 00:00:12",
  "subjects_found": 1,
  "subject_list": [
   "03"
  ],
- "error": "ValueError: No appropriate channels found for the given picks ([])",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 248, in _get_single_subject_data\n    r.pick(keep)\n  File \"<decorator-gen-95>\", line 12, in pick\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/channels/channels.py\", line 501, in pick\n    picks = _picks_to_idx(self.info, picks, \"all\", exclude, allow_empty=False)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/.venv/lib/python3.12/site-packages/mne/_fiff/pick.py\", line 1362, in _picks_to_idx\n    raise ValueError(\nValueError: No appropriate channels found for the given picks ([])\n",
- "seconds": 14.0
+ "sessions": {
+  "01/game_01": {
+   "kind": "raw",
+   "sfreq": 1000.0,
+   "n_ecog": 64,
+   "n_misc": 0,
+   "duration_s": 428.103,
+   "n_annotations": 122,
+   "classes": {
+    "Trigger-101": 122
+   }
+  }
+ },
+ "electrodes": {
+  "n": 118,
+  "frame": "unknown"
+ },
+ "event_id": {
+  "Trigger-101": 1
+ },
+ "seconds": 0.4
 }

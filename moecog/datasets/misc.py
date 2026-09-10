@@ -13,9 +13,8 @@ import os
 import pickle
 import re
 import shutil
-import sys
-import types
 import urllib.request
+import warnings
 import zipfile
 from pathlib import Path
 
@@ -29,15 +28,44 @@ def _data_dir() -> Path:
     return Path(os.environ.get("MOECOG_DATA_DIR", "~/moecog_data")).expanduser()
 
 
-def _download(url: str, dest: Path, expected_size=None) -> Path:
+def _download(url: str, dest: Path, expected_size=None, retries: int = 3) -> Path:
+    """Stream ``url`` to ``dest`` with HTTP-range resumption.
+
+    A file that already exists is trusted unless ``expected_size`` disagrees with it. Interrupted transfers
+    are written to ``dest.part`` and resumed with a ``Range`` request, so multi-GB archives (OSF, Hugging
+    Face, figshare) survive dropped connections; servers that ignore ranges restart from zero.
+    """
     dest = Path(dest)
     if dest.is_file() and (expected_size is None or dest.stat().st_size == expected_size):
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers={"User-Agent": "moecog/0.2"})
-    with urllib.request.urlopen(req, timeout=600) as resp, open(dest, "wb") as fh:
-        shutil.copyfileobj(resp, fh, length=1 << 22)
-    return dest
+    part = dest.with_name(dest.name + ".part")
+    last_err = None
+    for attempt in range(retries):
+        offset = part.stat().st_size if part.is_file() else 0
+        headers = {"User-Agent": "moecog/0.2"}
+        if offset:
+            headers["Range"] = f"bytes={offset}-"
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=600) as resp:
+                resumed = offset and resp.status == 206
+                total = resp.headers.get("Content-Length")
+                total = int(total) + (offset if resumed else 0) if total else None
+                with open(part, "ab" if resumed else "wb") as fh:
+                    shutil.copyfileobj(resp, fh, length=1 << 22)
+            size = part.stat().st_size
+            if (total is not None and size != total) or (expected_size is not None and size != expected_size):
+                last_err = OSError(f"{url}: got {size} bytes, expected {expected_size or total}")
+                if total is not None and size < total:
+                    continue  # short read: resume on the next attempt
+                part.unlink(missing_ok=True)
+                continue
+            part.replace(dest)
+            return dest
+        except (OSError, EOFError) as err:  # includes URLError, IncompleteRead, timeouts
+            last_err = err
+    raise OSError(f"download of {url} failed after {retries} attempts: {last_err}")
 
 
 def _raw_from_array(data, sfreq, ch_names=None, ch_types=None, annotations=None, description=""):
@@ -339,9 +367,15 @@ class RogersMicroECoG(_SimpleDataset):
 
 # ------------------------------------------------------------------ OSF (Verwoert iBIDS)
 class VerwoertSpeech(_SimpleDataset):
-    """Verwoert 2022 single-word production sEEG (OSF nrgx6, iBIDS zip with NWB files)."""
+    """Verwoert 2022 single-word production sEEG (OSF nrgx6, iBIDS zip with NWB files).
 
-    ZIP = "https://files.osf.io/v1/resources/nrgx6/providers/osfstorage/?zip="
+    The OSF project stores one file, ``SingleWordProductionDutch-iBIDS.zip`` (OSF guid ``g6q5m``, ~2.8 GB).
+    It is fetched directly; the project-level ``?zip=`` endpoint wraps that zip in another zip whose
+    single member carries the same file name, so extracting it in place truncates the archive being read.
+    """
+
+    ZIP = "https://osf.io/download/g6q5m/"
+    ZIP_NAME = "verwoert_nrgx6_iBIDS.zip"
 
     def __init__(self, root=None, subjects=None, download=True):
         self.root = Path(root).expanduser() if root else _data_dir() / "osf" / "verwoert"
@@ -360,13 +394,30 @@ class VerwoertSpeech(_SimpleDataset):
             return
         if not self.download:
             raise FileNotFoundError(d)
-        z = _download(self.ZIP, self.root / "SingleWordProductionDutch-iBIDS.zip")
+        z = self.root / self.ZIP_NAME
+        for attempt in range(2):
+            z = _download(self.ZIP, z)
+            if zipfile.is_zipfile(z):
+                break
+            z.unlink()  # truncated or an HTML error page: fetch again once
+        else:
+            raise OSError(f"{z} is not a valid zip archive after re-download")
         with zipfile.ZipFile(z) as zf:
-            zf.extractall(self.root)
+            names = zf.namelist()
+            inner = [n for n in names if n.lower().endswith(".zip")]
+            if len(names) == len(inner) + sum(n.endswith("/") for n in names) and inner:
+                # wrapper archive (project-level export): unpack the real iBIDS zip it contains
+                with zf.open(inner[0]) as src, open(self.root / "inner.zip", "wb") as dst:
+                    shutil.copyfileobj(src, dst, length=1 << 22)
+                with zipfile.ZipFile(self.root / "inner.zip") as zi:
+                    zi.extractall(self.root)
+                (self.root / "inner.zip").unlink()
+            else:
+                zf.extractall(self.root)
         if not d.is_dir():
-            inner = next(self.root.glob("*/SingleWordProductionDutch-iBIDS"), None)
-            if inner:
-                shutil.move(str(inner), str(d))
+            inner_dir = next(self.root.glob("*/SingleWordProductionDutch-iBIDS"), None)
+            if inner_dir:
+                shutil.move(str(inner_dir), str(d))
 
     def data_path(self, subject):
         d = self.root / "SingleWordProductionDutch-iBIDS" / f"sub-{subject}"
@@ -460,6 +511,20 @@ class MerkGripForce(_SimpleDataset):
         return out
 
 
+def _load_hdf5_plugins():
+    """Register third-party HDF5 filters (Blosc, LZ4, Zstd) when ``hdf5plugin`` is installed.
+
+    The SWEC-ETHZ HDF5 exports are Blosc-compressed (filter id 32001); stock h5py wheels cannot decode them and
+    fail with "Can't synchronously read data (can't open directory .../hdf5/lib/plugin)". Importing
+    ``hdf5plugin`` registers the filters process-wide, so this is a no-op after the first call.
+    """
+    try:
+        import hdf5plugin  # noqa: F401
+    except ImportError:
+        warnings.warn("hdf5plugin is not installed; Blosc/LZ4/Zstd-compressed HDF5 files (e.g. SWEC) will not "
+                      "load. Install it with `pip install hdf5plugin`.", stacklevel=2)
+
+
 # ------------------------------------------------------------------ Hugging Face
 _HF = "https://huggingface.co/datasets/{repo}/resolve/main/{path}"
 
@@ -495,18 +560,20 @@ class DuIN(_SimpleDataset):
 
     @staticmethod
     def _load_pickle(path):
-        shim = types.ModuleType("utils")
-        shim.DotDict = _DotDict
-        saved = sys.modules.get("utils")
-        sys.modules["utils"] = shim
-        try:
-            with open(path, "rb") as fh:
-                return pickle.load(fh)
-        finally:
-            if saved is not None:
-                sys.modules["utils"] = saved
-            else:
-                sys.modules.pop("utils", None)
+        """Unpickle a Du-IN file, mapping the project's ``utils.DotDict.DotDict`` class onto :class:`_DotDict`.
+
+        The files were pickled with ``from utils.DotDict import DotDict`` (module path ``utils.DotDict``); older
+        exports reference plain ``utils``. Overriding ``find_class`` covers both without touching ``sys.modules``.
+        """
+
+        class _Unpickler(pickle.Unpickler):
+            def find_class(self, module, name):
+                if name == "DotDict" and module.split(".")[0] == "utils":
+                    return _DotDict
+                return super().find_class(module, name)
+
+        with open(path, "rb") as fh:
+            return _Unpickler(fh).load()
 
     def _get_single_subject_data(self, subject):
         out = {}
@@ -559,6 +626,7 @@ class SWEC(_SimpleDataset):
     def _get_single_subject_data(self, subject):
         import h5py
 
+        _load_hdf5_plugins()
         out = {}
         for path in self.data_path(subject):
             with h5py.File(path, "r") as f:

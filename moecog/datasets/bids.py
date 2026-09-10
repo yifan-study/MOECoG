@@ -67,9 +67,12 @@ class BIDSiEEGDataset(BaseECoGDataset):
     def __init__(self, root=None, openneuro_id=None, task=None, events=None,
                  event_column="trial_type", interval=None, paradigm="epoched",
                  channel_types=("ecog",), subjects=None, code=None, download=True,
-                 include=None, sfreq=None):
+                 include=None, sfreq=None, max_runs=None):
         if root is None and openneuro_id is None:
             raise ValueError("Give root or openneuro_id")
+        #: load at most this many runs per session (sorted file order); None loads everything. Smoke tests
+        #: and memory-bound machines use it on datasets with hours-long runs (e.g. the RAM ds0055xx family).
+        self.max_runs = max_runs
         self.openneuro_id = openneuro_id
         self._root = Path(root).expanduser() if root else _data_dir() / "openneuro" / openneuro_id
         self.task = task
@@ -266,6 +269,12 @@ class BIDSiEEGDataset(BaseECoGDataset):
         files = self._ieeg_files(subject)
         if not files:
             raise FileNotFoundError(f"sub-{subject}: no readable ieeg files under {self._root}")
+        if self.max_runs is not None:
+            by_ses = {}
+            for f in files:
+                m = re.search(r"_ses-([A-Za-z0-9]+)_", f.name)
+                by_ses.setdefault(m.group(1) if m else "0", []).append(f)
+            files = [f for fs in by_ses.values() for f in fs[: int(self.max_runs)]]
         for f in files:
             raw, ent = self._load_file(f)
             session = ent["session"] or "0"

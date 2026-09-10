@@ -766,3 +766,197 @@ class BrainTreebank(_SimpleDataset):
 __all__ = ["BCICompIV4", "BCICompIII1", "PetersonMoveRest", "PetersonPose", "PetersonReach",
            "RogersMicroECoG", "VerwoertSpeech", "MerkGripForce", "DuIN", "SWEC", "OmniEDF",
            "MindEyeIEEG", "BrainTreebank"]
+
+
+# ------------------------------------------------------------------ Zenodo (Bellier music)
+class BellierMusic(_SimpleDataset):
+    """Bellier 2023 music reconstruction: high-frequency activity (70-150 Hz) of 29 patients (Zenodo 7876019, CC-BY).
+
+    Each ``P{n}_HFA_data.mat`` holds ``ecog`` (time x electrodes) at 100 Hz while the patient listened to
+    190.7 s of Pink Floyd's "Another Brick in the Wall, Part 1"; ``thewall1_stim32.mat`` is the 32-band
+    auditory spectrogram of the song on the same time base. The loader returns one Raw per patient: HFA
+    channels typed ``ecog`` (feature domain, already rectified and z-scored by the authors) plus 32 ``misc``
+    channels ``stim_<Hz>`` carrying the spectrogram, so the regression target lives next to the features.
+    Electrodes flagged noisy or epileptic by the authors go to ``info["bads"]``; MNI coordinates come from
+    ``P{n}_MNI_electrode_coordinates.mat``.
+    """
+
+    RECORD = 7876019
+    URL = "https://zenodo.org/api/records/{rec}/files/{name}/content"
+    ALL = tuple(f"P{i}" for i in range(1, 30))
+
+    def __init__(self, subjects=ALL, root=None):
+        self.root = Path(root).expanduser() if root else _data_dir() / "zenodo" / "bellier"
+        super().__init__(subjects=list(subjects), sessions_per_subject=1, events=None, code="Bellier2023-music",
+                         paradigm="stimulus-reconstruction", interval=None, sfreq=100.0,
+                         doi="10.1371/journal.pbio.3002176")
+
+    def _file(self, name):
+        return _download(self.URL.format(rec=self.RECORD, name=name), self.root / name)
+
+    def data_path(self, subject):
+        return [self._file(f"{subject}_HFA_data.mat"), self._file("thewall1_stim32.mat"),
+                self._file(f"{subject}_MNI_electrode_coordinates.mat")]
+
+    def _get_single_subject_data(self, subject):
+        import scipy.io as sio
+
+        hfa_p, stim_p, _ = self.data_path(subject)
+        m = sio.loadmat(hfa_p, squeeze_me=True, struct_as_record=False)
+        x = np.asarray(m["ecog"], dtype=float).T  # (n_elec, n_times)
+        info = m["dataInfo"]
+        fs = float(getattr(info, "fs", 100.0))
+        stim = np.asarray(sio.loadmat(stim_p, squeeze_me=True)["stim32"], dtype=float).T
+        cf = np.asarray(sio.loadmat(stim_p, squeeze_me=True)["CF32"]).ravel()
+        n = min(x.shape[1], stim.shape[1])
+        names = [f"E{i + 1:03d}" for i in range(x.shape[0])] + [f"stim_{int(round(float(c)))}Hz" for c in cf]
+        types = ["ecog"] * x.shape[0] + ["misc"] * stim.shape[0]
+        raw = _raw_from_array(np.vstack([x[:, :n], stim[:, :n]]), fs, ch_names=names, ch_types=types,
+                              description=f"Bellier HFA (z-scored 70-150 Hz envelope) {subject}; "
+                                          "32-band song spectrogram as misc")
+        bads = set()
+        for attr in ("idxNoisyElecs", "idxEpilepticElecs"):
+            idx = np.atleast_1d(np.asarray(getattr(info, attr, []), dtype=float)).astype(int)
+            bads.update(f"E{i:03d}" for i in idx if 1 <= i <= x.shape[0])  # MATLAB 1-based indices
+        raw.info["bads"] = sorted(bads)
+        return {"0": {"0": raw}}
+
+    def get_electrode_info(self, subject):
+        import scipy.io as sio
+
+        from .base import ElectrodeInfo
+
+        m = sio.loadmat(self.data_path(subject)[2], squeeze_me=True, struct_as_record=False)
+        e = m[next(k for k in m if not k.startswith("__"))]
+        pos = np.asarray(e.elecpos, dtype=float)
+        labels = [f"E{i + 1:03d}" for i in range(pos.shape[0])]
+        anat = [str(a) for a in np.atleast_1d(getattr(e, "anatLabels", []))] or None
+        return ElectrodeInfo(positions=pos, labels=labels, coord_frame="mni", gyrus=anat)
+
+
+# ------------------------------------------------------------------ OSF (Stolk sensorimotor)
+class StolkSensorimotor(_SimpleDataset):
+    """Stolk 2019 eLife sensorimotor alpha/beta: high-density ECoG, FieldTrip trials (OSF z4hfm).
+
+    ``S{n}_raw_segmented.mat`` (MATLAB v5) holds a FieldTrip raw structure: ``trial`` (cells of channels x
+    2049 samples, -1.5 to 2.5 s around the cue at 512 Hz), ``label``, ``trialinfo`` (49 x 9) and ``elec``
+    (positions in mm). The columns of ``trialinfo`` are not documented in the deposit; columns 1-4 are
+    binary condition codes and column 5 a reaction time. ``label_column`` picks the one used as the class
+    (default 2, two balanced values), so treat the resulting labels as *condition code*, not a named
+    movement, until the authors' analysis code is cross-checked (paper: Stolk et al. 2019, eLife 8:e48065).
+    """
+
+    FILES = {"S4": "mgn6y", "S5": "qmsc4", "S6": "dtqky"}
+
+    def __init__(self, subjects=("S4", "S5", "S6"), root=None, label_column=2):
+        self.root = Path(root).expanduser() if root else _data_dir() / "osf" / "stolk"
+        self.label_column = int(label_column)
+        super().__init__(subjects=list(subjects), sessions_per_subject=1, events=None, code="Stolk2019-sensorimotor",
+                         paradigm="motor", interval=[0.0, 1.0], sfreq=512.0, doi="10.7554/eLife.48065")
+
+    def data_path(self, subject):
+        return [_download(f"https://osf.io/download/{self.FILES[subject]}/",
+                          self.root / f"{subject}_raw_segmented.mat")]
+
+    def _get_single_subject_data(self, subject):
+        import scipy.io as sio
+
+        d = sio.loadmat(self.data_path(subject)[0], squeeze_me=True, struct_as_record=False)["data"]
+        trials = [np.asarray(t, dtype=float) for t in d.trial]
+        n_t = min(t.shape[1] for t in trials)
+        X = np.stack([t[:, :n_t] for t in trials]) * 1e-6  # FieldTrip data in microvolts
+        labels = [str(lab) for lab in np.atleast_1d(d.label)]
+        fs = float(d.fsample)
+        tmin = float(np.asarray(d.time[0]).ravel()[0])
+        info_ = np.asarray(d.trialinfo, dtype=float)
+        codes = info_[:, self.label_column]
+        classes = sorted(set(codes.tolist()))
+        self.event_id = {f"cond{int(c) if float(c).is_integer() else c}": i + 1 for i, c in enumerate(classes)}
+        events = np.column_stack([np.arange(len(codes)) * (n_t + 1), np.zeros(len(codes), int),
+                                  [self.event_id[f"cond{int(c) if float(c).is_integer() else c}"] for c in codes]])
+        info = mne.create_info(labels, fs, ["ecog"] * len(labels))
+        epochs = mne.EpochsArray(X, info, events=events, event_id=self.event_id, tmin=tmin, verbose=False)
+        epochs.info["description"] = f"Stolk 2019 {subject}; classes = trialinfo column {self.label_column}"
+        return {"0": {"0": epochs}}
+
+    def get_electrode_info(self, subject):
+        import scipy.io as sio
+
+        from .base import ElectrodeInfo
+
+        d = sio.loadmat(self.data_path(subject)[0], squeeze_me=True, struct_as_record=False)["data"]
+        e = d.elec
+        return ElectrodeInfo(positions=np.asarray(e.elecpos, dtype=float),
+                             labels=[str(lab) for lab in np.atleast_1d(e.label)], coord_frame="unknown")
+
+
+# ------------------------------------------------------------------ DANDI 001535 (BRAVO neural features)
+class BRAVOFeatures(_SimpleDataset):
+    """DANDI 001535: long-term BCI training data of a tetraplegic participant (BRAVO1), neural features per trial.
+
+    The NWB holds no voltage: each ``acquisition/trial_<k>`` is a (time x 256) TimeSeries of neural features
+    (the Chang-lab high-gamma and low-frequency streams over the 128-channel array) with timestamps, and
+    ``intervals/trials`` gives ``target_id`` (the cued target), ``is_robot`` and ``is_virtual``. The loader
+    turns the first ``max_trials`` trials into an ``EpochsArray`` cropped to the shortest trial, labelled by
+    ``target_id``, so target decoding runs like any other epoched paradigm; the channels are typed ``ecog``
+    but are *features*, which the description records.
+    """
+
+    def __init__(self, subjects=("BRAVO1",), root=None, max_trials=2000, label="target_id", version="draft"):
+        self.root = Path(root).expanduser() if root else _data_dir() / "dandi" / "001535"
+        self.max_trials = max_trials
+        self.label = label
+        self.version = version
+        super().__init__(subjects=list(subjects), sessions_per_subject=1, events=None, code="DANDI-001535-BRAVO",
+                         paradigm="bci-target", interval=[0.0, 0.9], sfreq=float("nan"))
+
+    def data_path(self, subject):
+        from .nwb import download_dandi_asset, list_dandi_assets
+
+        dest = self.root / f"sub-{subject}" / f"sub-{subject}.nwb"
+        if not dest.is_file():
+            assets = [a for a in list_dandi_assets("001535", self.version) if f"sub-{subject}" in a["path"]]
+            if not assets:
+                raise FileNotFoundError(f"no asset for sub-{subject} in DANDI 001535")
+            download_dandi_asset("001535", assets[0], self.root, self.version)
+        return [dest]
+
+    def _get_single_subject_data(self, subject):
+        import h5py
+
+        path = self.data_path(subject)[0]
+        with h5py.File(path, "r") as f:
+            tab = f["intervals/trials"]
+            ids = np.asarray(tab["id"][()])
+            labels = np.asarray(tab[self.label][()])
+            order = np.argsort(ids)
+            ids, labels = ids[order], labels[order]
+            if self.max_trials is not None:
+                ids, labels = ids[: self.max_trials], labels[: self.max_trials]
+            X, y, rates = [], [], []
+            for tid, lab in zip(ids, labels):
+                g = f["acquisition"].get(f"trial_{int(tid)}")
+                if g is None or not np.isfinite(float(lab)):
+                    continue
+                data = np.asarray(g["data"][()], dtype=float)  # (time, features)
+                ts = np.asarray(g["timestamps"][()], dtype=float) if "timestamps" in g else None
+                if ts is not None and ts.size > 1:
+                    rates.append(1.0 / float(np.median(np.diff(ts))))
+                X.append(data.T)
+                y.append(lab)
+        if not X:
+            raise ValueError(f"{path}: no usable trials")
+        sfreq = float(np.median(rates)) if rates else 200.0
+        n_t = min(x.shape[1] for x in X)
+        X = np.stack([x[:, :n_t] for x in X])
+        classes = sorted(set(float(v) for v in y))
+        self.event_id = {f"target{int(c)}": i + 1 for i, c in enumerate(classes)}
+        events = np.column_stack([np.arange(len(y)) * (n_t + 1), np.zeros(len(y), int),
+                                  [self.event_id[f"target{int(c)}"] for c in y]])
+        names = [f"f{i + 1:03d}" for i in range(X.shape[1])]
+        info = mne.create_info(names, sfreq, ["ecog"] * len(names))
+        epochs = mne.EpochsArray(X, info, events=events, event_id=self.event_id, tmin=0.0, verbose=False)
+        epochs.info["description"] = ("BRAVO1 neural features (256 = high-gamma + low-frequency streams of 128 "
+                                      f"channels) at {sfreq:.0f} Hz; first {len(y)} trials cropped to {n_t} samples; "
+                                      f"label {self.label}")
+        return {"0": {"0": epochs}}

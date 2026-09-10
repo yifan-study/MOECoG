@@ -48,9 +48,10 @@ _NO_TASK = ("rest", "sleep", "sws", "seizure", "ictal", "interictal", "acute", "
 # probably embargoed or not yet exported to S3. Re-check occasionally with
 # `curl -sI -L https://openneuro.org/crn/datasets/<id>/snapshots/<tag>/files/participants.tsv`.
 _ON_LOCKED = {
-    "ds006254": "OpenNeuro returns HTTP 403 for every file of snapshot 1.0.0 (checked 2026-09-10)",
-    "ds007703": "OpenNeuro returns HTTP 403 for every file of snapshot 1.0.0 and the snapshot lists only "
-                "sidecar files, no ieeg recordings (checked 2026-09-10)",
+    # ds006254 answers 403 to HEAD only; the loader now falls back to GET through the GraphQL file tree
+    "ds007703": "the snapshot lists only sidecar files (channels, events), no ieeg recordings; OpenNeuro also "
+                "refuses HEAD on every file (checked 2026-09-10)",
+    "ds005592": "deleted by OpenNeuro as a duplicate of ds006107, which loads",
 }
 
 
@@ -102,7 +103,6 @@ _DANDI = [
     ("000623", "Keles/Rutishauser movie watching (CS62)", r"sub-CS62_ses-P62CSR2", 1.0, "naturalistic"),
     ("000574", "Rutishauser verbal WM + iEEG (sub-05 ses-01)", r"sub-05_ses-01", 1.5, "memory"),
     ("000576", "Rutishauser amygdala aversive stimuli", None, 0.05, "visual"),
-    ("001535", "Natraj/Ganguly long-term ECoG BCI", None, 5.0, "motor_imagery"),
     ("000055", "AJILE12 (sub-04 ses-3)", r"sub-04_ses-3", 9.0, "naturalistic"),
 ]
 for _d, _t, _inc, _gb, _tag in _DANDI:
@@ -122,9 +122,11 @@ for _d, _t, _inc, _gb, _tag in _DANDI:
 for _d, _t in [("000469", "Rutishauser Sternberg WM"), ("000004", "Rutishauser declarative memory"),
                ("001616", "SUMMER movie single-neuron")]:
     _add(Entry(id=f"dandi-{_d}", title=_t, source="dandi",
-               blocked="NWB files hold spike times only (no ElectricalSeries)"))
+               blocked="single-unit spike times only; no field potentials or voltage in the NWB files (verified "
+                       "2026-09-10 by opening the files)"))
 _add(Entry(id="dandi-000571", title="Mayo CorTec BrainInterchange (MEF3)", source="dandi",
-           blocked="MEF3 format needs pymef; not supported yet"))
+           blocked="MEF3 stored as .mefd directory trees on DANDI; pymef reader exists for BIDS, a DANDI folder "
+                   "fetcher is still to write"))
 _add(Entry(id="dandi-001638", title="Cogan µECoG pseudoword repetition", source="dandi",
            blocked="dandiset has no assets yet (empty on 2026-09-09)"))
 _add(Entry(id="dandi-001613", title="Nentwich/Parra movies + eye tracking", source="dandi",
@@ -166,6 +168,10 @@ def _epoched_par():
     return EpochedClassification(tmin=0.0, tmax=None, fmin=1.0, fmax=150.0)
 
 
+_add(Entry(id="dandi-001535", title="Natraj/Ganguly long-term ECoG BCI, BRAVO1 neural features (DANDI 001535)",
+           source="dandi", build=_misc("BRAVOFeatures", max_trials=1500), paradigm=_epoched_par,
+           notes="4.7 GB NWB; 9737 BCI trials of 256 neural features (high-gamma + low-frequency streams of a 128-ch "
+                 "array) at 200 Hz, labelled by target_id; no raw voltage in the deposit", tags=("bci", "features")))
 _add(Entry(id="bci-iv-4", title="BCI Competition IV dataset 4 (finger flexion)", source="bbci",
            build=_misc("BCICompIV4"), tags=("motor_regression",),
            notes="from the Miller SDR deposit BCI_Competion4_dataset4_data_fingerflexions"))
@@ -194,12 +200,19 @@ _add(Entry(id="mindeye-ieeg", title="mindeye iEEG NSD high-frequency broadband",
            notes="12 GB derivative array; loader reads shape only unless the array is present"))
 _add(Entry(id="braintreebank", title="Brain Treebank (sub_1 trial000)", source="braintreebank",
            build=_misc("BrainTreebank", subjects=["1"], trials=[0]), tags=("naturalistic",)))
-_add(Entry(id="stolk-sensorimotor", title="Stolk sensorimotor alpha/beta (OSF)", source="osf",
-           blocked="MATLAB v7.3 segmented .mat; loader pending"))
-_add(Entry(id="bellier-music", title="Bellier music reconstruction (Zenodo 7876019)", source="zenodo",
-           blocked="Zenodo API timed out on 2026-09-09; file list pending"))
-_add(Entry(id="tonal-speech", title="Li tonal speech perception ECoG (Zenodo)", source="zenodo",
-           blocked="Zenodo record id not yet located"))
+_add(Entry(id="stolk-sensorimotor", title="Stolk sensorimotor alpha/beta, high-density ECoG (OSF z4hfm)",
+           source="osf", build=_misc("StolkSensorimotor", subjects=("S5",)),
+           paradigm=_epoched_par,
+           notes="3 patients, 120-ch grids, 49 cued-movement trials each (-1.5..2.5 s, 512 Hz); classes = "
+                 "trialinfo condition code (undocumented in the deposit); 140/38/137 MB", tags=("motor",)))
+_add(Entry(id="bellier-music", title="Bellier music reconstruction HFA, 29 patients (Zenodo 7876019)",
+           source="zenodo", build=_misc("BellierMusic", subjects=("P1",)),
+           notes="CC-BY; 70-150 Hz envelopes at 100 Hz, 190.7 s of song per patient; 32-band spectrogram as misc "
+                 "target channels; regression paradigm to come; ~400 MB for all 29", tags=("auditory", "features")))
+_add(Entry(id="tonal-speech", title="Li tonal speech perception ECoG, 4 awake-craniotomy patients (ScienceDB)",
+           source="scidb", blocked="hosted on ScienceDB (scidb.cn dataSetId c4d82d65ad5c4db88d712e68e199b6aa), a "
+                                   "JavaScript-only site whose file API is undocumented; BIDS-iEEG/NWB once "
+                                   "downloaded, so BIDSiEEGDataset(root=...) will read it"))
 
 # ---------------------------------------------------------------- needs account / agreement
 for _i, _t, _why in [
@@ -214,7 +227,7 @@ for _i, _t, _why in [
     ("crcns", "CRCNS ECoG/LFP sets", "account"),
     ("epilepsiae", "EPILEPSIAE", "restricted"),
     ("metzger-2023", "Chang lab neuroprosthesis deposit (Zenodo restricted)", "restricted deposit; request"),
-    ("gin-usz", "GIN USZ intraoperative HFO", "git-annex content; same data as ds004944"),
+    ("gin-usz", "GIN USZ intraoperative HFO", "duplicate of ds004944, which loads; no separate loader needed"),
 ]:
     _add(Entry(id=_i, title=_t, source="blocked", blocked=_why))
 

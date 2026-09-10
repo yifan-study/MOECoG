@@ -2,14 +2,14 @@
  "id": "ds004624",
  "title": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
  "source": "openneuro",
- "status": "unsupported",
- "started": "2026-09-10 04:31:52",
- "max_runs": 2,
+ "status": "error",
+ "started": "2026-09-10 14:35:36",
+ "max_seconds": 600.0,
  "subjects_found": 1,
  "subject_list": [
   "c03"
  ],
- "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 40, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 279, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 200, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 10.0
+ "error": "AssertionError: ",
+ "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 43, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 422, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 282, in _load_file\n    self._apply_sidecars(raw, path)\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 357, in _apply_sidecars\n    raw.set_annotations(mne.Annotations(onset[keep].astype(float),\n  File \"<decorator-gen-244>\", line 12, in set_annotations\n  File \"/mnt/beegfs/home/yyu2024/miniconda3/envs/pytorch_ml/lib/python3.11/site-packages/mne/io/base.py\", line 749, in set_annotations\n    new_annotations.crop(\n  File \"<decorator-gen-40>\", line 12, in crop\n  File \"/mnt/beegfs/home/yyu2024/miniconda3/envs/pytorch_ml/lib/python3.11/site-packages/mne/annotations.py\", line 839, in crop\n    assert (self.duration >= 0).all()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+ "seconds": 19.7
 }

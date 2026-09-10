@@ -2,13 +2,48 @@
  "id": "ds006392",
  "title": "HED schema library for SCORE annotations example",
  "source": "openneuro",
- "status": "unsupported",
- "started": "2026-09-10 00:00:12",
+ "status": "ok",
+ "started": "2026-09-10 10:34:49",
+ "max_seconds": 600.0,
  "subjects_found": 1,
  "subject_list": [
   "ieegModulator"
  ],
- "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 270, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 197, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 0.1
+ "sessions": {
+  "ieeg01/photicstim_01": {
+   "kind": "raw",
+   "sfreq": 512.0,
+   "n_ecog": 194,
+   "n_misc": 0,
+   "duration_s": 191.404296875,
+   "n_annotations": 18,
+   "classes": {
+    "1.0": 2,
+    "10.0": 2,
+    "12.0": 2,
+    "15.0": 2,
+    "20.0": 2,
+    "3.0": 2,
+    "30.0": 2,
+    "8.0": 2,
+    "nan": 2
+   }
+  }
+ },
+ "electrodes": {
+  "n": 166,
+  "frame": "mni152lin"
+ },
+ "event_id": {
+  "1.0": 1,
+  "10.0": 2,
+  "12.0": 3,
+  "15.0": 4,
+  "20.0": 5,
+  "3.0": 6,
+  "30.0": 7,
+  "8.0": 8,
+  "nan": 9
+ },
+ "seconds": 1.1
 }

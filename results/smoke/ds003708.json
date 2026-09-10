@@ -2,13 +2,32 @@
  "id": "ds003708",
  "title": "Basis profile curve identification to understand electrical stimulation effects in human b",
  "source": "openneuro",
- "status": "unsupported",
- "started": "2026-09-09 23:59:07",
+ "status": "ok",
+ "started": "2026-09-10 10:33:04",
+ "max_seconds": 600.0,
  "subjects_found": 1,
  "subject_list": [
   "01"
  ],
- "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/scripts/smoke_test.py\", line 37, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 270, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/Users/johnsmith/Desktop/sweet_home/yifan-study/MOECoG/moecog/datasets/bids.py\", line 197, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 0.7
+ "sessions": {
+  "ieeg01/ccep_01": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 76,
+   "n_misc": 1,
+   "duration_s": 599.99951171875,
+   "n_annotations": 2,
+   "classes": {
+    "electrical_stimulation": 2
+   }
+  }
+ },
+ "electrodes": {
+  "n": 89,
+  "frame": "mni152nlin6sym"
+ },
+ "event_id": {
+  "electrical_stimulation": 1
+ },
+ "seconds": 6.8
 }

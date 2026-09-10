@@ -1,0 +1,28 @@
+{
+ "id": "bellier-music",
+ "title": "Bellier music reconstruction HFA, 29 patients (Zenodo 7876019)",
+ "source": "zenodo",
+ "status": "ok",
+ "started": "2026-09-10 10:36:40",
+ "subjects_found": 1,
+ "subject_list": [
+  "P1"
+ ],
+ "sessions": {
+  "0/0": {
+   "kind": "raw",
+   "sfreq": 100.0,
+   "n_ecog": 64,
+   "n_misc": 32,
+   "duration_s": 190.71,
+   "n_annotations": 0,
+   "classes": {}
+  }
+ },
+ "electrodes": {
+  "n": 64,
+  "frame": "mni"
+ },
+ "event_id": null,
+ "seconds": 0.7
+}

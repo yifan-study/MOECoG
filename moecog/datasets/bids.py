@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import os
 import re
+import warnings
 from pathlib import Path
 
 import mne
@@ -67,12 +68,17 @@ class BIDSiEEGDataset(BaseECoGDataset):
     def __init__(self, root=None, openneuro_id=None, task=None, events=None,
                  event_column="trial_type", interval=None, paradigm="epoched",
                  channel_types=("ecog",), subjects=None, code=None, download=True,
-                 include=None, sfreq=None, max_runs=None):
+                 include=None, sfreq=None, max_runs=None, max_seconds=None, mef_password=None):
         if root is None and openneuro_id is None:
             raise ValueError("Give root or openneuro_id")
         #: load at most this many runs per session (sorted file order); None loads everything. Smoke tests
         #: and memory-bound machines use it on datasets with hours-long runs (e.g. the RAM ds0055xx family).
         self.max_runs = max_runs
+        #: keep only the first ``max_seconds`` of every run (MEF3 sessions are read partially, other formats
+        #: are cropped after loading); None keeps everything.
+        self.max_seconds = max_seconds
+        #: password for encrypted MEF3 sessions (OpenNeuro deposits are unencrypted: None)
+        self.mef_password = mef_password
         self.openneuro_id = openneuro_id
         self._root = Path(root).expanduser() if root else _data_dir() / "openneuro" / openneuro_id
         self.task = task
@@ -133,13 +139,21 @@ class BIDSiEEGDataset(BaseECoGDataset):
         if include:
             # directories download recursively; top-level metadata is fetched file by file
             dirs = [i.rstrip("/*") for i in include if i.startswith("sub-")]
-            for attempt in range(2):
-                try:
-                    openneuro.download(dataset=self.openneuro_id, target_dir=self._root, include=dirs or None)
-                    break
-                except Exception:  # noqa: BLE001
-                    if attempt == 1:
-                        raise
+            top_patterns = [i for i in include if not i.startswith("sub-")]
+            try:
+                for attempt in range(2):
+                    try:
+                        openneuro.download(dataset=self.openneuro_id, target_dir=self._root, include=dirs or None)
+                        break
+                    except Exception:  # noqa: BLE001
+                        if attempt == 1:
+                            raise
+            except Exception as err:  # noqa: BLE001
+                # openneuro-py checks every file with a HEAD request; some datasets (ds006254) answer 403 to
+                # HEAD but serve GET, so walk the snapshot through GraphQL and stream the files ourselves
+                warnings.warn(f"{self.openneuro_id}: openneuro-py failed ({type(err).__name__}); "
+                              "downloading through the GraphQL file tree")
+                self._download_via_graphql(dirs, top_patterns)
             for name in self._TOP_FILES:
                 if (self._root / name).exists():
                     continue
@@ -152,6 +166,83 @@ class BIDSiEEGDataset(BaseECoGDataset):
         if not (self._root / "dataset_description.json").is_file():
             (self._root / "dataset_description.json").write_text(
                 '{"Name": "%s", "BIDSVersion": "1.7.0"}' % self.openneuro_id)
+
+    _GQL = "https://openneuro.org/crn/graphql"
+
+    def _gql(self, query):
+        import json
+        import urllib.request
+
+        req = urllib.request.Request(self._GQL, data=json.dumps({"query": query}).encode(),
+                                     headers={"Content-Type": "application/json", "User-Agent": "moecog/0.2"})
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            out = json.load(resp)
+        if out.get("errors"):
+            raise RuntimeError(out["errors"][0].get("message", "GraphQL error"))
+        return out["data"]
+
+    def _snapshot_files(self, tag, tree_id=None):
+        sel = f'(tree:"{tree_id}")' if tree_id else ""
+        q = '{ snapshot(datasetId:"%s", tag:"%s"){ files%s { id filename size directory urls } } }' % (
+            self.openneuro_id, tag, sel)
+        return self._gql(q)["snapshot"]["files"] or []
+
+    def _download_via_graphql(self, dirs, top_patterns):
+        """Fetch ``dirs`` (``sub-X`` or ``sub-X/ses-Y`` paths) and matching top-level files with plain GET.
+
+        OpenNeuro's GraphQL tree lists every file with an S3 URL (signed for git-tracked files, versioned
+        for annexed ones). GET works on both even when HEAD is refused.
+        """
+        from fnmatch import fnmatch
+
+        from .misc import _download
+
+        tag = self._gql('{ dataset(id:"%s"){ latestSnapshot { tag } } }' % self.openneuro_id)
+        tag = tag["dataset"]["latestSnapshot"]["tag"]
+        root = self._snapshot_files(tag)
+
+        def fetch(f, rel):
+            dest = self._root / rel
+            if dest.is_file() and dest.stat().st_size == int(f["size"]):
+                return
+            crn = (f"https://openneuro.org/crn/datasets/{self.openneuro_id}/snapshots/{tag}/files/"
+                   + rel.replace("/", ":"))
+            urls = [u for u in (f.get("urls") or []) if u] + [crn]
+            last = None
+            for url in urls:  # annexed sidecars can point at another subject's path and answer 403: try the CRN route
+                try:
+                    _download(url, dest, expected_size=int(f["size"]), retries=2)
+                    return
+                except OSError as err:
+                    last = err
+            if rel.endswith(tuple(self._EXT)):
+                raise OSError(f"{rel}: {last}")
+            warnings.warn(f"{self.openneuro_id}: could not fetch sidecar {rel} ({last})")
+
+        def walk(node, rel):
+            for f in self._snapshot_files(tag, node["id"]):
+                sub = f"{rel}/{f['filename']}"
+                if f["directory"]:
+                    walk(f, sub)
+                else:
+                    fetch(f, sub)
+
+        for f in root:
+            if f["directory"]:
+                for d in dirs:
+                    parts = d.split("/")
+                    if f["filename"] != parts[0]:
+                        continue
+                    node = f
+                    for part in parts[1:]:
+                        node = next((x for x in self._snapshot_files(tag, node["id"])
+                                     if x["filename"] == part and x["directory"]), None)
+                        if node is None:
+                            break
+                    if node is not None:
+                        walk(node, d)
+            elif any(fnmatch(f["filename"], pat) for pat in top_patterns):
+                fetch(f, f["filename"])
 
     def _list_subjects(self):
         subs = sorted(p.name[4:] for p in self._root.glob("sub-*") if p.is_dir())
@@ -192,31 +283,28 @@ class BIDSiEEGDataset(BaseECoGDataset):
         if path.suffix.lower() == ".nwb":
             from .nwb import read_nwb_raw
 
-            raw, _, _ = read_nwb_raw(path, channel_types=("ecog", "seeg", "ieeg"))
-            ev = list(path.parent.glob(path.name.replace("_ieeg.nwb", "_events.tsv")))
-            if ev:
-                import pandas as pd
-
-                df = pd.read_csv(ev[0], sep="\t")
-                col = self.event_column if self.event_column in df.columns else df.columns[-1]
-                raw.set_annotations(mne.Annotations(df["onset"].astype(float), df["duration"].astype(float),
-                                                    df[col].astype(str)))
-            return raw, ent
-        if path.suffix.lower() == ".mefd":
-            raise NotImplementedError("MEF3 (.mefd) needs pymef; not supported")
-        bp = BIDSPath(root=self._root, datatype="ieeg", suffix="ieeg",
-                      extension=path.suffix, **{k: v for k, v in ent.items() if v})
-        with mne.utils.use_log_level("error"):
-            try:
+            raw, _, _ = read_nwb_raw(path, channel_types=("ecog", "seeg", "ieeg"),
+                                     max_seconds=self.max_seconds)
+            self._apply_sidecars(raw, path, channels=False)
+        elif path.suffix.lower() == ".mefd":
+            raw = self._read_mef(path)
+            self._apply_sidecars(raw, path)
+        else:
+            bp = BIDSPath(root=self._root, datatype="ieeg", suffix="ieeg",
+                          extension=path.suffix, **{k: v for k, v in ent.items() if v})
+            with mne.utils.use_log_level("error"):
                 try:
-                    raw = read_raw_bids(bp, verbose=False, on_ch_mismatch="warn")
-                except TypeError:  # older mne-bids without the argument
-                    raw = read_raw_bids(bp, verbose=False)
-            except (IndexError, KeyError, ValueError) as err:
-                # mne-bids trips on empty events.tsv or odd sidecars: read the file directly
-                # and take channel types from channels.tsv when present
-                raw = self._read_plain(path, err)
+                    try:
+                        raw = read_raw_bids(bp, verbose=False, on_ch_mismatch="warn")
+                    except TypeError:  # older mne-bids without the argument
+                        raw = read_raw_bids(bp, verbose=False)
+                except (IndexError, KeyError, ValueError) as err:
+                    # mne-bids trips on empty events.tsv or odd sidecars: read the file directly
+                    # and take channel types from channels.tsv when present
+                    raw = self._read_plain(path, err)
         raw.load_data()
+        if self.max_seconds is not None and raw.times[-1] > self.max_seconds:
+            raw.crop(tmax=float(self.max_seconds), include_tmax=False)
         types_now = dict(zip(raw.ch_names, raw.get_channel_types()))
         keep = [ch for ch, t in types_now.items() if t in self.channel_types or t in ("stim", "misc")]
         if not any(types_now[ch] in self.channel_types for ch in keep):
@@ -240,34 +328,94 @@ class BIDSiEEGDataset(BaseECoGDataset):
         return raw, ent
 
     def _read_plain(self, path, err):
-        import warnings
-
         warnings.warn(f"{path.name}: mne-bids failed ({type(err).__name__}); reading the file directly")
         raw = mne.io.read_raw(path, preload=True, verbose=False)
-        ch_tsv = list(path.parent.glob(path.name.split("_ieeg")[0] + "_channels.tsv"))
-        if ch_tsv:
-            import pandas as pd
+        self._apply_sidecars(raw, path)
+        return raw
 
+    def _apply_sidecars(self, raw, path, channels=True, events=True):
+        """Channel types and bad channels from ``*_channels.tsv``, annotations from ``*_events.tsv``."""
+        import pandas as pd
+
+        stem = path.name.split("_ieeg")[0]
+        ch_tsv = list(path.parent.glob(stem + "_channels.tsv"))
+        if channels and ch_tsv:
             df = pd.read_csv(ch_tsv[0], sep="\t")
             if "name" in df.columns and "type" in df.columns:
                 mapping = {}
                 for name, typ in zip(df["name"].astype(str), df["type"].astype(str).str.lower()):
                     if name in raw.ch_names and typ in ("ecog", "seeg", "dbs", "eeg", "misc", "stim"):
                         mapping[name] = typ
+                    elif name in raw.ch_names and typ in ("ecg", "ekg", "emg", "eog", "trig", "audio", "other",
+                                                          "ref", "eeg-ref"):
+                        mapping[name] = "misc"
                 if mapping:
                     raw.set_channel_types(mapping, verbose=False)
             if "status" in df.columns:
                 raw.info["bads"] = [n for n, st in zip(df["name"].astype(str), df["status"].astype(str))
                                     if st == "bad" and n in raw.ch_names]
-        ev = list(path.parent.glob(path.name.split("_ieeg")[0] + "_events.tsv"))
-        if ev:
-            import pandas as pd
-
+        ev = list(path.parent.glob(stem + "_events.tsv"))
+        if events and ev:
             df = pd.read_csv(ev[0], sep="\t")
             if len(df) and "onset" in df.columns:
                 col = self.event_column if self.event_column in df.columns else df.columns[-1]
-                dur = df["duration"].astype(float) if "duration" in df.columns else 0.0
-                raw.set_annotations(mne.Annotations(df["onset"].astype(float), dur, df[col].astype(str)))
+                # ds004624 lists negative durations for some stimulation events: MNE refuses those
+                dur = (pd.to_numeric(df["duration"], errors="coerce").fillna(0.0).clip(lower=0.0)
+                       if "duration" in df.columns else 0.0)
+                onset = pd.to_numeric(df["onset"], errors="coerce")
+                keep = onset.notna()
+                if keep.any():
+                    raw.set_annotations(mne.Annotations(onset[keep].astype(float),
+                                                        dur[keep] if hasattr(dur, "__len__") else dur,
+                                                        df[col][keep].astype(str)))
+        return raw
+
+    def _read_mef(self, path):
+        """Read a MEF3 session directory (``*.mefd``) with pymef into a RawArray in volts.
+
+        pymef returns the stored integers; ``units_conversion_factor`` (often negative, i.e. inverted
+        polarity) and ``units_description`` turn them into volts. Discontinuities come back as NaN and are
+        zeroed. Only the first ``max_seconds`` are read when set, which keeps hour-long CCEP sessions
+        (ds003708: 89 channels at 2048 Hz) within a few hundred MB.
+        """
+        try:
+            from pymef.mef_session import MefSession
+        except ImportError as err:
+            raise NotImplementedError("MEF3 (.mefd) needs pymef: pip install pymef") from err
+        try:
+            ms = MefSession(str(path), self.mef_password)
+        except Exception as err:  # noqa: BLE001
+            raise NotImplementedError(f"MEF3 session {path.name} could not be opened "
+                                      f"({type(err).__name__}: {err}); encrypted?") from err
+
+        def field(rec, key, default=None):
+            try:
+                v = rec[key]
+            except (KeyError, ValueError, IndexError, TypeError):
+                return default
+            if hasattr(v, "size") and v.size == 1:
+                v = v.item()
+            return v.decode() if isinstance(v, bytes) else v
+
+        md = ms.session_md
+        s2 = md["time_series_metadata"]["section_2"]
+        sfreq = float(field(s2, "sampling_frequency"))
+        n_total = int(field(s2, "number_of_samples"))
+        chans = md["time_series_channels"]
+        names = list(chans)
+        n = n_total if self.max_seconds is None else min(n_total, int(self.max_seconds * sfreq))
+        data = np.zeros((len(names), n))
+        for i, name in enumerate(names):
+            cs2 = chans[name]["section_2"]
+            ucf = float(field(cs2, "units_conversion_factor", 1.0) or 1.0)
+            units = str(field(cs2, "units_description", "microvolts") or "microvolts").lower()
+            scale = 1e-6 if "micro" in units else (1e-3 if "milli" in units else 1.0)
+            x = np.asarray(ms.read_ts_channels_sample([name], [[0, n]])[0], dtype=float)
+            m = min(x.size, n)
+            data[i, :m] = np.nan_to_num(x[:m]) * ucf * scale
+        info = mne.create_info(names, sfreq, ["ecog"] * len(names))
+        raw = mne.io.RawArray(data, info, verbose=False)
+        raw.info["description"] = f"MEF3 {path.name}"
         return raw
 
     def _get_single_subject_data(self, subject):

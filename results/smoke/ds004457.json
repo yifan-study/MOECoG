@@ -2,14 +2,32 @@
  "id": "ds004457",
  "title": "Electrical stimulation of temporal and limbic circuitry produces distinct responses in hum",
  "source": "openneuro",
- "status": "unsupported",
- "started": "2026-09-10 04:31:49",
- "max_runs": 2,
+ "status": "ok",
+ "started": "2026-09-10 14:34:50",
+ "max_seconds": 600.0,
  "subjects_found": 1,
  "subject_list": [
   "1"
  ],
- "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 40, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 279, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 200, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 3.0
+ "sessions": {
+  "ieeg01/ccep_01": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 154,
+   "n_misc": 1,
+   "duration_s": 599.99951171875,
+   "n_annotations": 54,
+   "classes": {
+    "electrical_stimulation": 54
+   }
+  }
+ },
+ "electrodes": {
+  "n": 147,
+  "frame": "acpc"
+ },
+ "event_id": {
+  "electrical_stimulation": 1
+ },
+ "seconds": 45.8
 }

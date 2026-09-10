@@ -2,14 +2,32 @@
  "id": "ds004696",
  "title": "HAPwave_bids",
  "source": "openneuro",
- "status": "unsupported",
- "started": "2026-09-10 04:32:02",
- "max_runs": 2,
+ "status": "ok",
+ "started": "2026-09-10 14:35:55",
+ "max_seconds": 600.0,
  "subjects_found": 1,
  "subject_list": [
   "01"
  ],
- "error": "NotImplementedError: MEF3 (.mefd) needs pymef; not supported",
- "traceback": "Traceback (most recent call last):\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/scripts/smoke_test.py\", line 40, in run_entry\n    data = ds.get_data(subjects=[subject])[subject]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/base.py\", line 126, in get_data\n    data[subject] = self._get_single_subject_data(subject)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 279, in _get_single_subject_data\n    raw, ent = self._load_file(f)\n               ^^^^^^^^^^^^^^^^^^\n  File \"/mnt/onefs/home/yyu2024/PLaCT/MOECoG/moecog/datasets/bids.py\", line 200, in _load_file\n    raise NotImplementedError(\"MEF3 (.mefd) needs pymef; not supported\")\nNotImplementedError: MEF3 (.mefd) needs pymef; not supported\n",
- "seconds": 0.5
+ "sessions": {
+  "ieeg01/ccep_01": {
+   "kind": "raw",
+   "sfreq": 2048.0,
+   "n_ecog": 162,
+   "n_misc": 1,
+   "duration_s": 599.99951171875,
+   "n_annotations": 21,
+   "classes": {
+    "electrical_stimulation": 21
+   }
+  }
+ },
+ "electrodes": {
+  "n": 165,
+  "frame": "other"
+ },
+ "event_id": {
+  "electrical_stimulation": 1
+ },
+ "seconds": 39.9
 }

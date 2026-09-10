@@ -68,3 +68,27 @@ imagery task difficult.
   windows, and the harder experiments (n-back, visual search, speech).
 - Wall-clock on 8 CPU cores: 141 s for motor_basic (19 patients x 2
   pipelines), 88 s for faces_basic, 51 s for imagery_basic.
+
+## Rerun 2026-09-09 (fold policy active, finger flexion added; job 4721667, 19 min 50 s)
+
+`WithinSubjectCV` now checks every chronological fold and switches block-ordered
+files to stratified shuffled folds (`fold_policy` column). Two motor_basic
+patients fell back (gf, jf), so kappa is defined for every patient:
+LogBandPower+LDA kappa 0.917 (was 0.899 with two undefined patients),
+HighGamma+LDA 0.877. faces_basic and imagery_basic are unchanged (no
+block-ordered files).
+
+First continuous-tier baseline, fingerflex (9 patients, 500 ms windows, 50 ms
+stride, causal target, 5 chronological folds with a purge gap):
+
+| Pipeline | Pearson r (mean over fingers and patients) | R2 |
+|---|---|---|
+| HighGamma+Ridge | 0.283 | -0.14 |
+| LogBandPower+Ridge | 0.265 | -0.21 |
+
+Per patient (r, HighGamma+Ridge): bp 0.30, cc 0.45, ht 0.20, jc 0.33, jp 0.29,
+mv 0.26, wc 0.20, wm 0.22, zt 0.31. This is the classical band-power reference
+the roadmap predicted (0.3-0.5); the deep decoders of TRACE and PACE reach
+0.5-0.74 on the same patients under their own protocol, so the gap is the
+benchmark's room. The negative R2 comes from unnormalised ridge predictions on
+raw dataglove units; the leaderboard reports r.

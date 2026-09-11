@@ -1,67 +1,79 @@
 # MOECoG leaderboard
 
-Generated 2026-09-11 from `results/*.csv` at commit `c3aab13` by `scripts/build_leaderboard.py`. Values are mean ± sd over subjects of the per-subject fold mean. Headline metrics: kappa (trials), Pearson r (kinematics). Chronological folds unless noted; see `docs/baselines.md` for protocol details.
+Generated 2026-09-11 from `results/*.csv` at commit `2daf9d6` by `scripts/build_leaderboard.py`. Values are mean ± sd over subjects of the per-subject fold mean. Headline metrics: kappa (trials), Pearson r (kinematics). Chronological folds unless noted; see `docs/baselines.md` for protocol details.
 
 ## BCICompIII-1
 
 | evaluation | session | pipeline | n | kappa | accuracy | balanced_accuracy | folds |
 |---|---|---|---|---|---|---|---|
 | cross_session | test | HighGamma + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
+| cross_session | test | LogBandPower + BatchZ + LDA | 1 | 0.780 ± 0.000 | 0.890 ± 0.000 | 0.890 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | test | LogBandPower + LDA | 1 | 0.180 ± 0.000 | 0.590 ± 0.000 | 0.590 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | test | LogBandPower + LogReg | 1 | 0.040 ± 0.000 | 0.520 ± 0.000 | 0.520 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | test | Riemann HG TS + LogReg | 1 | 0.360 ± 0.000 | 0.680 ± 0.000 | 0.680 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | test | Riemann TS + LogReg | 1 | 0.520 ± 0.000 | 0.760 ± 0.000 | 0.760 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | train | HighGamma + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
+| cross_session | train | LogBandPower + BatchZ + LDA | 1 | 0.719 ± 0.000 | 0.860 ± 0.000 | 0.860 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | train | LogBandPower + LDA | 1 | 0.532 ± 0.000 | 0.766 ± 0.000 | 0.766 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | train | LogBandPower + LogReg | 1 | 0.446 ± 0.000 | 0.723 ± 0.000 | 0.723 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | train | Riemann HG TS + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session | train | Riemann TS + LogReg | 1 | 0.576 ± 0.000 | 0.788 ± 0.000 | 0.788 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | test | HighGamma + LDA | 1 | 0.020 ± 0.000 | 0.510 ± 0.000 | 0.510 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:ea | test | LogBandPower + BatchZ + LDA | 1 | 0.760 ± 0.000 | 0.880 ± 0.000 | 0.880 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | test | LogBandPower + LDA | 1 | 0.020 ± 0.000 | 0.510 ± 0.000 | 0.510 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | test | LogBandPower + LogReg | 1 | 0.100 ± 0.000 | 0.550 ± 0.000 | 0.550 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | test | Riemann HG TS + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | test | Riemann TS + LogReg | 1 | 0.660 ± 0.000 | 0.830 ± 0.000 | 0.830 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | train | HighGamma + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:ea | train | LogBandPower + BatchZ + LDA | 1 | 0.727 ± 0.000 | 0.863 ± 0.000 | 0.863 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | train | LogBandPower + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | train | LogBandPower + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | train | Riemann HG TS + LogReg | 1 | -0.007 ± 0.000 | 0.496 ± 0.000 | 0.496 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:ea | train | Riemann TS + LogReg | 1 | 0.295 ± 0.000 | 0.647 ± 0.000 | 0.647 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | test | HighGamma + LDA | 1 | 0.020 ± 0.000 | 0.510 ± 0.000 | 0.510 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:recenter | test | LogBandPower + BatchZ + LDA | 1 | 0.780 ± 0.000 | 0.890 ± 0.000 | 0.890 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | test | LogBandPower + LDA | 1 | 0.320 ± 0.000 | 0.660 ± 0.000 | 0.660 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | test | LogBandPower + LogReg | 1 | 0.520 ± 0.000 | 0.760 ± 0.000 | 0.760 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | test | Riemann HG TS + LogReg | 1 | 0.080 ± 0.000 | 0.540 ± 0.000 | 0.540 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | test | Riemann TS + LogReg | 1 | 0.860 ± 0.000 | 0.930 ± 0.000 | 0.930 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | train | HighGamma + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:recenter | train | LogBandPower + BatchZ + LDA | 1 | 0.727 ± 0.000 | 0.863 ± 0.000 | 0.863 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | train | LogBandPower + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | train | LogBandPower + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | train | Riemann HG TS + LogReg | 1 | 0.014 ± 0.000 | 0.507 ± 0.000 | 0.507 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:recenter | train | Riemann TS + LogReg | 1 | 0.719 ± 0.000 | 0.860 ± 0.000 | 0.860 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | test | HighGamma + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:zscore | test | LogBandPower + BatchZ + LDA | 1 | 0.780 ± 0.000 | 0.890 ± 0.000 | 0.890 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | test | LogBandPower + LDA | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | test | LogBandPower + LogReg | 1 | 0.020 ± 0.000 | 0.510 ± 0.000 | 0.510 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | test | Riemann HG TS + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | test | Riemann TS + LogReg | 1 | 0.000 ± 0.000 | 0.500 ± 0.000 | 0.500 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | train | HighGamma + LDA | 1 | 0.007 ± 0.000 | 0.504 ± 0.000 | 0.504 ± 0.000 | chronological, leave_one_session_out |
+| cross_session:zscore | train | LogBandPower + BatchZ + LDA | 1 | 0.719 ± 0.000 | 0.860 ± 0.000 | 0.860 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | train | LogBandPower + LDA | 1 | 0.288 ± 0.000 | 0.644 ± 0.000 | 0.644 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | train | LogBandPower + LogReg | 1 | 0.669 ± 0.000 | 0.835 ± 0.000 | 0.835 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | train | Riemann HG TS + LogReg | 1 | 0.259 ± 0.000 | 0.629 ± 0.000 | 0.629 ± 0.000 | chronological, leave_one_session_out |
 | cross_session:zscore | train | Riemann TS + LogReg | 1 | 0.022 ± 0.000 | 0.511 ± 0.000 | 0.511 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | test | HighGamma + LDA | 1 | 0.811 ± 0.000 | 0.910 ± 0.000 | 0.906 ± 0.000 | chronological, leave_one_session_out |
+| within_subject | test | LogBandPower + BatchZ + LDA | 1 | 0.778 ± 0.000 | 0.890 ± 0.000 | 0.901 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | test | LogBandPower + LDA | 1 | 0.855 ± 0.000 | 0.930 ± 0.000 | 0.927 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | test | LogBandPower + LogReg | 1 | 0.836 ± 0.000 | 0.920 ± 0.000 | 0.919 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | test | Riemann HG TS + LogReg | 1 | 0.652 ± 0.000 | 0.830 ± 0.000 | 0.833 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | test | Riemann TS + LogReg | 1 | 0.835 ± 0.000 | 0.920 ± 0.000 | 0.923 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | train | HighGamma + LDA | 1 | 0.507 ± 0.000 | 0.755 ± 0.000 | 0.754 ± 0.000 | chronological, leave_one_session_out |
+| within_subject | train | LogBandPower + BatchZ + LDA | 1 | 0.748 ± 0.000 | 0.874 ± 0.000 | 0.878 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | train | LogBandPower + LDA | 1 | 0.747 ± 0.000 | 0.874 ± 0.000 | 0.875 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | train | LogBandPower + LogReg | 1 | 0.746 ± 0.000 | 0.874 ± 0.000 | 0.873 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | train | Riemann HG TS + LogReg | 1 | 0.585 ± 0.000 | 0.795 ± 0.000 | 0.793 ± 0.000 | chronological, leave_one_session_out |
 | within_subject | train | Riemann TS + LogReg | 1 | 0.811 ± 0.000 | 0.906 ± 0.000 | 0.905 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | test | HighGamma + LDA | 1 | 0.831 ± 0.000 | 0.920 ± 0.000 | 0.916 ± 0.000 | chronological, leave_one_session_out |
+| within_subject:ea | test | LogBandPower + BatchZ + LDA | 1 | 0.797 ± 0.000 | 0.900 ± 0.000 | 0.911 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | test | LogBandPower + LDA | 1 | 0.915 ± 0.000 | 0.960 ± 0.000 | 0.956 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | test | LogBandPower + LogReg | 1 | 0.895 ± 0.000 | 0.950 ± 0.000 | 0.947 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | test | Riemann HG TS + LogReg | 1 | 0.652 ± 0.000 | 0.830 ± 0.000 | 0.833 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | test | Riemann TS + LogReg | 1 | 0.877 ± 0.000 | 0.940 ± 0.000 | 0.942 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | train | HighGamma + LDA | 1 | 0.674 ± 0.000 | 0.838 ± 0.000 | 0.840 ± 0.000 | chronological, leave_one_session_out |
+| within_subject:ea | train | LogBandPower + BatchZ + LDA | 1 | 0.748 ± 0.000 | 0.874 ± 0.000 | 0.879 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | train | LogBandPower + LDA | 1 | 0.733 ± 0.000 | 0.867 ± 0.000 | 0.868 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | train | LogBandPower + LogReg | 1 | 0.782 ± 0.000 | 0.892 ± 0.000 | 0.891 ± 0.000 | chronological, leave_one_session_out |
 | within_subject:ea | train | Riemann HG TS + LogReg | 1 | 0.585 ± 0.000 | 0.795 ± 0.000 | 0.793 ± 0.000 | chronological, leave_one_session_out |
@@ -131,14 +143,14 @@ Generated 2026-09-11 from `results/*.csv` at commit `c3aab13` by `scripts/build_
 | within_subject | im | Riemann HG TS + LogReg | 7 | 0.340 ± 0.277 | 0.671 ± 0.139 | 0.675 ± 0.145 | chronological |
 | within_subject | im | Riemann TS + LogReg | 7 | 0.221 ± 0.196 | 0.598 ± 0.100 | 0.618 ± 0.107 | chronological |
 | within_subject | im | ShallowFBCSPNet s0 | 7 | 0.051 ± 0.170 | 0.521 ± 0.091 | 0.530 ± 0.089 | chronological |
-| within_subject | im | ShallowFBCSPNet s1 | 5 | 0.045 ± 0.093 | 0.517 ± 0.051 | 0.523 ± 0.049 | chronological |
+| within_subject | im | ShallowFBCSPNet s1 | 6 | -0.035 ± 0.198 | 0.478 ± 0.098 | 0.482 ± 0.102 | chronological |
 | within_subject | mot | HighGamma + LDA | 7 | 0.893 ± 0.111 | 0.948 ± 0.055 | 0.954 ± 0.048 | chronological |
 | within_subject | mot | LogBandPower + LDA | 7 | 0.860 ± 0.089 | 0.931 ± 0.044 | 0.934 ± 0.043 | chronological |
 | within_subject | mot | LogBandPower + LogReg | 7 | 0.812 ± 0.117 | 0.907 ± 0.058 | 0.913 ± 0.055 | chronological |
 | within_subject | mot | Riemann HG TS + LogReg | 7 | 0.898 ± 0.093 | 0.950 ± 0.045 | 0.956 ± 0.040 | chronological |
 | within_subject | mot | Riemann TS + LogReg | 7 | 0.603 ± 0.234 | 0.793 ± 0.129 | 0.818 ± 0.109 | chronological |
 | within_subject | mot | ShallowFBCSPNet s0 | 7 | 0.377 ± 0.376 | 0.669 ± 0.213 | 0.686 ± 0.204 | chronological |
-| within_subject | mot | ShallowFBCSPNet s1 | 5 | 0.267 ± 0.272 | 0.630 ± 0.140 | 0.639 ± 0.146 | chronological |
+| within_subject | mot | ShallowFBCSPNet s1 | 6 | 0.221 ± 0.269 | 0.592 ± 0.154 | 0.612 ± 0.147 | chronological |
 
 ## Miller2019-motor_basic
 

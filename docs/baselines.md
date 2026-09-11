@@ -78,8 +78,12 @@ the PACE camera-ready (2026-09-25).
   whitening mixes channels, so band power of the mixed channels no longer means the same thing on the next day.
   Per-channel z-scoring of the raw session does not help band power either (0.14 to 0.35 against 0.24 to 0.36
   unaligned), so the drift is not a per-channel gain. Within a session, whitening on all trials (transductive)
-  adds two to nine points to every classical pipeline (`within_subject:ea`). The alignment that suits band-power
-  features is standardisation of the features per session, the next chunk (`BatchStandardizer`).
+  adds two to nine points to every classical pipeline (`within_subject:ea`). The fix that suits band power is
+  standardising the features per session: `LogBandPower + BatchZ + LDA` (`BatchStandardizer`, z-scoring over the
+  batch it transforms, so over the whole held-out session) goes from 0.36 to 0.75 across the week and stays there
+  whatever raw alignment precedes it (0.74 to 0.75), at a cost of four points within a session (0.76 against 0.80,
+  a fifth of a session being a small batch to standardise on). Two label-free fixes, one per feature family, and
+  both land within a few points of the within-session numbers (0.75 and 0.79 against 0.80 and 0.82).
 - **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
   far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.
 

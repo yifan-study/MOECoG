@@ -6,6 +6,7 @@ Generated 2026-09-11 by `scripts/build_analysis.py` from `results/reference_*.cs
 
 | pipeline | mean | sd | median | patients |
 |---|---|---|---|---|
+| LogBandPower + BatchZ + LDA | 0.750 | nan | 0.750 | 1 |
 | Riemann TS + LogReg | 0.548 | nan | 0.548 | 1 |
 | LogBandPower + LDA | 0.356 | nan | 0.356 | 1 |
 | LogBandPower + LogReg | 0.243 | nan | 0.243 | 1 |
@@ -16,6 +17,7 @@ Generated 2026-09-11 by `scripts/build_analysis.py` from `results/reference_*.cs
 
 | pipeline | mean | sd | median | patients |
 |---|---|---|---|---|
+| LogBandPower + BatchZ + LDA | 0.743 | nan | 0.743 | 1 |
 | Riemann TS + LogReg | 0.477 | nan | 0.477 | 1 |
 | LogBandPower + LogReg | 0.050 | nan | 0.050 | 1 |
 | HighGamma + LDA | 0.010 | nan | 0.010 | 1 |
@@ -27,6 +29,7 @@ Generated 2026-09-11 by `scripts/build_analysis.py` from `results/reference_*.cs
 | pipeline | mean | sd | median | patients |
 |---|---|---|---|---|
 | Riemann TS + LogReg | 0.790 | nan | 0.790 | 1 |
+| LogBandPower + BatchZ + LDA | 0.753 | nan | 0.753 | 1 |
 | LogBandPower + LogReg | 0.260 | nan | 0.260 | 1 |
 | LogBandPower + LDA | 0.160 | nan | 0.160 | 1 |
 | Riemann HG TS + LogReg | 0.047 | nan | 0.047 | 1 |
@@ -36,6 +39,7 @@ Generated 2026-09-11 by `scripts/build_analysis.py` from `results/reference_*.cs
 
 | pipeline | mean | sd | median | patients |
 |---|---|---|---|---|
+| LogBandPower + BatchZ + LDA | 0.750 | nan | 0.750 | 1 |
 | LogBandPower + LogReg | 0.345 | nan | 0.345 | 1 |
 | LogBandPower + LDA | 0.144 | nan | 0.144 | 1 |
 | Riemann HG TS + LogReg | 0.129 | nan | 0.129 | 1 |
@@ -63,6 +67,7 @@ Train on the first 10/25/50/100 % of the non-test trials of every (patient, sess
 | Riemann TS + LogReg | 0.823 | nan | 0.823 | 1 |
 | LogBandPower + LDA | 0.801 | nan | 0.801 | 1 |
 | LogBandPower + LogReg | 0.791 | nan | 0.791 | 1 |
+| LogBandPower + BatchZ + LDA | 0.763 | nan | 0.763 | 1 |
 | HighGamma + LDA | 0.659 | nan | 0.659 | 1 |
 | Riemann HG TS + LogReg | 0.618 | nan | 0.618 | 1 |
 
@@ -73,6 +78,7 @@ Train on the first 10/25/50/100 % of the non-test trials of every (patient, sess
 | Riemann TS + LogReg | 0.848 | nan | 0.848 | 1 |
 | LogBandPower + LogReg | 0.838 | nan | 0.838 | 1 |
 | LogBandPower + LDA | 0.824 | nan | 0.824 | 1 |
+| LogBandPower + BatchZ + LDA | 0.773 | nan | 0.773 | 1 |
 | HighGamma + LDA | 0.753 | nan | 0.753 | 1 |
 | Riemann HG TS + LogReg | 0.618 | nan | 0.618 | 1 |
 
@@ -208,11 +214,27 @@ Train on the first 10/25/50/100 % of the non-test trials of every (patient, sess
 | LogBandPower + LogReg | 0.609 | 0.132 | 0.556 | 7 |
 | Riemann TS + LogReg | 0.412 | 0.169 | 0.361 | 7 |
 | ShallowFBCSPNet s0 | 0.214 | 0.245 | 0.211 | 7 |
-| ShallowFBCSPNet s1 | 0.156 | 0.113 | 0.128 | 5 |
+| ShallowFBCSPNet s1 | 0.093 | 0.184 | 0.096 | 6 |
 
-Mean rank (1 = best), Friedman p = 0.000866: LogBandPower + LDA 2.20, HighGamma + LDA 2.40, Riemann HG TS + LogReg 2.60, LogBandPower + LogReg 3.20, Riemann TS + LogReg 4.60, ShallowFBCSPNet s0 6.40, ShallowFBCSPNet s1 6.60
+Mean rank (1 = best), Friedman p = 8.56e-05: HighGamma + LDA 2.17, LogBandPower + LDA 2.17, Riemann HG TS + LogReg 2.67, LogBandPower + LogReg 3.33, Riemann TS + LogReg 4.67, ShallowFBCSPNet s0 6.33, ShallowFBCSPNet s1 6.67
 
-No pairwise difference reaches p < 0.05.
+Significant pairwise differences (row beats column, p < 0.05):
+
+- HighGamma + LDA > Riemann TS + LogReg: p = 0.0308, d_z = 2.11
+- HighGamma + LDA > ShallowFBCSPNet s0: p = 0.0308, d_z = 2.88
+- HighGamma + LDA > ShallowFBCSPNet s1: p = 0.0308, d_z = 2.49
+- LogBandPower + LDA > LogBandPower + LogReg: p = 0.0308, d_z = 2.19
+- LogBandPower + LDA > ShallowFBCSPNet s0: p = 0.0308, d_z = 1.85
+- LogBandPower + LDA > ShallowFBCSPNet s1: p = 0.0308, d_z = 2.40
+- LogBandPower + LogReg > ShallowFBCSPNet s0: p = 0.0308, d_z = 1.62
+- LogBandPower + LogReg > ShallowFBCSPNet s1: p = 0.0308, d_z = 2.20
+- Riemann HG TS + LogReg > Riemann TS + LogReg: p = 0.0308, d_z = 1.45
+- Riemann HG TS + LogReg > ShallowFBCSPNet s0: p = 0.0308, d_z = 1.93
+- Riemann HG TS + LogReg > ShallowFBCSPNet s1: p = 0.0308, d_z = 2.48
+- Riemann TS + LogReg > ShallowFBCSPNet s0: p = 0.0308, d_z = 2.88
+- Riemann TS + LogReg > ShallowFBCSPNet s1: p = 0.0308, d_z = 1.95
+- LogBandPower + LDA > Riemann TS + LogReg: p = 0.0462, d_z = 1.30
+- LogBandPower + LogReg > Riemann TS + LogReg: p = 0.0462, d_z = 1.03
 
 ![imagery_basic_within_subject scores](figures/imagery_basic_within_subject_scores.png)
 

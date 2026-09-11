@@ -43,4 +43,5 @@ nav:
   - MOABB:
       - Lessons: moabb_lessons.md
       - Review and decisions: moabb_review.md
+  - Field practices: best_practices.md
   - API: api.md

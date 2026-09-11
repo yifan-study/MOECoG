@@ -2,6 +2,9 @@
 
 ## 0.3.0.dev0 (unreleased)
 
+- `docs/best_practices.md`: literature pass on preprocessing, transfer (alignment,
+  HTNet, stability across days, pretrained representations, Neuroprobe) and
+  evaluation practices, with the roadmap chunks each point feeds.
 - M2 pipelines: Riemannian tangent space (`riemann` extra) and braindecode
   `ShallowFBCSPNet` through `moecog.pipelines.deep.BraindecodeClassifier`;
   `load_pipelines()` reports pipelines skipped for a missing optional

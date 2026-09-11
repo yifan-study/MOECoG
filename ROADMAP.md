@@ -17,7 +17,8 @@ not a to-do list; the milestones below pick what to walk first.
    this file; drop or defer anything that no longer earns its place; write the decision in Jira and here.
 5. **Follow MOABB where it worked, deviate where ECoG differs** (`docs/moabb_lessons.md`): per-patient evaluation,
    regression as a first-class citizen, a catalog with statuses.
-6. **Data stay at the source.** MOECoG hosts code, results and summaries; loaders fetch data; nothing under a
+6. **Read before building.** Every milestone starts from `docs/best_practices.md` (what the field does for preprocessing, transfer and evaluation) and `docs/moabb_review.md`; a technique enters the roadmap only with the paper that motivates it.
+7. **Data stay at the source.** MOECoG hosts code, results and summaries; loaders fetch data; nothing under a
    data-use agreement is redistributed.
 
 ## Milestones
@@ -42,13 +43,15 @@ catalog and smoke sweep of 130 public deposits (106 load).
 
 ### M2. Reference benchmark on the Miller tier (target 2026-10-31)
 
-| chunk | definition of done |
-|---|---|
-| Reference tasks | five tasks fixed and documented: motor_basic hand vs tongue, faces_basic, gestures, imagery_basic, fingerflex regression |
+| chunk | definition of done | status |
+|---|---|---|
+| Reference tasks | six tasks fixed and documented in `docs/baselines.md`: motor_basic hand vs tongue, faces_basic, gestures, imagery_basic, fingerflex regression, BCI III-1 (two sessions) | done 2026-09-10 |
 | Pipeline set | the five YAML baselines plus a Riemannian pipeline (pyriemann) and one braindecode model (ShallowFBCSPNet) on CPU; done 2026-09-10 (PRSNL-82) |
-| Numbers | `results/reference_<task>.csv` for every task x pipeline, 5 chronological folds, three seeds where randomness enters; leaderboard regenerated (`scripts/run_reference.py`, PRSNL-83, running) |
-| Analysis | per-patient distributions and a paired comparison (MOABB-style meta-analysis) in `docs/analysis.md` (`scripts/build_analysis.py`, PRSNL-83) |
-| Second evaluation | `CrossSessionEvaluation` exists (M1 batch); on the Miller tier most "sessions" are task variants rather than repeat days, so it is run only where a task repeats (speech_lists L1 vs L2) and reported with that caveat |
+| Numbers | `results/reference_<task>.csv` for every task x pipeline, 5 chronological folds, three seeds where randomness enters; leaderboard regenerated | classical set done 2026-09-10 (motor 0.92, faces 0.68, imagery 0.66, gestures 0.49, fingerflex r 0.28, BCI III-1 within 0.82 / cross-session 0.52); ShallowFBCSPNet seed 0 running, seeds 1-2 on Athene (PRSNL-83) |
+| Analysis | per-patient distributions and a paired comparison (MOABB-style meta-analysis) in `docs/analysis.md` (`scripts/build_analysis.py`) | done 2026-09-10, regenerated after every run |
+| Second evaluation | `CrossSessionEvaluation` on BCI III-1 (train and test sessions a week apart, published labels attached): kappa 0.75-0.86 within a session, 0.00-0.52 across; Riemannian tangent space transfers best | done 2026-09-10; Miller "sessions" are task variants, so no cross-session there |
+| Learning curves | `LearningCurveEvaluation` (train on 10/25/50/100 % of a patient's trials, chronological), the MOABB `data_size` policies; HTNet reports tailored performance from about 50 events | to do (last M2 chunk) |
+| Better Riemannian baseline | tangent space on high-gamma envelope covariances (`HilbertEnvelope` raw step before `Covariances`) instead of raw-epoch covariances, which trail band power within session | to do (M2) |
 
 ### M3. Second dataset family and the regression story (target 2026-11-30)
 
@@ -58,16 +61,23 @@ catalog and smoke sweep of 130 public deposits (106 load).
 | Merk grip force + Peterson pose | regression paradigms for force and 2-D pose; ridge and PACE baselines |
 | Detroit naming corpora (ds006910, ds006234, ds005545) | 100+ patient classification with the epoched paradigm; per-patient distribution plotted |
 | Stimulus reconstruction | `SpectrogramReconstruction` paradigm on Bellier and Verwoert |
+| Session drift | per-session feature normalisation and Euclidean / Riemannian Procrustes alignment as pipeline steps (`moecog.pipelines.alignment`), evaluated on BCI III-1 cross-session and on the Miller multi-session files; the literature says alignment is worth 3-10 points and no single method wins (`docs/best_practices.md`) |
+| Deep fingerflex | a FingerFlex-style convolutional regressor as a pipeline, to test the published r above 0.6 on BCI IV-4 against ridge's 0.28 |
 
 ### M4. Cross-subject and transfer (target 2027-01)
 
-Cross-subject evaluation with electrode-count alignment, the PACE isoparametric decoders as pipelines, a transfer
-table that reproduces the PACE camera-ready null result on the benchmark.
+| chunk | definition of done |
+|---|---|
+| Electrode aligner | `CrossSubjectEvaluation(aligner=...)` with the HTNet recipe as the first aligner: radial-basis projection of electrodes onto atlas regions (2 cm kernel, sensorimotor AAL regions) from `ElectrodeInfo` MNI coordinates, so patients with different grids share a feature space; refuses to run without an aligner |
+| Fine-tuning protocol | pooled-patient pretraining then fine-tuning with 20 / 50 / 100 target events (HTNet's budget), reported as a calibration curve next to the tailored decoder |
+| PACE decoders | the PACE isoparametric decoders as pipelines; the transfer table reproduces the PACE camera-ready null result on the benchmark |
+| Foundation-model pipelines | BrainBERT and Population Transformer as feature extractors behind a linear head (electrode coordinates as inputs), compared with the linear spectrogram baseline that beats them on Neuroprobe |
 
 ### M5. Speech tier and community (2027 H1)
 
-Bouchard CV syllables, Verwoert, Du-IN, tonal speech; a speech paradigm with word error metrics; first external
-contributor; a benchmark paper draft.
+Bouchard CV syllables, Verwoert, Du-IN, tonal speech; a speech paradigm with word error metrics; the Neuroprobe
+tasks on Brain Treebank as a naturalistic tier (their splits: within-session, cross-session, cross-subject); first
+external contributor; a benchmark paper draft.
 
 ### Parked
 
@@ -77,10 +87,12 @@ loading of hour-long runs, CodeCarbon, optuna. They come back when a milestone n
 ## What needs Yifan
 
 - Enabling GitHub Pages on the repository for the docs site.
+- Jira: a PhD project with its own boards (MOECoG board = filter on this epic); creating projects and boards needs the UI, the proposal is on the decision ticket.
 - Tier and licence policy (PRSNL-75), outreach sends (PRSNL-73), registrations (PRSNL-77).
 
 ## Re-evaluation log
 
+- 2026-09-10 (night): M2 classical set done in one day; the surprise is BCI III-1's cross-session drop, so session drift moves up: alignment steps into M3, the HTNet electrode aligner and fine-tuning budgets define M4, foundation models become pipelines rather than a separate tier. Learning curves stay the last M2 chunk. Literature pass recorded in `docs/best_practices.md`.
 - 2026-09-10 (later): "copy everything MOABB did, better": `docs/moabb_review.md` is the component-by-component decision list; batch 1 of it shipped the same day (analysis, cross-session, store, docs site); cross-subject with an explicit aligner stays in M4, learning curves in M2.
 - 2026-09-10: pivot from "test everything" to "package + contribution path + chunks". The catalog sweep stays as
   the map. Dropped from the near term: the remaining blocked sources, the non-human tier, lazy loading.

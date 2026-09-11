@@ -41,7 +41,7 @@ def test_benchmark_one_call_and_incremental_store(tmp_path):
     expected = {"pipeline", "subject", "metric", "score", "moecog_version", "pipeline_digest", "evaluation"}
     assert expected <= set(df.columns)
     assert set(df["evaluation"]) == {"within_subject", "cross_session"}
-    assert df["pipeline"].nunique() == len(_default_pipelines(par, 200.0))  # the registry pipelines without optional deps
+    assert df["pipeline"].nunique() == len(_default_pipelines(par, 200.0))
     assert (df[df.metric == "kappa"].score.abs() <= 1).all()
     n = len(df)
     again = benchmark(ds, par, n_splits=3, out=out, sfreq=200.0, evaluations=("within_subject", "cross_session"))

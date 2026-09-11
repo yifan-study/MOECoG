@@ -37,7 +37,7 @@ pyriemann 0.12); the deep pipeline in a NumPy 1 environment on the same machine 
 for Intel macOS predates NumPy 2. Athene (CPU) reruns the seeds when it is reachable; no GPU is used before
 the PACE camera-ready (2026-09-25).
 
-## Findings so far (2026-09-11, seed 0 of the deep model)
+## Findings so far (2026-09-11; deep model seeds 0 and 1, seed 2 partial)
 
 - **Band power with a linear classifier is the reference to beat on small per-patient sets.** With 60 cued trials per
   patient (motor_basic, imagery_basic) `LogBandPower + LDA` and `HighGamma + LDA` lead every pairwise test;
@@ -45,7 +45,10 @@ the PACE camera-ready (2026-09-25).
   (d_z above 1.1 in every comparison, permutation p < 0.001 on motor).
 - **The deep model wins where trials are many and the signal is evoked.** faces_basic (300 trials of 400 ms per
   patient): ShallowFBCSPNet 0.76 against 0.68 for the best band-power pipeline, ahead of every classical pipeline
-  (p between 0.0005 and 0.034, d_z 0.47 to 0.90, Friedman p = 0.003); its median patient reaches 0.84.
+  (p between 0.0005 and 0.034, d_z 0.47 to 0.90, Friedman p = 0.003); its median patient reaches 0.84. Seed 1
+  agrees to within two hundredths on every task (faces 0.75, motor 0.45, imagery 0.17 against 0.76, 0.44, 0.21);
+  seed 2 covers six of the fourteen faces patients so far (0.75) and the gestures seeds wait for the cluster, as
+  full-length multi-second trials make that run the memory-hungry one.
 - **Gestures is the hard task**: five patients, several sessions of a few trials, best kappa 0.52 (HighGamma + LDA),
   the network near chance (0.04).
 - **Riemannian tangent space on raw-epoch covariances trails band power within a session** on every Miller task,
@@ -82,7 +85,9 @@ the PACE camera-ready (2026-09-25).
   standardising the features per session: `LogBandPower + BatchZ + LDA` (`BatchStandardizer`, z-scoring over the
   batch it transforms, so over the whole held-out session) goes from 0.36 to 0.75 across the week and stays there
   whatever raw alignment precedes it (0.74 to 0.75), at a cost of four points within a session (0.76 against 0.80,
-  a fifth of a session being a small batch to standardise on). Two label-free fixes, one per feature family, and
+  a fifth of a session being a small batch to standardise on); on the Miller tasks the within-session cost is nil
+  to two points (motor 0.90 against 0.92, faces 0.70 against 0.68, imagery 0.64 against 0.65, gestures 0.48
+  against 0.45). Two label-free fixes, one per feature family, and
   both land within a few points of the within-session numbers (0.75 and 0.79 against 0.80 and 0.82).
 - **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
   far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.

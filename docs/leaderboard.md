@@ -1,6 +1,6 @@
 # MOECoG leaderboard
 
-Generated 2026-09-11 from `results/*.csv` at commit `2daf9d6` by `scripts/build_leaderboard.py`. Values are mean ± sd over subjects of the per-subject fold mean. Headline metrics: kappa (trials), Pearson r (kinematics). Chronological folds unless noted; see `docs/baselines.md` for protocol details.
+Generated 2026-09-11 from `results/*.csv` at commit `3074675` by `scripts/build_leaderboard.py`. Values are mean ± sd over subjects of the per-subject fold mean. Headline metrics: kappa (trials), Pearson r (kinematics). Chronological folds unless noted; see `docs/baselines.md` for protocol details.
 
 ## BCICompIII-1
 
@@ -84,12 +84,14 @@ Generated 2026-09-11 from `results/*.csv` at commit `2daf9d6` by `scripts/build_
 | evaluation | session | pipeline | n | kappa | accuracy | balanced_accuracy | folds |
 |---|---|---|---|---|---|---|---|
 | within_subject | faceshouses | HighGamma + LDA | 14 | 0.638 ± 0.253 | 0.818 ± 0.128 | 0.820 ± 0.125 | chronological |
+| within_subject | faceshouses | LogBandPower + BatchZ + LDA | 14 | 0.696 ± 0.232 | 0.848 ± 0.116 | 0.849 ± 0.116 | chronological |
 | within_subject | faceshouses | LogBandPower + LDA | 14 | 0.682 ± 0.251 | 0.841 ± 0.126 | 0.841 ± 0.124 | chronological |
 | within_subject | faceshouses | LogBandPower + LogReg | 14 | 0.667 ± 0.249 | 0.834 ± 0.125 | 0.834 ± 0.124 | chronological |
 | within_subject | faceshouses | Riemann HG TS + LogReg | 14 | 0.738 ± 0.220 | 0.869 ± 0.111 | 0.870 ± 0.109 | chronological |
 | within_subject | faceshouses | Riemann TS + LogReg | 14 | 0.608 ± 0.252 | 0.804 ± 0.127 | 0.805 ± 0.126 | chronological |
 | within_subject | faceshouses | ShallowFBCSPNet s0 | 14 | 0.763 ± 0.198 | 0.882 ± 0.099 | 0.882 ± 0.099 | chronological |
 | within_subject | faceshouses | ShallowFBCSPNet s1 | 14 | 0.749 ± 0.203 | 0.875 ± 0.102 | 0.875 ± 0.101 | chronological |
+| within_subject | faceshouses | ShallowFBCSPNet s2 | 6 | 0.749 ± 0.165 | 0.875 ± 0.082 | 0.875 ± 0.083 | chronological |
 
 ## Miller2019-fingerflex
 
@@ -103,30 +105,35 @@ Generated 2026-09-11 from `results/*.csv` at commit `2daf9d6` by `scripts/build_
 | evaluation | session | pipeline | n | kappa | accuracy | balanced_accuracy | folds |
 |---|---|---|---|---|---|---|---|
 | within_subject | fingerflex | HighGamma + LDA | 3 | 0.334 ± 0.329 | 0.466 ± 0.266 | 0.497 ± 0.251 | chronological |
+| within_subject | fingerflex | LogBandPower + BatchZ + LDA | 3 | 0.294 ± 0.269 | 0.432 ± 0.220 | 0.459 ± 0.210 | chronological |
 | within_subject | fingerflex | LogBandPower + LDA | 3 | 0.287 ± 0.244 | 0.428 ± 0.199 | 0.451 ± 0.197 | chronological |
 | within_subject | fingerflex | LogBandPower + LogReg | 3 | 0.252 ± 0.193 | 0.403 ± 0.155 | 0.421 ± 0.154 | chronological |
 | within_subject | fingerflex | Riemann HG TS + LogReg | 3 | 0.233 ± 0.245 | 0.383 ± 0.204 | 0.404 ± 0.209 | chronological |
 | within_subject | fingerflex | Riemann TS + LogReg | 3 | 0.080 ± 0.089 | 0.254 ± 0.067 | 0.265 ± 0.091 | chronological |
 | within_subject | fingerflex | ShallowFBCSPNet s0 | 3 | 0.078 ± 0.110 | 0.256 ± 0.093 | 0.253 ± 0.088 | chronological |
 | within_subject | glovefingersgrasp | HighGamma + LDA | 1 | 0.292 ± 0.000 | 0.411 ± 0.000 | 0.369 ± 0.000 | chronological |
+| within_subject | glovefingersgrasp | LogBandPower + BatchZ + LDA | 1 | 0.354 ± 0.000 | 0.461 ± 0.000 | 0.403 ± 0.000 | chronological |
 | within_subject | glovefingersgrasp | LogBandPower + LDA | 1 | 0.287 ± 0.000 | 0.411 ± 0.000 | 0.349 ± 0.000 | chronological |
 | within_subject | glovefingersgrasp | LogBandPower + LogReg | 1 | 0.256 ± 0.000 | 0.383 ± 0.000 | 0.332 ± 0.000 | chronological |
 | within_subject | glovefingersgrasp | Riemann HG TS + LogReg | 1 | 0.142 ± 0.000 | 0.311 ± 0.000 | 0.234 ± 0.000 | chronological |
 | within_subject | glovefingersgrasp | Riemann TS + LogReg | 1 | 0.111 ± 0.000 | 0.289 ± 0.000 | 0.223 ± 0.000 | chronological |
 | within_subject | glovefingersgrasp | ShallowFBCSPNet s0 | 1 | 0.044 ± 0.000 | 0.222 ± 0.000 | 0.172 ± 0.000 | chronological |
 | within_subject | mot_TH | HighGamma + LDA | 1 | 0.793 ± 0.000 | 0.900 ± 0.000 | 0.898 ± 0.000 | chronological |
+| within_subject | mot_TH | LogBandPower + BatchZ + LDA | 1 | 0.867 ± 0.000 | 0.933 ± 0.000 | 0.946 ± 0.000 | chronological |
 | within_subject | mot_TH | LogBandPower + LDA | 1 | 0.797 ± 0.000 | 0.900 ± 0.000 | 0.898 ± 0.000 | chronological |
 | within_subject | mot_TH | LogBandPower + LogReg | 1 | 0.797 ± 0.000 | 0.900 ± 0.000 | 0.898 ± 0.000 | chronological |
 | within_subject | mot_TH | Riemann HG TS + LogReg | 1 | 0.692 ± 0.000 | 0.850 ± 0.000 | 0.853 ± 0.000 | chronological |
 | within_subject | mot_TH | Riemann TS + LogReg | 1 | 0.788 ± 0.000 | 0.900 ± 0.000 | 0.894 ± 0.000 | chronological |
 | within_subject | mot_TH | ShallowFBCSPNet s0 | 1 | 0.156 ± 0.000 | 0.583 ± 0.000 | 0.582 ± 0.000 | chronological |
 | within_subject | rh_lh | HighGamma + LDA | 1 | 0.635 ± 0.000 | 0.768 ± 0.000 | 0.776 ± 0.000 | chronological |
+| within_subject | rh_lh | LogBandPower + BatchZ + LDA | 1 | 0.653 ± 0.000 | 0.781 ± 0.000 | 0.761 ± 0.000 | chronological |
 | within_subject | rh_lh | LogBandPower + LDA | 1 | 0.631 ± 0.000 | 0.767 ± 0.000 | 0.761 ± 0.000 | chronological |
 | within_subject | rh_lh | LogBandPower + LogReg | 1 | 0.628 ± 0.000 | 0.767 ± 0.000 | 0.761 ± 0.000 | chronological |
 | within_subject | rh_lh | Riemann HG TS + LogReg | 1 | 0.507 ± 0.000 | 0.674 ± 0.000 | 0.711 ± 0.000 | chronological |
 | within_subject | rh_lh | Riemann TS + LogReg | 1 | 0.144 ± 0.000 | 0.390 ± 0.000 | 0.451 ± 0.000 | chronological |
 | within_subject | rh_lh | ShallowFBCSPNet s0 | 1 | 0.246 ± 0.000 | 0.500 ± 0.000 | 0.515 ± 0.000 | chronological |
 | within_subject | thumbfore | HighGamma + LDA | 2 | 0.580 ± 0.420 | 0.733 ± 0.267 | 0.800 ± 0.200 | chronological |
+| within_subject | thumbfore | LogBandPower + BatchZ + LDA | 2 | 0.352 ± 0.612 | 0.658 ± 0.325 | 0.669 ± 0.319 | chronological |
 | within_subject | thumbfore | LogBandPower + LDA | 2 | 0.353 ± 0.613 | 0.658 ± 0.325 | 0.667 ± 0.317 | chronological |
 | within_subject | thumbfore | LogBandPower + LogReg | 2 | 0.541 ± 0.361 | 0.742 ± 0.208 | 0.777 ± 0.177 | chronological |
 | within_subject | thumbfore | Riemann HG TS + LogReg | 2 | 0.370 ± 0.630 | 0.633 ± 0.367 | 0.675 ± 0.325 | chronological |
@@ -138,25 +145,28 @@ Generated 2026-09-11 from `results/*.csv` at commit `2daf9d6` by `scripts/build_
 | evaluation | session | pipeline | n | kappa | accuracy | balanced_accuracy | folds |
 |---|---|---|---|---|---|---|---|
 | within_subject | im | HighGamma + LDA | 7 | 0.417 ± 0.193 | 0.710 ± 0.093 | 0.714 ± 0.096 | chronological |
+| within_subject | im | LogBandPower + BatchZ + LDA | 7 | 0.433 ± 0.155 | 0.717 ± 0.078 | 0.726 ± 0.083 | chronological |
 | within_subject | im | LogBandPower + LDA | 7 | 0.449 ± 0.191 | 0.724 ± 0.099 | 0.730 ± 0.101 | chronological |
 | within_subject | im | LogBandPower + LogReg | 7 | 0.405 ± 0.213 | 0.700 ± 0.109 | 0.708 ± 0.110 | chronological |
 | within_subject | im | Riemann HG TS + LogReg | 7 | 0.340 ± 0.277 | 0.671 ± 0.139 | 0.675 ± 0.145 | chronological |
 | within_subject | im | Riemann TS + LogReg | 7 | 0.221 ± 0.196 | 0.598 ± 0.100 | 0.618 ± 0.107 | chronological |
 | within_subject | im | ShallowFBCSPNet s0 | 7 | 0.051 ± 0.170 | 0.521 ± 0.091 | 0.530 ± 0.089 | chronological |
-| within_subject | im | ShallowFBCSPNet s1 | 6 | -0.035 ± 0.198 | 0.478 ± 0.098 | 0.482 ± 0.102 | chronological |
+| within_subject | im | ShallowFBCSPNet s1 | 7 | 0.009 ± 0.213 | 0.500 ± 0.106 | 0.505 ± 0.110 | chronological |
 | within_subject | mot | HighGamma + LDA | 7 | 0.893 ± 0.111 | 0.948 ± 0.055 | 0.954 ± 0.048 | chronological |
+| within_subject | mot | LogBandPower + BatchZ + LDA | 7 | 0.837 ± 0.104 | 0.919 ± 0.051 | 0.928 ± 0.047 | chronological |
 | within_subject | mot | LogBandPower + LDA | 7 | 0.860 ± 0.089 | 0.931 ± 0.044 | 0.934 ± 0.043 | chronological |
 | within_subject | mot | LogBandPower + LogReg | 7 | 0.812 ± 0.117 | 0.907 ± 0.058 | 0.913 ± 0.055 | chronological |
 | within_subject | mot | Riemann HG TS + LogReg | 7 | 0.898 ± 0.093 | 0.950 ± 0.045 | 0.956 ± 0.040 | chronological |
 | within_subject | mot | Riemann TS + LogReg | 7 | 0.603 ± 0.234 | 0.793 ± 0.129 | 0.818 ± 0.109 | chronological |
 | within_subject | mot | ShallowFBCSPNet s0 | 7 | 0.377 ± 0.376 | 0.669 ± 0.213 | 0.686 ± 0.204 | chronological |
-| within_subject | mot | ShallowFBCSPNet s1 | 6 | 0.221 ± 0.269 | 0.592 ± 0.154 | 0.612 ± 0.147 | chronological |
+| within_subject | mot | ShallowFBCSPNet s1 | 7 | 0.322 ± 0.352 | 0.645 ± 0.193 | 0.662 ± 0.183 | chronological |
 
 ## Miller2019-motor_basic
 
 | evaluation | session | pipeline | n | kappa | accuracy | balanced_accuracy | folds |
 |---|---|---|---|---|---|---|---|
 | within_subject | 0 | HighGamma + LDA | 19 | 0.877 ± 0.166 | 0.939 ± 0.085 | 0.944 ± 0.075 | chronological, stratified_fallback |
+| within_subject | 0 | LogBandPower + BatchZ + LDA | 19 | 0.898 ± 0.096 | 0.950 ± 0.047 | 0.956 ± 0.044 | chronological, stratified_fallback |
 | within_subject | 0 | LogBandPower + LDA | 19 | 0.917 ± 0.091 | 0.960 ± 0.045 | 0.960 ± 0.044 | chronological, stratified_fallback |
 | within_subject | 0 | LogBandPower + LogReg | 19 | 0.880 ± 0.125 | 0.942 ± 0.061 | 0.942 ± 0.062 | chronological, stratified_fallback |
 | within_subject | 0 | Riemann HG TS + LogReg | 19 | 0.936 ± 0.067 | 0.968 ± 0.033 | 0.971 ± 0.031 | chronological, stratified_fallback |

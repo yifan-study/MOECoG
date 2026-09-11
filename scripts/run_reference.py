@@ -24,13 +24,34 @@ from moecog.paradigms import (
     MotorClassification,
 )
 
+
+def _miller(exp):
+    return lambda: MillerLibrary(exp)
+
+
+def _bci_iii_1():
+    from moecog.datasets.misc import BCICompIII1
+
+    return BCICompIII1()
+
+
+# task -> (paradigm class name, paradigm factory(resample), dataset factory, evaluations)
 TASKS = {
-    "motor_basic": ("MotorClassification", lambda r: MotorClassification(resample=r)),
-    "imagery_basic": ("MotorClassification", lambda r: MotorClassification(resample=r)),
-    "faces_basic": ("FaceHouseClassification", lambda r: FaceHouseClassification(resample=r)),
-    "gestures": ("EpochedClassification", lambda r: EpochedClassification(tmin=0.0, tmax=None, fmin=1.0, fmax=200.0,
-                                                                            resample=r)),
-    "fingerflex": ("FingerFlexionRegression", lambda r: FingerFlexionRegression(resample=r)),
+    "motor_basic": ("MotorClassification", lambda r: MotorClassification(resample=r), _miller("motor_basic"),
+                    ("within_subject",)),
+    "imagery_basic": ("MotorClassification", lambda r: MotorClassification(resample=r), _miller("imagery_basic"),
+                      ("within_subject",)),
+    "faces_basic": ("FaceHouseClassification", lambda r: FaceHouseClassification(resample=r),
+                    _miller("faces_basic"), ("within_subject",)),
+    "gestures": ("EpochedClassification", lambda r: EpochedClassification(tmin=0.0, tmax=None, fmin=1.0,
+                                                                            fmax=200.0, resample=r),
+                 _miller("gestures"), ("within_subject",)),
+    "fingerflex": ("FingerFlexionRegression", lambda r: FingerFlexionRegression(resample=r),
+                   _miller("fingerflex"), ("within_subject",)),
+    # two sessions a week apart with published test labels: the one honest cross-session check in this tier
+    "bci_iii_1": ("EpochedClassification", lambda r: EpochedClassification(tmin=0.0, tmax=None, fmin=1.0,
+                                                                             fmax=200.0, resample=r),
+                  _bci_iii_1, ("within_subject", "cross_session")),
 }
 DEEP = "ShallowFBCSPNet"
 
@@ -68,9 +89,9 @@ def main():
     ap.add_argument("--out-dir", default="results")
     args = ap.parse_args()
     for task in args.tasks:
-        pname, make = TASKS[task]
+        pname, make, build, evaluations = TASKS[task]
         paradigm = make(args.resample)
-        ds = MillerLibrary(task)
+        ds = build()
         sfreq = args.resample or 1000.0
         pipes = build_pipelines(args.pipelines, pname, sfreq, args.seeds)
         if not pipes:
@@ -78,7 +99,8 @@ def main():
             continue
         t0 = time.time()
         df = benchmark(ds, paradigm, pipelines=pipes, n_splits=args.n_splits, subjects=args.subjects,
-                       out=f"{args.out_dir}/reference_{task}.csv", overwrite=args.overwrite, sfreq=sfreq)
+                       out=f"{args.out_dir}/reference_{task}.csv", overwrite=args.overwrite, sfreq=sfreq,
+                       evaluations=evaluations)
         head = "pearson_r" if task == "fingerflex" else "kappa"
         summ = df[(df.metric == head) & (df.evaluation == "within_subject")].groupby("pipeline")["score"].agg(
             ["mean", "std", "count"])

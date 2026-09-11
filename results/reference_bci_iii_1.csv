@@ -1,0 +1,145 @@
+dataset,subject,session,pipeline,metric,score,fold,fold_policy,n_train,n_test,n_channels,time,pipeline_digest,paradigm_digest,evaluation,moecog_version,computed_at
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.5629139072847682,0,chronological,223,55,64,4.298383951187134,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.7818181818181819,0,chronological,223,55,64,4.298383951187134,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.7833333333333334,0,chronological,223,55,64,4.298383951187134,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.638157894736842,0,chronological,223,55,64,1.6730961799621582,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.8181818181818182,0,chronological,223,55,64,1.6730961799621582,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.8233333333333334,0,chronological,223,55,64,1.6730961799621582,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.6006600660066006,0,chronological,223,55,64,1.7566468715667725,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.8,0,chronological,223,55,64,1.7566468715667725,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.8033333333333333,0,chronological,223,55,64,1.7566468715667725,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.7441860465116279,0,chronological,223,55,64,1.856170892715454,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.8727272727272727,0,chronological,223,55,64,1.856170892715454,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.8733333333333333,0,chronological,223,55,64,1.856170892715454,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.35959339263024137,1,chronological,222,56,64,1.688737154006958,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.6785714285714286,1,chronological,222,56,64,1.688737154006958,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.6807151979565773,1,chronological,222,56,64,1.688737154006958,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.5719745222929936,1,chronological,222,56,64,1.8113720417022705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.7857142857142857,1,chronological,222,56,64,1.8113720417022705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.7867177522349935,1,chronological,222,56,64,1.8113720417022705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.6785714285714286,1,chronological,222,56,64,1.7907040119171143,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.8392857142857143,1,chronological,222,56,64,1.7907040119171143,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.8397190293742018,1,chronological,222,56,64,1.7907040119171143,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.7854406130268199,1,chronological,222,56,64,2.5030410289764404,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.8928571428571429,1,chronological,222,56,64,2.5030410289764404,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.89272030651341,1,chronological,222,56,64,2.5030410289764404,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.40217391304347827,2,chronological,223,55,64,4.219435691833496,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.7090909090909091,2,chronological,223,55,64,4.219435691833496,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.7010869565217391,2,chronological,223,55,64,4.219435691833496,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.8523489932885906,2,chronological,223,55,64,4.627064943313599,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.9272727272727272,2,chronological,223,55,64,4.627064943313599,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.9313858695652174,2,chronological,223,55,64,4.627064943313599,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.7785234899328859,2,chronological,223,55,64,3.538337230682373,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.8909090909090909,2,chronological,223,55,64,3.538337230682373,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.8940217391304348,2,chronological,223,55,64,3.538337230682373,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.887218045112782,2,chronological,223,55,64,2.120471954345703,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.9454545454545454,2,chronological,223,55,64,2.120471954345703,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.9408967391304348,2,chronological,223,55,64,2.120471954345703,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.6735751295336787,3,chronological,222,56,64,2.0580389499664307,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.8392857142857143,3,chronological,222,56,64,2.0580389499664307,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.8385416666666667,3,chronological,222,56,64,2.0580389499664307,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.8167539267015707,3,chronological,222,56,64,1.835972785949707,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.9107142857142857,3,chronological,222,56,64,1.835972785949707,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.90625,3,chronological,222,56,64,1.835972785949707,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.8148148148148149,3,chronological,222,56,64,1.8185231685638428,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.9107142857142857,3,chronological,222,56,64,1.8185231685638428,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.9010416666666667,3,chronological,222,56,64,1.8185231685638428,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.743455497382199,3,chronological,222,56,64,1.856846809387207,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.875,3,chronological,222,56,64,1.856846809387207,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.8697916666666667,3,chronological,222,56,64,1.856846809387207,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.5345268542199488,4,chronological,222,56,64,1.6425080299377441,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.7678571428571429,4,chronological,222,56,64,1.6425080299377441,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.7669220945083014,4,chronological,222,56,64,1.6425080299377441,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.8573248407643312,4,chronological,222,56,64,1.6883389949798584,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.9285714285714286,4,chronological,222,56,64,1.6883389949798584,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.9297573435504469,4,chronological,222,56,64,1.6883389949798584,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.8569604086845466,4,chronological,222,56,64,4.667968034744263,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.9285714285714286,4,chronological,222,56,64,4.667968034744263,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.9284802043422733,4,chronological,222,56,64,4.667968034744263,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.8928571428571429,4,chronological,222,56,64,2.0603420734405518,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.9464285714285714,4,chronological,222,56,64,2.0603420734405518,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.9469987228607918,4,chronological,222,56,64,2.0603420734405518,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.9,0,chronological,80,20,64,1.870664119720459,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.95,0,chronological,80,20,64,1.870664119720459,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.9545454545454546,0,chronological,80,20,64,1.870664119720459,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.9,0,chronological,80,20,64,0.6890699863433838,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.95,0,chronological,80,20,64,0.6890699863433838,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.9545454545454546,0,chronological,80,20,64,0.6890699863433838,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,0.797979797979798,0,chronological,80,20,64,0.622988224029541,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,0.9,0,chronological,80,20,64,0.622988224029541,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,0.898989898989899,0,chronological,80,20,64,0.622988224029541,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.9,0,chronological,80,20,64,0.8107459545135498,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.95,0,chronological,80,20,64,0.8107459545135498,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.9545454545454546,0,chronological,80,20,64,0.8107459545135498,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.7802197802197802,1,chronological,80,20,64,0.611760139465332,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.9,1,chronological,80,20,64,0.611760139465332,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.8901098901098901,1,chronological,80,20,64,0.611760139465332,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.8936170212765957,1,chronological,80,20,64,0.595383882522583,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.95,1,chronological,80,20,64,0.595383882522583,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.9615384615384616,1,chronological,80,20,64,0.595383882522583,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,1.0,1,chronological,80,20,64,0.5617139339447021,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,1.0,1,chronological,80,20,64,0.5617139339447021,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,80,20,64,0.5617139339447021,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.8936170212765957,1,chronological,80,20,64,0.8740949630737305,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.95,1,chronological,80,20,64,0.8740949630737305,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.9615384615384616,1,chronological,80,20,64,0.8740949630737305,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.6938775510204083,2,chronological,80,20,64,0.752892017364502,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.85,2,chronological,80,20,64,0.752892017364502,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.8434343434343434,2,chronological,80,20,64,0.752892017364502,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.7938144329896907,2,chronological,80,20,64,0.707695722579956,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.9,2,chronological,80,20,64,0.707695722579956,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.8888888888888888,2,chronological,80,20,64,0.707695722579956,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,0.6875,2,chronological,80,20,64,0.7695879936218262,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,0.85,2,chronological,80,20,64,0.7695879936218262,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,0.8333333333333333,2,chronological,80,20,64,0.7695879936218262,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.5876288659793814,2,chronological,80,20,64,0.9360449314117432,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.8,2,chronological,80,20,64,0.9360449314117432,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.7878787878787878,2,chronological,80,20,64,0.9360449314117432,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.9,3,chronological,80,20,64,1.4639620780944824,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.95,3,chronological,80,20,64,1.4639620780944824,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.95,3,chronological,80,20,64,1.4639620780944824,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.8,3,chronological,80,20,64,1.074815273284912,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.9,3,chronological,80,20,64,1.074815273284912,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.9,3,chronological,80,20,64,1.074815273284912,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,0.8,3,chronological,80,20,64,0.7157750129699707,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,0.9,3,chronological,80,20,64,0.7157750129699707,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,0.9,3,chronological,80,20,64,0.7157750129699707,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.9,3,chronological,80,20,64,1.1628539562225342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.95,3,chronological,80,20,64,1.1628539562225342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.95,3,chronological,80,20,64,1.1628539562225342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.7802197802197802,4,chronological,80,20,64,0.6492068767547607,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.9,4,chronological,80,20,64,0.6492068767547607,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.8901098901098901,4,chronological,80,20,64,0.6492068767547607,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.8863636363636364,4,chronological,80,20,64,0.5764470100402832,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.95,4,chronological,80,20,64,0.5764470100402832,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,4,chronological,80,20,64,0.5764470100402832,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,0.8936170212765957,4,chronological,80,20,64,0.5748751163482666,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,0.95,4,chronological,80,20,64,0.5748751163482666,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,0.9615384615384616,4,chronological,80,20,64,0.5748751163482666,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.8936170212765957,4,chronological,80,20,64,0.8618721961975098,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.95,4,chronological,80,20,64,0.8618721961975098,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.9615384615384616,4,chronological,80,20,64,0.8618721961975098,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:27:08
+BCICompIII-1,1,test,HighGamma + LDA,kappa,0.0,0,leave_one_session_out,278,100,64,4.381958246231079,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,HighGamma + LDA,accuracy,0.5,0,leave_one_session_out,278,100,64,4.381958246231079,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,HighGamma + LDA,balanced_accuracy,0.5,0,leave_one_session_out,278,100,64,4.381958246231079,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LDA,kappa,0.18000000000000005,0,leave_one_session_out,278,100,64,3.7910399436950684,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LDA,accuracy,0.59,0,leave_one_session_out,278,100,64,3.7910399436950684,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LDA,balanced_accuracy,0.59,0,leave_one_session_out,278,100,64,3.7910399436950684,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LogReg,kappa,0.040000000000000036,0,leave_one_session_out,278,100,64,2.9312713146209717,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LogReg,accuracy,0.52,0,leave_one_session_out,278,100,64,2.9312713146209717,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,LogBandPower + LogReg,balanced_accuracy,0.52,0,leave_one_session_out,278,100,64,2.9312713146209717,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,Riemann TS + LogReg,kappa,0.52,0,leave_one_session_out,278,100,64,2.5656630992889404,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,Riemann TS + LogReg,accuracy,0.76,0,leave_one_session_out,278,100,64,2.5656630992889404,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,test,Riemann TS + LogReg,balanced_accuracy,0.76,0,leave_one_session_out,278,100,64,2.5656630992889404,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,HighGamma + LDA,kappa,0.0,1,leave_one_session_out,100,278,64,2.506075859069824,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,HighGamma + LDA,accuracy,0.5,1,leave_one_session_out,100,278,64,2.506075859069824,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,HighGamma + LDA,balanced_accuracy,0.5,1,leave_one_session_out,100,278,64,2.506075859069824,f0ad027786a9,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LDA,kappa,0.5323741007194245,1,leave_one_session_out,100,278,64,2.3701131343841553,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LDA,accuracy,0.7661870503597122,1,leave_one_session_out,100,278,64,2.3701131343841553,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LDA,balanced_accuracy,0.7661870503597121,1,leave_one_session_out,100,278,64,2.3701131343841553,ad4c2abc31c8,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LogReg,kappa,0.4460431654676259,1,leave_one_session_out,100,278,64,2.516279697418213,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LogReg,accuracy,0.7230215827338129,1,leave_one_session_out,100,278,64,2.516279697418213,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,LogBandPower + LogReg,balanced_accuracy,0.7230215827338129,1,leave_one_session_out,100,278,64,2.516279697418213,688f919f3ab0,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,Riemann TS + LogReg,kappa,0.5755395683453237,1,leave_one_session_out,100,278,64,1.7165560722351074,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,Riemann TS + LogReg,accuracy,0.7877697841726619,1,leave_one_session_out,100,278,64,1.7165560722351074,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48
+BCICompIII-1,1,train,Riemann TS + LogReg,balanced_accuracy,0.7877697841726619,1,leave_one_session_out,100,278,64,1.7165560722351074,b4736e60e22e,53c35aeb54c0,cross_session,0.3.0.dev0,2026-09-10T20:27:48

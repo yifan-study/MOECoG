@@ -1,0 +1,841 @@
+dataset,subject,session,pipeline,metric,score,fold,fold_policy,n_train,n_test,n_channels,time,pipeline_digest,paradigm_digest,evaluation,moecog_version,computed_at
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,kappa,1.0,0,chronological,48,12,46,0.27890801429748535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,accuracy,1.0,0,chronological,48,12,46,0.27890801429748535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,balanced_accuracy,1.0,0,chronological,48,12,46,0.27890801429748535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,kappa,1.0,0,chronological,48,12,46,0.15774822235107422,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,accuracy,1.0,0,chronological,48,12,46,0.15774822235107422,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,balanced_accuracy,1.0,0,chronological,48,12,46,0.15774822235107422,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,kappa,1.0,0,chronological,48,12,46,0.1674489974975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,accuracy,1.0,0,chronological,48,12,46,0.1674489974975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,balanced_accuracy,1.0,0,chronological,48,12,46,0.1674489974975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,kappa,0.8235294117647058,0,chronological,48,12,46,0.2426760196685791,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,46,0.2426760196685791,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,balanced_accuracy,0.9375,0,chronological,48,12,46,0.2426760196685791,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,kappa,1.0,1,chronological,48,12,46,0.17539095878601074,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,46,0.17539095878601074,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,46,0.17539095878601074,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,kappa,1.0,1,chronological,48,12,46,0.18078303337097168,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,accuracy,1.0,1,chronological,48,12,46,0.18078303337097168,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,balanced_accuracy,1.0,1,chronological,48,12,46,0.18078303337097168,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,kappa,1.0,1,chronological,48,12,46,0.16771817207336426,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,accuracy,1.0,1,chronological,48,12,46,0.16771817207336426,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,48,12,46,0.16771817207336426,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,kappa,0.8235294117647058,1,chronological,48,12,46,0.22962498664855957,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,46,0.22962498664855957,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,balanced_accuracy,0.9375,1,chronological,48,12,46,0.22962498664855957,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,46,0.15316486358642578,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,46,0.15316486358642578,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,46,0.15316486358642578,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,46,0.17155003547668457,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,46,0.17155003547668457,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,46,0.17155003547668457,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,46,0.1708240509033203,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,46,0.1708240509033203,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,46,0.1708240509033203,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,kappa,0.6666666666666667,2,chronological,48,12,46,0.23302912712097168,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,46,0.23302912712097168,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,balanced_accuracy,0.875,2,chronological,48,12,46,0.23302912712097168,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,kappa,1.0,3,chronological,48,12,46,0.16218805313110352,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,46,0.16218805313110352,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,46,0.16218805313110352,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,46,0.17193818092346191,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,46,0.17193818092346191,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,46,0.17193818092346191,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,kappa,1.0,3,chronological,48,12,46,0.1551668643951416,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,accuracy,1.0,3,chronological,48,12,46,0.1551668643951416,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,balanced_accuracy,1.0,3,chronological,48,12,46,0.1551668643951416,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,kappa,0.8,3,chronological,48,12,46,0.230057954788208,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,3,chronological,48,12,46,0.230057954788208,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,balanced_accuracy,0.875,3,chronological,48,12,46,0.230057954788208,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,kappa,0.8333333333333334,4,chronological,48,12,46,0.17767596244812012,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,46,0.17767596244812012,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,HighGamma + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,46,0.17767596244812012,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,kappa,0.8333333333333334,4,chronological,48,12,46,0.1735689640045166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,46,0.1735689640045166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,46,0.1735689640045166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,kappa,0.8333333333333334,4,chronological,48,12,46,0.1639542579650879,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,4,chronological,48,12,46,0.1639542579650879,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,4,chronological,48,12,46,0.1639542579650879,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,kappa,1.0,4,chronological,48,12,46,0.26252102851867676,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,accuracy,1.0,4,chronological,48,12,46,0.26252102851867676,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,mot,Riemann TS + LogReg,balanced_accuracy,1.0,4,chronological,48,12,46,0.26252102851867676,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,kappa,-0.09090909090909083,0,chronological,48,12,46,0.16686296463012695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,accuracy,0.5,0,chronological,48,12,46,0.16686296463012695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,balanced_accuracy,0.4571428571428572,0,chronological,48,12,46,0.16686296463012695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,kappa,0.3142857142857143,0,chronological,48,12,46,0.15677881240844727,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,accuracy,0.6666666666666666,0,chronological,48,12,46,0.15677881240844727,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,balanced_accuracy,0.6571428571428571,0,chronological,48,12,46,0.15677881240844727,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,kappa,0.11764705882352944,0,chronological,48,12,46,0.16010427474975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,accuracy,0.5833333333333334,0,chronological,48,12,46,0.16010427474975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,balanced_accuracy,0.5571428571428572,0,chronological,48,12,46,0.16010427474975586,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,kappa,-0.23076923076923084,0,chronological,48,12,46,0.23013782501220703,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,accuracy,0.3333333333333333,0,chronological,48,12,46,0.23013782501220703,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,balanced_accuracy,0.37142857142857144,0,chronological,48,12,46,0.23013782501220703,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,kappa,-0.16666666666666674,1,chronological,48,12,46,0.1831190586090088,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,accuracy,0.4166666666666667,1,chronological,48,12,46,0.1831190586090088,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,balanced_accuracy,0.41428571428571426,1,chronological,48,12,46,0.1831190586090088,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,kappa,-0.16666666666666674,1,chronological,48,12,46,0.16312384605407715,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,accuracy,0.4166666666666667,1,chronological,48,12,46,0.16312384605407715,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,balanced_accuracy,0.41428571428571426,1,chronological,48,12,46,0.16312384605407715,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,kappa,-0.29729729729729737,1,chronological,48,12,46,0.15613794326782227,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,accuracy,0.3333333333333333,1,chronological,48,12,46,0.15613794326782227,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,balanced_accuracy,0.34285714285714286,1,chronological,48,12,46,0.15613794326782227,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,kappa,-0.10526315789473673,1,chronological,48,12,46,0.2261049747467041,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,accuracy,0.4166666666666667,1,chronological,48,12,46,0.2261049747467041,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,balanced_accuracy,0.44285714285714284,1,chronological,48,12,46,0.2261049747467041,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,kappa,0.11764705882352944,2,chronological,48,12,46,0.1719989776611328,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,accuracy,0.5833333333333334,2,chronological,48,12,46,0.1719989776611328,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,balanced_accuracy,0.5625,2,chronological,48,12,46,0.1719989776611328,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,kappa,0.33333333333333337,2,chronological,48,12,46,0.16580796241760254,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,accuracy,0.6666666666666666,2,chronological,48,12,46,0.16580796241760254,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,balanced_accuracy,0.6875,2,chronological,48,12,46,0.16580796241760254,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,kappa,0.5263157894736843,2,chronological,48,12,46,0.18512201309204102,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,accuracy,0.75,2,chronological,48,12,46,0.18512201309204102,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,balanced_accuracy,0.8125,2,chronological,48,12,46,0.18512201309204102,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,kappa,0.0,2,chronological,48,12,46,0.2517969608306885,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,accuracy,0.4166666666666667,2,chronological,48,12,46,0.2517969608306885,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,balanced_accuracy,0.5,2,chronological,48,12,46,0.2517969608306885,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,kappa,0.0,3,chronological,48,12,46,0.15354418754577637,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,accuracy,0.5,3,chronological,48,12,46,0.15354418754577637,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,balanced_accuracy,0.5,3,chronological,48,12,46,0.15354418754577637,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,kappa,-0.33333333333333326,3,chronological,48,12,46,0.17321419715881348,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,accuracy,0.3333333333333333,3,chronological,48,12,46,0.17321419715881348,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,balanced_accuracy,0.3333333333333333,3,chronological,48,12,46,0.17321419715881348,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,kappa,-0.33333333333333326,3,chronological,48,12,46,0.17525696754455566,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,accuracy,0.3333333333333333,3,chronological,48,12,46,0.17525696754455566,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,balanced_accuracy,0.3333333333333333,3,chronological,48,12,46,0.17525696754455566,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,kappa,-0.16666666666666674,3,chronological,48,12,46,0.2547750473022461,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,accuracy,0.4166666666666667,3,chronological,48,12,46,0.2547750473022461,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,balanced_accuracy,0.41666666666666663,3,chronological,48,12,46,0.2547750473022461,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,kappa,0.6666666666666667,4,chronological,48,12,46,0.155134916305542,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,accuracy,0.8333333333333334,4,chronological,48,12,46,0.155134916305542,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,HighGamma + LDA,balanced_accuracy,0.8333333333333333,4,chronological,48,12,46,0.155134916305542,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,kappa,0.8333333333333334,4,chronological,48,12,46,0.1653749942779541,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,46,0.1653749942779541,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,46,0.1653749942779541,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,kappa,0.6666666666666667,4,chronological,48,12,46,0.17776799201965332,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,46,0.17776799201965332,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,LogBandPower + LogReg,balanced_accuracy,0.8333333333333334,4,chronological,48,12,46,0.17776799201965332,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,kappa,0.0,4,chronological,48,12,46,0.27930617332458496,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,accuracy,0.5,4,chronological,48,12,46,0.27930617332458496,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,bp,im,Riemann TS + LogReg,balanced_accuracy,0.5,4,chronological,48,12,46,0.27930617332458496,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:28
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,kappa,0.8333333333333334,0,chronological,48,12,64,0.30774664878845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.30774664878845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,balanced_accuracy,0.9285714285714286,0,chronological,48,12,64,0.30774664878845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,kappa,0.6756756756756757,0,chronological,48,12,64,0.26854872703552246,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.26854872703552246,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.26854872703552246,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,kappa,0.6756756756756757,0,chronological,48,12,64,0.248399019241333,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,64,0.248399019241333,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.248399019241333,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.48116397857666016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.48116397857666016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,balanced_accuracy,0.9285714285714286,0,chronological,48,12,64,0.48116397857666016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,kappa,1.0,1,chronological,48,12,64,0.2717897891998291,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,64,0.2717897891998291,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.2717897891998291,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,kappa,1.0,1,chronological,48,12,64,0.2631518840789795,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,accuracy,1.0,1,chronological,48,12,64,0.2631518840789795,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.2631518840789795,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,kappa,1.0,1,chronological,48,12,64,0.23915386199951172,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,accuracy,1.0,1,chronological,48,12,64,0.23915386199951172,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,48,12,64,0.23915386199951172,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,kappa,0.8235294117647058,1,chronological,48,12,64,0.45337510108947754,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.45337510108947754,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,balanced_accuracy,0.9,1,chronological,48,12,64,0.45337510108947754,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,64,0.2512929439544678,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,64,0.2512929439544678,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.2512929439544678,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,kappa,0.8333333333333334,2,chronological,48,12,64,0.24689507484436035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,accuracy,0.9166666666666666,2,chronological,48,12,64,0.24689507484436035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,2,chronological,48,12,64,0.24689507484436035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,kappa,0.8333333333333334,2,chronological,48,12,64,0.24510908126831055,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,2,chronological,48,12,64,0.24510908126831055,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,2,chronological,48,12,64,0.24510908126831055,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,kappa,1.0,2,chronological,48,12,64,0.4661600589752197,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,accuracy,1.0,2,chronological,48,12,64,0.4661600589752197,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.4661600589752197,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,kappa,1.0,3,chronological,48,12,64,0.25321221351623535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,64,0.25321221351623535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.25321221351623535,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.28339409828186035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.28339409828186035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,3,chronological,48,12,64,0.28339409828186035,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,kappa,0.6666666666666667,3,chronological,48,12,64,0.28293395042419434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.28293395042419434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,balanced_accuracy,0.8333333333333334,3,chronological,48,12,64,0.28293395042419434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,kappa,1.0,3,chronological,48,12,64,0.532447099685669,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,accuracy,1.0,3,chronological,48,12,64,0.532447099685669,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,balanced_accuracy,1.0,3,chronological,48,12,64,0.532447099685669,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,kappa,0.6666666666666667,4,chronological,48,12,64,0.25897908210754395,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,accuracy,0.8333333333333334,4,chronological,48,12,64,0.25897908210754395,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,HighGamma + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.25897908210754395,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,kappa,0.6666666666666667,4,chronological,48,12,64,0.26691722869873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,accuracy,0.8333333333333334,4,chronological,48,12,64,0.26691722869873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.26691722869873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,kappa,0.5263157894736843,4,chronological,48,12,64,0.261948823928833,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,accuracy,0.75,4,chronological,48,12,64,0.261948823928833,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,LogBandPower + LogReg,balanced_accuracy,0.8125,4,chronological,48,12,64,0.261948823928833,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,kappa,0.6666666666666667,4,chronological,48,12,64,0.5758106708526611,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.5758106708526611,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,mot,Riemann TS + LogReg,balanced_accuracy,0.875,4,chronological,48,12,64,0.5758106708526611,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,kappa,0.6756756756756757,0,chronological,48,12,64,0.2862861156463623,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.2862861156463623,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.2862861156463623,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,kappa,0.6756756756756757,0,chronological,48,12,64,0.2888219356536865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.2888219356536865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.2888219356536865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,kappa,0.6756756756756757,0,chronological,48,12,64,0.2618582248687744,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,64,0.2618582248687744,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.2618582248687744,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,kappa,0.16666666666666663,0,chronological,48,12,64,0.46886706352233887,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,accuracy,0.5833333333333334,0,chronological,48,12,64,0.46886706352233887,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,balanced_accuracy,0.5857142857142856,0,chronological,48,12,64,0.46886706352233887,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,kappa,0.3142857142857143,1,chronological,48,12,64,0.27060985565185547,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,accuracy,0.6666666666666666,1,chronological,48,12,64,0.27060985565185547,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,balanced_accuracy,0.6571428571428571,1,chronological,48,12,64,0.27060985565185547,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,kappa,-0.23076923076923084,1,chronological,48,12,64,0.2766711711883545,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,accuracy,0.3333333333333333,1,chronological,48,12,64,0.2766711711883545,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,balanced_accuracy,0.37142857142857144,1,chronological,48,12,64,0.2766711711883545,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,kappa,-0.23076923076923084,1,chronological,48,12,64,0.27583789825439453,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,accuracy,0.3333333333333333,1,chronological,48,12,64,0.27583789825439453,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,balanced_accuracy,0.37142857142857144,1,chronological,48,12,64,0.27583789825439453,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,kappa,0.2499999999999999,1,chronological,48,12,64,0.42916226387023926,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,accuracy,0.5833333333333334,1,chronological,48,12,64,0.42916226387023926,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,balanced_accuracy,0.6428571428571428,1,chronological,48,12,64,0.42916226387023926,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,kappa,0.2857142857142857,2,chronological,48,12,64,0.26162004470825195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,accuracy,0.5833333333333334,2,chronological,48,12,64,0.26162004470825195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,balanced_accuracy,0.7222222222222222,2,chronological,48,12,64,0.26162004470825195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,kappa,0.07692307692307687,2,chronological,48,12,64,0.31101322174072266,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,accuracy,0.5,2,chronological,48,12,64,0.31101322174072266,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,balanced_accuracy,0.5555555555555556,2,chronological,48,12,64,0.31101322174072266,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,kappa,0.07692307692307687,2,chronological,48,12,64,0.26078319549560547,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,accuracy,0.5,2,chronological,48,12,64,0.26078319549560547,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,balanced_accuracy,0.5555555555555556,2,chronological,48,12,64,0.26078319549560547,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,kappa,0.2857142857142857,2,chronological,48,12,64,0.40242600440979004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,accuracy,0.5833333333333334,2,chronological,48,12,64,0.40242600440979004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,balanced_accuracy,0.7222222222222222,2,chronological,48,12,64,0.40242600440979004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,kappa,0.3846153846153846,3,chronological,48,12,64,0.2600719928741455,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,accuracy,0.6666666666666666,3,chronological,48,12,64,0.2600719928741455,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,balanced_accuracy,0.7142857142857143,3,chronological,48,12,64,0.2600719928741455,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,kappa,0.3513513513513513,3,chronological,48,12,64,0.3114438056945801,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,accuracy,0.6666666666666666,3,chronological,48,12,64,0.3114438056945801,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,balanced_accuracy,0.6857142857142857,3,chronological,48,12,64,0.3114438056945801,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,kappa,0.16666666666666663,3,chronological,48,12,64,0.2703838348388672,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,accuracy,0.5833333333333334,3,chronological,48,12,64,0.2703838348388672,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,balanced_accuracy,0.5857142857142856,3,chronological,48,12,64,0.2703838348388672,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,kappa,0.5,3,chronological,48,12,64,0.4121830463409424,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,accuracy,0.75,3,chronological,48,12,64,0.4121830463409424,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,balanced_accuracy,0.7571428571428571,3,chronological,48,12,64,0.4121830463409424,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,kappa,0.5,4,chronological,48,12,64,0.252971887588501,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,accuracy,0.75,4,chronological,48,12,64,0.252971887588501,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,HighGamma + LDA,balanced_accuracy,0.75,4,chronological,48,12,64,0.252971887588501,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,kappa,0.33333333333333337,4,chronological,48,12,64,0.2760200500488281,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,accuracy,0.6666666666666666,4,chronological,48,12,64,0.2760200500488281,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LDA,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.2760200500488281,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,kappa,0.16666666666666663,4,chronological,48,12,64,0.2798919677734375,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,accuracy,0.5833333333333334,4,chronological,48,12,64,0.2798919677734375,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,LogBandPower + LogReg,balanced_accuracy,0.5833333333333333,4,chronological,48,12,64,0.2798919677734375,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,kappa,0.5,4,chronological,48,12,64,0.499614953994751,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,accuracy,0.75,4,chronological,48,12,64,0.499614953994751,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,fp,im,Riemann TS + LogReg,balanced_accuracy,0.75,4,chronological,48,12,64,0.499614953994751,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:44
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,kappa,1.0,0,chronological,48,12,48,0.18608403205871582,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,accuracy,1.0,0,chronological,48,12,48,0.18608403205871582,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,balanced_accuracy,1.0,0,chronological,48,12,48,0.18608403205871582,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,kappa,1.0,0,chronological,48,12,48,0.17934107780456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,accuracy,1.0,0,chronological,48,12,48,0.17934107780456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,balanced_accuracy,1.0,0,chronological,48,12,48,0.17934107780456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,kappa,0.8333333333333334,0,chronological,48,12,48,0.19332313537597656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,48,0.19332313537597656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,balanced_accuracy,0.9285714285714286,0,chronological,48,12,48,0.19332313537597656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,kappa,0.2499999999999999,0,chronological,48,12,48,0.32543516159057617,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,accuracy,0.5833333333333334,0,chronological,48,12,48,0.32543516159057617,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,balanced_accuracy,0.6428571428571428,0,chronological,48,12,48,0.32543516159057617,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,kappa,0.47058823529411764,1,chronological,48,12,48,0.16736197471618652,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,accuracy,0.75,1,chronological,48,12,48,0.16736197471618652,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,balanced_accuracy,0.7285714285714285,1,chronological,48,12,48,0.16736197471618652,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,kappa,0.47058823529411764,1,chronological,48,12,48,0.1836559772491455,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,accuracy,0.75,1,chronological,48,12,48,0.1836559772491455,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,balanced_accuracy,0.7285714285714285,1,chronological,48,12,48,0.1836559772491455,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,kappa,0.47058823529411764,1,chronological,48,12,48,0.18032097816467285,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,accuracy,0.75,1,chronological,48,12,48,0.18032097816467285,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,balanced_accuracy,0.7285714285714285,1,chronological,48,12,48,0.18032097816467285,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,kappa,-0.23529411764705865,1,chronological,48,12,48,0.27544307708740234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,accuracy,0.4166666666666667,1,chronological,48,12,48,0.27544307708740234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,balanced_accuracy,0.3857142857142857,1,chronological,48,12,48,0.27544307708740234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,kappa,0.5263157894736843,2,chronological,48,12,48,0.16846418380737305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,accuracy,0.75,2,chronological,48,12,48,0.16846418380737305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,balanced_accuracy,0.8125,2,chronological,48,12,48,0.16846418380737305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,48,0.18044400215148926,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,48,0.18044400215148926,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,48,0.18044400215148926,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,48,0.18325304985046387,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,48,0.18325304985046387,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,48,0.18325304985046387,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,kappa,0.18181818181818188,2,chronological,48,12,48,0.2687532901763916,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,accuracy,0.5,2,chronological,48,12,48,0.2687532901763916,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,balanced_accuracy,0.625,2,chronological,48,12,48,0.2687532901763916,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,kappa,0.8235294117647058,3,chronological,48,12,48,0.19956398010253906,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,accuracy,0.9166666666666666,3,chronological,48,12,48,0.19956398010253906,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,balanced_accuracy,0.9,3,chronological,48,12,48,0.19956398010253906,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,48,0.23380136489868164,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,48,0.23380136489868164,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,48,0.23380136489868164,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,kappa,0.8333333333333334,3,chronological,48,12,48,0.18659472465515137,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,3,chronological,48,12,48,0.18659472465515137,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,balanced_accuracy,0.9285714285714286,3,chronological,48,12,48,0.18659472465515137,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,kappa,0.3846153846153846,3,chronological,48,12,48,0.25887393951416016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,accuracy,0.6666666666666666,3,chronological,48,12,48,0.25887393951416016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,balanced_accuracy,0.7142857142857143,3,chronological,48,12,48,0.25887393951416016,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,kappa,0.5,4,chronological,48,12,48,0.17093181610107422,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,accuracy,0.75,4,chronological,48,12,48,0.17093181610107422,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,HighGamma + LDA,balanced_accuracy,0.8333333333333333,4,chronological,48,12,48,0.17093181610107422,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,kappa,0.8,4,chronological,48,12,48,0.19895720481872559,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,48,0.19895720481872559,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LDA,balanced_accuracy,0.9444444444444444,4,chronological,48,12,48,0.19895720481872559,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,kappa,0.8,4,chronological,48,12,48,0.19970202445983887,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,4,chronological,48,12,48,0.19970202445983887,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,LogBandPower + LogReg,balanced_accuracy,0.9444444444444444,4,chronological,48,12,48,0.19970202445983887,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,kappa,0.2857142857142857,4,chronological,48,12,48,0.24611401557922363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,accuracy,0.5833333333333334,4,chronological,48,12,48,0.24611401557922363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,mot,Riemann TS + LogReg,balanced_accuracy,0.7222222222222222,4,chronological,48,12,48,0.24611401557922363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,kappa,0.5,0,chronological,48,12,48,0.16382479667663574,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,accuracy,0.75,0,chronological,48,12,48,0.16382479667663574,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,balanced_accuracy,0.7571428571428571,0,chronological,48,12,48,0.16382479667663574,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,kappa,0.5,0,chronological,48,12,48,0.26398777961730957,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,48,0.26398777961730957,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,balanced_accuracy,0.7571428571428571,0,chronological,48,12,48,0.26398777961730957,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,kappa,0.5,0,chronological,48,12,48,0.19617795944213867,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,accuracy,0.75,0,chronological,48,12,48,0.19617795944213867,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,balanced_accuracy,0.7571428571428571,0,chronological,48,12,48,0.19617795944213867,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,kappa,-0.29729729729729737,0,chronological,48,12,48,0.25711703300476074,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,accuracy,0.3333333333333333,0,chronological,48,12,48,0.25711703300476074,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,balanced_accuracy,0.34285714285714286,0,chronological,48,12,48,0.25711703300476074,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,kappa,0.8333333333333334,1,chronological,48,12,48,0.1892549991607666,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,48,0.1892549991607666,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,balanced_accuracy,0.9166666666666667,1,chronological,48,12,48,0.1892549991607666,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,kappa,0.8333333333333334,1,chronological,48,12,48,0.17390918731689453,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,48,0.17390918731689453,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,1,chronological,48,12,48,0.17390918731689453,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,kappa,0.8333333333333334,1,chronological,48,12,48,0.16678404808044434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,48,0.16678404808044434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,1,chronological,48,12,48,0.16678404808044434,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,kappa,0.16666666666666663,1,chronological,48,12,48,0.25603389739990234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,accuracy,0.5833333333333334,1,chronological,48,12,48,0.25603389739990234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,balanced_accuracy,0.5833333333333334,1,chronological,48,12,48,0.25603389739990234,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,kappa,0.33333333333333337,2,chronological,48,12,48,0.2160341739654541,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,accuracy,0.6666666666666666,2,chronological,48,12,48,0.2160341739654541,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,balanced_accuracy,0.6666666666666666,2,chronological,48,12,48,0.2160341739654541,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,kappa,0.6666666666666667,2,chronological,48,12,48,0.1660010814666748,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,accuracy,0.8333333333333334,2,chronological,48,12,48,0.1660010814666748,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,balanced_accuracy,0.8333333333333334,2,chronological,48,12,48,0.1660010814666748,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,kappa,0.6666666666666667,2,chronological,48,12,48,0.17467308044433594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,48,0.17467308044433594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,balanced_accuracy,0.8333333333333334,2,chronological,48,12,48,0.17467308044433594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,kappa,0.8333333333333334,2,chronological,48,12,48,0.2526891231536865,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,accuracy,0.9166666666666666,2,chronological,48,12,48,0.2526891231536865,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,balanced_accuracy,0.9166666666666667,2,chronological,48,12,48,0.2526891231536865,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,kappa,0.11764705882352944,3,chronological,48,12,48,0.19460701942443848,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,accuracy,0.5833333333333334,3,chronological,48,12,48,0.19460701942443848,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,balanced_accuracy,0.5571428571428572,3,chronological,48,12,48,0.19460701942443848,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,kappa,0.47058823529411764,3,chronological,48,12,48,0.175994873046875,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,accuracy,0.75,3,chronological,48,12,48,0.175994873046875,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,balanced_accuracy,0.7285714285714285,3,chronological,48,12,48,0.175994873046875,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,kappa,0.47058823529411764,3,chronological,48,12,48,0.16768288612365723,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,accuracy,0.75,3,chronological,48,12,48,0.16768288612365723,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,balanced_accuracy,0.7285714285714285,3,chronological,48,12,48,0.16768288612365723,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,kappa,0.3513513513513513,3,chronological,48,12,48,0.2673971652984619,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,accuracy,0.6666666666666666,3,chronological,48,12,48,0.2673971652984619,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,balanced_accuracy,0.6857142857142857,3,chronological,48,12,48,0.2673971652984619,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,kappa,0.16666666666666663,4,chronological,48,12,48,0.16596722602844238,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,accuracy,0.5833333333333334,4,chronological,48,12,48,0.16596722602844238,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,HighGamma + LDA,balanced_accuracy,0.5833333333333333,4,chronological,48,12,48,0.16596722602844238,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,kappa,0.8333333333333334,4,chronological,48,12,48,0.20209407806396484,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,48,0.20209407806396484,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,48,0.20209407806396484,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,kappa,0.8333333333333334,4,chronological,48,12,48,0.17029619216918945,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,accuracy,0.9166666666666666,4,chronological,48,12,48,0.17029619216918945,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,4,chronological,48,12,48,0.17029619216918945,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,kappa,0.0,4,chronological,48,12,48,0.2596118450164795,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,accuracy,0.5,4,chronological,48,12,48,0.2596118450164795,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,hh,im,Riemann TS + LogReg,balanced_accuracy,0.5,4,chronological,48,12,48,0.2596118450164795,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:16:54
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,kappa,1.0,0,chronological,48,12,48,0.15001988410949707,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,accuracy,1.0,0,chronological,48,12,48,0.15001988410949707,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,balanced_accuracy,1.0,0,chronological,48,12,48,0.15001988410949707,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,kappa,1.0,0,chronological,48,12,48,0.15407586097717285,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,accuracy,1.0,0,chronological,48,12,48,0.15407586097717285,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,balanced_accuracy,1.0,0,chronological,48,12,48,0.15407586097717285,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,kappa,1.0,0,chronological,48,12,48,0.1536729335784912,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,accuracy,1.0,0,chronological,48,12,48,0.1536729335784912,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,balanced_accuracy,1.0,0,chronological,48,12,48,0.1536729335784912,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,kappa,0.6666666666666667,0,chronological,48,12,48,0.2182309627532959,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,48,0.2182309627532959,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,balanced_accuracy,0.8333333333333334,0,chronological,48,12,48,0.2182309627532959,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,kappa,1.0,1,chronological,48,12,48,0.15150785446166992,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,48,0.15150785446166992,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,48,0.15150785446166992,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,kappa,1.0,1,chronological,48,12,48,0.1566920280456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,accuracy,1.0,1,chronological,48,12,48,0.1566920280456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,balanced_accuracy,1.0,1,chronological,48,12,48,0.1566920280456543,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,kappa,1.0,1,chronological,48,12,48,0.15172576904296875,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,accuracy,1.0,1,chronological,48,12,48,0.15172576904296875,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,48,12,48,0.15172576904296875,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,kappa,0.5263157894736843,1,chronological,48,12,48,0.2194840908050537,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,accuracy,0.75,1,chronological,48,12,48,0.2194840908050537,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,balanced_accuracy,0.7857142857142857,1,chronological,48,12,48,0.2194840908050537,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,48,0.15020322799682617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,48,0.15020322799682617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,48,0.15020322799682617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,48,0.15888214111328125,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,48,0.15888214111328125,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,48,0.15888214111328125,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,48,0.17661309242248535,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,48,0.17661309242248535,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,48,0.17661309242248535,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,kappa,0.6571428571428571,2,chronological,48,12,48,0.26555705070495605,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,48,0.26555705070495605,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,balanced_accuracy,0.8285714285714285,2,chronological,48,12,48,0.26555705070495605,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,kappa,1.0,3,chronological,48,12,48,0.17241311073303223,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,48,0.17241311073303223,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,48,0.17241311073303223,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,48,0.18592166900634766,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,48,0.18592166900634766,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,48,0.18592166900634766,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,kappa,1.0,3,chronological,48,12,48,0.1810767650604248,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,accuracy,1.0,3,chronological,48,12,48,0.1810767650604248,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,balanced_accuracy,1.0,3,chronological,48,12,48,0.1810767650604248,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,kappa,0.5,3,chronological,48,12,48,0.2759990692138672,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,accuracy,0.75,3,chronological,48,12,48,0.2759990692138672,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,balanced_accuracy,0.7571428571428571,3,chronological,48,12,48,0.2759990692138672,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,kappa,1.0,4,chronological,48,12,48,0.1712050437927246,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,accuracy,1.0,4,chronological,48,12,48,0.1712050437927246,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,HighGamma + LDA,balanced_accuracy,1.0,4,chronological,48,12,48,0.1712050437927246,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,kappa,1.0,4,chronological,48,12,48,0.19159984588623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,accuracy,1.0,4,chronological,48,12,48,0.19159984588623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LDA,balanced_accuracy,1.0,4,chronological,48,12,48,0.19159984588623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,kappa,1.0,4,chronological,48,12,48,0.17040681838989258,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,accuracy,1.0,4,chronological,48,12,48,0.17040681838989258,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,LogBandPower + LogReg,balanced_accuracy,1.0,4,chronological,48,12,48,0.17040681838989258,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,kappa,0.3142857142857143,4,chronological,48,12,48,0.24080395698547363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,48,0.24080395698547363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,mot,Riemann TS + LogReg,balanced_accuracy,0.6571428571428571,4,chronological,48,12,48,0.24080395698547363,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,kappa,0.8333333333333334,0,chronological,48,12,48,0.16869401931762695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,48,12,48,0.16869401931762695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,balanced_accuracy,0.9285714285714286,0,chronological,48,12,48,0.16869401931762695,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,kappa,0.8333333333333334,0,chronological,48,12,48,0.2036280632019043,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,accuracy,0.9166666666666666,0,chronological,48,12,48,0.2036280632019043,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,0,chronological,48,12,48,0.2036280632019043,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,kappa,0.5,0,chronological,48,12,48,0.17496800422668457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,accuracy,0.75,0,chronological,48,12,48,0.17496800422668457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,balanced_accuracy,0.7571428571428571,0,chronological,48,12,48,0.17496800422668457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,kappa,0.3142857142857143,0,chronological,48,12,48,0.26604604721069336,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,accuracy,0.6666666666666666,0,chronological,48,12,48,0.26604604721069336,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,balanced_accuracy,0.6571428571428571,0,chronological,48,12,48,0.26604604721069336,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,kappa,0.8235294117647058,1,chronological,48,12,48,0.1767120361328125,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,48,0.1767120361328125,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,balanced_accuracy,0.9,1,chronological,48,12,48,0.1767120361328125,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,kappa,0.8333333333333334,1,chronological,48,12,48,0.19143390655517578,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,48,0.19143390655517578,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,1,chronological,48,12,48,0.19143390655517578,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,kappa,0.8333333333333334,1,chronological,48,12,48,0.20304417610168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,48,0.20304417610168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,balanced_accuracy,0.9285714285714286,1,chronological,48,12,48,0.20304417610168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,kappa,0.6571428571428571,1,chronological,48,12,48,0.26155686378479004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,accuracy,0.8333333333333334,1,chronological,48,12,48,0.26155686378479004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,balanced_accuracy,0.8285714285714285,1,chronological,48,12,48,0.26155686378479004,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,kappa,1.0,2,chronological,48,12,48,0.15815114974975586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,48,0.15815114974975586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,48,0.15815114974975586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,kappa,0.4375000000000001,2,chronological,48,12,48,0.18673300743103027,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,accuracy,0.75,2,chronological,48,12,48,0.18673300743103027,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,balanced_accuracy,0.85,2,chronological,48,12,48,0.18673300743103027,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,kappa,0.33333333333333337,2,chronological,48,12,48,0.17130589485168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,accuracy,0.6666666666666666,2,chronological,48,12,48,0.17130589485168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,balanced_accuracy,0.8,2,chronological,48,12,48,0.17130589485168457,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,kappa,0.18181818181818188,2,chronological,48,12,48,0.2751491069793701,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,accuracy,0.5,2,chronological,48,12,48,0.2751491069793701,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,balanced_accuracy,0.7,2,chronological,48,12,48,0.2751491069793701,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,kappa,0.6571428571428571,3,chronological,48,12,48,0.1683051586151123,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,accuracy,0.8333333333333334,3,chronological,48,12,48,0.1683051586151123,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,balanced_accuracy,0.8285714285714285,3,chronological,48,12,48,0.1683051586151123,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,48,0.21996402740478516,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,48,0.21996402740478516,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,48,0.21996402740478516,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,kappa,1.0,3,chronological,48,12,48,0.17286396026611328,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,accuracy,1.0,3,chronological,48,12,48,0.17286396026611328,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,balanced_accuracy,1.0,3,chronological,48,12,48,0.17286396026611328,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,kappa,0.6756756756756757,3,chronological,48,12,48,0.24628114700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,48,0.24628114700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,balanced_accuracy,0.8571428571428572,3,chronological,48,12,48,0.24628114700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,kappa,0.6571428571428571,4,chronological,48,12,48,0.17005300521850586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,accuracy,0.8333333333333334,4,chronological,48,12,48,0.17005300521850586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,HighGamma + LDA,balanced_accuracy,0.8285714285714285,4,chronological,48,12,48,0.17005300521850586,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,kappa,0.5,4,chronological,48,12,48,0.19309687614440918,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,accuracy,0.75,4,chronological,48,12,48,0.19309687614440918,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LDA,balanced_accuracy,0.7571428571428571,4,chronological,48,12,48,0.19309687614440918,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,kappa,0.6571428571428571,4,chronological,48,12,48,0.17910194396972656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,48,0.17910194396972656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,LogBandPower + LogReg,balanced_accuracy,0.8285714285714285,4,chronological,48,12,48,0.17910194396972656,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,kappa,0.3846153846153846,4,chronological,48,12,48,0.24890494346618652,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,48,0.24890494346618652,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jc,im,Riemann TS + LogReg,balanced_accuracy,0.7142857142857143,4,chronological,48,12,48,0.24890494346618652,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:04
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,kappa,0.8235294117647058,0,chronological,48,12,64,0.25702691078186035,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.25702691078186035,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,balanced_accuracy,0.9375,0,chronological,48,12,64,0.25702691078186035,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,kappa,0.8,0,chronological,48,12,64,0.30622220039367676,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.30622220039367676,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,balanced_accuracy,0.875,0,chronological,48,12,64,0.30622220039367676,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,kappa,0.5714285714285714,0,chronological,48,12,64,0.27662110328674316,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,64,0.27662110328674316,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,balanced_accuracy,0.75,0,chronological,48,12,64,0.27662110328674316,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,kappa,0.8235294117647058,0,chronological,48,12,64,0.42335009574890137,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.42335009574890137,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,balanced_accuracy,0.9375,0,chronological,48,12,64,0.42335009574890137,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,kappa,0.8333333333333334,1,chronological,48,12,64,0.2829759120941162,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.2829759120941162,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,balanced_accuracy,0.9285714285714286,1,chronological,48,12,64,0.2829759120941162,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,kappa,0.3846153846153846,1,chronological,48,12,64,0.2924611568450928,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,accuracy,0.6666666666666666,1,chronological,48,12,64,0.2924611568450928,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,balanced_accuracy,0.7142857142857143,1,chronological,48,12,64,0.2924611568450928,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,kappa,0.3846153846153846,1,chronological,48,12,64,0.27617311477661133,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,accuracy,0.6666666666666666,1,chronological,48,12,64,0.27617311477661133,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,balanced_accuracy,0.7142857142857143,1,chronological,48,12,64,0.27617311477661133,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,kappa,0.5,1,chronological,48,12,64,0.41400694847106934,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,accuracy,0.75,1,chronological,48,12,64,0.41400694847106934,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,balanced_accuracy,0.7571428571428571,1,chronological,48,12,64,0.41400694847106934,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,64,0.2598228454589844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,64,0.2598228454589844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.2598228454589844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.2805602550506592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.2805602550506592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.2805602550506592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.2514169216156006,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.2514169216156006,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.2514169216156006,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,kappa,0.2857142857142857,2,chronological,48,12,64,0.49958276748657227,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,accuracy,0.5833333333333334,2,chronological,48,12,64,0.49958276748657227,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,balanced_accuracy,0.6875,2,chronological,48,12,64,0.49958276748657227,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.25303220748901367,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.25303220748901367,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.25303220748901367,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.2749650478363037,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.2749650478363037,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.2749650478363037,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,kappa,0.6571428571428571,3,chronological,48,12,64,0.30155181884765625,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.30155181884765625,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,balanced_accuracy,0.8285714285714285,3,chronological,48,12,64,0.30155181884765625,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,kappa,0.3846153846153846,3,chronological,48,12,64,0.4745149612426758,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,accuracy,0.6666666666666666,3,chronological,48,12,64,0.4745149612426758,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,balanced_accuracy,0.7142857142857143,3,chronological,48,12,64,0.4745149612426758,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,kappa,0.625,4,chronological,48,12,64,0.2522773742675781,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,accuracy,0.8333333333333334,4,chronological,48,12,64,0.2522773742675781,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,HighGamma + LDA,balanced_accuracy,0.8125,4,chronological,48,12,64,0.2522773742675781,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,kappa,0.625,4,chronological,48,12,64,0.2594130039215088,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,accuracy,0.8333333333333334,4,chronological,48,12,64,0.2594130039215088,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LDA,balanced_accuracy,0.8125,4,chronological,48,12,64,0.2594130039215088,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,kappa,0.6666666666666667,4,chronological,48,12,64,0.2906920909881592,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.2906920909881592,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,LogBandPower + LogReg,balanced_accuracy,0.875,4,chronological,48,12,64,0.2906920909881592,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,kappa,0.4,4,chronological,48,12,64,0.4699587821960449,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,accuracy,0.75,4,chronological,48,12,64,0.4699587821960449,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,mot,Riemann TS + LogReg,balanced_accuracy,0.6875,4,chronological,48,12,64,0.4699587821960449,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,kappa,0.3142857142857143,0,chronological,48,12,64,0.29619312286376953,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,accuracy,0.6666666666666666,0,chronological,48,12,64,0.29619312286376953,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,balanced_accuracy,0.6571428571428571,0,chronological,48,12,64,0.29619312286376953,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,kappa,0.5,0,chronological,48,12,64,0.27408409118652344,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,64,0.27408409118652344,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,balanced_accuracy,0.7571428571428571,0,chronological,48,12,64,0.27408409118652344,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,kappa,0.8235294117647058,0,chronological,48,12,64,0.26703596115112305,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.26703596115112305,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,balanced_accuracy,0.9,0,chronological,48,12,64,0.26703596115112305,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,kappa,0.027027027027026973,0,chronological,48,12,64,0.425508975982666,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,accuracy,0.5,0,chronological,48,12,64,0.425508975982666,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,balanced_accuracy,0.5142857142857142,0,chronological,48,12,64,0.425508975982666,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,kappa,0.07692307692307687,1,chronological,48,12,64,0.25577402114868164,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,accuracy,0.5,1,chronological,48,12,64,0.25577402114868164,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,balanced_accuracy,0.5428571428571429,1,chronological,48,12,64,0.25577402114868164,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,kappa,0.3846153846153846,1,chronological,48,12,64,0.3157386779785156,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,accuracy,0.6666666666666666,1,chronological,48,12,64,0.3157386779785156,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,balanced_accuracy,0.7142857142857143,1,chronological,48,12,64,0.3157386779785156,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,kappa,0.12195121951219523,1,chronological,48,12,64,0.26078009605407715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,accuracy,0.5,1,chronological,48,12,64,0.26078009605407715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,balanced_accuracy,0.5714285714285714,1,chronological,48,12,64,0.26078009605407715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,kappa,0.12195121951219523,1,chronological,48,12,64,0.4373610019683838,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,accuracy,0.5,1,chronological,48,12,64,0.4373610019683838,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,balanced_accuracy,0.5714285714285714,1,chronological,48,12,64,0.4373610019683838,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,kappa,0.6666666666666667,2,chronological,48,12,64,0.2625091075897217,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,accuracy,0.8333333333333334,2,chronological,48,12,64,0.2625091075897217,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,balanced_accuracy,0.8333333333333334,2,chronological,48,12,64,0.2625091075897217,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,kappa,0.5,2,chronological,48,12,64,0.27013301849365234,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,accuracy,0.75,2,chronological,48,12,64,0.27013301849365234,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,balanced_accuracy,0.75,2,chronological,48,12,64,0.27013301849365234,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,kappa,0.33333333333333337,2,chronological,48,12,64,0.2555549144744873,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,accuracy,0.6666666666666666,2,chronological,48,12,64,0.2555549144744873,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,balanced_accuracy,0.6666666666666667,2,chronological,48,12,64,0.2555549144744873,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,kappa,0.5,2,chronological,48,12,64,0.4457221031188965,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,accuracy,0.75,2,chronological,48,12,64,0.4457221031188965,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,balanced_accuracy,0.75,2,chronological,48,12,64,0.4457221031188965,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,kappa,0.6666666666666667,3,chronological,48,12,64,0.2620201110839844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,accuracy,0.8333333333333334,3,chronological,48,12,64,0.2620201110839844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,balanced_accuracy,0.8333333333333334,3,chronological,48,12,64,0.2620201110839844,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,kappa,0.6666666666666667,3,chronological,48,12,64,0.3039400577545166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,accuracy,0.8333333333333334,3,chronological,48,12,64,0.3039400577545166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,balanced_accuracy,0.8333333333333334,3,chronological,48,12,64,0.3039400577545166,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,kappa,0.6666666666666667,3,chronological,48,12,64,0.265031099319458,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.265031099319458,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,balanced_accuracy,0.8333333333333334,3,chronological,48,12,64,0.265031099319458,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,kappa,0.16666666666666663,3,chronological,48,12,64,0.4269070625305176,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,accuracy,0.5833333333333334,3,chronological,48,12,64,0.4269070625305176,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,balanced_accuracy,0.5833333333333333,3,chronological,48,12,64,0.4269070625305176,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,kappa,0.8333333333333334,4,chronological,48,12,64,0.24304699897766113,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.24304699897766113,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,HighGamma + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,64,0.24304699897766113,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,kappa,0.33333333333333337,4,chronological,48,12,64,0.26738405227661133,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,accuracy,0.6666666666666666,4,chronological,48,12,64,0.26738405227661133,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LDA,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.26738405227661133,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,kappa,0.33333333333333337,4,chronological,48,12,64,0.23868513107299805,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,64,0.23868513107299805,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,LogBandPower + LogReg,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.23868513107299805,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,kappa,0.33333333333333337,4,chronological,48,12,64,0.3471407890319824,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,64,0.3471407890319824,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,jm,im,Riemann TS + LogReg,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.3471407890319824,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:20
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,kappa,0.8235294117647058,0,chronological,48,12,64,0.2612779140472412,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.2612779140472412,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,balanced_accuracy,0.9375,0,chronological,48,12,64,0.2612779140472412,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,kappa,1.0,0,chronological,48,12,64,0.27534914016723633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,accuracy,1.0,0,chronological,48,12,64,0.27534914016723633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,balanced_accuracy,1.0,0,chronological,48,12,64,0.27534914016723633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,kappa,0.6666666666666667,0,chronological,48,12,64,0.2711160182952881,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,64,0.2711160182952881,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,balanced_accuracy,0.875,0,chronological,48,12,64,0.2711160182952881,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,kappa,0.3999999999999999,0,chronological,48,12,64,0.44064998626708984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,accuracy,0.6666666666666666,0,chronological,48,12,64,0.44064998626708984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,balanced_accuracy,0.75,0,chronological,48,12,64,0.44064998626708984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,kappa,0.8333333333333334,1,chronological,48,12,64,0.24269914627075195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.24269914627075195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,balanced_accuracy,0.9285714285714286,1,chronological,48,12,64,0.24269914627075195,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,kappa,0.8333333333333334,1,chronological,48,12,64,0.2822878360748291,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.2822878360748291,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,1,chronological,48,12,64,0.2822878360748291,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,kappa,0.8333333333333334,1,chronological,48,12,64,0.2690541744232178,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.2690541744232178,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,balanced_accuracy,0.9285714285714286,1,chronological,48,12,64,0.2690541744232178,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,kappa,0.5,1,chronological,48,12,64,0.4412567615509033,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,accuracy,0.75,1,chronological,48,12,64,0.4412567615509033,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,balanced_accuracy,0.7571428571428571,1,chronological,48,12,64,0.4412567615509033,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,64,0.2534298896789551,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,64,0.2534298896789551,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.2534298896789551,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.26646995544433594,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.26646995544433594,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.26646995544433594,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.28307104110717773,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.28307104110717773,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.28307104110717773,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,kappa,0.2857142857142857,2,chronological,48,12,64,0.5062780380249023,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,accuracy,0.5833333333333334,2,chronological,48,12,64,0.5062780380249023,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,balanced_accuracy,0.7222222222222222,2,chronological,48,12,64,0.5062780380249023,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,kappa,1.0,3,chronological,48,12,64,0.24538326263427734,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,64,0.24538326263427734,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.24538326263427734,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,64,0.29653501510620117,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,64,0.29653501510620117,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.29653501510620117,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,kappa,1.0,3,chronological,48,12,64,0.27379703521728516,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,accuracy,1.0,3,chronological,48,12,64,0.27379703521728516,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,balanced_accuracy,1.0,3,chronological,48,12,64,0.27379703521728516,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,kappa,0.3999999999999999,3,chronological,48,12,64,0.5155351161956787,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,accuracy,0.6666666666666666,3,chronological,48,12,64,0.5155351161956787,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,balanced_accuracy,0.75,3,chronological,48,12,64,0.5155351161956787,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,kappa,0.8333333333333334,4,chronological,48,12,64,0.24624991416931152,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.24624991416931152,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,HighGamma + LDA,balanced_accuracy,0.9166666666666667,4,chronological,48,12,64,0.24624991416931152,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,kappa,0.5,4,chronological,48,12,64,0.3206601142883301,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,accuracy,0.75,4,chronological,48,12,64,0.3206601142883301,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LDA,balanced_accuracy,0.75,4,chronological,48,12,64,0.3206601142883301,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,kappa,0.5,4,chronological,48,12,64,0.27708005905151367,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,accuracy,0.75,4,chronological,48,12,64,0.27708005905151367,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,LogBandPower + LogReg,balanced_accuracy,0.75,4,chronological,48,12,64,0.27708005905151367,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,kappa,1.0,4,chronological,48,12,64,0.45457887649536133,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,accuracy,1.0,4,chronological,48,12,64,0.45457887649536133,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,mot,Riemann TS + LogReg,balanced_accuracy,1.0,4,chronological,48,12,64,0.45457887649536133,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,kappa,0.6363636363636364,0,chronological,48,12,64,0.2451481819152832,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.2451481819152832,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,balanced_accuracy,0.8,0,chronological,48,12,64,0.2451481819152832,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,kappa,0.4375000000000001,0,chronological,48,12,64,0.2723679542541504,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,64,0.2723679542541504,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,balanced_accuracy,0.7,0,chronological,48,12,64,0.2723679542541504,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,kappa,0.4375000000000001,0,chronological,48,12,64,0.27530813217163086,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,accuracy,0.75,0,chronological,48,12,64,0.27530813217163086,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,balanced_accuracy,0.7,0,chronological,48,12,64,0.27530813217163086,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,kappa,0.0,0,chronological,48,12,64,0.5533089637756348,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,accuracy,0.5833333333333334,0,chronological,48,12,64,0.5533089637756348,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,balanced_accuracy,0.5,0,chronological,48,12,64,0.5533089637756348,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,kappa,0.3513513513513513,1,chronological,48,12,64,0.25720810890197754,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,accuracy,0.6666666666666666,1,chronological,48,12,64,0.25720810890197754,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,balanced_accuracy,0.6857142857142857,1,chronological,48,12,64,0.25720810890197754,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,kappa,0.21052631578947378,1,chronological,48,12,64,0.2838139533996582,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,accuracy,0.5833333333333334,1,chronological,48,12,64,0.2838139533996582,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,balanced_accuracy,0.6142857142857143,1,chronological,48,12,64,0.2838139533996582,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,kappa,0.21052631578947378,1,chronological,48,12,64,0.2657737731933594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,accuracy,0.5833333333333334,1,chronological,48,12,64,0.2657737731933594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,balanced_accuracy,0.6142857142857143,1,chronological,48,12,64,0.2657737731933594,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,kappa,-0.1707317073170731,1,chronological,48,12,64,0.49757814407348633,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,accuracy,0.3333333333333333,1,chronological,48,12,64,0.49757814407348633,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,balanced_accuracy,0.4,1,chronological,48,12,64,0.49757814407348633,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,kappa,0.3846153846153846,2,chronological,48,12,64,0.2570319175720215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,accuracy,0.6666666666666666,2,chronological,48,12,64,0.2570319175720215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,balanced_accuracy,0.7142857142857143,2,chronological,48,12,64,0.2570319175720215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,kappa,0.2727272727272727,2,chronological,48,12,64,0.25760412216186523,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,accuracy,0.6666666666666666,2,chronological,48,12,64,0.25760412216186523,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,balanced_accuracy,0.6285714285714286,2,chronological,48,12,64,0.25760412216186523,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,kappa,0.2727272727272727,2,chronological,48,12,64,0.25298476219177246,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,accuracy,0.6666666666666666,2,chronological,48,12,64,0.25298476219177246,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,balanced_accuracy,0.6285714285714286,2,chronological,48,12,64,0.25298476219177246,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,kappa,0.027027027027026973,2,chronological,48,12,64,0.508328914642334,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,accuracy,0.5,2,chronological,48,12,64,0.508328914642334,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,balanced_accuracy,0.5142857142857142,2,chronological,48,12,64,0.508328914642334,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,kappa,0.6666666666666667,3,chronological,48,12,64,0.25501227378845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,accuracy,0.8333333333333334,3,chronological,48,12,64,0.25501227378845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,balanced_accuracy,0.8333333333333334,3,chronological,48,12,64,0.25501227378845215,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,kappa,0.5,3,chronological,48,12,64,0.26557493209838867,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,accuracy,0.75,3,chronological,48,12,64,0.26557493209838867,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,balanced_accuracy,0.75,3,chronological,48,12,64,0.26557493209838867,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,kappa,0.16666666666666663,3,chronological,48,12,64,0.2763800621032715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,accuracy,0.5833333333333334,3,chronological,48,12,64,0.2763800621032715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,balanced_accuracy,0.5833333333333333,3,chronological,48,12,64,0.2763800621032715,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,kappa,0.16666666666666663,3,chronological,48,12,64,0.5388069152832031,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,accuracy,0.5833333333333334,3,chronological,48,12,64,0.5388069152832031,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,balanced_accuracy,0.5833333333333333,3,chronological,48,12,64,0.5388069152832031,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,kappa,-0.3124999999999998,4,chronological,48,12,64,0.2527308464050293,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,accuracy,0.4166666666666667,4,chronological,48,12,64,0.2527308464050293,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,HighGamma + LDA,balanced_accuracy,0.35714285714285715,4,chronological,48,12,64,0.2527308464050293,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,kappa,0.11764705882352944,4,chronological,48,12,64,0.25605297088623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,accuracy,0.5833333333333334,4,chronological,48,12,64,0.25605297088623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LDA,balanced_accuracy,0.5571428571428572,4,chronological,48,12,64,0.25605297088623047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,kappa,-0.028571428571428692,4,chronological,48,12,64,0.23566889762878418,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,accuracy,0.5,4,chronological,48,12,64,0.23566889762878418,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,LogBandPower + LogReg,balanced_accuracy,0.4857142857142857,4,chronological,48,12,64,0.23566889762878418,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,kappa,-0.09090909090909083,4,chronological,48,12,64,0.46823787689208984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,accuracy,0.5,4,chronological,48,12,64,0.46823787689208984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rh,im,Riemann TS + LogReg,balanced_accuracy,0.4571428571428572,4,chronological,48,12,64,0.46823787689208984,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:35
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,kappa,1.0,0,chronological,48,12,64,0.26304006576538086,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,accuracy,1.0,0,chronological,48,12,64,0.26304006576538086,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,balanced_accuracy,1.0,0,chronological,48,12,64,0.26304006576538086,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,kappa,0.8333333333333334,0,chronological,48,12,64,0.28072595596313477,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.28072595596313477,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,0,chronological,48,12,64,0.28072595596313477,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,kappa,0.6666666666666667,0,chronological,48,12,64,0.32367587089538574,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,48,12,64,0.32367587089538574,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,balanced_accuracy,0.8333333333333333,0,chronological,48,12,64,0.32367587089538574,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,kappa,1.0,0,chronological,48,12,64,0.41749000549316406,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,accuracy,1.0,0,chronological,48,12,64,0.41749000549316406,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,balanced_accuracy,1.0,0,chronological,48,12,64,0.41749000549316406,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,kappa,1.0,1,chronological,48,12,64,0.2744560241699219,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,64,0.2744560241699219,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.2744560241699219,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,kappa,0.8333333333333334,1,chronological,48,12,64,0.2747619152069092,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.2747619152069092,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,1,chronological,48,12,64,0.2747619152069092,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,kappa,0.8333333333333334,1,chronological,48,12,64,0.2551097869873047,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.2551097869873047,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,1,chronological,48,12,64,0.2551097869873047,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,kappa,1.0,1,chronological,48,12,64,0.42267274856567383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,accuracy,1.0,1,chronological,48,12,64,0.42267274856567383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,balanced_accuracy,1.0,1,chronological,48,12,64,0.42267274856567383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,kappa,1.0,2,chronological,48,12,64,0.2512998580932617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,64,0.2512998580932617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.2512998580932617,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.3146178722381592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.3146178722381592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.3146178722381592,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.2998850345611572,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.2998850345611572,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.2998850345611572,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,kappa,0.6756756756756757,2,chronological,48,12,64,0.41451168060302734,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,64,0.41451168060302734,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,balanced_accuracy,0.8571428571428572,2,chronological,48,12,64,0.41451168060302734,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,kappa,1.0,3,chronological,48,12,64,0.2931828498840332,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,64,0.2931828498840332,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.2931828498840332,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.2824420928955078,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.2824420928955078,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.2824420928955078,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,kappa,0.6756756756756757,3,chronological,48,12,64,0.32297420501708984,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.32297420501708984,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,balanced_accuracy,0.8571428571428572,3,chronological,48,12,64,0.32297420501708984,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,kappa,0.8235294117647058,3,chronological,48,12,64,0.40972304344177246,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,accuracy,0.9166666666666666,3,chronological,48,12,64,0.40972304344177246,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,balanced_accuracy,0.9,3,chronological,48,12,64,0.40972304344177246,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,kappa,1.0,4,chronological,48,12,64,0.24871301651000977,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,accuracy,1.0,4,chronological,48,12,64,0.24871301651000977,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,HighGamma + LDA,balanced_accuracy,1.0,4,chronological,48,12,64,0.24871301651000977,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,kappa,0.5,4,chronological,48,12,64,0.310870885848999,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,accuracy,0.75,4,chronological,48,12,64,0.310870885848999,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LDA,balanced_accuracy,0.75,4,chronological,48,12,64,0.310870885848999,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,kappa,0.5,4,chronological,48,12,64,0.271665096282959,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,accuracy,0.75,4,chronological,48,12,64,0.271665096282959,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,LogBandPower + LogReg,balanced_accuracy,0.75,4,chronological,48,12,64,0.271665096282959,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,kappa,0.6666666666666667,4,chronological,48,12,64,0.4090549945831299,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.4090549945831299,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,mot,Riemann TS + LogReg,balanced_accuracy,0.8333333333333333,4,chronological,48,12,64,0.4090549945831299,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,kappa,0.33333333333333337,0,chronological,48,12,64,0.2718498706817627,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,accuracy,0.6666666666666666,0,chronological,48,12,64,0.2718498706817627,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,balanced_accuracy,0.6666666666666667,0,chronological,48,12,64,0.2718498706817627,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,kappa,0.5,0,chronological,48,12,64,0.27375316619873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,64,0.27375316619873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,balanced_accuracy,0.75,0,chronological,48,12,64,0.27375316619873047,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,kappa,0.5,0,chronological,48,12,64,0.2826559543609619,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,accuracy,0.75,0,chronological,48,12,64,0.2826559543609619,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,balanced_accuracy,0.75,0,chronological,48,12,64,0.2826559543609619,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,kappa,0.5,0,chronological,48,12,64,0.46232104301452637,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,accuracy,0.75,0,chronological,48,12,64,0.46232104301452637,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,balanced_accuracy,0.75,0,chronological,48,12,64,0.46232104301452637,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,kappa,0.16666666666666663,1,chronological,48,12,64,0.25189924240112305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,accuracy,0.5833333333333334,1,chronological,48,12,64,0.25189924240112305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,balanced_accuracy,0.5833333333333333,1,chronological,48,12,64,0.25189924240112305,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,kappa,0.5,1,chronological,48,12,64,0.3274660110473633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,accuracy,0.75,1,chronological,48,12,64,0.3274660110473633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,balanced_accuracy,0.75,1,chronological,48,12,64,0.3274660110473633,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,kappa,0.6666666666666667,1,chronological,48,12,64,0.30469202995300293,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,accuracy,0.8333333333333334,1,chronological,48,12,64,0.30469202995300293,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,balanced_accuracy,0.8333333333333333,1,chronological,48,12,64,0.30469202995300293,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,kappa,0.6666666666666667,1,chronological,48,12,64,0.3930938243865967,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,accuracy,0.8333333333333334,1,chronological,48,12,64,0.3930938243865967,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,balanced_accuracy,0.8333333333333334,1,chronological,48,12,64,0.3930938243865967,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,kappa,0.16666666666666663,2,chronological,48,12,64,0.2871239185333252,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,accuracy,0.5833333333333334,2,chronological,48,12,64,0.2871239185333252,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,balanced_accuracy,0.5833333333333333,2,chronological,48,12,64,0.2871239185333252,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,kappa,0.8333333333333334,2,chronological,48,12,64,0.2905309200286865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,accuracy,0.9166666666666666,2,chronological,48,12,64,0.2905309200286865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,2,chronological,48,12,64,0.2905309200286865,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,kappa,0.6666666666666667,2,chronological,48,12,64,0.263247013092041,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,64,0.263247013092041,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,balanced_accuracy,0.8333333333333333,2,chronological,48,12,64,0.263247013092041,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,kappa,0.5,2,chronological,48,12,64,0.41748499870300293,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,accuracy,0.75,2,chronological,48,12,64,0.41748499870300293,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,balanced_accuracy,0.75,2,chronological,48,12,64,0.41748499870300293,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,kappa,0.21052631578947378,3,chronological,48,12,64,0.27522897720336914,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,accuracy,0.5833333333333334,3,chronological,48,12,64,0.27522897720336914,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,balanced_accuracy,0.6142857142857143,3,chronological,48,12,64,0.27522897720336914,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,kappa,0.21052631578947378,3,chronological,48,12,64,0.2785308361053467,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,accuracy,0.5833333333333334,3,chronological,48,12,64,0.2785308361053467,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,balanced_accuracy,0.6142857142857143,3,chronological,48,12,64,0.2785308361053467,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,kappa,0.21052631578947378,3,chronological,48,12,64,0.3028550148010254,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,accuracy,0.5833333333333334,3,chronological,48,12,64,0.3028550148010254,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,balanced_accuracy,0.6142857142857143,3,chronological,48,12,64,0.3028550148010254,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,kappa,0.3513513513513513,3,chronological,48,12,64,0.4260859489440918,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,accuracy,0.6666666666666666,3,chronological,48,12,64,0.4260859489440918,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,balanced_accuracy,0.6857142857142857,3,chronological,48,12,64,0.4260859489440918,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,kappa,0.8333333333333334,4,chronological,48,12,64,0.27800869941711426,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.27800869941711426,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,HighGamma + LDA,balanced_accuracy,0.9285714285714286,4,chronological,48,12,64,0.27800869941711426,f0ad027786a9,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,kappa,0.6363636363636364,4,chronological,48,12,64,0.26783204078674316,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,accuracy,0.8333333333333334,4,chronological,48,12,64,0.26783204078674316,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LDA,balanced_accuracy,0.8,4,chronological,48,12,64,0.26783204078674316,ad4c2abc31c8,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,kappa,0.6363636363636364,4,chronological,48,12,64,0.26289987564086914,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.26289987564086914,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,LogBandPower + LogReg,balanced_accuracy,0.8,4,chronological,48,12,64,0.26289987564086914,688f919f3ab0,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,kappa,0.16666666666666663,4,chronological,48,12,64,0.4237489700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,accuracy,0.5833333333333334,4,chronological,48,12,64,0.4237489700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50
+Miller2019-imagery_basic,rr,im,Riemann TS + LogReg,balanced_accuracy,0.5857142857142856,4,chronological,48,12,64,0.4237489700317383,b4736e60e22e,0d79a81a67b3,within_subject,0.3.0.dev0,2026-09-10T20:17:50

@@ -145,39 +145,62 @@ class BCICompIV4(_SimpleDataset):
 
 
 class BCICompIII1(_SimpleDataset):
-    """BCI Competition III dataset I (Tübingen ECoG motor imagery, 1 subject, 8x8 grid).
+    """BCI Competition III dataset I (Tübingen ECoG motor imagery, 1 subject, 8x8 grid, two sessions a week apart).
 
-    Downloads ``Competition_train.mat.gz`` (278 trials, 3 s at 1 kHz, labels
-    -1 pinky / 1 tongue) and, if reachable, ``Competition_test.mat.gz``; the
-    test labels were published separately and are not attached here.
+    Session ``train``: ``Competition_train.mat.gz`` (278 trials, 3 s at 1 kHz, imagined pinky vs tongue).
+    Session ``test``: ``Competition_test.mat.gz`` (100 trials recorded about a week later) with the labels the
+    organisers published after the competition (``results/tuebingen/true_labels.txt``). Training on one
+    session and testing on the other (:class:`~moecog.evaluations.CrossSessionEvaluation`) reproduces the
+    competition protocol; the winning entry reached 91 % accuracy on the test session.
     """
 
     URL = "https://www.bbci.de/competition/download/competition_iii/tuebingen/"
+    LABELS_URL = "https://www.bbci.de/competition/iii/results/tuebingen/true_labels.txt"
 
-    def __init__(self, root=None):
+    def __init__(self, root=None, sessions=("train", "test")):
         self.root = Path(root).expanduser() if root else _data_dir() / "bbci" / "bci_iii_1"
-        super().__init__(subjects=[1], sessions_per_subject=2, events={"pinky": 1, "tongue": 2},
+        self.sessions = tuple(sessions)
+        super().__init__(subjects=[1], sessions_per_subject=len(self.sessions), events={"pinky": 1, "tongue": 2},
                          code="BCICompIII-1", paradigm="motor_imagery", interval=[0.0, 3.0],
                          sfreq=1000.0, doi="10.1109/TBME.2004.826692")
 
     def data_path(self, subject):
-        return [_download(self.URL + "Competition_train.mat.gz", self.root / "Competition_train.mat.gz")]
+        paths = []
+        if "train" in self.sessions:
+            paths.append(_download(self.URL + "Competition_train.mat.gz", self.root / "Competition_train.mat.gz"))
+        if "test" in self.sessions:
+            paths.append(_download(self.URL + "Competition_test.mat.gz", self.root / "Competition_test.mat.gz"))
+            paths.append(_download(self.LABELS_URL, self.root / "true_labels.txt"))
+        return paths
+
+    @staticmethod
+    def _epochs(X, y):
+        n_trials, n_ch, n_t = X.shape
+        events = np.column_stack([np.arange(n_trials) * n_t, np.zeros(n_trials, int), np.where(y < 0, 1, 2)])
+        info = mne.create_info([f"E{i + 1:03d}" for i in range(n_ch)], 1000.0, ["ecog"] * n_ch)
+        return mne.EpochsArray(X, info, events=events, event_id={"pinky": 1, "tongue": 2}, tmin=0.0,
+                               verbose=False)
 
     def _get_single_subject_data(self, subject):
         import scipy.io as sio
 
-        path = self.data_path(subject)[0]
-        with gzip.open(path, "rb") as fh:
-            m = sio.loadmat(io.BytesIO(fh.read()))
-        X = np.asarray(m["X"], dtype=float) * 1e-6  # (trials, ch, times)
-        y = np.asarray(m["Y"]).ravel().astype(int)
-        n_trials, n_ch, n_t = X.shape
-        events = np.column_stack([np.arange(n_trials) * n_t, np.zeros(n_trials, int),
-                                  np.where(y < 0, 1, 2)])
-        info = mne.create_info([f"E{i + 1:03d}" for i in range(n_ch)], 1000.0, ["ecog"] * n_ch)
-        epochs = mne.EpochsArray(X, info, events=events, event_id={"pinky": 1, "tongue": 2},
-                                 tmin=0.0, verbose=False)
-        return {"train": {"0": epochs}}
+        paths = {p.name: p for p in self.data_path(subject)}
+        out = {}
+        if "Competition_train.mat.gz" in paths:
+            with gzip.open(paths["Competition_train.mat.gz"], "rb") as fh:
+                m = sio.loadmat(io.BytesIO(fh.read()))
+            X = np.asarray(m["X"], dtype=float) * 1e-6
+            y = np.asarray(m["Y"]).ravel().astype(int)
+            out["train"] = {"0": self._epochs(X, y)}
+        if "Competition_test.mat.gz" in paths:
+            with gzip.open(paths["Competition_test.mat.gz"], "rb") as fh:
+                m = sio.loadmat(io.BytesIO(fh.read()))
+            X = np.asarray(m["X"], dtype=float) * 1e-6
+            y = np.loadtxt(paths["true_labels.txt"]).ravel().astype(int)
+            if len(y) != len(X):
+                raise ValueError(f"BCI III-1: {len(X)} test trials but {len(y)} published labels")
+            out["test"] = {"0": self._epochs(X, y)}
+        return out
 
 
 # ------------------------------------------------------------------ figshare (Peterson, Rogers)

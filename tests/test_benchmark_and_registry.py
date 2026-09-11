@@ -56,3 +56,24 @@ def test_benchmark_paradigm_by_name_with_context(tmp_path):
                                                                                     "fmin": 1.0, "fmax": 90.0}},
                    n_splits=3, sfreq=200.0, out=tmp_path / "r.csv")
     assert len(df) > 0 and "skipped" in df.attrs
+
+
+def test_results_store_merge_from_adds_only_missing_keys(tmp_path):
+    import pandas as pd
+
+    from moecog.analysis import ResultsStore
+
+    cols = ["dataset", "subject", "session", "pipeline", "pipeline_digest", "paradigm_digest", "evaluation",
+            "metric", "score", "fold"]
+    a = pd.DataFrame([["D", "s1", "0", "P", "p1", "q", "within_subject", "kappa", 0.5, 0]], columns=cols)
+    b = pd.DataFrame([["D", "s1", "0", "P", "p1", "q", "within_subject", "kappa", 0.9, 0],
+                      ["D", "s2", "0", "P", "p1", "q", "within_subject", "kappa", 0.7, 0]], columns=cols)
+    a.to_csv(tmp_path / "a.csv", index=False)
+    store = ResultsStore(tmp_path / "a.csv")
+    added = store.merge_from(b)
+    assert list(added["subject"]) == ["s2"]
+    df = ResultsStore(tmp_path / "a.csv").to_dataframe()
+    assert len(df) == 2 and df[df.subject == "s1"]["score"].item() == 0.5
+    store.merge_from(b, replace=True)
+    df = ResultsStore(tmp_path / "a.csv").to_dataframe()
+    assert len(df) == 2 and df[df.subject == "s1"]["score"].item() == 0.9

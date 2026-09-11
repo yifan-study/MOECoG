@@ -105,16 +105,45 @@ class ResultsStore:
         new["evaluation"] = evaluation
         new["moecog_version"] = __version__
         new["computed_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+        self._append(new, replace=replace)
+        return new
+
+    def merge_from(self, other, replace: bool = False) -> pd.DataFrame:
+        """Bring the rows of another store (path or DataFrame) into this one and write the CSV.
+
+        Rows are matched on (dataset, subject, session, pipeline_digest, paradigm_digest, evaluation): by default
+        only combinations this store has not computed are added, with ``replace=True`` the incoming rows win.
+        This is how results computed elsewhere (a cluster, a contributor's machine) join the repository's CSV
+        without recomputing anything. Returns the rows that were added.
+        """
+        incoming = other.copy() if isinstance(other, pd.DataFrame) else pd.read_csv(other)
+        if incoming.empty:
+            return incoming
+        missing = [k for k in self.KEYS if k not in incoming.columns]
+        if missing:
+            raise ValueError(f"cannot merge: incoming rows lack {missing}")
+        if not replace and not self.df.empty:
+            have = set(self._key_strings(self.df))
+            incoming = incoming[~self._key_strings(incoming).isin(have)]
+            if incoming.empty:
+                return incoming
+        self._append(incoming, replace=replace)
+        return incoming
+
+    KEYS = ("dataset", "subject", "session", "pipeline_digest", "paradigm_digest", "evaluation")
+
+    @classmethod
+    def _key_strings(cls, df: pd.DataFrame) -> pd.Series:
+        return df[list(cls.KEYS)].astype(str).agg("|".join, axis=1)
+
+    def _append(self, new: pd.DataFrame, replace: bool) -> None:
         if replace and not self.df.empty:
-            keys = ["dataset", "subject", "session", "pipeline_digest", "paradigm_digest", "evaluation"]
-            old_keys = self.df[keys].astype(str).agg("|".join, axis=1)
-            new_keys = set(new[keys].astype(str).agg("|".join, axis=1))
-            self.df = self.df[~old_keys.isin(new_keys)]
-        self.df = pd.concat([self.df, new], ignore_index=True) if not self.df.empty else new
+            new_keys = set(self._key_strings(new))
+            self.df = self.df[~self._key_strings(self.df).isin(new_keys)]
+        self.df = pd.concat([self.df, new], ignore_index=True) if not self.df.empty else new.reset_index(drop=True)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.df.to_csv(self.path, index=False)
         self.overwrite = False
-        return new
 
     def to_dataframe(self) -> pd.DataFrame:
         return self.df.copy()

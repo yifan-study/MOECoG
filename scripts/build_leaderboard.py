@@ -29,6 +29,8 @@ def summarise(df):
         df = df.assign(fold_policy="chronological (legacy)")
     if "evaluation" not in df.columns:
         df = df.assign(evaluation="within_subject")
+    # learning-curve rows mix training fractions; they are summarised in docs/analysis.md instead
+    df = df[df["evaluation"] != "learning_curve"]
     keys = ["dataset", "evaluation", "session", "pipeline", "metric", "subject"]
     per_subject = df.groupby(keys, observed=True)["score"].mean().reset_index()
     rows = []

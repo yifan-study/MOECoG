@@ -45,10 +45,10 @@ catalog and smoke sweep of 130 public deposits (106 load).
 | chunk | definition of done |
 |---|---|
 | Reference tasks | five tasks fixed and documented: motor_basic hand vs tongue, faces_basic, gestures, imagery_basic, fingerflex regression |
-| Pipeline set | the five YAML baselines plus a Riemannian pipeline (pyriemann) and one braindecode model (ShallowFBCSPNet) on CPU |
-| Numbers | `results/*.csv` for every task x pipeline, 5 chronological folds, three seeds where randomness enters; leaderboard regenerated |
-| Analysis | per-patient distributions and a paired comparison (MOABB-style meta-analysis) in `docs/analysis.md` |
-| Second evaluation | `CrossSessionEvaluation` for the experiments that have sessions (imagery_feedback, speech_lists) |
+| Pipeline set | the five YAML baselines plus a Riemannian pipeline (pyriemann) and one braindecode model (ShallowFBCSPNet) on CPU; done 2026-09-10 (PRSNL-82) |
+| Numbers | `results/reference_<task>.csv` for every task x pipeline, 5 chronological folds, three seeds where randomness enters; leaderboard regenerated (`scripts/run_reference.py`, PRSNL-83, running) |
+| Analysis | per-patient distributions and a paired comparison (MOABB-style meta-analysis) in `docs/analysis.md` (`scripts/build_analysis.py`, PRSNL-83) |
+| Second evaluation | `CrossSessionEvaluation` exists (M1 batch); on the Miller tier most "sessions" are task variants rather than repeat days, so it is run only where a task repeats (speech_lists L1 vs L2) and reported with that caveat |
 
 ### M3. Second dataset family and the regression story (target 2026-11-30)
 

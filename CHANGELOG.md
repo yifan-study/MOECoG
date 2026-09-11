@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0.dev0 (unreleased)
+
+- M2 pipelines: Riemannian tangent space (`riemann` extra) and braindecode
+  `ShallowFBCSPNet` through `moecog.pipelines.deep.BraindecodeClassifier`;
+  `load_pipelines()` reports pipelines skipped for a missing optional
+  dependency; `scripts/run_reference.py`, `scripts/build_analysis.py`,
+  leaderboard grouped by evaluation.
+
 ## 0.2.0 (2026-09-10)
 
 Published to PyPI (`pip install moecog`) and tagged `v0.2.0` on yifan-study/MOECoG.

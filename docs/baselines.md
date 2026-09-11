@@ -12,7 +12,7 @@ published test labels attached).
 
 **Paradigms.** Band-pass 1-200 Hz, ECoG channels only, epochs from cue onset to cue end (or 1 s windows
 where the preset says so); `FingerFlexionRegression` uses causal 0.5 s windows with a 50 ms stride.
-Deep pipelines see the same epochs resampled to 250 Hz.
+Classical pipelines and the learning curves run at each file's native rate (1000 Hz for Miller and BCI III-1); deep pipelines see the same epochs resampled to 250 Hz. Rows carry a paradigm digest, so a store never mixes the two silently (`benchmark()` warns).
 
 **Evaluations.** `WithinSubjectCV` with 5 chronological contiguous folds per (patient, session), stratified
 shuffled folds only where a file presents its cues in blocks (`fold_policy` column); regression folds carry
@@ -23,8 +23,7 @@ the earliest minutes of the session, as a calibration phase would.
 
 **Pipelines.** The reference YAMLs shipped in the package: `LogBandPower + LDA`, `LogBandPower + LogReg`,
 `HighGamma + LDA`, `Riemann TS + LogReg` (covariances on the raw epochs), `Riemann HG TS + LogReg` (covariances of
-the 70-150 Hz band-passed epochs), `Riemann Env TS + LogReg` (pyriemann `ERPCovariances` with class prototypes of the
-log high-gamma envelope, eight SVD components per class), `ShallowFBCSPNet` (braindecode,
+the 70-150 Hz band-passed epochs), `ShallowFBCSPNet` (braindecode,
 150 epochs of batch 16, AdamW 6.25e-4, per-channel standardisation on the training fold, CPU); regression
 uses `LogBandPower + Ridge` and `HighGamma + Ridge`. Randomness enters only through the deep model, which is
 run with seeds 0, 1, 2 (`ShallowFBCSPNet s<k>` rows).
@@ -51,8 +50,26 @@ the PACE camera-ready (2026-09-25).
   the network near chance (0.04).
 - **Riemannian tangent space on raw-epoch covariances trails band power within a session** on every Miller task,
   but is the only pipeline that survives the week between the BCI III-1 sessions (kappa 0.52 versus 0.00 to 0.36):
-  standardising band power on one session does not transfer, covariance geometry partly does. Tangent space on
-  high-gamma envelopes and per-session alignment are the next chunks (roadmap M2/M3).
+  standardising band power on one session does not transfer, covariance geometry partly does. Per-session
+  alignment is the M3 chunk.
+- **Band-limit the covariances and the Riemannian pipeline becomes the best classical one where high gamma carries
+  the task.** `Riemann HG TS + LogReg` (covariances of the 70-150 Hz band-passed epochs) reaches kappa 0.94 on
+  motor_basic against 0.92 for `LogBandPower + LDA` and 0.70 for raw-epoch covariances, and 0.74 on faces_basic
+  against 0.68; it falls behind wherever the discriminative band is elsewhere: imagery 0.62 against 0.66, gestures
+  0.39 against 0.52, BCI III-1 0.62 within a session and 0.18 across (raw-epoch covariances 0.82 and 0.55, band
+  power 0.80 and 0.36). The geometry is not the point; the band is. Prototype covariances of the log high-gamma
+  envelope (pyriemann `ERPCovariances`, class prototypes with eight SVD components) were tried and trail every
+  baseline on every task; the YAML stays under `examples/pipelines/` as a negative result, outside the reference set.
+- **Learning curves: the simplest features are the most data-efficient, and the informative band depends on the
+  dataset.** With the last fifth of a session as the test block and the first 10 % of the rest as training data
+  (five trials on motor_basic), `HighGamma + LDA` (one feature per channel) keeps kappa 0.50 where
+  `LogBandPower + LDA` has 0.31 and the band-limited Riemannian pipeline 0.33; from 25 % of a session on the two
+  overtake it (0.68 and 0.67 at 25 %, 0.85 and 0.86 at 100 %, against 0.79). faces_basic has 240 training trials at
+  full data and `Riemann HG TS + LogReg` leads at every budget (0.47 at 10 %, 0.64 at 100 %, tied with
+  `LogBandPower + LDA` there). On BCI III-1 the band is low: `LogBandPower + LDA` gives 0.66 from 15 trials and 0.87
+  from all, raw-epoch covariances 0.18 and 0.89, the high-gamma pipelines 0.10 to 0.34 at 10 %. Full-data curve
+  points sit below the five-fold means because the test block is the last fifth of the session, where drift is
+  largest. Curves and tables: `docs/analysis.md`.
 - **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
   far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.
 

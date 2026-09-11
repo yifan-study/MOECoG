@@ -1,3 +1,6 @@
+# Kept as a negative result, not shipped in the reference set: prototype covariances of the log high-gamma
+# envelope trail the band-power baselines on every Miller task (motor kappa 0.67 vs 0.93 for Riemann HG, faces
+# 0.41 vs 0.68 for LogBandPower + LDA at full data). Load with load_pipelines("examples/pipelines", sfreq=...).
 name: Riemann Env TS + LogReg
 paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
 requires: [pyriemann]

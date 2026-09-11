@@ -12,6 +12,36 @@ Generated 2026-09-11 by `scripts/build_analysis.py` from `results/reference_*.cs
 | Riemann HG TS + LogReg | 0.180 | nan | 0.180 | 1 |
 | HighGamma + LDA | 0.000 | nan | 0.000 | 1 |
 
+## bci_iii_1 (cross_session:ea, kappa, 1 patients)
+
+| pipeline | mean | sd | median | patients |
+|---|---|---|---|---|
+| Riemann TS + LogReg | 0.477 | nan | 0.477 | 1 |
+| LogBandPower + LogReg | 0.050 | nan | 0.050 | 1 |
+| HighGamma + LDA | 0.010 | nan | 0.010 | 1 |
+| LogBandPower + LDA | 0.010 | nan | 0.010 | 1 |
+| Riemann HG TS + LogReg | -0.004 | nan | -0.004 | 1 |
+
+## bci_iii_1 (cross_session:recenter, kappa, 1 patients)
+
+| pipeline | mean | sd | median | patients |
+|---|---|---|---|---|
+| Riemann TS + LogReg | 0.790 | nan | 0.790 | 1 |
+| LogBandPower + LogReg | 0.260 | nan | 0.260 | 1 |
+| LogBandPower + LDA | 0.160 | nan | 0.160 | 1 |
+| Riemann HG TS + LogReg | 0.047 | nan | 0.047 | 1 |
+| HighGamma + LDA | 0.010 | nan | 0.010 | 1 |
+
+## bci_iii_1 (cross_session:zscore, kappa, 1 patients)
+
+| pipeline | mean | sd | median | patients |
+|---|---|---|---|---|
+| LogBandPower + LogReg | 0.345 | nan | 0.345 | 1 |
+| LogBandPower + LDA | 0.144 | nan | 0.144 | 1 |
+| Riemann HG TS + LogReg | 0.129 | nan | 0.129 | 1 |
+| Riemann TS + LogReg | 0.011 | nan | 0.011 | 1 |
+| HighGamma + LDA | 0.004 | nan | 0.004 | 1 |
+
 ## bci_iii_1 (learning_curve, kappa, 1 patients)
 
 Train on the first 10/25/50/100 % of the non-test trials of every (patient, session), test on the fixed final 20 %. The last column is the smallest fraction whose mean reaches 90 % of the full-data mean.
@@ -34,6 +64,16 @@ Train on the first 10/25/50/100 % of the non-test trials of every (patient, sess
 | LogBandPower + LDA | 0.801 | nan | 0.801 | 1 |
 | LogBandPower + LogReg | 0.791 | nan | 0.791 | 1 |
 | HighGamma + LDA | 0.659 | nan | 0.659 | 1 |
+| Riemann HG TS + LogReg | 0.618 | nan | 0.618 | 1 |
+
+## bci_iii_1 (within_subject:ea, kappa, 1 patients)
+
+| pipeline | mean | sd | median | patients |
+|---|---|---|---|---|
+| Riemann TS + LogReg | 0.848 | nan | 0.848 | 1 |
+| LogBandPower + LogReg | 0.838 | nan | 0.838 | 1 |
+| LogBandPower + LDA | 0.824 | nan | 0.824 | 1 |
+| HighGamma + LDA | 0.753 | nan | 0.753 | 1 |
 | Riemann HG TS + LogReg | 0.618 | nan | 0.618 | 1 |
 
 ## faces_basic (learning_curve, kappa, 14 patients)
@@ -168,9 +208,9 @@ Train on the first 10/25/50/100 % of the non-test trials of every (patient, sess
 | LogBandPower + LogReg | 0.609 | 0.132 | 0.556 | 7 |
 | Riemann TS + LogReg | 0.412 | 0.169 | 0.361 | 7 |
 | ShallowFBCSPNet s0 | 0.214 | 0.245 | 0.211 | 7 |
-| ShallowFBCSPNet s1 | 0.185 | 0.106 | 0.198 | 4 |
+| ShallowFBCSPNet s1 | 0.156 | 0.113 | 0.128 | 5 |
 
-Mean rank (1 = best), Friedman p = 0.00623: LogBandPower + LDA 2.25, Riemann HG TS + LogReg 2.25, HighGamma + LDA 2.75, LogBandPower + LogReg 3.25, Riemann TS + LogReg 4.50, ShallowFBCSPNet s0 6.50, ShallowFBCSPNet s1 6.50
+Mean rank (1 = best), Friedman p = 0.000866: LogBandPower + LDA 2.20, HighGamma + LDA 2.40, Riemann HG TS + LogReg 2.60, LogBandPower + LogReg 3.20, Riemann TS + LogReg 4.60, ShallowFBCSPNet s0 6.40, ShallowFBCSPNet s1 6.60
 
 No pairwise difference reaches p < 0.05.
 

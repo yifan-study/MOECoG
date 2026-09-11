@@ -71,6 +71,15 @@ the PACE camera-ready (2026-09-25).
   points sit below the five-fold means because the test block is the last fifth of the session, where drift is
   largest. Fingerflex behaves the same way: `HighGamma + Ridge` reaches r 0.15 from the first 10 % of a run and 0.27
   from all of it, `LogBandPower + Ridge` 0.10 and 0.25. Curves and tables: `docs/analysis.md`.
+- **Session drift: the fix depends on the feature family.** On BCI III-1 (train and test sessions a week apart)
+  label-free alignment of each session's epochs (`alignment=`, `moecog.alignment`) moves the Riemannian pipeline
+  from kappa 0.55 across sessions to 0.79 with Riemannian re-centering (Zanini et al. 2018), while Euclidean
+  alignment (arithmetic-mean whitening) lowers it to 0.48 and destroys every band-power pipeline (0.01 to 0.05):
+  whitening mixes channels, so band power of the mixed channels no longer means the same thing on the next day.
+  Per-channel z-scoring of the raw session does not help band power either (0.14 to 0.35 against 0.24 to 0.36
+  unaligned), so the drift is not a per-channel gain. Within a session, whitening on all trials (transductive)
+  adds two to nine points to every classical pipeline (`within_subject:ea`). The alignment that suits band-power
+  features is standardisation of the features per session, the next chunk (`BatchStandardizer`).
 - **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
   far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.
 

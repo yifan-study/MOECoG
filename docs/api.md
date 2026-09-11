@@ -18,6 +18,7 @@
 ::: moecog.evaluations.within_subject
 ::: moecog.evaluations.cross_session
 ::: moecog.evaluations.learning_curve
+::: moecog.alignment
 
 ## Pipelines and benchmark
 

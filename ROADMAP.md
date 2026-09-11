@@ -62,7 +62,7 @@ catalog and smoke sweep of 130 public deposits (106 load).
 | Merk grip force + Peterson pose | regression paradigms for force and 2-D pose; ridge and PACE baselines |
 | Detroit naming corpora (ds006910, ds006234, ds005545) | 100+ patient classification with the epoched paradigm; per-patient distribution plotted |
 | Stimulus reconstruction | `SpectrogramReconstruction` paradigm on Bellier and Verwoert |
-| Session drift | per-session feature normalisation and Euclidean / Riemannian Procrustes alignment as pipeline steps (`moecog.pipelines.alignment`), evaluated on BCI III-1 cross-session and on the Miller multi-session files; the literature says alignment is worth 3-10 points and no single method wins (`docs/best_practices.md`) |
+| Session drift | label-free per-session alignment as an evaluation option (`moecog.alignment`: Euclidean alignment, Riemannian re-centering, raw z-score) and per-session feature standardisation as a pipeline step (`BatchStandardizer`), evaluated on BCI III-1 cross-session; the literature says alignment is worth 3-10 points and no single method wins (`docs/best_practices.md`) | started 2026-09-11: Riemannian re-centering lifts the Riemannian pipeline from 0.55 to 0.79 across the BCI III-1 sessions, Euclidean alignment hurts every pipeline there; band power needs feature-level standardisation instead |
 | Deep fingerflex | a FingerFlex-style convolutional regressor as a pipeline, to test the published r above 0.6 on BCI IV-4 against ridge's 0.28 |
 
 ### M4. Cross-subject and transfer (target 2027-01)

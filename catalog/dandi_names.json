@@ -1,0 +1,730 @@
+[
+ {
+  "id": "000004",
+  "name": "A NWB-based dataset and processing pipeline of human single-neuron activity during a declarative memory task",
+  "size": 6197474020,
+  "assets": 87,
+  "status": "Valid"
+ },
+ {
+  "id": "000006",
+  "name": "Mouse anterior lateral motor cortex (ALM) in delay response task",
+  "size": 139600500,
+  "assets": 53,
+  "status": "Valid"
+ },
+ {
+  "id": "000007",
+  "name": "A cortico-cerebellar loop for motor planning",
+  "size": 199439472,
+  "assets": 54,
+  "status": "Valid"
+ },
+ {
+  "id": "000008",
+  "name": "Phenotypic variation within and across transcriptomic cell types in mouse motor cortex",
+  "size": 11922334254,
+  "assets": 1328,
+  "status": "Valid"
+ },
+ {
+  "id": "000010",
+  "name": "A motor cortex circuit for motor planning and movement",
+  "size": 40006570644,
+  "assets": 158,
+  "status": "Valid"
+ },
+ {
+  "id": "000011",
+  "name": "Robust neuronal dynamics in premotor cortex during motor planning",
+  "size": 32435325542,
+  "assets": 92,
+  "status": "Valid"
+ },
+ {
+  "id": "000015",
+  "name": "A Map of Anticipatory Activity in Mouse Motor Cortex",
+  "size": 17159727736,
+  "assets": 210,
+  "status": "Valid"
+ },
+ {
+  "id": "000019",
+  "name": "Human ECoG speaking consonant-vowel syllables",
+  "size": 55585858956,
+  "assets": 31,
+  "status": "Valid"
+ },
+ {
+  "id": "000023",
+  "name": "Patch-seq recordings from human cortex (June 2020)",
+  "size": 12401578899,
+  "assets": 318,
+  "status": "Valid"
+ },
+ {
+  "id": "000026",
+  "name": "Human brain cell census for BA 44/45",
+  "size": 38464536222290,
+  "assets": 40982,
+  "status": "Valid"
+ },
+ {
+  "id": "000035",
+  "name": "Temperature-controlled intracellular Patch-seq recordings in mouse motor cortex",
+  "size": 1656166654,
+  "assets": 185,
+  "status": "Valid"
+ },
+ {
+  "id": "000043",
+  "name": "Human, macaque, and mouse L5 pyramidal neuron physiology",
+  "size": 3271279661,
+  "assets": 94,
+  "status": "Valid"
+ },
+ {
+  "id": "000055",
+  "name": "AJILE12: Long-term naturalistic human intracranial neural recordings and pose",
+  "size": 845869698341,
+  "assets": 55,
+  "status": "Valid"
+ },
+ {
+  "id": "000108",
+  "name": "Light sheet imaging of the human brain",
+  "size": 376773748160654,
+  "assets": 8084,
+  "status": "Valid"
+ },
+ {
+  "id": "000109",
+  "name": "Patch-seq recordings from human cortex (June 2021)",
+  "size": 14212577893,
+  "assets": 350,
+  "status": "Valid"
+ },
+ {
+  "id": "000121",
+  "name": "Structure and variability of delay activity in premotor cortex",
+  "size": 39481256665,
+  "assets": 12,
+  "status": "Valid"
+ },
+ {
+  "id": "000122",
+  "name": "Human fNIRS recordings of motor cortex during finger-tapping task",
+  "size": 49898320,
+  "assets": 5,
+  "status": "Valid"
+ },
+ {
+  "id": "000128",
+  "name": "MC_Maze: macaque primary motor and dorsal premotor cortex spiking activity during delayed reaching",
+  "size": 694004935,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "000129",
+  "name": "MC_RTT: macaque motor cortex spiking activity during self-paced reaching",
+  "size": 50965512,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "000138",
+  "name": "MC_Maze_Large: macaque primary motor and dorsal premotor cortex spiking activity during delayed reaching",
+  "size": 149392888,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "000139",
+  "name": "MC_Maze_Medium: macaque primary motor and dorsal premotor cortex spiking activity during delayed reaching",
+  "size": 77300692,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "000140",
+  "name": "MC_Maze_Small: macaque primary motor and dorsal premotor cortex spiking activity during delayed reaching",
+  "size": 29896840,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "000142",
+  "name": "20210923_AIBS_Patchseq_human",
+  "size": 26800026646,
+  "assets": 717,
+  "status": "Valid"
+ },
+ {
+  "id": "000147",
+  "name": "PPC_Finger: human posterior parietal cortex recordings during attempted finger movements",
+  "size": 77665528,
+  "assets": 10,
+  "status": "Valid"
+ },
+ {
+  "id": "000207",
+  "name": "Data for: Neurons detect cognitive boundaries to structure episodic memories in humans (Zheng et al., 2022, Nat Neuro in press)",
+  "size": 50310106,
+  "assets": 19,
+  "status": "Valid"
+ },
+ {
+  "id": "000209",
+  "name": "20211223_AIBS_Patchseq_human",
+  "size": 11109213211,
+  "assets": 291,
+  "status": "Valid"
+ },
+ {
+  "id": "000228",
+  "name": "20220330_AIBS_Patchseq_human",
+  "size": 5816158527,
+  "assets": 91,
+  "status": "Valid"
+ },
+ {
+  "id": "000231",
+  "name": "A detailed behavioral, videographic, and neural dataset on object recognition in mice",
+  "size": 1996516623953,
+  "assets": 4228,
+  "status": "Valid"
+ },
+ {
+  "id": "000232",
+  "name": "Rule-based modulation of a sensorimotor transformation across cortical areas",
+  "size": 23585285354,
+  "assets": 179,
+  "status": "Valid"
+ },
+ {
+  "id": "000239",
+  "name": "Cortical processing of flexible and context-dependent sensorimotor sequences",
+  "size": 11769901909,
+  "assets": 754,
+  "status": "Valid"
+ },
+ {
+  "id": "000243",
+  "name": "MRI of human ex vivo brainstem",
+  "size": 6079714780,
+  "assets": 5,
+  "status": "Valid"
+ },
+ {
+  "id": "000252",
+  "name": "Finger_RL: human intracortical recordings during attempted finger movements of right and left hands",
+  "size": 38128728,
+  "assets": 12,
+  "status": "Valid"
+ },
+ {
+  "id": "000288",
+  "name": "20220630_AIBS_Patchseq_human",
+  "size": 1049737334,
+  "assets": 36,
+  "status": "Valid"
+ },
+ {
+  "id": "000293",
+  "name": "UHN whole-cell patch-clamp excitability recordings from human cortical neurons",
+  "size": 234976142,
+  "assets": 121,
+  "status": "Valid"
+ },
+ {
+  "id": "000297",
+  "name": "UHN whole-cell patch-clamp excitability recordings from human cortical neurons",
+  "size": 231099211,
+  "assets": 118,
+  "status": "Invalid"
+ },
+ {
+  "id": "000337",
+  "name": "20220917_AIBS_Patchseq_human",
+  "size": 1532057791,
+  "assets": 21,
+  "status": "Valid"
+ },
+ {
+  "id": "000397",
+  "name": "Large-scale neural recordings with single neuron resolution using Neuropixels probes in human cortex",
+  "size": 24071283109,
+  "assets": 3,
+  "status": "Valid"
+ },
+ {
+  "id": "000465",
+  "name": "Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics",
+  "size": 129066795249,
+  "assets": 36,
+  "status": "Valid"
+ },
+ {
+  "id": "000467",
+  "name": "Sparse and stereotyped encoding implicates a core glomerulus for ant alarm behavior",
+  "size": 1262490250560,
+  "assets": 14685,
+  "status": "Valid"
+ },
+ {
+  "id": "000469",
+  "name": "Dataset of human-single neuron activity during a Sternberg working memory task.",
+  "size": 9788560252,
+  "assets": 41,
+  "status": "Valid"
+ },
+ {
+  "id": "000540",
+  "name": "Dataset for: A change in behavioral state switches the pattern of motor output that underlies rhythmic head and orofacial movements",
+  "size": 1003937347960,
+  "assets": 990,
+  "status": "Valid"
+ },
+ {
+  "id": "000554",
+  "name": "Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics",
+  "size": 129066795249,
+  "assets": 36,
+  "status": "Valid"
+ },
+ {
+  "id": "000569",
+  "name": "20230630_AIBS_Patchseq_nonhuman_primate",
+  "size": 5622625870,
+  "assets": 103,
+  "status": "Valid"
+ },
+ {
+  "id": "000570",
+  "name": "20230630_AIBS_Patchseq_human",
+  "size": 4628300559,
+  "assets": 155,
+  "status": "Valid"
+ },
+ {
+  "id": "000571",
+  "name": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
+  "size": 21567625500,
+  "assets": 68210,
+  "status": "Valid"
+ },
+ {
+  "id": "000572",
+  "name": "Activity map of a cortico-cerebellar loop underlying motor planning",
+  "size": 311812040462,
+  "assets": 289,
+  "status": "Valid"
+ },
+ {
+  "id": "000574",
+  "name": "Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task",
+  "size": 107315450285,
+  "assets": 37,
+  "status": "Valid"
+ },
+ {
+  "id": "000575",
+  "name": "Dataset of human medial temporal lobe neurons during a visual working memory task",
+  "size": 50794717628,
+  "assets": 18,
+  "status": "Valid"
+ },
+ {
+  "id": "000576",
+  "name": "Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation",
+  "size": 2191651090,
+  "assets": 27,
+  "status": "Valid"
+ },
+ {
+  "id": "000623",
+  "name": "Data for: Multimodal single-neuron, intracranial EEG, and fMRI brain responses during movie watching in human patients",
+  "size": 27744749325,
+  "assets": 29,
+  "status": "Valid"
+ },
+ {
+  "id": "000630",
+  "name": "Human L1 patch-seq electrophysiology",
+  "size": 8073127848,
+  "assets": 210,
+  "status": "Valid"
+ },
+ {
+  "id": "000635",
+  "name": "20230930_AIBS_Patchseq_nonhuman_primate",
+  "size": 4707135438,
+  "assets": 81,
+  "status": "Valid"
+ },
+ {
+  "id": "000636",
+  "name": "Human interneuron patch-seq electrophysiology",
+  "size": 24473831989,
+  "assets": 706,
+  "status": "Valid"
+ },
+ {
+  "id": "000673",
+  "name": "Data for: Control of working memory by phase\u2013amplitude coupling of human hippocampal neurons",
+  "size": 23440983616,
+  "assets": 44,
+  "status": "Valid"
+ },
+ {
+  "id": "000674",
+  "name": "Volumetric multiplex imaging of whole human and non-human primate brains",
+  "size": 12828194091,
+  "assets": 25,
+  "status": "Valid"
+ },
+ {
+  "id": "000688",
+  "name": "Long-term recordings of motor and premotor cortical spiking activity during reaching in monkeys",
+  "size": 13179483710,
+  "assets": 111,
+  "status": "Valid"
+ },
+ {
+  "id": "000722",
+  "name": "sOCT of the Human Somatosensory Cortex and Vessel Segmentation",
+  "size": 10429346741,
+  "assets": 9,
+  "status": "Invalid"
+ },
+ {
+  "id": "000768",
+  "name": "20231222_AIBS_Patchseq_nonhuman_primate",
+  "size": 3153299188,
+  "assets": 51,
+  "status": "Valid"
+ },
+ {
+  "id": "000769",
+  "name": "20231222_AIBS_Patchseq_human",
+  "size": 10299057874,
+  "assets": 177,
+  "status": "Valid"
+ },
+ {
+  "id": "000933",
+  "name": "20240331_AIBS_Patchseq_human",
+  "size": 1715556217,
+  "assets": 28,
+  "status": "Valid"
+ },
+ {
+  "id": "000934",
+  "name": "20240331_AIBS_Patchseq_nonhuman_primate",
+  "size": 755815585,
+  "assets": 13,
+  "status": "Valid"
+ },
+ {
+  "id": "000940",
+  "name": "Data for: Hippocampal Theta Phase Precession Supports Memory Formation and Retrieval of Naturalistic Experience in Humans",
+  "size": 2050531406,
+  "assets": 16,
+  "status": "Valid"
+ },
+ {
+  "id": "000941",
+  "name": "FALCON Benchmark M1-A: primary motor cortex recordings in primate during reach-to-grasp task",
+  "size": 311792278,
+  "assets": 11,
+  "status": "Valid"
+ },
+ {
+  "id": "000950",
+  "name": "FALCON Benchmark H2: Human Handwriting iBCI",
+  "size": 1224956736,
+  "assets": 47,
+  "status": "Valid"
+ },
+ {
+  "id": "000953",
+  "name": "FALCON Benchmark M2: primary motor cortex recordings in primate during finger movement",
+  "size": 15916372200,
+  "assets": 20,
+  "status": "Invalid"
+ },
+ {
+  "id": "000954",
+  "name": "FALCON Benchmark H1: Human 7DoF Reach and Grasp Motor BCI",
+  "size": 102258934,
+  "assets": 40,
+  "status": "Invalid"
+ },
+ {
+  "id": "001044",
+  "name": "Dataset of long-term multi-site LFP activity with spontaneous chronic seizures recorded in temporal lobe epilepsy rats.",
+  "size": 17935587444,
+  "assets": 162,
+  "status": "Valid"
+ },
+ {
+  "id": "001070",
+  "name": "LITMUS: Rat-based motor unit dataset with 0 STD waveform shape variability",
+  "size": 165183476,
+  "assets": 1,
+  "status": "Valid"
+ },
+ {
+  "id": "001071",
+  "name": "LITMUS: Rat-based motor unit dataset with 2 STD waveform shape variability",
+  "size": 165256732,
+  "assets": 1,
+  "status": "Valid"
+ },
+ {
+  "id": "001072",
+  "name": "LITMUS: Rat-based motor unit dataset with 4 STD waveform shape variability",
+  "size": 165460020,
+  "assets": 1,
+  "status": "Valid"
+ },
+ {
+  "id": "001073",
+  "name": "LITMUS: Rat-based simulated motor unit dataset with 3 levels of waveform shape variability",
+  "size": 495900228,
+  "assets": 3,
+  "status": "Valid"
+ },
+ {
+  "id": "001132",
+  "name": "Multimodal evaluation of network activity and optogenetic interventions in human hippocampal slices",
+  "size": 192373252150,
+  "assets": 69,
+  "status": "Valid"
+ },
+ {
+  "id": "001187",
+  "name": "Data for: Daume et al. (2024) \"Persistent activity during working memory maintenance predicts long-term memory formation in the human hippocampus\"",
+  "size": 20665003724,
+  "assets": 46,
+  "status": "Valid"
+ },
+ {
+  "id": "001188",
+  "name": "A combinatorial neural code for long-term motor memory.",
+  "size": 61633166050,
+  "assets": 233,
+  "status": "Valid"
+ },
+ {
+  "id": "001193",
+  "name": "Data for: Distinct spatiotemporal patterns of syntactic and semantic processing in human inferior frontal gyrus",
+  "size": 1365465792,
+  "assets": 40,
+  "status": "Valid"
+ },
+ {
+  "id": "001209",
+  "name": "FALCON Benchmark M1-B: primary motor cortex recordings in primate during reach-to-grasp task",
+  "size": 233554359,
+  "assets": 12,
+  "status": "Valid"
+ },
+ {
+  "id": "001212",
+  "name": "Individualized Target Selection of Closed-loop Electrical Stimulation for the Treatment of Spontaneous Temporal Lobe Epilepsy.",
+  "size": 3611530887,
+  "assets": 56,
+  "status": "Valid"
+ },
+ {
+  "id": "001278",
+  "name": "NIH BRAIN CONNECTS - LINC UM1 - Human Data",
+  "size": 5715683287807,
+  "assets": 205,
+  "status": "Valid"
+ },
+ {
+  "id": "001281",
+  "name": "Electrophysiology and Morphology of Human Cortical Supragranular Pyramidal Cells in a Wide Age Range",
+  "size": 12059214392,
+  "assets": 457,
+  "status": "Valid"
+ },
+ {
+  "id": "001347",
+  "name": "Brain-wide human electrophysiology during aversive stimuli and ketamine",
+  "size": 16035455232,
+  "assets": 207,
+  "status": "Valid"
+ },
+ {
+  "id": "001348",
+  "name": "20250331_AIBS_Patchseq_nonhuman_primate",
+  "size": 33112101454,
+  "assets": 556,
+  "status": "Valid"
+ },
+ {
+  "id": "001359",
+  "name": "20250331_AIBS_Patchseq_human",
+  "size": 23778635304,
+  "assets": 391,
+  "status": "Valid"
+ },
+ {
+  "id": "001413",
+  "name": "Calcium imaging of motor cortex during arm reaching tasks",
+  "size": 16277513318,
+  "assets": 2,
+  "status": "Valid"
+ },
+ {
+  "id": "001444",
+  "name": "Simulated mouse primary motor cortex activity during control and decreased pyramidal tract neuron excitability in the parkinsonian condition",
+  "size": 7376447744,
+  "assets": 17,
+  "status": "Valid"
+ },
+ {
+  "id": "001453",
+  "name": "Neural circuits underlying divergent visuomotor strategies of zebrafish and Danionella cerebrum",
+  "size": 3823109128,
+  "assets": 37,
+  "status": "Valid"
+ },
+ {
+  "id": "001464",
+  "name": "20250627_AIBS_Patchseq_human",
+  "size": 7704277949,
+  "assets": 128,
+  "status": "Valid"
+ },
+ {
+  "id": "001465",
+  "name": "20250627_AIBS_Patchseq_nonhuman_primate",
+  "size": 18441816107,
+  "assets": 308,
+  "status": "Valid"
+ },
+ {
+  "id": "001513",
+  "name": "Human Brainstem Connectome",
+  "size": 15283535132,
+  "assets": 3,
+  "status": "Valid"
+ },
+ {
+  "id": "001603",
+  "name": "Preconfigured neuronal firing sequences in human brain organoids",
+  "size": 322237314228,
+  "assets": 111,
+  "status": "Valid"
+ },
+ {
+  "id": "001610",
+  "name": "Integrator dynamics in cortico-basal ganglia loop for flexible motor timing",
+  "size": 8313593988,
+  "assets": 261,
+  "status": "Valid"
+ },
+ {
+  "id": "001612",
+  "name": "Dataset for Finkelstein et al. \"Connectivity underlying motor cortex activity during goal-directed behavior\" 2025",
+  "size": 44969345792,
+  "assets": 61,
+  "status": "Valid"
+ },
+ {
+  "id": "001613",
+  "name": "Large-scale human intracranial electrophysiology and eye-tracking recordings from naturalistic image and movie stimuli",
+  "size": 5873673906,
+  "assets": 9,
+  "status": "Valid"
+ },
+ {
+  "id": "001616",
+  "name": "SUMMER: Dataset of human single-neuron activity during an 83-minute movie from 2,286 neurons and 29 patients",
+  "size": 2383696012,
+  "assets": 29,
+  "status": "Valid"
+ },
+ {
+  "id": "001625",
+  "name": "20251020_AIBS_Patchseq_human",
+  "size": 4405988367,
+  "assets": 87,
+  "status": "Valid"
+ },
+ {
+  "id": "001635",
+  "name": "Contralesional activity reflects compensation, while brainstem detour pathways support skilled motor recovery after stroke",
+  "size": 8438704208,
+  "assets": 163,
+  "status": "Valid"
+ },
+ {
+  "id": "001636",
+  "name": "Pyramidal tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor tasks",
+  "size": 6417876637,
+  "assets": 447,
+  "status": "Valid"
+ },
+ {
+  "id": "001683",
+  "name": "Transcranial Focused Ultrasound Stimulation Targeting White Matter Inhibits Seizures in a Rat Model of Epilepsy",
+  "size": 355741584920,
+  "assets": 318,
+  "status": "Valid"
+ },
+ {
+  "id": "001746",
+  "name": "Electrophysiological Dataset of Patch-seq Recording in non-Human Primate Anterior Insular Cortex",
+  "size": 14735339376,
+  "assets": 462,
+  "status": "Valid"
+ },
+ {
+  "id": "001765",
+  "name": "Neuropixels recordings in anesthetized rats (saline vs. LSD) with intracranial electrical stimulation",
+  "size": 954842477885,
+  "assets": 71,
+  "status": "Valid"
+ },
+ {
+  "id": "001769",
+  "name": "NIH BRAIN CONNECTS - LINC UM1 - Human Data - Scratch",
+  "size": 2764275071822,
+  "assets": 239,
+  "status": "Valid"
+ },
+ {
+  "id": "001847",
+  "name": "Retrosplenial cortex enables context-dependent goal-directed sensorimotor transformation",
+  "size": 21106554451786,
+  "assets": 1497,
+  "status": "Valid"
+ },
+ {
+  "id": "001855",
+  "name": "20260623_AIBS_Patchseq_BICAN_human",
+  "size": 3157927742,
+  "assets": 50,
+  "status": "Valid"
+ },
+ {
+  "id": "001875",
+  "name": "Multimodal characterization of sensorimotor peripheral neuropathy in a preclinical mouse model of SCA3",
+  "size": 1509542947,
+  "assets": 12,
+  "status": "Valid"
+ },
+ {
+  "id": "001882",
+  "name": "SalidoLab 2024.Genes paper. WVU humans with IMPG1/2 mutations",
+  "size": 992787471,
+  "assets": 13,
+  "status": "Valid"
+ }
+]

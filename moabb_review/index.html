@@ -1,0 +1,1542 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Mother of all ECoG Benchmarks">
+      
+      
+      
+      
+        <link rel="prev" href="../moabb_lessons/">
+      
+      
+        <link rel="next" href="../best_practices/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Review and decisions - MOECoG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#moabb-component-by-component-and-what-moecog-changes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MOECoG" class="md-header__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MOECoG
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Review and decisions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MOECoG" class="md-nav__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MOECoG
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datasets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dataset_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decodable_datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decodable datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smoke_tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smoke tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miller_library_map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Miller library map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preprocessing_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preprocessing catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Results
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaderboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leaderboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../baselines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOABB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MOABB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moabb_lessons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Review and decisions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Review and decisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Datasets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-paradigms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Paradigms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-evaluations-and-splitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Evaluations and splitters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-results-storage-and-bookkeeping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Results storage and bookkeeping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-benchmark-entry-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. The benchmark entry point
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-statistics-and-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Statistics and plots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-caching-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Caching and configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-documentation-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Documentation and examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ci-and-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. CI and quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-community-governance-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Community, governance, papers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary table
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../best_practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Datasets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-paradigms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Paradigms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-evaluations-and-splitters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Evaluations and splitters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-results-storage-and-bookkeeping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Results storage and bookkeeping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-benchmark-entry-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. The benchmark entry point
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-statistics-and-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Statistics and plots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-caching-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Caching and configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-documentation-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Documentation and examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ci-and-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. CI and quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-community-governance-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Community, governance, papers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary table
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="moabb-component-by-component-and-what-moecog-changes">MOABB, component by component, and what MOECoG changes<a class="headerlink" href="#moabb-component-by-component-and-what-moecog-changes" title="Permanent link">&para;</a></h1>
+<p>Read on 2026-09-10 from the MOABB source (<code>yifan-study/moabb</code>, upstream <code>NeuroTechX/moabb</code>, 28k lines of
+package code, 84 contributors, releases to v1.7.1) and from its open issues. Each section says what MOABB built,
+what its users complain about, and what MOECoG does with it: <strong>copy</strong>, <strong>adapt</strong>, or <strong>improve</strong>. Status
+columns refer to <code>ROADMAP.md</code> milestones.</p>
+<h2 id="1-datasets">1. Datasets<a class="headerlink" href="#1-datasets" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>BaseDataset(subjects, sessions_per_subject, events, code, interval, paradigm, doi)</code> with
+<code>get_data(subjects) -&gt; {subject: {session: {run: Raw}}}</code>, <code>data_path</code>, <code>download</code>, a metaclass that validates
+CamelCase codes and session/run naming, a per-subject BIDS cache (<code>CacheConfig</code>: save raw / epochs / arrays,
+use, overwrite), <code>BaseBIDSDataset</code> and <code>LocalBIDSDataset</code> for BIDS deposits without writing a class,
+<code>CompoundDataset</code> to assemble subjects from several datasets, <code>FakeDataset</code> for tests, and summary CSV tables
+per paradigm that feed an auto-generated docs page. Downloads go through pooch into <code>~/mne_data</code>
+(<code>set_download_dir</code>).</p>
+<p><strong>Complaints (issues).</strong> Datasets loaded as generic EEG1..EEGn without montage; inconsistent class parameters;
+BIDS subject labels assumed numeric; requests for lazy loading and static (metadata-only) analysis; dataset
+defects only discovered by a full-catalogue sweep; a 2025 issue titled "Ecog data" with no answer.</p>
+<p><strong>MOECoG.</strong>
+- Copy the contract (<code>get_data</code> nesting, <code>code</code>, <code>interval</code>, <code>sfreq</code>, <code>doi</code>), <code>FakeECoGDataset</code>,
+  <code>BIDSiEEGDataset(root=...)</code> as the <code>LocalBIDSDataset</code> equivalent. Done.
+- Improve: subjects are strings (BIDS labels as they are), channel types carry the electrode kind (<code>ecog</code> for
+  data, <code>misc</code> for everything else) and <code>ElectrodeInfo</code> carries coordinates, so the montage problem MOABB
+  hit does not recur. Done.
+- Improve: the catalog is a registry with statuses (<code>ok</code>, <code>unsupported</code>, <code>blocked</code> with a reason) and a scheduled
+  smoke sweep, which is the "full-catalogue sweep" MOABB does by hand. Done; make it a scheduled CI job (M1).
+- Improve: <code>max_runs</code> / <code>max_seconds</code> memory guards on loaders; lazy <code>preload=False</code> reading is on the roadmap
+  (M3), which is MOABB's open "lazier data loading" request.
+- Skip for now: <code>CompoundDataset</code> and the BIDS preprocessing cache. ECoG datasets are per-patient; pooling is
+  a paradigm decision, not a dataset one.</p>
+<h2 id="2-paradigms">2. Paradigms<a class="headerlink" href="#2-paradigms" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>BaseProcessing</code> builds scikit-learn "process pipelines" (raw -&gt; events -&gt; epochs -&gt; arrays) with
+filter banks, <code>tmin</code>/<code>tmax</code> relative to the dataset interval, <code>baseline</code>, <code>channels</code>, <code>resample</code>, and
+<code>overlap</code> for pseudo-online windows; paradigms are per-BCI-family (<code>MotorImagery</code>, <code>P300</code>, <code>SSVEP</code>, <code>CVEP</code>,
+<code>FixedIntervalWindowsProcessing</code>, <code>RestingStateToP300Adapter</code>); <code>scoring()</code> picks accuracy or ROC-AUC.</p>
+<p><strong>Complaints.</strong> "Make the paradigms more broadly"; the filter-bank paradigm does not fit the newer
+abstraction; label handling through MNE options is awkward; preprocessing documentation unclear.</p>
+<p><strong>MOECoG.</strong>
+- Copy <code>tmin</code>/<code>tmax</code>/<code>fmin</code>/<code>fmax</code>/<code>resample</code>/<code>channels</code> and the "paradigm decides the metric" rule. Done.
+- Improve: two base kinds from the start, <code>BaseClassificationParadigm</code> (epochs from annotations) and
+  <code>BaseRegressionParadigm</code> (causal windows with a continuous target from <code>misc</code> channels). MOABB has no
+  regression paradigm; ECoG decoding is half regression. Done.
+- Improve: <code>raw_steps</code> (CAR, notch, Hilbert envelopes, Chang-lab high gamma) are explicit objects passed to the
+  paradigm, documented in <code>docs/preprocessing_catalog.md</code>, instead of implicit MNE options. Done.
+- Adapt: filter banks become a <code>raw_step</code>, not a paradigm family (M2).
+- Improve: the headline metric is kappa (chance-corrected) for classification and Pearson r for regression, so
+  2-class and 15-class results sit in one table. Done.</p>
+<h2 id="3-evaluations-and-splitters">3. Evaluations and splitters<a class="headerlink" href="#3-evaluations-and-splitters" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>WithinSessionEvaluation</code> (stratified shuffled K-fold inside each session), <code>CrossSessionEvaluation</code>
+(leave-one-session-out), <code>CrossSubjectEvaluation</code> (leave-one-subject-out, sessions concatenated), a newer
+<code>splitters</code> module (<code>WithinSessionSplitter</code>, <code>CrossSessionSplitter</code>, <code>CrossSubjectSplitter</code>,
+<code>LearningCurveSplitter</code> with <code>data_size</code> policies), grid search inside the evaluation, optuna, model saving,
+CodeCarbon emissions, <code>is_valid</code> with a reason message.</p>
+<p><strong>Complaints.</strong> Splitters silently overriding explicit <code>n_splits</code>; a metadata-aware splitter cannot be passed
+directly; grid search should live in the pipeline, not the evaluation; results should be pushed as soon as
+they are computed; cross-subject should support transfer learning; a "critical difference" visualisation is
+missing.</p>
+<p><strong>MOECoG.</strong>
+- Improve: chronological contiguous folds are the default for classification (ECoG is non-stationary within a
+  session) with a stratified-shuffled fallback for block-ordered cues, and the fold policy is a result column.
+  Regression folds carry a purge gap. Done (BCI-27).
+- Copy: <code>CrossSessionEvaluation</code> (leave-one-session-out per patient, sessions in chronological order) and
+  <code>is_valid</code> with reasons. This batch.
+- Improve: <code>CrossSubjectEvaluation</code> cannot concatenate patients with different grids. It takes an explicit
+  <code>aligner</code> (a fitted transform to a shared space: anatomical ROI pooling from <code>ElectrodeInfo</code>, channel-count
+  padding, or a learned alignment) and refuses to run without one. M4, with the PACE transfer decoders.
+- Copy: learning curves (<code>data_size</code> policies) because ECoG has few trials per patient. M2.
+- Improve: grid search is a pipeline step (<code>GridSearchCV</code> inside the estimator), never an evaluation option.
+  Documented in <code>CONTRIBUTING.md</code>.
+- Improve: results are appended per (dataset, subject, session, pipeline) as they finish (MOABB's open request),
+  with a digest so reruns skip what exists. This batch.
+- Skip: CodeCarbon, optuna, model saving until a milestone needs them.</p>
+<h2 id="4-results-storage-and-bookkeeping">4. Results storage and bookkeeping<a class="headerlink" href="#4-results-storage-and-bookkeeping" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>Results</code>: one HDF5 file keyed by pipeline digest (hash of the pipeline repr) and dataset, rows of
+(score, time, samples), <code>not_yet_computed</code> to skip finished (pipeline, dataset, subject) triples, <code>overwrite</code>
+and <code>suffix</code> options, <code>to_dataframe</code>. The benchmark paper's tables are committed as CSV/JSON in <code>results/</code>.</p>
+<p><strong>Complaints.</strong> Digest keyed on <code>repr</code>, so a cosmetic change reruns everything; HDF5 locking on shared
+filesystems; results only written at the end of a dataset.</p>
+<p><strong>MOECoG.</strong>
+- Adapt: <code>moecog.analysis.ResultsStore</code>, one tidy CSV per store (git-friendly, no HDF5 locks), rows keyed by a
+  digest of the pipeline's <code>get_params()</code> (not its repr), the paradigm's parameters and the package version;
+  <code>not_yet_computed</code>, <code>overwrite</code>, incremental append. This batch.
+- Copy: committed result tables in <code>results/</code> regenerated by scripts, rendered in <code>docs/leaderboard.md</code>. Done.</p>
+<h2 id="5-pipelines">5. Pipelines<a class="headerlink" href="#5-pipelines" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> Pipelines as YAML in a top-level <code>pipelines/</code> folder (name, paradigms, citations, steps, optional
+<code>param_grid</code>), parsed by <code>parse_pipelines_from_directory</code>; feature transformers (<code>LogVariance</code>, <code>FM</code>,
+<code>FilterBank</code>, <code>AugmentedDataset</code>), SSVEP estimators, pyriemann as a hard dependency, braindecode as an extra.</p>
+<p><strong>Complaints.</strong> "Ship the reference benchmark pipelines in the package, with an accessor" (they are outside the
+wheel); Keras pipelines skipping datasets silently; pyriemann in the main dependencies.</p>
+<p><strong>MOECoG.</strong>
+- Copy the YAML format and <code>load_pipelines</code>. Done.
+- Improve: the reference YAMLs ship inside the wheel (<code>moecog/pipelines/configs/</code>) and <code>load_pipelines()</code> with
+  no argument returns them; <code>$sfreq</code> placeholders make one file serve every sampling rate. This batch.
+- Improve: a pipeline that cannot run on a dataset raises with the reason; nothing is skipped silently. This batch.
+- Keep pyriemann optional (<code>moecog[riemann]</code>), braindecode optional (<code>moecog[deep]</code>). M2.</p>
+<h2 id="6-the-benchmark-entry-point">6. The benchmark entry point<a class="headerlink" href="#6-the-benchmark-entry-point" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>moabb.benchmark(pipelines=, evaluations=, paradigms=, results=, overwrite=, output=, n_jobs=,
+plot=, contexts=, include_datasets=, exclude_datasets=, n_splits=, cache_config=, optuna=, codecarbon_config=)</code>
+with paradigm parameters supplied as <code>contexts/*.yml</code>.</p>
+<p><strong>MOECoG.</strong> <code>moecog.benchmark(datasets, paradigm, pipelines=, evaluations=, n_splits=, out=, overwrite=)</code>:
+datasets by object or catalog id, paradigm by object or class name plus a context YAML, results appended to a
+<code>ResultsStore</code>, and a reason printed for every (dataset, pipeline) pair that was skipped. This batch.</p>
+<h2 id="7-statistics-and-plots">7. Statistics and plots<a class="headerlink" href="#7-statistics-and-plots" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>collapse_session_scores</code>, Wilcoxon and permutation paired tests per dataset, standardised effect
+sizes, Stouffer combination across datasets (<code>combine_effects</code>, <code>combine_pvalues</code>),
+<code>find_significant_differences</code>; <code>score_plot</code>, <code>paired_plot</code>, <code>summary_plot</code>, <code>meta_analysis_plot</code>, dataset
+bubble plots, emissions plots.</p>
+<p><strong>Complaints.</strong> The one-sided Wilcoxon tail is chosen from the mean difference rather than from the signed-rank
+statistic (issue of 2026-09-04); no critical-difference diagram.</p>
+<p><strong>MOECoG.</strong>
+- Copy the structure (<code>moecog.analysis.meta_analysis</code>, <code>moecog.analysis.plotting</code>). This batch.
+- Improve: the paired test direction comes from the signed-rank statistic; per-patient effect sizes use the
+  patient as the unit (never the fold); a critical-difference ranking across pipelines is the default summary
+  figure because ECoG benchmarks have few patients and many pipelines. This batch (ranking), M2 (CD diagram).</p>
+<h2 id="8-caching-and-configuration">8. Caching and configuration<a class="headerlink" href="#8-caching-and-configuration" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> <code>set_download_dir</code> writes <code>MNE_DATA</code> into the MNE config; <code>set_log_level</code>; <code>CacheConfig</code> stores
+preprocessed BIDS derivatives next to the data.</p>
+<p><strong>MOECoG.</strong> <code>moecog.set_data_dir</code> / <code>get_data_dir</code> / <code>set_log_level</code> backed by <code>~/.moecog/config.json</code> with the
+<code>MOECOG_DATA_DIR</code> environment variable taking precedence (Athene and laptops share code, not paths). This batch.
+Preprocessed caches: M3, as parquet arrays keyed by paradigm digest, not BIDS derivatives.</p>
+<h2 id="9-documentation-and-examples">9. Documentation and examples<a class="headerlink" href="#9-documentation-and-examples" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> Sphinx with the pydata theme, an API page organised by concept, a sphinx-gallery of about 40 runnable
+examples (tutorials, paradigm examples, data management, benchmarking, learning curves), <code>whats_new.rst</code> with
+PR numbers and author links, install pages, a "paper results" page with DataTables, a dataset summary page.</p>
+<p><strong>Complaints.</strong> Generated documentation categories wrong, broken links (a recurring automated issue),
+no dev/stable split.</p>
+<p><strong>MOECoG.</strong> MkDocs (material) with mkdocstrings for the API, the existing Markdown docs as pages, the dataset
+atlas and smoke table as generated pages, a small gallery of runnable scripts under <code>examples/</code>, <code>CHANGELOG.md</code>
+as the what's-new. Built on every push, deployed to GitHub Pages once the repository setting is enabled. M1
+(this batch adds the site and workflow).</p>
+<h2 id="10-ci-and-quality">10. CI and quality<a class="headerlink" href="#10-ci-and-quality" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> Tests on Python 3.10-3.14 across three operating systems with a data cache, a docs build, a monthly
+download test, a weekly link check, a what's-new check on every PR, pre-commit with black/isort/flake8/prettier
+and pre-commit.ci, codecov.</p>
+<p><strong>MOECoG.</strong> Tests on 3.10-3.12 (ubuntu, macOS), ruff only, a changelog check on PRs, a weekly link check, a
+monthly download test that smoke-tests two small public deposits, docs build. This batch. Windows and 3.13 when
+someone needs them.</p>
+<h2 id="11-community-governance-papers">11. Community, governance, papers<a class="headerlink" href="#11-community-governance-papers" title="Permanent link">&para;</a></h2>
+<p><strong>MOABB.</strong> NeuroTechX umbrella, maintainers in <code>pyproject.toml</code>, a code of conduct, <code>CITATION.cff</code> with ORCIDs,
+a Zenodo DOI per release, a JNE 2018 framework paper and a 2024 benchmark paper, dataset requests as issues
+(dozens open), PapersWithCode links per dataset.</p>
+<p><strong>MOECoG.</strong> Maintainer Yifan Yu; versions cut on <code>yifan-study/MOECoG</code> and mirrored to the public <code>epyifany</code>
+account; a Zenodo DOI once releases exist; a framework paper after M2, a benchmark paper after M3 (the order
+MOABB used). Dataset requests use the issue template; the outreach list is private.</p>
+<h2 id="summary-table">Summary table<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>component</th>
+<th>MOABB</th>
+<th>MOECoG decision</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataset contract</td>
+<td><code>get_data</code> nesting, codes, cache</td>
+<td>copy + string subjects + electrode info + status registry</td>
+<td>done</td>
+</tr>
+<tr>
+<td>paradigms</td>
+<td>per BCI family, classification only</td>
+<td>classification and regression bases, explicit raw steps</td>
+<td>done</td>
+</tr>
+<tr>
+<td>within-session CV</td>
+<td>stratified shuffled</td>
+<td>chronological contiguous with fallback, fold policy recorded</td>
+<td>done</td>
+</tr>
+<tr>
+<td>cross-session</td>
+<td>leave-one-session-out</td>
+<td>copy</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>cross-subject</td>
+<td>concatenate subjects</td>
+<td>explicit aligner or refuse</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>learning curves</td>
+<td><code>LearningCurveSplitter</code></td>
+<td>copy</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>results</td>
+<td>HDF5 keyed by repr digest</td>
+<td>CSV keyed by params digest, incremental</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>pipelines</td>
+<td>YAML outside the wheel</td>
+<td>YAML inside the wheel, <code>$sfreq</code>, loud skips</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>benchmark()</td>
+<td>one call</td>
+<td>one call, catalog ids, contexts</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>statistics</td>
+<td>Wilcoxon/permutation + Stouffer</td>
+<td>same, tail from the statistic, patient as unit, ranking</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>plots</td>
+<td>score, paired, summary, meta</td>
+<td>score, paired, summary; CD diagram later</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>config</td>
+<td>MNE config <code>MNE_DATA</code></td>
+<td><code>~/.moecog/config.json</code> + env var</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>Sphinx + gallery + GitHub Pages</td>
+<td>MkDocs + examples + GitHub Pages</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>CI</td>
+<td>3 OS, 5 Pythons, download test, links, what's new</td>
+<td>2 OS, 3 Pythons, download test, links, changelog</td>
+<td>this batch</td>
+</tr>
+<tr>
+<td>releases</td>
+<td>PyPI + Zenodo</td>
+<td>tags on yifan-study, mirror to epyifany, PyPI on approval</td>
+<td>v0.2.0 next</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

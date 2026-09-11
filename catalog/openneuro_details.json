@@ -1,0 +1,628 @@
+{
+ "ds006910": {
+  "name": "Auditory Naming EC",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda",
+   "Keisuke Hatano",
+   "Masaki Sonoda",
+   "Hidenori Endo",
+   "Michael Cools",
+   "Robert Rothermel",
+   "Aimee F. Luat",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset, used in the analysis reported by Kochi et al., (2025), contains intracranial EEG recordings from 121 individuals who performed an auditory\u2011naming task. Electrode coordinates are provided in MNI\u2011305 space.\n\nEach EDF file is tagged for the auditory naming task with the following event codes:  \n401 \u2013 stimulus onset  \n402 \u2013 stimulus offset  \n501 \u2013 response onset  \n\nReference: \nRyuzaburo Kochi, Aya Kanno, Hiroshi Uda, Keisuke Hatano,  Masaki Sonoda, Hidenori Endo, Michael Cools, Robert Rothermel, Aimee F. Luat, Eishi Asano. Whole-Brain Millisecond-Scale Effective Connectivity Atlases of Speech \n"
+ },
+ "ds006234": {
+  "name": "Auditory naming",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda",
+   "Keisuke Hatano",
+   "Hidenori Endo",
+   "Michael Cools",
+   "Robert Rothermel",
+   "Aimee F. Luat",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset, used in the analysis reported by Kochi et al., (2025), contains intracranial EEG recordings from 119 individuals who performed an auditory\u2011naming task. Electrode coordinates are provided in MNI\u2011305 space.\n\nEach EDF file is tagged for the auditory naming task with the following event codes:  \n401 \u2013 stimulus onset  \n402 \u2013 stimulus offset  \n501 \u2013 response onset  \n\nReference: \nRyuzaburo Kochi, Aya Kanno, Hiroshi Uda, Keisuke Hatano, Hidenori Endo, Michael Cools, Robert Rothermel, Aimee F. Luat, Eishi Asano. Naming is Shaped by Early Facilitative and Late Compensatory Neural Interactions: An Intracranial Study of 125 Patients\n"
+ },
+ "ds006914": {
+  "name": "Visual Naming EC",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda",
+   "Keisuke Hatano",
+   "Masaki Sonoda",
+   "Hidenori Endo",
+   "Michael Cools",
+   "Robert Rothermel",
+   "Aimee F. Luat",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset, used in the analysis reported by Kochi et al., (2025), contains intracranial EEG recordings from 110 individuals who performed an visual\u2011naming task. Electrode coordinates are provided in MNI\u2011305 space.\n\nEach EDF file is tagged for the visual naming task with the following event codes:  \n401 \u2013 stimulus onset  \n501 \u2013 response onset  \n\nReference: \nRyuzaburo Kochi, Aya Kanno, Hiroshi Uda, Keisuke Hatano,  Masaki Sonoda, Hidenori Endo, Michael Cools, Robert Rothermel, Aimee F. Luat, Eishi Asano. Whole-Brain Millisecond-Scale Effective Connectivity Atlases of Speech \n"
+ },
+ "ds006233": {
+  "name": "Picture naming",
+  "authors": [
+   "Ryuzaburo Kochi",
+   "Aya Kanno",
+   "Hiroshi Uda",
+   "Keisuke Hatano",
+   "Hidenori Endo",
+   "Michael Cools",
+   "Robert Rothermel",
+   "Aimee F. Luat",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset, used in the analysis reported by Kochi et al., (2025), contains intracranial EEG recordings from 108 individuals who performed an picture\u2011naming task. Electrode coordinates are provided in MNI\u2011305 space.\n\nEach EDF file is tagged for the auditory naming task with the following event codes:  \n401 \u2013 stimulus onset  \n501 \u2013 response onset  \n\nReference: \nRyuzaburo Kochi, Aya Kanno, Hiroshi Uda, Keisuke Hatano, Hidenori Endo, Michael Cools, Robert Rothermel, Aimee F. Luat, Eishi Asano. Naming is Shaped by Early Facilitative and Late Compensatory Neural Interactions: An Intracranial Study of 125 Patients\n"
+ },
+ "ds005545": {
+  "name": "Auditory naming",
+  "authors": [
+   "Aya Kanno",
+   "Ryuzaburo Kochi",
+   "Kazuki Sakakura",
+   "Yu Kitazawa",
+   "Hiroshi Uda",
+   "Riyo Ueda",
+   "Masaki Sonoda",
+   "Min-Hee Lee",
+   "Jeong-Won Jeong",
+   "Aimee F. Luat",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset, used in the analysis reported by Kanno et al., (2025), contains intracranial EEG recordings from 106 individuals who performed an auditory\u2011naming task. The corresponding MATLAB analysis code is available at https://github.com/a8k8nn0/TractographyAtlas, and electrode coordinates are provided in MNI\u2011305 space.\n\nEach EDF file is tagged for the auditory naming task with the following event codes:  \n401 \u2013 stimulus onset  \n402 \u2013 stimulus offset  \n501 \u2013 response onset  \n\nReference: \nAya Kanno, Ryuzaburo Kochi, Kazuki Sakakura, Yu Kitazawa, Hiroshi Uda, Riyo Ueda, Masaki Sonoda, Min-Hee Lee, Jeong-Won Jeong, Robert Rothermel, Aimee F. Luat, Eishi Asano. Dynamic Causal Tractography Anal"
+ },
+ "ds005007": {
+  "name": "Auditory naming task with questions that begin or end with a wh-interrogative",
+  "authors": [
+   "Yu Kitazawa",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": ""
+ },
+ "ds005398": {
+  "name": "Open iEEG Dataset (Pediatric iEEG, Wayne State University and UCLA)",
+  "authors": [
+   "Yipeng Zhang",
+   "Atsuro Daida",
+   "Lawrence Liu",
+   "Naoto Kuroda",
+   "Yuanyi Ding",
+   "Shingo Oana",
+   "Tonmoy Monsoor",
+   "Chenda Duan",
+   "Shaun A. Hussain",
+   "Joe X Qiao",
+   "Noriko Salamon",
+   "Aria Fallah",
+   "Myung Shin Sim",
+   "Raman Sankar",
+   "Richard J. Staba",
+   "Jerome Engel Jr.",
+   "Eishi Asano",
+   "Vwani Roychowdhury",
+   "Hiroki Nariai"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "This dataset was utilized for the publication of the manuscript by Zhang et al. [1]. A subset of the data has been employed in [2], [3], [4], and [5].\n\nSummary:\nThis data set comprises the de-identified subjects with interictal iEEG recordings with sleep from University of California Los Angels Mattel Children\u2019s Hospital, and Children\u2019s Hospital of Michigan, Detroit. \nSubject-wise information is contained in each folder, including iEEGs collected from 185 subjects during sleep. The channel name and valuables, such as the anatomical label and the resection status, are attached to each folder. The outcome and background information of all the subjects are summarized in \u2018paticipant.tsv\u2019 located"
+ },
+ "ds004551": {
+  "name": "iEEG on children during slow wave sleep\n",
+  "authors": [
+   "Kazuki Sakakura",
+   "Naoto Kuroda",
+   "Masaki Sonoda",
+   "Takumi Mitsuhashi",
+   "Ethan Firestone",
+   "Aimee F. Luat",
+   "Neena I. Marupudi",
+   "Sandeep Sood",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset was curated for publication as part of the manuscript in Sakakura et al. (in preparation). \nIt contains iEEGs collected from 114 individuals during slow wave sleep. \nThe available Matlab code can be found at https://github.com/kaz1126/MI_HFO.\nThe iEEG coordinate system employed in this dataset is MNI305.\n"
+ },
+ "ds006107": {
+  "name": "iEEG_Neural_spatial_volatility",
+  "authors": [
+   "Naoto Kuroda",
+   "Eishi Asano",
+   "Nobukazu Nakasato"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": ""
+ },
+ "ds007119": {
+  "name": "iEEG_comprehensive_HFA_model_part3",
+  "authors": [
+   "Keisuke Hatano",
+   "Naoto Kuroda",
+   "Hiroshi Uda",
+   "Kazuki Sakakura",
+   "Michael J. Cools",
+   "Aimee F. Luat",
+   "Shin-Ichiro Osawa",
+   "Hitoshi Nemoto",
+   "Kazushi Ukishiro",
+   "Hidenori Endo",
+   "Nobukazu Nakasato",
+   "Yutaro Takayama",
+   "Keiya Iijima",
+   "Masaki Iwasaki",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "This dataset contains intracranial EEG data recorded during non-REM sleep and used in Hatano et al. (in press).\n\nAuthors: \nKeisuke Hatano, Naoto Kuroda, Hiroshi Uda, Kazuki Sakakura, Michael J. Cools, Aimee F. Luat, Shin-Ichiro Osawa, Hitoshi Nemoto, Kazushi Ukishiro, Hidenori Endo, Nobukazu Nakasato, Yutaro Takayama, Keiya Iijima, Masaki Iwasaki, Eishi Asano\n\nFunding: \nNational Institutes of Health (NIH; NS064033 to E.A.); \nUehara Memorial Foundation Postdoctoral Fellowship (202441017 to K.H.; 20210301 to H.U.);\nJapan Society for the Promotion of Science (JP22J23281, JP22KJ0323, and 202560576 to N.K.; 202560628 to H.U.; JP19K09494 and 22K09296 to M.I.)"
+ },
+ "ds005624": {
+  "name": "Color Change Detection Task",
+  "authors": [
+   "[Unspecified]"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "References\r\n----------\r\nAppelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., H\u00f6chenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896).https://doi.org/10.21105/joss.01896\r\n\r\nHoldgraf, C., Appelhoff, S., Bickel, S., Bouchard, K., D'Ambrosio, S., David, O., \u2026 Hermes, D. (2019). iEEG-BIDS, extending the Brain Imaging Data Structure specification to human intracranial electrophysiology. Scientific Data, 6, 102. https://doi.org/10.1038/s41597-019-010"
+ },
+ "ds005415": {
+  "name": "Numbers",
+  "authors": [
+   "Alexander P. Rockhill",
+   "Ahmed M. Raslan"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "Welcome to the numbers dataset. These data were collected using stereoelectroencephalography recordings of epilepsy patients while they were waiting on the epilepsy monitoring unit to have seizures at Oregon Health & Science University. They were shown auditory and visual numbers that were symbolic (Arabic + spoken) or non-symbolic (dots + beeps)."
+ },
+ "ds006136": {
+  "name": "OWM-Dataset",
+  "authors": [
+   "Vladimir Omelyusik",
+   "Tyler S. Davis",
+   "Satish S. Nair",
+   "Behrad Noudoost",
+   "Patrick Hackett",
+   "Elliot H. Smith",
+   "Shervin Rahimpour",
+   "John D. Rolston",
+   "Bornali Kundu"
+  ],
+  "refs": [],
+  "license": "CC0",
+  "readme": "# OWM-Dataset\n\n## Description\nThe dataset contains processed intracranial EEG recordings from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) areas of 13 subjects (epilepsy patients) while they performed a load-3 object working memory task. Please see the associated publication (Paper): https://doi.org/10.1016/j.neuroimage.2026.121718\n\n## Data structure\n\n### Included trials\nThe dataset includes trials which were used for the final analyses (i.e., after artifact rejection; see the Methods section of the Paper for a full description of preprocessing procedures). Note that since some artifact rejection procedures were performed at the single-trial level, trial indexes are not matched across chan"
+ },
+ "ds004703": {
+  "name": "sEEG Passive listening to natural speech",
+  "authors": [
+   "Anna Mai",
+   "Stephanie Ries",
+   "Sharona Ben-Haim",
+   "Jerry Shih",
+   "Timothy Gentner"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "CONTACT\r\n\r\nFor questions about this data set, please contact Anna Mai (anna.mai@mpi.nl; ORCiD 0000-0002-8343-9216). \r\n\r\nPERMISSIONS\r\n\r\nThese data may not be used for commericial purposes, including but not limited to use in any kind of training set for commercial machine learning applications.\r\n\r\nThese data may not be used in any way that either in part or in whole disambiguates participant identity, including but not limited to attempts at 3D facial reconstruction.\r\n\r\nRECORDING SETUP\r\n\r\nThese data were collected from June 2018 to August 2019.\r\n\r\nFor all patients, a scalp electrode was used for referencing and ground. These were 13mm, 2.5M single lead subdermal electrodes made by Rochester E"
+ },
+ "ds004770": {
+  "name": "iEEG on children during gameplay",
+  "authors": [
+   "Riyo Ueda",
+   "Kazuki Sakakura",
+   "Takumi Mitsuhashi",
+   " Masaki Sonoda",
+   "Ethan Firestone",
+   "Naoto Kuroda",
+   "Yu Kitazawa",
+   "Hiroshi Uda",
+   "Aimee F. Luat ",
+   "Elizabeth L. Johnson",
+   "Noa Ofen",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "Dataset of intracranial EEG from human epilepsy patients performing a visuospatial working memory task\n\nDescription:\n\nWe present an electrophysiological dataset recorded from ten subjects during a visuospatial working memory task. Subjects were epilepsy patients undergoing intracranial monitoring for localization of epileptic seizures. Subjects completed 60 trials (five sessions) of Memory Matrix - a visuospatial working memory game on the Lumosity platform (https://www.lumosity.com/; Lumos Labs, Inc, San Francisco, CA) - during interictal iEEG recording.\n\nRepository structure:\n\nMain directory (iEEG from children during gameplay)\nContains iEEG files of each participant in the study. Folders "
+ },
+ "ds004859": {
+  "name": "iEEG on children during Stroop task",
+  "authors": [
+   "Kazuki Sakakura",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": ""
+ },
+ "ds004473": {
+  "name": "sEEG Forced Two-Choice Task",
+  "authors": [
+   "Alexander P. Rockhill",
+   "Alessandra Mantovani",
+   "Brittany Stedelin",
+   "Admed M. Raslan",
+   "Nicole C. Swann"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "Welcome to our dataset! Here we present stereoelectroencephalography data from a forced two-choice response task collected in the epilepsy monitoring unit at Oregon Health & Science University. The data was analyzed in collaboration with the University of Oregon. The accompanying paper the first reference below.\n\nReferences\n----------\n\nRockhill, A. P., Mantovani, A., Stedelin, B., Nerison, C. S., Raslan, A. M., & Swann, N. C. (2022). Stereo-EEG recordings extend known distributions of canonical movement-related oscillations. Journal of Neural Engineering. https://doi.org/10.1088/1741-2552/acae0a\n\nAppelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mik"
+ },
+ "ds005931": {
+  "name": "Visuomotor_task",
+  "authors": [
+   "Riyo Ueda",
+   "Eishi Asano"
+  ],
+  "refs": [
+   "",
+   "",
+   ""
+  ],
+  "license": "CC0",
+  "readme": "Dataset of intracranial EEG from human epilepsy patients performing a visuomotor task\n\nDescription:\n\nWe present an electrophysiological dataset recorded from ten subjects during a visuomotor task. Subjects were epilepsy patients undergoing intracranial monitoring for localization of epileptic seizures. Subjects completed five sessions of Speed Match - a visuomotor on the Lumosity platform (https://www.lumosity.com/; Lumos Labs, Inc, San Francisco, CA) - during interictal EEG recording.\n\nRepository structure:\n\nMain directory (interictal EEG from children during gameplay): Contains interictal EEG files of each participant in the study. Folders are explained below.\n\nSubfolders:\n\nsub-/: Contains"
+ },
+ "ds006253": {
+  "name": "MetaRDK",
+  "authors": [
+   "Dorian Goueytes",
+   "Francois Stockart",
+   "Alexis Robin",
+   "Lucien Gyger",
+   "Martin Rouy",
+   "Dominique Hoffmann",
+   "Lorella Minotti",
+   "Philippe Kahane",
+   "Michael Pereira",
+   "Nathan Faivre"
+  ],
+  "refs": [
+   "https://doi.org/10.1101/2024.03.23.586414"
+  ],
+  "license": "CC0",
+  "readme": "## Evidence accumulation in the pre-supplementary motor area and insula drives confidence and changes of mind\n\nGoueytes, D., Gigyer, L., Rouy, M., Hoffmann, D., Minotti, L., Kahane, P., Pereira, M., and Faivre, N. Evidence accumulation in the pre-supplementary motor area and insula drives confidence and changes of mind.\n\n## Overview\n\n### Overview of the task\n\nMetaRDK is a project aiming to understand the neural correlates of decision making and decision making-related metacognition. Epileptic patient with pharmacology intractable epilepsy performed a perceptual decision making task associated with a confidence judgement task.\nThe patients had to decide within a window of 6s if a a cloud of d"
+ },
+ "ds004752": {
+  "name": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients performing a verbal working memory task",
+  "authors": [
+   "Vasileios Dimakopoulos",
+   "Lennart Stieglitz",
+   "Lukas Imbach",
+   "Johannes Sarnthein"
+  ],
+  "refs": [
+   "Vasileios Dimakopoulos, Pierre M\u00e9gevand, Lennart H Stieglitz, Lukas Imbach, Johannes Sarnthein (2022) Information flows from hippocampus to auditory cortex during replay of verbal working memory items eLife 11:e78677. https://doi.org/10.7554/eLife.78677"
+  ],
+  "license": "CC0",
+  "readme": "### Dataset of intracranial EEG, scalp EEG and beamforming sources from human epilepsy patients performing a verbal working memory task\n\n#### Description\nWe present an electrophysiological dataset recorded from fifteen subjects during a verbal working memory task. Subjects were epilepsy patients undergoing intracranial monitoring for localization of epileptic seizures. Subjects performed a modified Sternberg task in which the encoding of memory items, maintenance, and recall were temporally separated. The dataset includes simultaneously recorded scalp EEG with the 10-20 system, intracranial EEG (iEEG) recorded with depth electrodes, waveforms, and the MNI coordinates and anatomical labels of"
+ },
+ "ds004993": {
+  "name": "WIRED ICM Sample Dataset - Workshop on Intracranial Recordings in Humans, Epilepsy, DBS",
+  "authors": [
+   "Liberty S. Hamilton",
+   "Maansi Desai",
+   "Alyssa Field"
+  ],
+  "refs": [
+   "https://slhs.utexas.edu/research/hamilton-lab"
+  ],
+  "license": "CC0",
+  "readme": "WIRED ICM TUTORIAL DATA\n------------------------\n\n*Contributors:* Liberty S. Hamilton, PhD, Maansi Desai, PhD, Alyssa Field, MEd\n\n*Email:* liberty.hamilton@austin.utexas.edu\n\nThis is a sample BIDS dataset for the WIRED ICM course in Paris, France in March 2024.\n\nThis contains intracranial recordings collected by the Hamilton Lab at the University of Texas at Austin. These recordings include examples of evoked data during natural listening tasks along with some examples of seizure-related activity and vagus nerve stimulator (VNS) artifact for illustrative purposes. All procedures were approved by the University of Texas at Austin Institutional Review Board. \n\n*Funding:* Support was provided b"
+ },
+ "ds005953": {
+  "name": "iEEG_visual",
+  "authors": [
+   "Jonathan Winawer",
+   "Dora Hermes"
+  ],
+  "refs": [
+   "Hermes D, Miller KJ, Wandell BA, Winawer J (2015). Stimulus dependence of gamma oscillations in human visual cortex. Cerebral Cortex 25(9):2951-9.",
+   "Hermes D, Nguyen M, Winawer J. (2017). Neuronal synchrony and the relation between the BOLD response and the local field potential. PLOS Biology 15(7)"
+  ],
+  "license": "CC0",
+  "readme": "Information\n===========\n\nThis folder contains the ECoG data from 2 subjects performing a visual task used in the publications of Hermes et al., 2015, Cerebral Cortex \"Stimulus Dependence of Gamma Oscillations in Human Visual Cortex\" and Hermes et al., 2017, PLOS Biology \u201cNeuronal synchrony and the relation between the blood-oxygen-level dependent response and the local field potential\u201d.\nContact: Dora Hermes (dorahermes@gmail.com)\n\n\nCiting this dataset\n--------\nIf you use this data as a part of any publications, please use the following citation:\n[1] Hermes D, Miller KJ, Wandell BA, Winawer J (2015). Stimulus dependence of gamma oscillations in human visual cortex. Cerebral Cortex 25(9):2951-"
+ },
+ "ds004080": {
+  "name": "CCEP ECoG dataset across age 4-51",
+  "authors": [
+   "D. van Blooijs",
+   "M.A. van den Boom",
+   "J.F. van der Aar",
+   "G.J.M. Huiskamp",
+   "G. Castegnaro",
+   "M. Demuru",
+   "W.J.E.M. Zweiphenning",
+   "P. van Eijsden",
+   "K. J. Miller",
+   "F.S.S. Leijten",
+   "D. Hermes"
+  ],
+  "refs": [
+   "see HowToAcknowledge"
+  ],
+  "license": "CC0",
+  "readme": "# Dataset description\nThis dataset consists of 74 patients age 4-51 years old where Cortico-Cortical Evoked Potentials (CCEPs) were measured with Electro-CorticoGraphy (ECoG) during single pulse electrical stimulation. For a detailed description see:\n\n- Developmental trajectory of transmission speed in the human brain. D. van Blooijs\u00b9, M.A. van den Boom\u00b9, J.F. van der Aar, G.J.M. Huiskamp, G. Castegnaro, M. Demuru, W.J.E.M. Zweiphenning, P. van Eijsden, K. J. Miller, F.S.S. Leijten, D. Hermes, Nature Neuroscience, 2023, https://doi.org/10.1038/s41593-023-01272-0  \n  \u00b9 these authors contributed equally.\n\nThis dataset is part of the RESPect (Registry for Epilepsy Surgery Patients) database, a "
+ },
+ "ds005522": {
+  "name": "Spatial Navigation Memory of Object Locations",
+  "authors": [
+   "Haydn G. Herrema",
+   "Michael J. Kahana"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "### Spatial Navigation Memory of Object Locations\n\n#### Description\nThis dataset contains behavioral events and intracranial electrophysiological recordings from a spatial navigation memory task.  The experiment consists of participants encoding object locations during a guided navigation learning phase and then recalling the object locations during a self-navigation test phase.  The data was collected at clinical sites across the country as part of a collaboration with the Computational Memory Lab at the University of Pennsylvania.\n\nEach session contains 50 trials (2 practice and 48 experimental), and each overall \"trial\" contains 2 learning trials followed by 1 test trial with the same obj"
+ },
+ "ds004194": {
+  "name": "Visual ECoG dataset",
+  "authors": [
+   "Iris Groen",
+   "Kenichi Yuasa",
+   "Amber Brands",
+   "Giovanni Piantoni",
+   "Stephanie Montenegro",
+   "Adeen Flinker",
+   "Sasha Devore",
+   "Orrin Devinsky",
+   "Werner Doyle",
+   "Patricia Dugan",
+   "Daniel Friedman",
+   "Nick Ramsey",
+   "Natalia Petridou",
+   "Jonathan Winawer"
+  ],
+  "refs": [
+   "Groen IIA, Piantoni G, Montenegro S, Flinker A, Devore S, Devinsky O, Doyle W, Dugan P, Friedman D, Ramsey N, Petridou N, Winawer JA. Temporal dynamics of neural responses in human visual cortex. The Journal of Neuroscience 42(40):7562-7580 https://doi.org/10.1523/JNEUROSCI.1812-21.2022",
+   "Yuasa K, Groen IIA, Piantoni G, Montenegro S, Flinker A, Devore S, Devinsky O, Doyle W, Dugan P, Friedman D, Ramsey N, Petridou N, Winawer JA. Precise spatial tuning of visually driven alpha oscillations in human visual cortex. eLife12:RP90387 https://doi.org/10.7554/eLife.90387.1",
+   "Brands AM, Devore S, Devinsky O, Doyle W, Flinker A, Friedman D, Dugan P, Winawer JA, Groen IIA (2024) Temporal dynamics of short-term neural adaptation in human visual cortex. https://doi.org/10.1101/2023.09.13.557378"
+  ],
+  "license": "CC0",
+  "readme": "## Details related to access to the data\n\n- Contact person\n\nPlease contact Iris Groen (i.i.a.groen@uva.nl, https://orcid.org/0000-0002-5536-6128) for more information.\n\nPlease see the following papers for more details on the data collection and preprocessing: \n\nGroen IIA, Piantoni G, Montenegro S, Flinker A, Devore S, Devinsky O, Doyle W, Dugan P, Friedman D, Ramsey N, Petridou N, Winawer JA (2022) Temporal dynamics of neural responses in human visual cortex. The Journal of Neuroscience 42(40):7562-7580 (https://doi.org/10.1523/JNEUROSCI.1812-21.2022) \n\nYuasa K, Groen IIA, Piantoni G, Montenegro S, Flinker A, Devore S, Devinsky O, Doyle W, Dugan P, Friedman D, Ramsey N, Petridou N, Winawer J"
+ },
+ "ds003688": {
+  "name": "Open multimodal iEEG-fMRI dataset from naturalistic stimulation with a short audiovisual film",
+  "authors": [
+   "Julia Berezutskaya",
+   "Mariska J. Vansteensel",
+   "Erik J. Aarnoutse",
+   "Zachary V. Freudenburg",
+   "Giovanni Piantoni",
+   "Mariana P. Branco",
+   "Nick F. Ramsey"
+  ],
+  "refs": [
+   "https://www.biorxiv.org/content/10.1101/2021.06.09.447733"
+  ],
+  "license": "CC0",
+  "readme": "Open iEEG-fMRI dataset from stimulation with a short audiovisual film\n\nFull description of the data in our dataset paper: https://www.nature.com/articles/s41597-022-01173-0\n\nVideo description of the dataset: https://www.youtube.com/watch?v=C14cWM1CvrE&t=13s\n\nUMC Utrecht Team\nhttps://www.nick-ramsey.eu/\n\n"
+ },
+ "ds005574": {
+  "name": "The \"Podcast\" ECoG dataset",
+  "authors": [
+   "Zaid Zada",
+   "Samuel A. Nastase",
+   "Bobbi Aubrey",
+   "Itamar Jalon",
+   "Ariel Goldstein",
+   "Sebastian Michelmann",
+   "Haocheng Wang",
+   "Liat Hasenfratz",
+   "Werner Doyle",
+   "Daniel Friedman",
+   "Patricia Dugan",
+   "Lucia Melloni",
+   "Sasha Devore",
+   "Orrin Devinsky",
+   "Adeen Flinker",
+   "Uri Hasson"
+  ],
+  "refs": [
+   "https://hassonlab.github.io/podcast-ecog-tutorials",
+   "https://github.com/hassonlab/podcast-ecog-paper"
+  ],
+  "license": "CC0",
+  "readme": "The \"Podcast\" ECoG dataset for modeling neural activity during natural story listening.\n\nWe introduce the \u201cPodcast\u201d electrocorticography (ECoG) dataset for modeling neural activity supporting natural narrative comprehension. This dataset combines the exceptional spatiotemporal resolution of human intracranial electrophysiology with a naturalistic experimental paradigm for language comprehension. In addition to the raw data, we provide a minimally preprocessed version in the high-gamma spectral band to showcase a simple pipeline and to make it easier to use. Furthermore, we include the auditory stimuli, an aligned word-level transcript, and linguistic features ranging from low-level acoustic "
+ },
+ "ds004944": {
+  "name": "Dataset of BCI2000-compatible intraoperative ECoG with neuromorphic encoding",
+  "authors": [
+   "Filippo Costa",
+   "Niklaus Krayenb\u00fchl",
+   "Georgia Ramantani",
+   "Ece Boran",
+   "Kristina K\u00f6nig",
+   "Johannes Sarnthein"
+  ],
+  "refs": [
+   "Ece Boran, Georgia Ramantani, Niklaus Krayenb\u00fchl, Maxine Schreiber, Kristina K\u00f6nig, Tommaso Fedele, Johannes Sarnthein **High-density ECoG improves the detection of high frequency oscillations that predict seizure outcome**, _Clinical Neurophysiology_ [https://doi.org/10.1016/j.clinph.2019.07.008]",
+   "Filippo Costa, Eline Schaft, Geertjan Huiskamp, Erik Aarnoutse, Maryse van\u2019t Klooster, Niklaus Krayenb\u00fchl, Georgia Ramantani, Maeike Zijlmans, Giacomo Indiveri, Johannes Sarnthein, **Robust compression and detection of epileptiform patterns in ECoG using a real-time spiking neural network hardware framework**, _Nature Communications_ [https://doi.org/10.1038/s41467-024-47495-y]"
+  ],
+  "license": "CC0",
+  "readme": "## Overview\n\nThis dataset comprises recordings of intraoperative Electrocorticography (ECoG) from 22 patients undergoing resective epilepsy surgery.\nFor each patient, the dataset is organized into pre-resection recording (referred to as SITUATION1A) and post-resection recording (referred to as SITUATION2A).\n\nWe provide raw ECoG recordings for each patient and a derivative folder that contains all the main processing stages \nperformed with our neuromorphic processing pipeline: [https://doi.org/10.1038/s41467-024-47495-y](https://doi.org/10.1038/s41467-024-47495-y).\n\nThe pipeline preprocesses ECoG recordings in real-time and performs Asynchronous Delta Modulator (ADM) encoding with a custom BC"
+ },
+ "ds004624": {
+  "name": "Intracranial recordings using BCI2000 and the CorTec BrainInterchange",
+  "authors": [
+   "F. Mivalt",
+   "F. Lampert",
+   "M.A. van den Boom",
+   "P. Brunner",
+   "J. Kim",
+   "Andrea Duque-lopez",
+   "M. Krakorova",
+   "V. Kremen",
+   "D. Hermes",
+   "G.A. Worrell",
+   "K. J. Miller"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "An Ecosystem of Technology and Protocols for Adaptive Neuromodulation Research in Humans\n\nThis study aims to develop an ecosystem for the purpose of neurmodulation using the Cortec BCI device and BCI2000 software.\n\nContact: For questions regarding this dataset, please contact\nmivalt.filip@mayo.edu or Miller.Kai@mayo.edu\n\nFunding: NIH U01NS128612\n"
+ },
+ "ds006065": {
+  "name": "TSS_iEEG",
+  "authors": [
+   "James Kragel",
+   "Joel Voss"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "# iEEG Dataset: Theta-synchronized Stimulation of Human Hippocampal Networks\n\n## Information\nThis folder contains intracranial EEG (iEEG) data from **7 participants** undergoing closed-loop stimulation as part of a study on hippocampal network connectivity, as used in the following publication:  \n\n**Kragel et al., 2025, Nature Communications:**  \n*\u201cClosed-loop control of theta oscillations enhances human hippocampal network connectivity\u201d*  \n\nFor questions or further information, contact:  \n- **James Kragel:** [jkragel@uchicago.edu](mailto:jkragel@uchicago.edu)  \n- **Joel Voss:** [joelvoss@uchicago.edu](mailto:joelvoss@uchicago.edu)  \n\n---\n\n## License\nThis dataset is made available under the "
+ },
+ "ds005691": {
+  "name": "SpinalExpect_Invasive",
+  "authors": [
+   "Max-Philipp Stenner",
+   "Cindy Marquez Nossa",
+   "Tino Zaehle",
+   "Elena Azanon",
+   "Hans-Jochen Heinze",
+   "Matthias Deliano",
+   "Lars Buentjen"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "Contact person: \nMax-Philipp Stenner, email: max-philipp.stenner@med.ovgu.de or max-philipp.stenner@lin-magdeburg.de, ORCID: 0000-0002-3694-1887\n\nBrief overview of the tasks in the experiment:\nThe goal was to reveal whether temporal expectation influences initial sensory processing in the human spinal cord. In each trial, subjects (included n=8, patients with neuropathic pain following epidural electrode implantation into the cervical spinal canal, dorsal to the spinal cord) received at least one electric median nerve stimulation on the left wrist. Their task was to silently count in how many (rare) trials in each block (~5 min) there were two median nerve stimuli in rapid succession (80 ms "
+ },
+ "ds003029": {
+  "name": "Epilepsy-iEEG-Multicenter-Dataset",
+  "authors": [
+   "Adam Li",
+   "Sara Inati",
+   "Kareem Zaghloul",
+   "Nathan Crone",
+   "William Anderson",
+   "Emily Johnson",
+   "Iahn Cajigas",
+   "Damian Brusko",
+   "Jonathan Jagid",
+   "Angel Claudio",
+   "Andres Kanner",
+   "Jennifer Hopp",
+   "Stephanie Chen",
+   "Jennifer Haagensen",
+   "Sridevi Sarma"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "Fragility Multi-Center Retrospective Study\n------------------------------------------\n\nThis dataset was updated and prepared for release as part of a manuscript by Bernabei & Li et al. (in preparation). A subset of the data has been featured in [1].\n\nSummary\n-------------\n\niEEG and EEG data from 5 centers is organized in our study with a total of 100 subjects. We publish 4 centers' dataset here due to data sharing issues. \n\nAcquisitions include ECoG and SEEG. Each run specifies a different snapshot of EEG data from that specific subject's session. For seizure sessions, this means that each run is a EEG snapshot around a different seizure event.\n\nFor additional clinical metadata about each su"
+ },
+ "ds004100": {
+  "name": "HUP iEEG Epilepsy Dataset",
+  "authors": [
+   "John M. Bernabei",
+   "Adam Li",
+   "Andrew Y. Revell",
+   "Rachel J. Smith",
+   "Kristin M. Gunnarsdottir",
+   "Ian Z. Ong",
+   "Kathryn A. Davis",
+   "Nishant Sinha",
+   "Sridevi Sarma",
+   "Brian Litt"
+  ],
+  "refs": null,
+  "license": "CC0",
+  "readme": "<h1>HUP iEEG dataset</h1>\n\nThis dataset was prepared for release as part of a manuscript by Bernabei & Li et al. (in preparation). A subset of the data has been featured in Kini & Bernabei et al., Brain (2019) [1], and Bernabei & Sinha et al., Brain (2022) [2]. \n\n<h3>Dataset description</h3>\nThese files contain de-identified patient data collected as part of surgical treatment for drug resistant epilepsy at the Hospital of the University of Pennsylvania. Each of the 58 subjects underwent intracranial EEG with subdural grid, strip, and depth electrodes (ECoG) or purely stereotactically-placed depth electrodes (SEEG). Each patient also underwent subsequent treatment with surgical resection or "
+ },
+ "ds003876": {
+  "name": "Epilepsy-iEEG-Interictal-Multicenter-Dataset",
+  "authors": [
+   "Gunnarsdottir, Kristin",
+   "Li, Adam",
+   "Smith, Rachel",
+   "Kang, Joon",
+   "Korzeniewska, Anna",
+   "Crone, Nathan",
+   "Rouse, Adam",
+   "Cheng, Jennifer",
+   "Kinsman, Michael",
+   "Landazuri, Patrick",
+   "Uysal, Utku",
+   "Ulloa, Carol",
+   "Cameron, Nathaniel",
+   "Cajigas, Iahn",
+   "Jagid, Jonathan",
+   "Kanner, Andres",
+   "Elarjani, Turki",
+   "Bicchi, Manuel",
+   "Inati, Sara",
+   "Zaghloul, Kareem",
+   "Boerwinkle, Varina",
+   "Wyckoff, Sarah",
+   "Barot, Niravkumar",
+   "Gonzalez-Martinez, Jorge",
+   "Sarma, Sridevi"
+  ],
+  "refs": [
+   "https://www.nature.com/articles/s41593-021-00901-w",
+   "https://www.biorxiv.org/content/10.1101/2021.10.15.464594v1 "
+  ],
+  "license": "CC0",
+  "readme": "Epilepsy Interictal Dataset\n=====================\n\nThis dataset was updated and prepared for release as part of a manuscript by Bernabei & Li et al. (in preparation). A subset of the data has been featured in [1] and [2].\n\nSummary\n-------------\n\nThis dataset comprises of de-identified subjects with interictal iEEG recordings possibly with sleep or awake state annotated. The subjects come from the following centers:\n\n- National Institute of Health (NIH)\n- Johns Hopkins Hospital (JHH)\n- University of Miami Florida Jackson Memorial Hospital (UMF)\n\nIn the actual study, there is also data from Kansas University Medical Center (KUMC), University of Pittsburgh Medical Center and Cleveland Clinic, w"
+ }
+}

@@ -1,0 +1,1199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Mother of all ECoG Benchmarks">
+      
+      
+      
+      
+        <link rel="prev" href="../code_of_conduct/">
+      
+      
+        <link rel="next" href="../changelog/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Roadmap - MOECoG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#roadmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MOECoG" class="md-header__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MOECoG
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Roadmap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MOECoG" class="md-nav__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MOECoG
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datasets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dataset_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decodable_datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decodable datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smoke_tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smoke tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miller_library_map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Miller library map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preprocessing_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preprocessing catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Results
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaderboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leaderboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../baselines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOABB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MOABB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moabb_lessons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moabb_review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Review and decisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../best_practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h1>
+<h1 id="moecog-roadmap">MOECoG roadmap<a class="headerlink" href="#moecog-roadmap" title="Permanent link">&para;</a></h1>
+<p><em>"As long as you have a kid, you are a mother."</em> MOECoG does not need every dataset and every model to be the
+Mother of all ECoG Benchmarks. It needs a package people can install, a contribution path people can follow,
+a few reference datasets with regenerable numbers, and a habit of re-evaluating. This file is the plan; it is
+rewritten, not appended, whenever the plan changes. History lives in <code>CHANGELOG.md</code> and Jira project BCI
+(epic BCI-2; the tickets moved out of PRSNL on 2026-09-10, old PRSNL keys still resolve).</p>
+<p>Status 2026-09-10: M0 done, M1 in progress. The 130-entry catalog with 106 loading is a map of the territory,
+not a to-do list; the milestones below pick what to walk first.</p>
+<h2 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Ship the package before the paper.</strong> Releases on PyPI with CI green; the docs describe what the release does.</li>
+<li><strong>One chunk is one PR is one week or less.</strong> If a chunk cannot be finished and merged in a week, split it.</li>
+<li><strong>Every chunk has a definition of done</strong> written before the work starts, and a number or a table at the end.</li>
+<li><strong>Re-evaluate monthly.</strong> On the first working day of each month: read the smoke table, the leaderboard and
+   this file; drop or defer anything that no longer earns its place; write the decision in Jira and here.</li>
+<li><strong>Follow MOABB where it worked, deviate where ECoG differs</strong> (<code>docs/moabb_lessons.md</code>): per-patient evaluation,
+   regression as a first-class citizen, a catalog with statuses.</li>
+<li><strong>Read before building.</strong> Every milestone starts from <code>docs/best_practices.md</code> (what the field does for preprocessing, transfer and evaluation) and <code>docs/moabb_review.md</code>; a technique enters the roadmap only with the paper that motivates it.</li>
+<li><strong>Data stay at the source.</strong> MOECoG hosts code, results and summaries; loaders fetch data; nothing under a
+   data-use agreement is redistributed.</li>
+</ol>
+<h2 id="milestones">Milestones<a class="headerlink" href="#milestones" title="Permanent link">&para;</a></h2>
+<h3 id="m0-a-kid-the-miller-library-end-to-end-done-2026-09-09">M0. A kid: the Miller library end to end (done 2026-09-09)<a class="headerlink" href="#m0-a-kid-the-miller-library-end-to-end-done-2026-09-09" title="Permanent link">&para;</a></h3>
+<p>All 16 experiments load with cue annotations; classification and regression paradigms; within-subject CV with a
+decided fold policy; first leaderboard (motor_basic kappa 0.90, faces 0.68, fingerflex ridge r 0.28); the
+catalog and smoke sweep of 130 public deposits (106 load).</p>
+<h3 id="m1-a-package-people-can-use-target-2026-09-30">M1. A package people can use (target 2026-09-30)<a class="headerlink" href="#m1-a-package-people-can-use-target-2026-09-30" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>chunk</th>
+<th>definition of done</th>
+<th>owner</th>
+<th>Jira</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contribution path</td>
+<td><code>CONTRIBUTING.md</code>, code of conduct, issue and PR templates, <code>CITATION.cff</code>, pre-commit</td>
+<td>done 2026-09-10</td>
+<td>BCI-37</td>
+</tr>
+<tr>
+<td>CI</td>
+<td>GitHub Actions runs ruff and the synthetic test suite on Python 3.10-3.12 for every PR; badge in README</td>
+<td>done 2026-09-10, first run green on all four jobs</td>
+<td>BCI-23</td>
+</tr>
+<tr>
+<td>YAML pipelines + one-call benchmark</td>
+<td><code>pipelines/*.yml</code>, <code>moecog.pipelines.load_pipelines</code>, <code>moecog.benchmark(...)</code> reproduces <code>results/*.csv</code></td>
+<td>done 2026-09-10</td>
+<td>BCI-32</td>
+</tr>
+<tr>
+<td>0.2.0 on PyPI</td>
+<td><code>pip install moecog</code> works in a clean environment; release notes from CHANGELOG; GitHub release tagged <code>v0.2.0</code></td>
+<td>done 2026-09-10 (https://pypi.org/project/moecog/0.2.0/, fresh-venv install verified)</td>
+<td>BCI-23</td>
+</tr>
+<tr>
+<td>Docs site</td>
+<td>MkDocs (material) built by Actions to GitHub Pages: install, quickstart, datasets table, smoke table, leaderboard, atlas, API</td>
+<td>site and workflow committed 2026-09-10; Pages setting needs Yifan</td>
+<td>BCI-33</td>
+</tr>
+<tr>
+<td>MOABB parity batch 1</td>
+<td><code>docs/moabb_review.md</code> decisions implemented: results store with digests, cross-session evaluation, meta-analysis and plots, pipelines and contexts inside the wheel, config helpers, changelog/link/download workflows, examples</td>
+<td>done 2026-09-10</td>
+<td>BCI-30</td>
+</tr>
+<tr>
+<td>Zenodo DOI</td>
+<td>GitHub release archived on Zenodo; DOI in README and CITATION</td>
+<td>after 0.2.0</td>
+<td>BCI-33</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m2-reference-benchmark-on-the-miller-tier-target-2026-10-31">M2. Reference benchmark on the Miller tier (target 2026-10-31)<a class="headerlink" href="#m2-reference-benchmark-on-the-miller-tier-target-2026-10-31" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>chunk</th>
+<th>definition of done</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reference tasks</td>
+<td>six tasks fixed and documented in <code>docs/baselines.md</code>: motor_basic hand vs tongue, faces_basic, gestures, imagery_basic, fingerflex regression, BCI III-1 (two sessions)</td>
+<td>done 2026-09-10</td>
+</tr>
+<tr>
+<td>Pipeline set</td>
+<td>the five YAML baselines plus a Riemannian pipeline (pyriemann) and one braindecode model (ShallowFBCSPNet) on CPU; done 2026-09-10 (BCI-31)</td>
+<td></td>
+</tr>
+<tr>
+<td>Numbers</td>
+<td><code>results/reference_&lt;task&gt;.csv</code> for every task x pipeline, 5 chronological folds, three seeds where randomness enters; leaderboard regenerated</td>
+<td>classical set done 2026-09-10 (motor 0.92, faces 0.68, imagery 0.66, gestures 0.49, fingerflex r 0.28, BCI III-1 within 0.82 / cross-session 0.52); ShallowFBCSPNet seed 0 done (motor 0.44, faces 0.76 = best pipeline, imagery 0.21, gestures 0.04); seeds 1-2 running on the Mac while Athene is down (BCI-34)</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>per-patient distributions and a paired comparison (MOABB-style meta-analysis) in <code>docs/analysis.md</code> (<code>scripts/build_analysis.py</code>)</td>
+<td>done 2026-09-10, regenerated after every run</td>
+</tr>
+<tr>
+<td>Second evaluation</td>
+<td><code>CrossSessionEvaluation</code> on BCI III-1 (train and test sessions a week apart, published labels attached): kappa 0.75-0.86 within a session, 0.00-0.52 across; Riemannian tangent space transfers best</td>
+<td>done 2026-09-10; Miller "sessions" are task variants, so no cross-session there</td>
+</tr>
+<tr>
+<td>Learning curves</td>
+<td><code>LearningCurveEvaluation</code> (train on the first 10/25/50/100 % of a patient's trials, test on the fixed final 20 %; stratified fallback for block-ordered files), curves in <code>docs/analysis.md</code></td>
+<td>done 2026-09-11: one feature per channel (<code>HighGamma + LDA</code>) is the most data-efficient at 10 % of a motor session, the multi-band and band-limited Riemannian pipelines overtake it from 25 %; on BCI III-1 the low bands win at every budget</td>
+</tr>
+<tr>
+<td>Better Riemannian baseline</td>
+<td><code>Riemann HG TS + LogReg</code>: tangent space on covariances of the 70-150 Hz band-passed epochs (<code>BandPassFilter</code>), the Riemannian counterpart of log band power</td>
+<td>done 2026-09-11: best classical pipeline on motor_basic (kappa 0.94 vs 0.92 for <code>LogBandPower + LDA</code>, 0.70 for raw-epoch covariances) and faces_basic (0.74 vs 0.68), behind where high gamma is not the band (gestures 0.39 vs 0.52, BCI III-1 0.62 vs 0.82); per-patient means in <code>docs/analysis.md</code>; envelope-prototype covariances (<code>ERPCovariances</code>) trail everything and stay under <code>examples/pipelines/</code> as a negative result</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m3-second-dataset-family-and-the-regression-story-target-2026-11-30">M3. Second dataset family and the regression story (target 2026-11-30)<a class="headerlink" href="#m3-second-dataset-family-and-the-regression-story-target-2026-11-30" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>chunk</th>
+<th>definition of done</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BCI Competition IV-4 and III-1</td>
+<td>numbers reproduce the published competition scores within tolerance</td>
+</tr>
+<tr>
+<td>Merk grip force + Peterson pose</td>
+<td>regression paradigms for force and 2-D pose; ridge and PACE baselines</td>
+</tr>
+<tr>
+<td>Detroit naming corpora (ds006910, ds006234, ds005545)</td>
+<td>100+ patient classification with the epoched paradigm; per-patient distribution plotted</td>
+</tr>
+<tr>
+<td>Stimulus reconstruction</td>
+<td><code>SpectrogramReconstruction</code> paradigm on Bellier and Verwoert</td>
+</tr>
+<tr>
+<td>Session drift</td>
+<td>label-free per-session alignment as an evaluation option (<code>moecog.alignment</code>: Euclidean alignment, Riemannian re-centering, raw z-score) and per-session feature standardisation as a pipeline step (<code>BatchStandardizer</code>), evaluated on BCI III-1 cross-session; the literature says alignment is worth 3-10 points and no single method wins (<code>docs/best_practices.md</code>)</td>
+</tr>
+<tr>
+<td>Deep fingerflex</td>
+<td>a FingerFlex-style convolutional regressor as a pipeline, to test the published r above 0.6 on BCI IV-4 against ridge's 0.28</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m4-cross-subject-and-transfer-target-2027-01">M4. Cross-subject and transfer (target 2027-01)<a class="headerlink" href="#m4-cross-subject-and-transfer-target-2027-01" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>chunk</th>
+<th>definition of done</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electrode aligner</td>
+<td><code>CrossSubjectEvaluation(aligner=...)</code> with the HTNet recipe as the first aligner: radial-basis projection of electrodes onto atlas regions (2 cm kernel, sensorimotor AAL regions) from <code>ElectrodeInfo</code> MNI coordinates, so patients with different grids share a feature space; refuses to run without an aligner</td>
+</tr>
+<tr>
+<td>Fine-tuning protocol</td>
+<td>pooled-patient pretraining then fine-tuning with 20 / 50 / 100 target events (HTNet's budget), reported as a calibration curve next to the tailored decoder</td>
+</tr>
+<tr>
+<td>PACE decoders</td>
+<td>the PACE isoparametric decoders as pipelines; the transfer table reproduces the PACE camera-ready null result on the benchmark</td>
+</tr>
+<tr>
+<td>Foundation-model pipelines</td>
+<td>BrainBERT and Population Transformer as feature extractors behind a linear head (electrode coordinates as inputs), compared with the linear spectrogram baseline that beats them on Neuroprobe</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m5-speech-tier-and-community-2027-h1">M5. Speech tier and community (2027 H1)<a class="headerlink" href="#m5-speech-tier-and-community-2027-h1" title="Permanent link">&para;</a></h3>
+<p>Bouchard CV syllables, Verwoert, Du-IN, tonal speech; a speech paradigm with word error metrics; the Neuroprobe
+tasks on Brain Treebank as a naturalistic tier (their splits: within-session, cross-session, cross-subject); first
+external contributor; a benchmark paper draft.</p>
+<h3 id="parked">Parked<a class="headerlink" href="#parked" title="Permanent link">&para;</a></h3>
+<p>Registration-gated sources (BCI-36), MEF3 on DANDI, pymef edge cases, spikes-only sets, non-human tier, lazy
+loading of hour-long runs, CodeCarbon, optuna. They come back when a milestone needs them.</p>
+<h2 id="what-needs-yifan">What needs Yifan<a class="headerlink" href="#what-needs-yifan" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Enabling GitHub Pages on the repository for the docs site.</li>
+<li>Jira: a PhD project with its own boards (MOECoG board = filter on this epic); creating projects and boards needs the UI, the proposal is on the decision ticket.</li>
+<li>Tier and licence policy (BCI-38), outreach sends (BCI-25), registrations (BCI-36).</li>
+</ul>
+<h2 id="re-evaluation-log">Re-evaluation log<a class="headerlink" href="#re-evaluation-log" title="Permanent link">&para;</a></h2>
+<ul>
+<li>2026-09-10 (night): M2 classical set done in one day; the surprise is BCI III-1's cross-session drop, so session drift moves up: alignment steps into M3, the HTNet electrode aligner and fine-tuning budgets define M4, foundation models become pipelines rather than a separate tier. Learning curves stay the last M2 chunk. Literature pass recorded in <code>docs/best_practices.md</code>.</li>
+<li>2026-09-11 (evening): M3 chunk 1 (session drift) done on BCI III-1 with two label-free fixes, one per feature family. Second-family audit: every OpenNeuro copy on the Mac is a single-patient smoke download, so the family is a fresh download; recommended Peterson move/rest (12 patients, several days each, HTNet numbers to compare, loader in place, 10.7 GB) on BCI-38, with ds003374 / dandi-001616 / ds004770 as cheap add-ons and the large CC0 speech sets (ds005007, ds006233, ds006914) for M5.</li>
+<li>2026-09-11: M2's last two chunks landed (learning curves, band-limited Riemannian baseline) while Athene stayed unreachable from off campus (FAU closed direct SSH to the login node; OnDemand or the Duo bastion are the doors now). Nothing in M2 needed the cluster: the Miller tier fits a laptop. The deep seeds finish on the Mac; M3 starts with drift alignment on BCI III-1, where the cross-session gap is largest.</li>
+<li>2026-09-10 (later): "copy everything MOABB did, better": <code>docs/moabb_review.md</code> is the component-by-component decision list; batch 1 of it shipped the same day (analysis, cross-session, store, docs site); cross-subject with an explicit aligner stays in M4, learning curves in M2.</li>
+<li>2026-09-10: pivot from "test everything" to "package + contribution path + chunks". The catalog sweep stays as
+  the map. Dropped from the near term: the remaining blocked sources, the non-human tier, lazy loading.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

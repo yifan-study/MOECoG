@@ -1,0 +1,2045 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Mother of all ECoG Benchmarks">
+      
+      
+      
+      
+        <link rel="prev" href="../decodable_datasets/">
+      
+      
+        <link rel="next" href="../miller_library_map/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Smoke tests - MOECoG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#smoke-tests-of-the-catalog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MOECoG" class="md-header__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MOECoG
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Smoke tests
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MOECoG" class="md-nav__button md-logo" aria-label="MOECoG" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MOECoG
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yifan-study/MOECoG" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datasets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dataset_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decodable_datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decodable datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smoke tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miller_library_map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Miller library map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preprocessing_catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preprocessing catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Results
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaderboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leaderboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../baselines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MOABB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MOABB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moabb_lessons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moabb_review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Review and decisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../best_practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Field practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="smoke-tests-of-the-catalog">Smoke tests of the catalog<a class="headerlink" href="#smoke-tests-of-the-catalog" title="Permanent link">&para;</a></h1>
+<p>Generated 2026-09-10 by <code>scripts/build_smoke_table.py</code> from <code>results/smoke/*.json</code>. Each entry downloads a one-subject (or one-file) subset, loads it through the MOECoG loader, reports what it found, and, when a trial-classification paradigm applies, scores LogBandPower+LDA with 3 chronological folds on the first subject. Numbers are sanity checks, not benchmark results.</p>
+<p>Status: 106 ok, 2 error, 3 unsupported, 19 blocked, 0 pending out of 130 entries.</p>
+<table>
+<thead>
+<tr>
+<th>entry</th>
+<th>source</th>
+<th>title</th>
+<th>status</th>
+<th>what was found / why not</th>
+<th>s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ds002799</td>
+<td>openneuro</td>
+<td>Human es-fMRI Resource: Concurrent deep-brain stimulation an</td>
+<td>unsupported</td>
+<td>ValueError: /mnt/archive/home/yyu2024/moecog_data/openneuro/ds002799: 26 sub-* folder(s) but no iEEG recordings, only sidecars/MRI (metadata-only snapshot); not</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>ds003029</td>
+<td>openneuro</td>
+<td>iEEG Fragility Epileptogenic Zone</td>
+<td>ok</td>
+<td>1 subj; 4 file(s); 126 ch @ 1000 Hz; 142 s; 21 events in 15 classes; electrodes none;</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>ds003078</td>
+<td>openneuro</td>
+<td>PROBE iEEG</td>
+<td>ok</td>
+<td>1 subj; 12 file(s); 130 ch @ 512 Hz; 584 s; 662 events in 14 classes; electrodes none;</td>
+<td>5.5</td>
+</tr>
+<tr>
+<td>ds003374</td>
+<td>openneuro</td>
+<td>Dataset of neurons and intracranial EEG from human amygdala</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 4 ch @ 2000 Hz; 522 s; 17 events in 2 classes; electrodes 4 (other);</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>ds003498</td>
+<td>openneuro</td>
+<td>iEEG Interictal Asleep HFO Dataset</td>
+<td>ok</td>
+<td>1 subj; 28 file(s); 50 ch @ 2000 Hz; 300 s; 4223 events in 15 classes; electrodes none;</td>
+<td>25.1</td>
+</tr>
+<tr>
+<td>ds003688</td>
+<td>openneuro</td>
+<td>Open multimodal iEEG-fMRI dataset from naturalistic stimulat</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 101 ch @ 2048 Hz; 420 s; 15 events in 4 classes; electrodes 103 (acpc); kappa 0.10 (n=17)</td>
+<td>13.1</td>
+</tr>
+<tr>
+<td>ds003708</td>
+<td>openneuro</td>
+<td>Basis profile curve identification to understand electrical</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 76 ch @ 2048 Hz; 600 s; 2 events in 1 classes; electrodes 89 (mni152nlin6sym);</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td>ds003844</td>
+<td>openneuro</td>
+<td>RESPect</td>
+<td>ok</td>
+<td>1 subj; 5 file(s); 31 ch @ 2048 Hz; 325 s; 20 events in 2 classes; electrodes 32 (other); kappa 0.00 (n=8)</td>
+<td>11.2</td>
+</tr>
+<tr>
+<td>ds003848</td>
+<td>openneuro</td>
+<td>Dataset Clinical Epilepsy iEEG to BIDS - RESPect_longterm_iE</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 54 ch @ 2048 Hz; 3187 s; 588 events in 3 classes; electrodes 133 (other); kappa 0.48 (n=617)</td>
+<td>101.4</td>
+</tr>
+<tr>
+<td>ds003876</td>
+<td>openneuro</td>
+<td>Epilepsy-iEEG-Interictal-Multicenter-Dataset</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 186 ch @ 1024 Hz; 573 s; 1 events in 1 classes; electrodes none;</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>ds004100</td>
+<td>openneuro</td>
+<td>ds004100</td>
+<td>ok</td>
+<td>1 subj; 5 file(s); 59 ch @ 500 Hz; 378 s; 2 events in 2 classes; electrodes 59 (fsaverage);</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>ds004127</td>
+<td>openneuro</td>
+<td>Somatosensory Cortex Rat DISC Data</td>
+<td>ok</td>
+<td>1 subj; 9 file(s); 104 ch @ 20000 Hz; 300 s; 450 events in 1 classes; electrodes none;</td>
+<td>64.3</td>
+</tr>
+<tr>
+<td>ds004194</td>
+<td>openneuro</td>
+<td>Visual ECoG dataset</td>
+<td>ok</td>
+<td>1 subj; 12 file(s); 140 ch @ 512 Hz; 59 s; 36 events in 15 classes; electrodes 124 (other); kappa 0.23 (n=432)</td>
+<td>4.8</td>
+</tr>
+<tr>
+<td>ds004080</td>
+<td>openneuro</td>
+<td>CCEP ECoG dataset across age 4-51</td>
+<td>ok</td>
+<td>1 subj; 8 file(s); 96 ch @ 512 Hz; 7200 s; 517 events in 3 classes; electrodes 133 (fsaverage);</td>
+<td>42.5</td>
+</tr>
+<tr>
+<td>ds004370</td>
+<td>openneuro</td>
+<td>PRIOS</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 48 ch @ 2048 Hz; 2359 s; 372 events in 3 classes; electrodes 68 (unknown);</td>
+<td>19.0</td>
+</tr>
+<tr>
+<td>ds004457</td>
+<td>openneuro</td>
+<td>Electrical stimulation of temporal and limbic circuitry prod</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 154 ch @ 2048 Hz; 600 s; 54 events in 1 classes; electrodes 147 (acpc);</td>
+<td>45.8</td>
+</tr>
+<tr>
+<td>ds004473</td>
+<td>openneuro</td>
+<td>sEEG Forced Two-Choice Task</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 128 ch @ 999 Hz; 3646 s; 808 events in 4 classes; electrodes 119 (acpc);</td>
+<td>141.6</td>
+</tr>
+<tr>
+<td>ds004551</td>
+<td>openneuro</td>
+<td>testMIproject</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 117 ch @ 1000 Hz; 1925 s; 5 events in 5 classes; electrodes 94 (unknown);</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>ds004624</td>
+<td>openneuro</td>
+<td>Intracranial recordings using BCI2000 and the CorTec BrainIn</td>
+<td>error</td>
+<td>AssertionError:</td>
+<td>19.7</td>
+</tr>
+<tr>
+<td>ds004642</td>
+<td>openneuro</td>
+<td>Intraoperative recordings of medianus stimulation with low a</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 8 ch @ 20000 Hz; 672 s; 0 events in 0 classes; electrodes none;</td>
+<td>24.6</td>
+</tr>
+<tr>
+<td>ds004696</td>
+<td>openneuro</td>
+<td>HAPwave_bids</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 162 ch @ 2048 Hz; 600 s; 21 events in 1 classes; electrodes 165 (other);</td>
+<td>39.9</td>
+</tr>
+<tr>
+<td>ds004703</td>
+<td>openneuro</td>
+<td>PassiveListen</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 110 ch @ 1024 Hz; 1044 s; 4531 events in 1 classes; electrodes none;</td>
+<td>3.6</td>
+</tr>
+<tr>
+<td>ds004752</td>
+<td>openneuro</td>
+<td>Dataset of intracranial EEG, scalp EEG and beamforming sourc</td>
+<td>ok</td>
+<td>1 subj; 4 file(s); 48 ch @ 2000 Hz; 400 s; 50 events in 1 classes; electrodes 48 (unknown);</td>
+<td>26.3</td>
+</tr>
+<tr>
+<td>ds004770</td>
+<td>openneuro</td>
+<td>iEEG on children during gameplay</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 126 ch @ 1000 Hz; 3755 s; 62 events in 3 classes; electrodes 97 (unknown); kappa 0.40 (n=342)</td>
+<td>241.8</td>
+</tr>
+<tr>
+<td>ds004774</td>
+<td>openneuro</td>
+<td>Automatic Evoked Response Detection (ER-Detect) dataset</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 76 ch @ 2048 Hz; 600 s; 2 events in 1 classes; electrodes 89 (other);</td>
+<td>16.9</td>
+</tr>
+<tr>
+<td>ds004789</td>
+<td>openneuro</td>
+<td>Delayed Free Recall of Word Lists</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 88 ch @ 500 Hz; 4699 s; 756 events in 15 classes; electrodes 88 (mni152nlin6asym); kappa 0.12 (n=713)</td>
+<td>44.5</td>
+</tr>
+<tr>
+<td>ds004809</td>
+<td>openneuro</td>
+<td>Categorized Free Recall: Delayed Free Recall of Word Lists O</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 162 ch @ 1600 Hz; 5400 s; 739 events in 15 classes; electrodes 120 (mni152nlin6asym); kappa 0.08 (n=697)</td>
+<td>176.6</td>
+</tr>
+<tr>
+<td>ds004819</td>
+<td>openneuro</td>
+<td>Flexible, Scalable, High Channel Count Stereo-Electrode for</td>
+<td>ok</td>
+<td>1 subj; 8 file(s); 64 ch @ 30000 Hz; 25 s; 20 events in 1 classes; electrodes 64 (unknown);</td>
+<td>54.8</td>
+</tr>
+<tr>
+<td>ds004859</td>
+<td>openneuro</td>
+<td>iEEG on children during Stroop task</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 108 ch @ 1000 Hz; 1040 s; 264 events in 15 classes; electrodes 108 (unknown);</td>
+<td>31.6</td>
+</tr>
+<tr>
+<td>ds004865</td>
+<td>openneuro</td>
+<td>pyFR: Delayed Free Recall of Word Lists, Preliminary Cogniti</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 94 ch @ 400 Hz; 3102 s; 367 events in 9 classes; electrodes 94 (talairach); kappa 0.12 (n=365)</td>
+<td>13.9</td>
+</tr>
+<tr>
+<td>ds004944</td>
+<td>openneuro</td>
+<td>Dataset of BCI2000-compatible intraoperative ECoG with neuro</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 15 ch @ 2000 Hz; 500 s; 175 events in 1 classes; electrodes 28 (unknown);</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>ds004977</td>
+<td>openneuro</td>
+<td>CARLA: Adjusted common average referencing for cortico-corti</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 210 ch @ 4800 Hz; 543 s; 120 events in 1 classes; electrodes 238 (acpc);</td>
+<td>97.5</td>
+</tr>
+<tr>
+<td>ds004993</td>
+<td>openneuro</td>
+<td>WIRED ICM Sample Dataset - Workshop on Intracranial Recordin</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 148 ch @ 512 Hz; 68 s; 1 events in 1 classes; electrodes 148 (acpc);</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>ds005007</td>
+<td>openneuro</td>
+<td>Auditory naming task with questions that begin or end with a</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 83 ch @ 1000 Hz; 880 s; 443 events in 15 classes; electrodes 64 (unknown);</td>
+<td>22.6</td>
+</tr>
+<tr>
+<td>ds005059</td>
+<td>openneuro</td>
+<td>Paired Associates Learning: Memory for Word Pairs in Cued Re</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 88 ch @ 500 Hz; 3647 s; 1279 events in 15 classes; electrodes 88 (mni152nlin6asym); kappa -0.00 (n=1088)</td>
+<td>35.5</td>
+</tr>
+<tr>
+<td>ds005083</td>
+<td>openneuro</td>
+<td>Safety and Accuracy of Stereoelectroencephalography for Pedi</td>
+<td>unsupported</td>
+<td>ValueError: Subjects ['SLCHRETRO002'] not in /Users/johnsmith/moecog_data/openneuro/ds005083 and nothing else readable</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>ds005169</td>
+<td>openneuro</td>
+<td>Dataset of intracranial EEG during cortical stimulation evok</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 29 ch @ 4096 Hz; 21 s; 3 events in 1 classes; electrodes 67 (scanras);</td>
+<td>6.2</td>
+</tr>
+<tr>
+<td>ds005398</td>
+<td>openneuro</td>
+<td>Open iEEG Dataset</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 56 ch @ 1000 Hz; 304 s; 0 events in 0 classes; electrodes 56 (mni152lin);</td>
+<td>12.4</td>
+</tr>
+<tr>
+<td>ds005411</td>
+<td>openneuro</td>
+<td>Free Recall of Word Lists with Repeated Items</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 118 ch @ 1000 Hz; 4213 s; 799 events in 10 classes; electrodes 118 (mni152nlin6asym); kappa 0.18 (n=799)</td>
+<td>96.7</td>
+</tr>
+<tr>
+<td>ds005415</td>
+<td>openneuro</td>
+<td>Numbers</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 188 ch @ 1000 Hz; 1449 s; 509 events in 5 classes; electrodes 174 (acpc);</td>
+<td>77.4</td>
+</tr>
+<tr>
+<td>ds005448</td>
+<td>openneuro</td>
+<td>STReEF</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 112 ch @ 2048 Hz; 3245 s; 571 events in 4 classes; electrodes 133 (other);</td>
+<td>85.9</td>
+</tr>
+<tr>
+<td>ds005489</td>
+<td>openneuro</td>
+<td>Free Recall with Open-Loop Stimulation at Encoding</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 88 ch @ 500 Hz; 4865 s; 826 events in 15 classes; electrodes 88 (mni152nlin6asym); kappa 0.08 (n=784)</td>
+<td>52.3</td>
+</tr>
+<tr>
+<td>ds005491</td>
+<td>openneuro</td>
+<td>Categorized Free Recall with Open-Loop Stimulation at Encodi</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 177 ch @ 500 Hz; 3499 s; 767 events in 15 classes; electrodes 128 (talairach); kappa 0.27 (n=723)</td>
+<td>31.6</td>
+</tr>
+<tr>
+<td>ds005494</td>
+<td>openneuro</td>
+<td>Cued Recall of Paired Associates with Open-Loop Stimulation</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 114 ch @ 500 Hz; 2463 s; 1018 events in 15 classes; electrodes 100 (mni152nlin6asym); kappa 0.03 (n=889)</td>
+<td>54.2</td>
+</tr>
+<tr>
+<td>ds005522</td>
+<td>openneuro</td>
+<td>Spatial Navigation Memory of Object Locations</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 120 ch @ 500 Hz; 2361 s; 58159 events in 8 classes; electrodes 120 (mni152nlin6asym); kappa 0.50 (n=58159)</td>
+<td>423.4</td>
+</tr>
+<tr>
+<td>ds005523</td>
+<td>openneuro</td>
+<td>Spatial Memory of Object Locations with Open-Loop Stimulatio</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 133 ch @ 500 Hz; 3421 s; 43216 events in 8 classes; electrodes 123 (mni152nlin6asym); kappa 0.59 (n=43216)</td>
+<td>786.5</td>
+</tr>
+<tr>
+<td>ds005545</td>
+<td>openneuro</td>
+<td>auditory</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 2 ch @ 1000 Hz; 935 s; 267 events in 3 classes; electrodes 123 (unknown); kappa 0.67 (n=265)</td>
+<td>23.7</td>
+</tr>
+<tr>
+<td>ds005557</td>
+<td>openneuro</td>
+<td>Free Recall with Closed-Loop Stimulation at Encoding (Encodi</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 120 ch @ 1000 Hz; 3071 s; 1290 events in 15 classes; electrodes 120 (mni152nlin6asym); kappa 0.04 (n=1237)</td>
+<td>137.0</td>
+</tr>
+<tr>
+<td>ds005558</td>
+<td>openneuro</td>
+<td>Categorized Free Recall with Closed-Loop Stimulation at Enco</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 122 ch @ 1000 Hz; 3004 s; 1320 events in 15 classes; electrodes 90 (mni152nlin6asym); kappa 0.11 (n=1263)</td>
+<td>50.5</td>
+</tr>
+<tr>
+<td>ds005574</td>
+<td>openneuro</td>
+<td>The "Podcast" ECoG dataset for modeling neural activity duri</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 82 ch @ 512 Hz; 1800 s; 0 events in 0 classes; electrodes 75 (other);</td>
+<td>21.9</td>
+</tr>
+<tr>
+<td>ds005592</td>
+<td>openneuro</td>
+<td>ds005592</td>
+<td>blocked</td>
+<td>0 subjects; tasks ; 0.0 GB; BLOCKED: deleted by OpenNeuro as a duplicate of ds006107, which loads</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>ds005624</td>
+<td>openneuro</td>
+<td>Color Change Detection Task</td>
+<td>ok</td>
+<td>1 subj; 4 file(s); 74 ch @ 512 Hz; 3280 s; 0 events in 0 classes; electrodes none;</td>
+<td>120.2</td>
+</tr>
+<tr>
+<td>ds005670</td>
+<td>openneuro</td>
+<td>SEEG Resting State Recording</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 238 ch @ 2000 Hz; 433 s; 4 events in 4 classes; electrodes 238 (mni152lin);</td>
+<td>51.6</td>
+</tr>
+<tr>
+<td>ds005691</td>
+<td>openneuro</td>
+<td>SpinalExpect_Invasive</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 7 ch @ 2500 Hz; 1602 s; 1205 events in 5 classes; electrodes none;</td>
+<td>8.9</td>
+</tr>
+<tr>
+<td>ds005931</td>
+<td>openneuro</td>
+<td>Visuomotor_task</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 64 ch @ 1000 Hz; 428 s; 122 events in 1 classes; electrodes 118 (unknown);</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>ds005953</td>
+<td>openneuro</td>
+<td>iEEG_visual</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 118 ch @ 3052 Hz; 234 s; 420 events in 8 classes; electrodes 118 (acpc);</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>ds006065</td>
+<td>openneuro</td>
+<td>TSS_iEEG</td>
+<td>ok</td>
+<td>1 subj; 10 file(s); 168 ch @ 500 Hz; 1570 s; 0 events in 0 classes; electrodes 168 (mni152nlin2009casym);</td>
+<td>154.9</td>
+</tr>
+<tr>
+<td>ds006107</td>
+<td>openneuro</td>
+<td>iEEG_Neural_spatial_volatility</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 100 ch @ 1000 Hz; 320 s; 0 events in 0 classes; electrodes 100 (unknown);</td>
+<td>16.4</td>
+</tr>
+<tr>
+<td>ds006136</td>
+<td>openneuro</td>
+<td>OWM-Dataset</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 8 ch @ 1000 Hz; 1021 s; 0 events in 0 classes; electrodes 8 (mni152lin);</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>ds006233</td>
+<td>openneuro</td>
+<td>Picture naming</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 2 ch @ 1000 Hz; 777 s; 120 events in 2 classes; electrodes 128 (unknown); kappa 0.17 (n=120)</td>
+<td>15.5</td>
+</tr>
+<tr>
+<td>ds006234</td>
+<td>openneuro</td>
+<td>Auditory naming</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 2 ch @ 1000 Hz; 3442 s; 402 events in 3 classes; electrodes 100 (unknown); kappa 0.64 (n=402)</td>
+<td>50.9</td>
+</tr>
+<tr>
+<td>ds006253</td>
+<td>openneuro</td>
+<td>MetaRDK</td>
+<td>unsupported</td>
+<td>ValueError: Subjects ['10'] not in /Users/johnsmith/moecog_data/openneuro/ds006253 and nothing else readable</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>ds006254</td>
+<td>openneuro</td>
+<td>IEEG CCEP Recording</td>
+<td>error</td>
+<td>OSError: download of https://s3.amazonaws.com/openneuro.org/ds006254/sub-18/ieeg/sub-18_coordsystem.json?versionId=OSffUiqbJTNf7oVHSoA8cmhuAkA7bbN5 failed after</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>ds006392</td>
+<td>openneuro</td>
+<td>HED schema library for SCORE annotations example</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 194 ch @ 512 Hz; 191 s; 18 events in 9 classes; electrodes 166 (mni152lin);</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>ds006519</td>
+<td>openneuro</td>
+<td>Dataset of intracranial EEG during cortical stimulations evo</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 63 ch @ 4096 Hz; 30 s; 2 events in 1 classes; electrodes 128 (scanras);</td>
+<td>7.3</td>
+</tr>
+<tr>
+<td>ds006890</td>
+<td>openneuro</td>
+<td>Longitudinal Multitask Wireless ECoG Data from Two Fully Imp</td>
+<td>ok</td>
+<td>1 subj; 225 file(s); 31 ch @ 1000 Hz; 718 s; 53 events in 1 classes; electrodes 32 (other); kappa 0.00 (n=54)</td>
+<td>1220.4</td>
+</tr>
+<tr>
+<td>ds006910</td>
+<td>openneuro</td>
+<td>Auditory Naming</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 48 ch @ 1000 Hz; 1175 s; 150 events in 3 classes; electrodes 58 (other); kappa 0.89 (n=150)</td>
+<td>17.9</td>
+</tr>
+<tr>
+<td>ds006914</td>
+<td>openneuro</td>
+<td>Picture naming</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 48 ch @ 1000 Hz; 291 s; 240 events in 14 classes; electrodes 58 (other); kappa 0.23 (n=119)</td>
+<td>9.3</td>
+</tr>
+<tr>
+<td>ds007095</td>
+<td>openneuro</td>
+<td>RNS_Epilepsy-iBIDS</td>
+<td>ok</td>
+<td>1 subj; 886 file(s); 2 ch @ 200 Hz; 91 s; 3 events in 1 classes; electrodes 2 (acpc);</td>
+<td>86.3</td>
+</tr>
+<tr>
+<td>ds007118</td>
+<td>openneuro</td>
+<td>iEEG_comprehensive_HFA_model_part1</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 106 ch @ 1000 Hz; 2269 s; 0 events in 0 classes; electrodes 104 (fsaverage);</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td>ds007119</td>
+<td>openneuro</td>
+<td>iEEG_comprehensive_HFA_model_part3</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 132 ch @ 1000 Hz; 3367 s; 0 events in 0 classes; electrodes 132 (fsaverage);</td>
+<td>37.0</td>
+</tr>
+<tr>
+<td>ds007120</td>
+<td>openneuro</td>
+<td>iEEG_comprehensive_HFA_model_part2</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 128 ch @ 1000 Hz; 1605 s; 0 events in 0 classes; electrodes 128 (fsaverage);</td>
+<td>25.3</td>
+</tr>
+<tr>
+<td>ds007703</td>
+<td>openneuro</td>
+<td>Single pulse electrical stimulation in white matter modulate</td>
+<td>blocked</td>
+<td>2 subjects; tasks Visual stimuli + CCEPs,Cortico-cortical evoked potentials - CCEPs,Cortico cortical Evoked Potentials, CCEPs,Cortico Cortical Evoked Potentials; 12.3 GB; BLOCKED: the snapshot lists only sidecar files (channels, events), no ieeg recordings; OpenNeuro also refuses HEAD on every file (checked 2026-09-10)</td>
+<td>31.6</td>
+</tr>
+<tr>
+<td>ds008610</td>
+<td>openneuro</td>
+<td>FUS and Tactile Neuromodulation in NHP VPL - Electrophysiolo</td>
+<td>ok</td>
+<td>1 subj; 31 file(s); 32 ch @ 1000 Hz; 71 s; 5 events in 1 classes; electrodes 96 (other); no scorable session (fewer than two classes per session)</td>
+<td>50.3</td>
+</tr>
+<tr>
+<td>dandi-000019</td>
+<td>dandi</td>
+<td>Bouchard/Chang CV syllables (sub-EC9 B15)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 256 ch @ 3052 Hz; 195 s; 96 events in 15 classes; electrodes 256 (unknown); kappa -0.04 (n=96)</td>
+<td>24.5</td>
+</tr>
+<tr>
+<td>dandi-001193</td>
+<td>dandi</td>
+<td>Shao IFG syntax/semantics high gamma</td>
+<td>ok</td>
+<td>10 subj; 1 file(s); 256 ch @ 400 Hz; 74 s; 0 events in 0 classes; electrodes none;</td>
+<td>17.7</td>
+</tr>
+<tr>
+<td>dandi-000623</td>
+<td>dandi</td>
+<td>Keles/Rutishauser movie watching (CS62)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 56 ch @ 1000 Hz; 600 s; 19 events in 2 classes; electrodes 56 (unknown); kappa undefined (2/2 folds single-class, n=18)</td>
+<td>7.9</td>
+</tr>
+<tr>
+<td>dandi-000574</td>
+<td>dandi</td>
+<td>Rutishauser verbal WM + iEEG (sub-05 ses-01)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 32 ch @ 32000 Hz; 400 s; 150 events in 15 classes; electrodes 32 (unknown); kappa 0.02 (n=120)</td>
+<td>64.4</td>
+</tr>
+<tr>
+<td>dandi-000576</td>
+<td>dandi</td>
+<td>Rutishauser amygdala aversive stimuli</td>
+<td>ok</td>
+<td>9 subj; 1 file(s); 2 ch @ 2000 Hz; 442 s; 17 events in 2 classes; electrodes 2 (unknown); kappa -0.25 (n=17)</td>
+<td>8.0</td>
+</tr>
+<tr>
+<td>dandi-000055</td>
+<td>dandi</td>
+<td>AJILE12 (sub-04 ses-3)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 84 ch @ 500 Hz; 600 s; 1 events in 1 classes; electrodes 84 (unknown);</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>dandi-000469</td>
+<td>dandi</td>
+<td>Rutishauser Sternberg WM</td>
+<td>blocked</td>
+<td>single-unit spike times only; no field potentials or voltage in the NWB files (verified 2026-09-10 by opening the files)</td>
+<td>7.3</td>
+</tr>
+<tr>
+<td>dandi-000004</td>
+<td>dandi</td>
+<td>Rutishauser declarative memory</td>
+<td>blocked</td>
+<td>single-unit spike times only; no field potentials or voltage in the NWB files (verified 2026-09-10 by opening the files)</td>
+<td>8.7</td>
+</tr>
+<tr>
+<td>dandi-001616</td>
+<td>dandi</td>
+<td>SUMMER movie single-neuron</td>
+<td>blocked</td>
+<td>single-unit spike times only; no field potentials or voltage in the NWB files (verified 2026-09-10 by opening the files)</td>
+<td>8.5</td>
+</tr>
+<tr>
+<td>dandi-000571</td>
+<td>dandi</td>
+<td>Mayo CorTec BrainInterchange (MEF3)</td>
+<td>blocked</td>
+<td>MEF3 stored as .mefd directory trees on DANDI; pymef reader exists for BIDS, a DANDI folder fetcher is still to write</td>
+<td></td>
+</tr>
+<tr>
+<td>dandi-001638</td>
+<td>dandi</td>
+<td>Cogan µECoG pseudoword repetition</td>
+<td>blocked</td>
+<td>dandiset has no assets yet (empty on 2026-09-09)</td>
+<td></td>
+</tr>
+<tr>
+<td>dandi-001613</td>
+<td>dandi</td>
+<td>Nentwich/Parra movies + eye tracking</td>
+<td>blocked</td>
+<td>only stimulus videos uploaded so far; no NWB assets</td>
+<td></td>
+</tr>
+<tr>
+<td>miller-motor_basic</td>
+<td>miller</td>
+<td>Miller library motor_basic</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 47 ch @ 1000 Hz; 376 s; 60 events in 2 classes; electrodes 47 (talairach); kappa 0.96 (n=60)</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>miller-imagery_basic</td>
+<td>miller</td>
+<td>Miller library imagery_basic</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 46 ch @ 1000 Hz; 376 s; 60 events in 2 classes; electrodes 46 (talairach); kappa 0.51 (n=60)</td>
+<td>5.3</td>
+</tr>
+<tr>
+<td>miller-faces_basic</td>
+<td>miller</td>
+<td>Miller library faces_basic</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 46 ch @ 1000 Hz; 271 s; 300 events in 2 classes; electrodes 46 (voxel); kappa 0.27 (n=300)</td>
+<td>2.6</td>
+</tr>
+<tr>
+<td>miller-fingerflex</td>
+<td>miller</td>
+<td>Miller library fingerflex</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 46 ch @ 1000 Hz; 610 s; 439 events in 7 classes; electrodes 46 (native);</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>miller-visual_search</td>
+<td>miller</td>
+<td>Miller library visual_search</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 8 ch @ 1000 Hz; 510 s; 120 events in 4 classes; electrodes 8 (native); kappa 0.16 (n=120)</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>miller-memory_nback</td>
+<td>miller</td>
+<td>Miller library memory_nback</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 40 ch @ 1000 Hz; 360 s; 150 events in 2 classes; electrodes 40 (talairach); kappa 0.18 (n=150)</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>miller-gestures</td>
+<td>miller</td>
+<td>Miller library gestures</td>
+<td>ok</td>
+<td>1 subj; 5 file(s); 84 ch @ 1000 Hz; 130 s; 0 events in 0 classes; electrodes 84 (talairach); kappa 0.63 (n=150)</td>
+<td>18.9</td>
+</tr>
+<tr>
+<td>miller-imagery_feedback</td>
+<td>miller</td>
+<td>Miller library imagery_feedback</td>
+<td>ok</td>
+<td>1 subj; 3 file(s); 40 ch @ 1000 Hz; 180 s; 27 events in 2 classes; electrodes 40 (talairach); kappa 0.46 (n=27)</td>
+<td>5.7</td>
+</tr>
+<tr>
+<td>miller-faces_noise</td>
+<td>miller</td>
+<td>Miller library faces_noise</td>
+<td>ok</td>
+<td>1 subj; 2 file(s); 41 ch @ 1000 Hz; 268 s; 300 events in 2 classes; electrodes 41 (voxel); kappa 0.41 (n=300)</td>
+<td>9.9</td>
+</tr>
+<tr>
+<td>miller-speech_basic</td>
+<td>miller</td>
+<td>Miller library speech_basic</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 48 ch @ 1000 Hz; 545 s; 40 events in 1 classes; electrodes 48 (native); no scorable session (fewer than two classes per session)</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>miller-speech_lists</td>
+<td>miller</td>
+<td>Miller library speech_lists</td>
+<td>ok</td>
+<td>1 subj; 13 file(s); 48 ch @ 1000 Hz; 138 s; 40 events in 1 classes; electrodes 48 (native); no scorable session (fewer than two classes per session)</td>
+<td>11.1</td>
+</tr>
+<tr>
+<td>miller-joystick_track</td>
+<td>miller</td>
+<td>Miller library joystick_track</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 60 ch @ 1000 Hz; 373 s; 0 events in 0 classes; electrodes 60 (talairach);</td>
+<td>1.7</td>
+</tr>
+<tr>
+<td>miller-mouse_track</td>
+<td>miller</td>
+<td>Miller library mouse_track</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 61 ch @ 1000 Hz; 248 s; 0 events in 0 classes; electrodes 61 (talairach);</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>miller-fixation_PAC</td>
+<td>miller</td>
+<td>Miller library fixation_PAC</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 46 ch @ 1000 Hz; 130 s; 0 events in 0 classes; electrodes 46 (native);</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>miller-fixation_pwrlaw</td>
+<td>miller</td>
+<td>Miller library fixation_pwrlaw</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 32 ch @ 1000 Hz; 130 s; 0 events in 0 classes; electrodes 32 (talairach);</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>miller-fixation_highfreq</td>
+<td>miller</td>
+<td>Miller library fixation_highfreq</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 32 ch @ 10000 Hz; 130 s; 0 events in 0 classes; electrodes none;</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>dandi-001535</td>
+<td>dandi</td>
+<td>Natraj/Ganguly long-term ECoG BCI, BRAVO1 neural features (D</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 256 ch @ 100 Hz; 2685 s; 1500 events in 9 classes; electrodes none; kappa 0.39 (n=1500)</td>
+<td>64.3</td>
+</tr>
+<tr>
+<td>bci-iv-4</td>
+<td>bbci</td>
+<td>BCI Competition IV dataset 4 (finger flexion)</td>
+<td>ok</td>
+<td>3 subj; 1 file(s); 62 ch @ 1000 Hz; 600 s; 2 events in 2 classes; electrodes none;</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>bci-iii-1</td>
+<td>bbci</td>
+<td>BCI Competition III dataset I (ECoG motor imagery)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 64 ch @ 1000 Hz; 834 s; 278 events in 2 classes; electrodes none; kappa 0.75 (n=278)</td>
+<td>9.7</td>
+</tr>
+<tr>
+<td>peterson-moverest</td>
+<td>figshare</td>
+<td>Peterson naturalistic move vs rest (EC09)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 126 ch @ 250 Hz; 1208 s; 302 events in 2 classes; electrodes none; kappa 0.46 (n=302)</td>
+<td>7.9</td>
+</tr>
+<tr>
+<td>peterson-reach</td>
+<td>figshare</td>
+<td>Peterson naturalistic reach epochs (subj 01 day 3)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 94 ch @ 500 Hz; 1716 s; 156 events in 1 classes; electrodes none;</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>peterson-pose</td>
+<td>figshare</td>
+<td>Peterson ECoG + arm pose (EC02)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 87 ch @ 250 Hz; 1672 s; 418 events in 1 classes; electrodes none;</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>rogers-uecog</td>
+<td>figshare</td>
+<td>Rogers submillimeter µECoG windows (S2)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 44 ch @ 4000 Hz; 652 s; 326 events in 1 classes; electrodes none;</td>
+<td>10.5</td>
+</tr>
+<tr>
+<td>verwoert-speech</td>
+<td>osf</td>
+<td>Verwoert single-word production sEEG (iBIDS)</td>
+<td>ok</td>
+<td>10 subj; 1 file(s); 127 ch @ 1024 Hz; 300 s; 199 events in 2 classes; electrodes none; kappa 0.53 (n=199)</td>
+<td>12.1</td>
+</tr>
+<tr>
+<td>merk-gripforce</td>
+<td>dataverse</td>
+<td>Merk grip-force ECoG + STN (Dataverse)</td>
+<td>ok</td>
+<td>16 subj; 4 file(s); 10 ch @ 1000 Hz; 130 s; 0 events in 0 classes; electrodes none;</td>
+<td>25.3</td>
+</tr>
+<tr>
+<td>duin</td>
+<td>huggingface</td>
+<td>Du-IN Mandarin word sEEG (sub 001 run 1)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 104 ch @ 1000 Hz; 1257 s; 419 events in 15 classes; electrodes none; kappa 0.02 (n=419)</td>
+<td>20.9</td>
+</tr>
+<tr>
+<td>swec</td>
+<td>huggingface</td>
+<td>SWEC long-term iEEG (ID01 part 1)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 88 ch @ 512 Hz; 600 s; 0 events in 0 classes; electrodes none;</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>omni-edf</td>
+<td>huggingface</td>
+<td>Omni-iEEG raw EDF (Pt1)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 38 ch @ 2000 Hz; 601 s; 3 events in 3 classes; electrodes none;</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>mindeye-ieeg</td>
+<td>huggingface</td>
+<td>mindeye iEEG NSD high-frequency broadband</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 130 ch @ 1 Hz; 9 s; 0 events in 0 classes; electrodes none;</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>braintreebank</td>
+<td>braintreebank</td>
+<td>Brain Treebank (sub_1 trial000)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 156 ch @ 2048 Hz; 600 s; 0 events in 0 classes; electrodes none;</td>
+<td>105.2</td>
+</tr>
+<tr>
+<td>stolk-sensorimotor</td>
+<td>osf</td>
+<td>Stolk sensorimotor alpha/beta, high-density ECoG (OSF z4hfm)</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 120 ch @ 512 Hz; 196 s; 49 events in 2 classes; electrodes 120 (unknown); kappa 0.18 (n=49)</td>
+<td>3.6</td>
+</tr>
+<tr>
+<td>bellier-music</td>
+<td>zenodo</td>
+<td>Bellier music reconstruction HFA, 29 patients (Zenodo 787601</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 64 ch @ 100 Hz; 191 s; 0 events in 0 classes; electrodes 64 (mni);</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>tonal-speech</td>
+<td>scidb</td>
+<td>Li tonal speech perception ECoG, 4 awake-craniotomy patients</td>
+<td>ok</td>
+<td>1 subj; 1 file(s); 128 ch @ 400 Hz; 182 s; 0 events in 0 classes; electrodes 128 (mni152lin);</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>cogitate</td>
+<td>blocked</td>
+<td>Cogitate iEEG release 1</td>
+<td>blocked</td>
+<td>portal registration + terms</td>
+<td></td>
+</tr>
+<tr>
+<td>dabi-*</td>
+<td>blocked</td>
+<td>DABI public projects (MGH stimulation/conversation, UTSW mot</td>
+<td>blocked</td>
+<td>DABI account required to download</td>
+<td></td>
+</tr>
+<tr>
+<td>ebrains-*</td>
+<td>blocked</td>
+<td>EBRAINS memory+pupillometry, EEG+stimulation</td>
+<td>blocked</td>
+<td>EBRAINS account</td>
+<td></td>
+</tr>
+<tr>
+<td>kaggle-seizure</td>
+<td>blocked</td>
+<td>UPenn/Mayo and Melbourne seizure competitions</td>
+<td>blocked</td>
+<td>Kaggle API token + competition rules</td>
+<td></td>
+</tr>
+<tr>
+<td>mni-atlas</td>
+<td>blocked</td>
+<td>MNI Open iEEG Atlas</td>
+<td>blocked</td>
+<td>HTTP 401: registration</td>
+<td></td>
+</tr>
+<tr>
+<td>neurotycho</td>
+<td>blocked</td>
+<td>Neurotycho macaque ECoG</td>
+<td>blocked</td>
+<td>download list behind registration (expdatalist)</td>
+<td></td>
+</tr>
+<tr>
+<td>ieeg-org</td>
+<td>blocked</td>
+<td>iEEG.org</td>
+<td>blocked</td>
+<td>account</td>
+<td></td>
+</tr>
+<tr>
+<td>crcns</td>
+<td>blocked</td>
+<td>CRCNS ECoG/LFP sets</td>
+<td>blocked</td>
+<td>account</td>
+<td></td>
+</tr>
+<tr>
+<td>epilepsiae</td>
+<td>blocked</td>
+<td>EPILEPSIAE</td>
+<td>blocked</td>
+<td>restricted</td>
+<td></td>
+</tr>
+<tr>
+<td>metzger-2023</td>
+<td>blocked</td>
+<td>Chang lab neuroprosthesis deposit (Zenodo restricted)</td>
+<td>blocked</td>
+<td>restricted deposit; request</td>
+<td></td>
+</tr>
+<tr>
+<td>gin-usz</td>
+<td>blocked</td>
+<td>GIN USZ intraoperative HFO</td>
+<td>blocked</td>
+<td>duplicate of ds004944, which loads; no separate loader needed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "content.code.copy", "search.suggest"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

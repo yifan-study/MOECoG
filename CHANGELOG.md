@@ -2,6 +2,21 @@
 
 ## 0.3.0.dev0 (unreleased)
 
+- `LearningCurveEvaluation` (`evaluations=("learning_curve",)` in `benchmark()`):
+  train on the first 10/25/50/100 % of a patient's non-test trials in recording
+  order, test on the fixed final 20 %; rows carry `train_fraction` and `n_train`;
+  `learning_curve_plot()` and a learning-curve section in `docs/analysis.md`.
+- Two more Riemannian reference pipelines: `Riemann HG TS + LogReg` (covariances of
+  the 70-150 Hz band-passed epochs, the Riemannian counterpart of log band power,
+  through the new `BandPassFilter` transformer) and `Riemann Env TS + LogReg`
+  (pyriemann `ERPCovariances` prototypes of log high-gamma envelopes).
+- A pipeline that raises on one fold now costs only its own rows (warning names the
+  pipeline, patient and fold; the rows stay "not yet computed" and are retried);
+  before, the exception dropped every pipeline of that patient.
+- `HilbertEnvelope`: the envelope is floored at zero before the log; zero-phase
+  decimation rang below zero on tiny envelopes and produced NaN features.
+- `scripts/run_reference.py --evaluations ...` overrides a task's evaluations.
+
 - `docs/best_practices.md`: literature pass on preprocessing, transfer (alignment,
   HTNet, stability across days, pretrained representations, Neuroprobe) and
   evaluation practices, with the roadmap chunks each point feeds.

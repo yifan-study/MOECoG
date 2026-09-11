@@ -1,0 +1,19 @@
+name: Riemann HG TS + LogReg
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+requires: [pyriemann]
+citations:
+  - https://doi.org/10.1016/j.neucom.2012.12.039
+  - https://doi.org/10.1088/1741-2560/4/3/012
+pipeline:
+  - name: BandPassFilter
+    from: moecog.preprocessing
+    parameters: {bands: {high_gamma: [70, 150]}, sfreq: $sfreq}
+  - name: Covariances
+    from: pyriemann.estimation
+    parameters: {estimator: oas}
+  - name: TangentSpace
+    from: pyriemann.tangentspace
+    parameters: {metric: riemann}
+  - name: LogisticRegression
+    from: sklearn.linear_model
+    parameters: {max_iter: 2000, C: 1.0}

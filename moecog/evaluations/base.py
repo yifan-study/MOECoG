@@ -87,19 +87,28 @@ class BaseEvaluation(ABC):
     def _evaluate(self, dataset, X, y, metadata, pipelines):
         """Implement the cross-validation strategy; return a list of row dicts."""
 
-    def _score_pipeline(self, pipeline, X_train, y_train, X_test, y_test):
-        """Fit a clone of ``pipeline`` and compute the paradigm's metrics."""
+    def _score_pipeline(self, pipeline, X_train, y_train, X_test, y_test, where=""):
+        """Fit a clone of ``pipeline`` and compute the paradigm's metrics.
+
+        Returns ``None`` (with a warning naming ``where``) when the pipeline raises, so one broken pipeline
+        does not cost the patient's rows for the others; the missing rows stay "not yet computed" in the
+        results store and are retried on the next run.
+        """
         t0 = time.time()
         clf = clone(pipeline)
         try:
-            clf.fit(X_train, y_train)
-            y_pred = clf.predict(X_test)
-        except ValueError:
-            if X_train.ndim != 3:
-                raise
-            clf = clone(pipeline)
-            clf.fit(X_train.reshape(len(X_train), -1), y_train)
-            y_pred = clf.predict(X_test.reshape(len(X_test), -1))
+            try:
+                clf.fit(X_train, y_train)
+                y_pred = clf.predict(X_test)
+            except ValueError:
+                if X_train.ndim != 3:
+                    raise
+                clf = clone(pipeline)
+                clf.fit(X_train.reshape(len(X_train), -1), y_train)
+                y_pred = clf.predict(X_test.reshape(len(X_test), -1))
+        except Exception as err:  # noqa: BLE001 - any estimator error is a per-pipeline failure
+            warnings.warn(f"pipeline failed {where}: {type(err).__name__}: {err}")
+            return None
         duration = time.time() - t0
 
         scoring = self.paradigm.scoring()

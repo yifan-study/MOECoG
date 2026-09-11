@@ -16,10 +16,15 @@ Deep pipelines see the same epochs resampled to 250 Hz.
 
 **Evaluations.** `WithinSubjectCV` with 5 chronological contiguous folds per (patient, session), stratified
 shuffled folds only where a file presents its cues in blocks (`fold_policy` column); regression folds carry
-a purge gap. `CrossSessionEvaluation` (leave one session out) on BCI III-1.
+a purge gap. `CrossSessionEvaluation` (leave one session out) on BCI III-1. `LearningCurveEvaluation` on the
+Miller classification tasks: the last 20 % of each (patient, session) in recording order is the test block
+for every point; training uses the first 10, 25, 50 or 100 % of the remaining trials, so a small budget means
+the earliest minutes of the session, as a calibration phase would.
 
 **Pipelines.** The reference YAMLs shipped in the package: `LogBandPower + LDA`, `LogBandPower + LogReg`,
-`HighGamma + LDA`, `Riemann TS + LogReg` (covariances on the raw epochs), `ShallowFBCSPNet` (braindecode,
+`HighGamma + LDA`, `Riemann TS + LogReg` (covariances on the raw epochs), `Riemann HG TS + LogReg` (covariances of
+the 70-150 Hz band-passed epochs), `Riemann Env TS + LogReg` (pyriemann `ERPCovariances` with class prototypes of the
+log high-gamma envelope, eight SVD components per class), `ShallowFBCSPNet` (braindecode,
 150 epochs of batch 16, AdamW 6.25e-4, per-channel standardisation on the training fold, CPU); regression
 uses `LogBandPower + Ridge` and `HighGamma + Ridge`. Randomness enters only through the deep model, which is
 run with seeds 0, 1, 2 (`ShallowFBCSPNet s<k>` rows).

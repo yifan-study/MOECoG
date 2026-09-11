@@ -87,9 +87,13 @@ def main():
     ap.add_argument("--n-splits", type=int, default=5)
     ap.add_argument("--overwrite", action="store_true")
     ap.add_argument("--out-dir", default="results")
+    ap.add_argument("--evaluations", nargs="*", default=None,
+                    help="override the task's evaluations, e.g. learning_curve (default: the task's tuple)")
     args = ap.parse_args()
     for task in args.tasks:
         pname, make, build, evaluations = TASKS[task]
+        if args.evaluations:
+            evaluations = tuple(args.evaluations)
         paradigm = make(args.resample)
         ds = build()
         sfreq = args.resample or 1000.0
@@ -102,10 +106,14 @@ def main():
                        out=f"{args.out_dir}/reference_{task}.csv", overwrite=args.overwrite, sfreq=sfreq,
                        evaluations=evaluations)
         head = "pearson_r" if task == "fingerflex" else "kappa"
-        summ = df[(df.metric == head) & (df.evaluation == "within_subject")].groupby("pipeline")["score"].agg(
-            ["mean", "std", "count"])
         print(f"[{task}] {time.time() - t0:.0f} s, {head} per pipeline (mean over folds and patients):")
-        print(summ.round(3).to_string())
+        for ev in evaluations:
+            sub = df[(df.metric == head) & (df.evaluation == ev)]
+            if sub.empty:
+                continue
+            keys = ["pipeline", "train_fraction"] if ev == "learning_curve" else ["pipeline"]
+            print(f"  {ev}:")
+            print(sub.groupby(keys)["score"].agg(["mean", "std", "count"]).round(3).to_string())
 
 
 if __name__ == "__main__":

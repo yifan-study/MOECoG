@@ -12,6 +12,48 @@ from pathlib import Path
 
 import pandas as pd
 
+from moecog.analysis import (
+    find_significant_differences,
+    learning_curve_plot,
+    rank_pipelines,
+    score_plot,
+    summary_plot,
+)
+
+
+def learning_curve_section(task, g, metric, figdir, figrel):
+    """Table of mean score per pipeline and training fraction, the fraction reaching 90 % of the full score,
+    and the learning-curve figure."""
+    import matplotlib.pyplot as plt
+
+    per = g.groupby(["pipeline", "train_fraction", "subject"], as_index=False).agg(
+        score=("score", "mean"), n_train=("n_train", "median"))
+    fractions = sorted(per["train_fraction"].unique())
+    n_pat = per["subject"].nunique()
+    lines = [f"## {task} (learning_curve, {metric}, {n_pat} patients)", "",
+             "Train on the first 10/25/50/100 % of the non-test trials of every (patient, session), test on the "
+             "fixed final 20 %. The last column is the smallest fraction whose mean reaches 90 % of the "
+             "full-data mean.", "",
+             "| pipeline | " + " | ".join(
+                 f"{int(round(f * 100))} % (n={int(per[per.train_fraction == f]['n_train'].median())})"
+                 for f in fractions) + " | 90 % of full at |",
+             "|---|" + "---|" * (len(fractions) + 1)]
+    full = per[per.train_fraction == fractions[-1]].groupby("pipeline")["score"].mean()
+    order = full.sort_values(ascending=False).index
+    for name in order:
+        means = per[per.pipeline == name].groupby("train_fraction")["score"].mean()
+        reach = next((f for f in fractions if means.get(f, -1) >= 0.9 * means[fractions[-1]]), fractions[-1])
+        lines.append(f"| {name} | " + " | ".join(f"{means.get(f, float('nan')):.3f}" for f in fractions)
+                     + f" | {int(round(reach * 100))} % |")
+    lines.append("")
+    fig = learning_curve_plot(g, metric)
+    fig.suptitle(task)
+    stem = f"{task}_learning_curve"
+    fig.savefig(figdir / f"{stem}.png", dpi=110, bbox_inches="tight")
+    plt.close("all")
+    lines += [f"![{stem}]({figrel}/{stem}.png)", ""]
+    return lines
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -23,7 +65,6 @@ def main():
     import matplotlib
 
     matplotlib.use("Agg")
-    from moecog.analysis import find_significant_differences, rank_pipelines, score_plot, summary_plot
 
     files = sorted(Path(args.results).glob(args.pattern))
     if not files:
@@ -42,6 +83,9 @@ def main():
         for ev, g in df.groupby("evaluation"):
             g = g[g.metric == metric]
             if g.empty:
+                continue
+            if ev == "learning_curve":
+                lines += learning_curve_section(task, g, metric, figdir, Path(args.figures).name)
                 continue
             per_pat = g.groupby(["pipeline", "subject"])["score"].mean().reset_index()
             summ = per_pat.groupby("pipeline")["score"].agg(["mean", "std", "median", "count"]).sort_values(

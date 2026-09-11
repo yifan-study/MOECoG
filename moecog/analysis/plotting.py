@@ -110,3 +110,32 @@ def ranking_plot(df: pd.DataFrame, metric: str | None = None, ax=None):
                  fontsize=9)
     fig.tight_layout()
     return fig
+
+
+def learning_curve_plot(df: pd.DataFrame, metric: str | None = None, ax=None):
+    """Mean score (line) and patient spread (band, 25th-75th percentile) against the training fraction.
+
+    Expects rows of :class:`~moecog.evaluations.LearningCurveEvaluation` (columns ``train_fraction`` and
+    ``n_train``); one line per pipeline, the x labels carry the median number of training trials.
+    """
+    plt = _plt()
+    d = df if metric is None else df[df.metric == metric]
+    if ax is None:
+        _, ax = plt.subplots(figsize=(6.0, 4.0))
+    per = d.groupby(["pipeline", "train_fraction", "subject"], as_index=False).agg(
+        score=("score", "mean"), n_train=("n_train", "median"))
+    fractions = sorted(per["train_fraction"].unique())
+    for name, g in per.groupby("pipeline"):
+        agg = g.groupby("train_fraction")["score"].agg(["mean", lambda v: v.quantile(0.25),
+                                                        lambda v: v.quantile(0.75)])
+        agg.columns = ["mean", "q25", "q75"]
+        ax.plot(agg.index, agg["mean"], marker="o", label=name)
+        ax.fill_between(agg.index, agg["q25"], agg["q75"], alpha=0.12)
+    med_n = per.groupby("train_fraction")["n_train"].median()
+    ax.set_xticks(fractions)
+    ax.set_xticklabels([f"{int(round(f * 100))} %\n(n={int(med_n[f])})" for f in fractions])
+    ax.set_xlabel("training fraction of the non-test trials (median trials)")
+    ax.set_ylabel(metric or "score")
+    ax.grid(alpha=0.3)
+    ax.legend(fontsize=8)
+    return ax.figure

@@ -18,7 +18,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-EVALUATIONS = {"within_subject": "WithinSubjectCV", "cross_session": "CrossSessionEvaluation"}
+EVALUATIONS = {"within_subject": "WithinSubjectCV", "cross_session": "CrossSessionEvaluation",
+               "learning_curve": "LearningCurveEvaluation"}
 
 
 def _resolve_paradigm(paradigm, contexts):
@@ -58,7 +59,7 @@ def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",
     paradigm : BaseParadigm or str
         Object, or class name from :mod:`moecog.paradigms` instantiated with ``contexts``.
     pipelines : str, Path, dict or None
-    evaluations : sequence of {"within_subject", "cross_session"}
+    evaluations : sequence of {"within_subject", "cross_session", "learning_curve"}
     n_splits, subjects, shuffle, random_state
         Passed to the within-subject evaluation.
     out : str or Path or None

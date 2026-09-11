@@ -63,7 +63,10 @@ class CrossSessionEvaluation(BaseEvaluation):
                     warnings.warn(f"{dataset.code} {subject} session {held_out}: single class in train or test")
                     continue
                 for name, pipeline in pipelines.items():
-                    out = self._score_pipeline(pipeline, X[train], y[train], X[test], y[test])
+                    out = self._score_pipeline(pipeline, X[train], y[train], X[test], y[test],
+                                               where=f"({name}, {dataset.code} {subject} -> session {held_out})")
+                    if out is None:
+                        continue
                     for metric, score in out["scores"].items():
                         results.append({
                             "dataset": dataset.code, "subject": subject, "session": held_out,

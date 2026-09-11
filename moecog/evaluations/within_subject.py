@@ -120,8 +120,11 @@ class WithinSubjectCV(BaseEvaluation):
                     continue
                 for name, pipeline in pipelines.items():
                     out = self._score_pipeline(
-                        pipeline, X_s[train], y_s[train], X_s[test], y_s[test]
+                        pipeline, X_s[train], y_s[train], X_s[test], y_s[test],
+                        where=f"({name}, {dataset.code} {subject}/{session} fold {fold})",
                     )
+                    if out is None:
+                        continue
                     for metric, score in out["scores"].items():
                         results.append({
                             "dataset": dataset.code,

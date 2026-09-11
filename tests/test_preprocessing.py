@@ -4,6 +4,7 @@ import pytest
 
 from moecog.paradigms import MotorClassification
 from moecog.preprocessing import (
+    BandPassFilter,
     CommonAverageReference,
     HilbertEnvelope,
     NotchFilter,
@@ -80,3 +81,26 @@ def test_paradigm_raw_steps(fake_cls):
         from moecog.preprocessing import RawStep
 
         RawStep().apply(None)
+
+
+def test_bandpass_filter_stacks_bands_and_keeps_in_band_power():
+    sf = 500.0
+    t = np.arange(int(sf)) / sf
+    X = np.random.default_rng(3).standard_normal((2, 2, len(t))) * 0.01
+    X[0, 0] += np.sin(2 * np.pi * 100 * t)   # in the high-gamma band
+    X[1, 0] += np.sin(2 * np.pi * 20 * t)    # beta, outside it
+    bp = BandPassFilter(bands={"hg": (70, 150)}, sfreq=sf)
+    F = bp.fit_transform(X)
+    assert F.shape == X.shape
+    assert F[0, 0].var() > 10 * F[1, 0].var()
+    two = BandPassFilter(bands={"hg": (70, 150), "beta": (13, 30)}, sfreq=sf).fit_transform(X)
+    assert two.shape == (2, 4, len(t)) and two[1, 2].var() > 10 * two[1, 0].var()
+    # a band above Nyquist is clipped rather than raising
+    assert BandPassFilter(bands={"hg": (70, 150)}, sfreq=200.0).fit_transform(X).shape == X.shape
+
+
+def test_hilbert_envelope_log_stays_finite_after_decimation():
+    """Zero-phase decimation rings below zero on tiny envelopes; the log must not turn that into NaN."""
+    X = np.random.default_rng(0).standard_normal((40, 8, 750)) * 1e-5
+    E = HilbertEnvelope(bands={"hg": (70, 150)}, sfreq=250.0, log=True, decimate=2).fit_transform(X)
+    assert np.isfinite(E).all()

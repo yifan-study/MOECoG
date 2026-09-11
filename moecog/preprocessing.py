@@ -134,6 +134,9 @@ class HilbertEnvelope(BaseEstimator, TransformerMixin):
                 env = decimate(env, int(self.decimate), axis=-1, zero_phase=True)
             outs.append(env)
         env = np.concatenate(outs, axis=1)  # (n, ch * bands, t)
+        # zero-phase IIR decimation rings slightly below zero where the envelope is tiny; floor it so the
+        # log stays finite (this produced NaN covariances in the Riemannian envelope pipeline)
+        env = np.maximum(env, 0.0)
         if self.log:
             env = np.log(env + 1e-12)
         if self.average:
@@ -152,6 +155,43 @@ class HilbertEnvelope(BaseEstimator, TransformerMixin):
         if self.zscore:
             feats = (feats - self.mean_) / self.std_
         return feats
+
+
+class BandPassFilter(BaseEstimator, TransformerMixin):
+    """Zero-phase Butterworth band-pass of one or more bands, stacked along the channel axis.
+
+    Output ``(n_samples, n_channels * n_bands, n_times)``; with one band this is a plain band-pass so a
+    covariance estimator downstream sees the power (diagonal) and coupling (off-diagonal) of that band, the
+    Riemannian counterpart of log band power. Bands whose upper edge exceeds Nyquist are clipped to 0.98 Nyquist.
+
+    Parameters
+    ----------
+    bands : dict
+        ``{name: (low, high)}`` in Hz (default high gamma 70-150).
+    sfreq : float
+    order : int
+    """
+
+    def __init__(self, bands=None, sfreq=1000.0, order=4):
+        self.bands = bands
+        self.sfreq = sfreq
+        self.order = order
+
+    def _bands(self):
+        bands = self.bands or {"high_gamma": (70.0, 150.0)}
+        nyq = self.sfreq / 2.0
+        return {k: (lo, min(hi, 0.98 * nyq)) for k, (lo, hi) in bands.items() if lo < nyq}
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        X = np.asarray(X, dtype=float)
+        outs = []
+        for lo, hi in self._bands().values():
+            sos = butter(self.order, [lo, hi], btype="bandpass", fs=self.sfreq, output="sos")
+            outs.append(sosfiltfilt(sos, X, axis=-1))
+        return np.concatenate(outs, axis=1)
 
 
 def chang_high_gamma(sfreq=1000.0, n_bands=8, fmin=70.0, fmax=150.0, decimate=None,

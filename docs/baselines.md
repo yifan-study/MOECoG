@@ -1,4 +1,41 @@
-# First classification-tier baselines (2026-09-09)
+# Reference protocol (roadmap M2, 2026-09-10)
+
+The reference benchmark on the Miller tier is produced by `scripts/run_reference.py` into
+`results/reference_<task>.csv` (a `ResultsStore`: one row per patient, session, pipeline, metric and fold,
+with parameter digests and the package version), summarised by `scripts/build_leaderboard.py`
+(`docs/leaderboard.md`) and analysed by `scripts/build_analysis.py` (`docs/analysis.md`, `docs/figures/`).
+
+**Tasks.** `motor_basic` hand vs tongue (19 patients), `faces_basic` face vs house (14), `imagery_basic` overt
+and imagined hand vs tongue (7, two sessions), `gestures` (5, several sessions), `fingerflex` dataglove
+regression (9), and BCI Competition III dataset I (1 patient, two sessions a week apart, the competition's
+published test labels attached).
+
+**Paradigms.** Band-pass 1-200 Hz, ECoG channels only, epochs from cue onset to cue end (or 1 s windows
+where the preset says so); `FingerFlexionRegression` uses causal 0.5 s windows with a 50 ms stride.
+Deep pipelines see the same epochs resampled to 250 Hz.
+
+**Evaluations.** `WithinSubjectCV` with 5 chronological contiguous folds per (patient, session), stratified
+shuffled folds only where a file presents its cues in blocks (`fold_policy` column); regression folds carry
+a purge gap. `CrossSessionEvaluation` (leave one session out) on BCI III-1.
+
+**Pipelines.** The reference YAMLs shipped in the package: `LogBandPower + LDA`, `LogBandPower + LogReg`,
+`HighGamma + LDA`, `Riemann TS + LogReg` (covariances on the raw epochs), `ShallowFBCSPNet` (braindecode,
+150 epochs of batch 16, AdamW 6.25e-4, per-channel standardisation on the training fold, CPU); regression
+uses `LogBandPower + Ridge` and `HighGamma + Ridge`. Randomness enters only through the deep model, which is
+run with seeds 0, 1, 2 (`ShallowFBCSPNet s<k>` rows).
+
+**Metrics.** Kappa is the headline for trials, Pearson r for kinematics; accuracy, balanced accuracy and r2 are
+recorded alongside. Statistics across patients use paired tests (permutation below 20 patients), effect sizes
+d_z and Stouffer combination, see `docs/moabb_review.md` section 7.
+
+**Where it ran.** Classical pipelines on a laptop CPU (Python 3.12, NumPy 2, mne 1.13, scikit-learn 1.7,
+pyriemann 0.12); the deep pipeline in a NumPy 1 environment on the same machine because the last torch build
+for Intel macOS predates NumPy 2. Athene (CPU) reruns the seeds when it is reachable; no GPU is used before
+the PACE camera-ready (2026-09-25).
+
+---
+
+# First classification-tier baselines (2026-09-09, superseded by the reference protocol above)
 
 Run on FAU Athene (`debug` partition, CPU only, job 4721651) against the
 library copy at `/mnt/archive/home/yyu2024/PLaCT_data` with

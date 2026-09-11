@@ -90,7 +90,7 @@ and predicted finger trajectories (the competition winner reached 0.46; the MOEC
 
 | point | chunk | milestone |
 |---|---|---|
-| per-session z-scoring, Euclidean and Riemannian Procrustes alignment as pipeline steps; Riemannian tangent space on high-gamma envelopes rather than raw covariances | `moecog.pipelines.alignment`, `HilbertEnvelope` before `Covariances` | M2 (Riemann on envelopes), M3 (alignment) |
+| per-session z-scoring, Euclidean alignment and Riemannian re-centering as an evaluation option (`alignment=`), applied label-free per session; Riemannian tangent space on the 70-150 Hz band (done: `Riemann HG TS + LogReg`) | `moecog.alignment`, `HilbertEnvelope` before `Covariances` | M2 (Riemann on envelopes), M3 (alignment) |
 | artefact and epileptiform channel rejection, Laplacian for depth probes | new `raw_steps` | M3 |
 | learning curves with chronological subsets (10/25/50/100 %) | `LearningCurveEvaluation` | M2 |
 | electrode-to-region projection (RBF kernel, atlas regions) as the first `aligner` for `CrossSubjectEvaluation`; pooled pretraining then fine-tuning with 20/50/100 events | M4 |

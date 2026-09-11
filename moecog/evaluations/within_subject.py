@@ -52,8 +52,8 @@ class WithinSubjectCV(BaseEvaluation):
     """
 
     def __init__(self, paradigm, datasets, n_splits=5, shuffle=False, random_state=42,
-                 purge=None, fallback="stratified"):
-        super().__init__(paradigm, datasets, n_splits=n_splits, random_state=random_state)
+                 purge=None, fallback="stratified", alignment=None):
+        super().__init__(paradigm, datasets, n_splits=n_splits, random_state=random_state, alignment=alignment)
         self.shuffle = shuffle
         self.purge = purge
         if fallback not in ("stratified", None):

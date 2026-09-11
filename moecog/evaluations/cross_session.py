@@ -24,9 +24,9 @@ class CrossSessionEvaluation(BaseEvaluation):
         Minimum number of sessions a patient needs (default 2).
     """
 
-    def __init__(self, paradigm, datasets, random_state=42, min_sessions=2):
+    def __init__(self, paradigm, datasets, random_state=42, min_sessions=2, alignment=None):
         self.min_sessions = int(min_sessions)  # before the base class filters datasets with incompatibility_reason
-        super().__init__(paradigm, datasets, n_splits=None, random_state=random_state)
+        super().__init__(paradigm, datasets, n_splits=None, random_state=random_state, alignment=alignment)
 
     def incompatibility_reason(self, dataset):
         base = super().incompatibility_reason(dataset)

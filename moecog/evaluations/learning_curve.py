@@ -38,8 +38,8 @@ class LearningCurveEvaluation(BaseEvaluation):
     """
 
     def __init__(self, paradigm, datasets, random_state=42, fractions=(0.1, 0.25, 0.5, 1.0), test_fraction=0.2,
-                 min_train=4, fallback="stratified"):
-        super().__init__(paradigm, datasets, n_splits=None, random_state=random_state)
+                 min_train=4, fallback="stratified", alignment=None):
+        super().__init__(paradigm, datasets, n_splits=None, random_state=random_state, alignment=alignment)
         self.fractions = tuple(sorted(float(f) for f in fractions))
         self.test_fraction = float(test_fraction)
         self.min_train = int(min_train)

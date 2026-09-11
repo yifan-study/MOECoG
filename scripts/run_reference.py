@@ -51,7 +51,8 @@ TASKS = {
     # two sessions a week apart with published test labels: the one honest cross-session check in this tier
     "bci_iii_1": ("EpochedClassification", lambda r: EpochedClassification(tmin=0.0, tmax=None, fmin=1.0,
                                                                              fmax=200.0, resample=r),
-                  _bci_iii_1, ("within_subject", "cross_session")),
+                  _bci_iii_1, ("within_subject", "cross_session", "within_subject:ea", "cross_session:ea",
+                               "cross_session:recenter", "cross_session:zscore")),
 }
 DEEP = "ShallowFBCSPNet"
 

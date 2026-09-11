@@ -19,6 +19,8 @@ from __future__ import annotations
 import warnings
 from pathlib import Path
 
+from .alignment import ALIGNMENTS
+
 EVALUATIONS = {"within_subject": "WithinSubjectCV", "cross_session": "CrossSessionEvaluation",
                "learning_curve": "LearningCurveEvaluation"}
 
@@ -65,7 +67,9 @@ def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",
     paradigm : BaseParadigm or str
         Object, or class name from :mod:`moecog.paradigms` instantiated with ``contexts``.
     pipelines : str, Path, dict or None
-    evaluations : sequence of {"within_subject", "cross_session", "learning_curve"}
+    evaluations : sequence of {"within_subject", "cross_session", "learning_curve"}, each optionally suffixed
+        ``":ea"``, ``":recenter"`` or ``":zscore"`` for label-free per-session alignment (``"cross_session:ea"``);
+        the full string is the ``evaluation`` label of the rows
     n_splits, subjects, shuffle, random_state
         Passed to the within-subject evaluation.
     out : str or Path or None
@@ -116,11 +120,15 @@ def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",
     store = ResultsStore(out if out else Path(tempfile.mkdtemp()) / "results.csv")
     skipped = []
     for ev_name in evaluations:
-        if ev_name not in EVALUATIONS:
-            raise ValueError(f"unknown evaluation {ev_name!r}; choose from {sorted(EVALUATIONS)}")
-        cls = getattr(E, EVALUATIONS[ev_name])
-        kwargs = dict(random_state=random_state)
-        if ev_name == "within_subject":
+        base_name, _, alignment = ev_name.partition(":")
+        if base_name not in EVALUATIONS:
+            raise ValueError(f"unknown evaluation {ev_name!r}; choose from {sorted(EVALUATIONS)}, optionally "
+                             "suffixed ':ea', ':recenter' or ':zscore' for per-session alignment")
+        if alignment and alignment not in ALIGNMENTS:
+            raise ValueError(f"unknown alignment {alignment!r} in {ev_name!r}; choose from {sorted(ALIGNMENTS)}")
+        cls = getattr(E, EVALUATIONS[base_name])
+        kwargs = dict(random_state=random_state, alignment=alignment or None)
+        if base_name == "within_subject":
             kwargs.update(n_splits=n_splits, shuffle=shuffle)
         try:
             ev = cls(paradigm, resolved, **kwargs)

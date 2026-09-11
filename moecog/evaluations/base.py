@@ -24,6 +24,10 @@ class BaseEvaluation(ABC):
         Number of cross-validation folds.
     random_state : int
         Random seed for reproducibility.
+    alignment : {"ea", "recenter", "zscore"} or None
+        Label-free per-session alignment applied to the epochs of every (patient, session) before the pipelines
+        (see :mod:`moecog.alignment`). It uses each session's own unlabeled trials, the test session included, so
+        it is what a deployed decoder could do on a new day.
     """
 
     #: Load and evaluate one subject at a time. ECoG grids are patient-specific,
@@ -31,10 +35,15 @@ class BaseEvaluation(ABC):
     #: set this to False and align channels themselves.
     per_subject = True
 
-    def __init__(self, paradigm, datasets, n_splits=5, random_state=42):
+    def __init__(self, paradigm, datasets, n_splits=5, random_state=42, alignment=None):
+        from moecog.alignment import ALIGNMENTS
+
+        if alignment is not None and alignment not in ALIGNMENTS:
+            raise ValueError(f"unknown alignment {alignment!r}; choose from {sorted(ALIGNMENTS)}")
         self.paradigm = paradigm
         self.n_splits = n_splits
         self.random_state = random_state
+        self.alignment = alignment
         self.skipped = {}  # dataset code -> reason, for datasets this evaluation cannot use
         kept = []
         for d in datasets:
@@ -80,6 +89,11 @@ class BaseEvaluation(ABC):
             groups = [[s] for s in subs] if self.per_subject else [subs]
             for group in groups:
                 X, y, metadata = self.paradigm.get_data(dataset, subjects=group)
+                if self.alignment is not None:
+                    from moecog.alignment import align_sessions
+
+                    key = metadata["subject"].astype(str) + "/" + metadata["session"].astype(str)
+                    X = align_sessions(X, key.to_numpy(), self.alignment)
                 all_results.extend(self._evaluate(dataset, X, y, metadata, pipelines))
         return pd.DataFrame(all_results)
 

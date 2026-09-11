@@ -9,10 +9,10 @@ Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,kappa,0.5041322314049587
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,accuracy,0.6,0,chronological,120,30,84,0.7944760322570801,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.6083333333333333,0,chronological,120,30,84,0.7944760322570801,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.1032608695652174,0,chronological,120,30,84,1.728518009185791,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.26666666666666666,0,chronological,120,30,84,1.728518009185791,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.2666666666666666,0,chronological,120,30,84,1.728518009185791,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.3083333333333333,0,chronological,120,30,84,1.728518009185791,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,kappa,0.9148936170212766,1,chronological,120,30,84,0.7019810676574707,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,fingerflex,HighGamma + LDA,accuracy,0.9333333333333333,1,chronological,120,30,84,0.7019810676574707,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,fingerflex,HighGamma + LDA,accuracy,0.9333333333333332,1,chronological,120,30,84,0.7019810676574707,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,balanced_accuracy,0.925,1,chronological,120,30,84,0.7019810676574707,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LDA,kappa,0.6260387811634349,1,chronological,120,30,84,0.7093031406402588,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LDA,accuracy,0.7,1,chronological,120,30,84,0.7093031406402588,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
@@ -20,7 +20,7 @@ Miller2019-gestures,bp,fingerflex,LogBandPower + LDA,balanced_accuracy,0.745,1,c
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,kappa,0.4246575342465754,1,chronological,120,30,84,0.6955208778381348,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,accuracy,0.5333333333333333,1,chronological,120,30,84,0.6955208778381348,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.5900000000000001,1,chronological,120,30,84,0.6955208778381348,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.16223404255319163,1,chronological,120,30,84,1.651561975479126,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.1622340425531916,1,chronological,120,30,84,1.651561975479126,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.3,1,chronological,120,30,84,1.651561975479126,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.36,1,chronological,120,30,84,1.651561975479126,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,kappa,0.7083333333333333,2,chronological,120,30,84,0.684035062789917,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
@@ -33,7 +33,7 @@ Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,kappa,0.5403899721448467
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,accuracy,0.6333333333333333,2,chronological,120,30,84,0.6654798984527588,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.6566666666666667,2,chronological,120,30,84,0.6654798984527588,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.3051771117166213,2,chronological,120,30,84,1.643272876739502,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.43333333333333335,2,chronological,120,30,84,1.643272876739502,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.4333333333333333,2,chronological,120,30,84,1.643272876739502,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.475,2,chronological,120,30,84,1.643272876739502,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,kappa,0.7,3,chronological,120,30,84,0.6991837024688721,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,accuracy,0.7666666666666667,3,chronological,120,30,84,0.6991837024688721,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
@@ -44,7 +44,7 @@ Miller2019-gestures,bp,fingerflex,LogBandPower + LDA,balanced_accuracy,0.7942857
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,kappa,0.6197183098591549,3,chronological,120,30,84,0.6799280643463135,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,accuracy,0.7,3,chronological,120,30,84,0.6799280643463135,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.7342857142857142,3,chronological,120,30,84,0.6799280643463135,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.18918918918918937,3,chronological,120,30,84,1.6450939178466797,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.1891891891891893,3,chronological,120,30,84,1.6450939178466797,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.3333333333333333,3,chronological,120,30,84,1.6450939178466797,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.3904761904761904,3,chronological,120,30,84,1.6450939178466797,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,HighGamma + LDA,kappa,0.7457627118644068,4,chronological,120,30,84,0.6813509464263916,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
@@ -59,156 +59,156 @@ Miller2019-gestures,bp,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.5999
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,kappa,0.2682926829268293,4,chronological,120,30,84,1.648393154144287,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,accuracy,0.4,4,chronological,120,30,84,1.648393154144287,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.4333333333333333,4,chronological,120,30,84,1.648393154144287,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.8709677419354839,0,chronological,52,12,84,0.21482491493225098,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,52,12,84,0.21482491493225098,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.8888888888888888,0,chronological,52,12,84,0.21482491493225098,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.7391304347826086,0,chronological,52,12,84,0.21229290962219238,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.8333333333333334,0,chronological,52,12,84,0.21229290962219238,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.7777777777777777,0,chronological,52,12,84,0.21229290962219238,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.7391304347826086,0,chronological,52,12,84,0.19616270065307617,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,52,12,84,0.19616270065307617,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.7777777777777777,0,chronological,52,12,84,0.19616270065307617,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.030303030303030276,0,chronological,52,12,84,0.7279367446899414,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.8709677419354839,0,chronological,52,12,84,0.2148249149322509,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.9166666666666666,0,chronological,52,12,84,0.2148249149322509,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.8888888888888888,0,chronological,52,12,84,0.2148249149322509,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.7391304347826086,0,chronological,52,12,84,0.2122929096221923,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.8333333333333334,0,chronological,52,12,84,0.2122929096221923,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.7777777777777777,0,chronological,52,12,84,0.2122929096221923,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.7391304347826086,0,chronological,52,12,84,0.1961627006530761,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.8333333333333334,0,chronological,52,12,84,0.1961627006530761,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.7777777777777777,0,chronological,52,12,84,0.1961627006530761,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.0303030303030302,0,chronological,52,12,84,0.7279367446899414,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.3333333333333333,0,chronological,52,12,84,0.7279367446899414,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.3277777777777778,0,chronological,52,12,84,0.7279367446899414,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.75,1,chronological,51,13,84,0.19005107879638672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.8461538461538461,1,chronological,51,13,84,0.19005107879638672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.8333333333333334,1,chronological,51,13,84,0.19005107879638672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.75,1,chronological,51,13,84,0.1900510787963867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.8461538461538461,1,chronological,51,13,84,0.1900510787963867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.8333333333333334,1,chronological,51,13,84,0.1900510787963867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.6320754716981132,1,chronological,51,13,84,0.2049858570098877,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.7692307692307693,1,chronological,51,13,84,0.2049858570098877,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.75,1,chronological,51,13,84,0.2049858570098877,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.6138613861386139,1,chronological,51,13,84,0.19441819190979004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.7692307692307693,1,chronological,51,13,84,0.19441819190979004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.75,1,chronological,51,13,84,0.19441819190979004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.11363636363636354,1,chronological,51,13,84,0.7174632549285889,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.6138613861386139,1,chronological,51,13,84,0.19441819190979,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.7692307692307693,1,chronological,51,13,84,0.19441819190979,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.75,1,chronological,51,13,84,0.19441819190979,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.1136363636363635,1,chronological,51,13,84,0.7174632549285889,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.3076923076923077,1,chronological,51,13,84,0.7174632549285889,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.46428571428571425,1,chronological,51,13,84,0.7174632549285889,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.4642857142857142,1,chronological,51,13,84,0.7174632549285889,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.75,2,chronological,51,13,84,0.1895580291748047,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.8461538461538461,2,chronological,51,13,84,0.1895580291748047,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.8777777777777778,2,chronological,51,13,84,0.1895580291748047,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.7547169811320754,2,chronological,51,13,84,0.20726299285888672,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.8461538461538461,2,chronological,51,13,84,0.20726299285888672,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.8888888888888888,2,chronological,51,13,84,0.20726299285888672,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.7547169811320754,2,chronological,51,13,84,0.19055509567260742,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.8461538461538461,2,chronological,51,13,84,0.19055509567260742,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.8888888888888888,2,chronological,51,13,84,0.19055509567260742,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.7547169811320754,2,chronological,51,13,84,0.2072629928588867,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.8461538461538461,2,chronological,51,13,84,0.2072629928588867,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.8888888888888888,2,chronological,51,13,84,0.2072629928588867,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.7547169811320754,2,chronological,51,13,84,0.1905550956726074,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.8461538461538461,2,chronological,51,13,84,0.1905550956726074,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.8888888888888888,2,chronological,51,13,84,0.1905550956726074,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.4036697247706422,2,chronological,51,13,84,0.7148189544677734,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.6153846153846154,2,chronological,51,13,84,0.7148189544677734,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.6,2,chronological,51,13,84,0.7148189544677734,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.3867924528301886,3,chronological,51,13,84,0.19197893142700195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.6153846153846154,3,chronological,51,13,84,0.19197893142700195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.6388888888888888,3,chronological,51,13,84,0.19197893142700195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.5357142857142857,3,chronological,51,13,84,0.20679402351379395,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.6923076923076923,3,chronological,51,13,84,0.20679402351379395,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.75,3,chronological,51,13,84,0.20679402351379395,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.5357142857142857,3,chronological,51,13,84,0.19306421279907227,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.6923076923076923,3,chronological,51,13,84,0.19306421279907227,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.75,3,chronological,51,13,84,0.19306421279907227,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.15447154471544722,3,chronological,51,13,84,0.7155032157897949,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.38461538461538464,3,chronological,51,13,84,0.7155032157897949,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.3867924528301886,3,chronological,51,13,84,0.1919789314270019,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.6153846153846154,3,chronological,51,13,84,0.1919789314270019,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.6388888888888888,3,chronological,51,13,84,0.1919789314270019,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.5357142857142857,3,chronological,51,13,84,0.2067940235137939,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.6923076923076923,3,chronological,51,13,84,0.2067940235137939,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.75,3,chronological,51,13,84,0.2067940235137939,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.5357142857142857,3,chronological,51,13,84,0.1930642127990722,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.6923076923076923,3,chronological,51,13,84,0.1930642127990722,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.75,3,chronological,51,13,84,0.1930642127990722,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.1544715447154472,3,chronological,51,13,84,0.7155032157897949,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.3846153846153846,3,chronological,51,13,84,0.7155032157897949,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.5,3,chronological,51,13,84,0.7155032157897949,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.4196428571428571,4,chronological,51,13,84,0.19224119186401367,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.6153846153846154,4,chronological,51,13,84,0.19224119186401367,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.6388888888888888,4,chronological,51,13,84,0.19224119186401367,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.49514563106796117,4,chronological,51,13,84,0.20613384246826172,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.6923076923076923,4,chronological,51,13,84,0.20613384246826172,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.638888888888889,4,chronological,51,13,84,0.20613384246826172,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.49514563106796117,4,chronological,51,13,84,0.19055604934692383,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.6923076923076923,4,chronological,51,13,84,0.19055604934692383,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.638888888888889,4,chronological,51,13,84,0.19055604934692383,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.01680672268907557,4,chronological,51,13,84,0.7174909114837646,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,kappa,0.4196428571428571,4,chronological,51,13,84,0.1922411918640136,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,accuracy,0.6153846153846154,4,chronological,51,13,84,0.1922411918640136,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,HighGamma + LDA,balanced_accuracy,0.6388888888888888,4,chronological,51,13,84,0.1922411918640136,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,kappa,0.4951456310679611,4,chronological,51,13,84,0.2061338424682617,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,accuracy,0.6923076923076923,4,chronological,51,13,84,0.2061338424682617,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LDA,balanced_accuracy,0.638888888888889,4,chronological,51,13,84,0.2061338424682617,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,kappa,0.4951456310679611,4,chronological,51,13,84,0.1905560493469238,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,accuracy,0.6923076923076923,4,chronological,51,13,84,0.1905560493469238,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,LogBandPower + LogReg,balanced_accuracy,0.638888888888889,4,chronological,51,13,84,0.1905560493469238,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
+Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,kappa,0.0168067226890755,4,chronological,51,13,84,0.7174909114837646,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,accuracy,0.3076923076923077,4,chronological,51,13,84,0.7174909114837646,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
 Miller2019-gestures,bp,rh_lh,Riemann TS + LogReg,balanced_accuracy,0.3611111111111111,4,chronological,51,13,84,0.7174909114837646,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:02
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,0.06630581867388363,0,chronological,120,30,64,0.45320606231689453,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.23333333333333334,0,chronological,120,30,64,0.45320606231689453,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.33571428571428574,0,chronological,120,30,64,0.45320606231689453,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.04255319148936165,0,chronological,120,30,64,0.41550278663635254,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.2,0,chronological,120,30,64,0.41550278663635254,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.23928571428571427,0,chronological,120,30,64,0.41550278663635254,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.06756756756756765,0,chronological,120,30,64,0.3970947265625,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.23333333333333334,0,chronological,120,30,64,0.3970947265625,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,0.0663058186738836,0,chronological,120,30,64,0.4532060623168945,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.2333333333333333,0,chronological,120,30,64,0.4532060623168945,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.3357142857142857,0,chronological,120,30,64,0.4532060623168945,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.0425531914893616,0,chronological,120,30,64,0.4155027866363525,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.2,0,chronological,120,30,64,0.4155027866363525,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.2392857142857142,0,chronological,120,30,64,0.4155027866363525,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.0675675675675676,0,chronological,120,30,64,0.3970947265625,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.2333333333333333,0,chronological,120,30,64,0.3970947265625,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.2557142857142857,0,chronological,120,30,64,0.3970947265625,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,-0.04311543810848395,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.16666666666666666,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.13428571428571429,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,0.08333333333333337,1,chronological,120,30,64,0.39981794357299805,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.26666666666666666,1,chronological,120,30,64,0.39981794357299805,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.28095238095238095,1,chronological,120,30,64,0.39981794357299805,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.15848527349228603,1,chronological,120,30,64,0.4102053642272949,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,-0.0431154381084839,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.1666666666666666,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.1342857142857142,0,chronological,120,30,64,3.0374419689178467,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,0.0833333333333333,1,chronological,120,30,64,0.399817943572998,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.2666666666666666,1,chronological,120,30,64,0.399817943572998,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.2809523809523809,1,chronological,120,30,64,0.399817943572998,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.158485273492286,1,chronological,120,30,64,0.4102053642272949,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.3333333333333333,1,chronological,120,30,64,0.4102053642272949,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.3333333333333333,1,chronological,120,30,64,0.4102053642272949,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.1712707182320442,1,chronological,120,30,64,0.40189409255981445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.3333333333333333,1,chronological,120,30,64,0.40189409255981445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.37142857142857144,1,chronological,120,30,64,0.40189409255981445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,0.10511363636363646,1,chronological,120,30,64,3.049828052520752,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.1712707182320442,1,chronological,120,30,64,0.4018940925598144,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.3333333333333333,1,chronological,120,30,64,0.4018940925598144,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.3714285714285714,1,chronological,120,30,64,0.4018940925598144,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,0.1051136363636364,1,chronological,120,30,64,3.049828052520752,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.3,1,chronological,120,30,64,3.049828052520752,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.2619047619047619,1,chronological,120,30,64,3.049828052520752,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.017639077340569687,2,chronological,120,30,64,0.4114398956298828,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.16666666666666666,2,chronological,120,30,64,0.4114398956298828,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.0176390773405696,2,chronological,120,30,64,0.4114398956298828,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.1666666666666666,2,chronological,120,30,64,0.4114398956298828,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.2126984126984127,2,chronological,120,30,64,0.4114398956298828,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.18367346938775508,2,chronological,120,30,64,0.4280712604522705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,0.183673469387755,2,chronological,120,30,64,0.4280712604522705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.3333333333333333,2,chronological,120,30,64,0.4280712604522705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4523809523809524,2,chronological,120,30,64,0.4280712604522705,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.2223738062755798,2,chronological,120,30,64,0.4054439067840576,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.36666666666666664,2,chronological,120,30,64,0.4054439067840576,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.3666666666666666,2,chronological,120,30,64,0.4054439067840576,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.4809523809523809,2,chronological,120,30,64,0.4054439067840576,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,0.021739130434782705,2,chronological,120,30,64,3.060683012008667,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,0.0217391304347827,2,chronological,120,30,64,3.060683012008667,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.2,2,chronological,120,30,64,3.060683012008667,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.17777777777777776,2,chronological,120,30,64,3.060683012008667,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.09704641350210963,3,chronological,120,30,64,0.41313886642456055,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.13333333333333333,3,chronological,120,30,64,0.41313886642456055,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.13,3,chronological,120,30,64,0.41313886642456055,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,-0.12299465240641716,3,chronological,120,30,64,0.43587517738342285,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.06666666666666667,3,chronological,120,30,64,0.43587517738342285,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.09,3,chronological,120,30,64,0.43587517738342285,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.07008086253369272,3,chronological,120,30,64,0.40796589851379395,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.23333333333333334,3,chronological,120,30,64,0.40796589851379395,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.21000000000000002,3,chronological,120,30,64,0.40796589851379395,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.1777777777777777,2,chronological,120,30,64,3.060683012008667,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.0970464135021096,3,chronological,120,30,64,0.4131388664245605,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.1333333333333333,3,chronological,120,30,64,0.4131388664245605,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.13,3,chronological,120,30,64,0.4131388664245605,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,-0.1229946524064171,3,chronological,120,30,64,0.4358751773834228,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.0666666666666666,3,chronological,120,30,64,0.4358751773834228,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.09,3,chronological,120,30,64,0.4358751773834228,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,0.0700808625336927,3,chronological,120,30,64,0.4079658985137939,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.2333333333333333,3,chronological,120,30,64,0.4079658985137939,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.21,3,chronological,120,30,64,0.4079658985137939,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,0.1428571428571429,3,chronological,120,30,64,3.175859212875366,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.3,3,chronological,120,30,64,3.175859212875366,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.3,3,chronological,120,30,64,3.175859212875366,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.053370786516853785,4,chronological,120,30,64,0.49590182304382324,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.16666666666666666,4,chronological,120,30,64,0.49590182304382324,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.17888888888888888,4,chronological,120,30,64,0.49590182304382324,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,-0.019830028328611915,4,chronological,120,30,64,0.5197908878326416,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,kappa,-0.0533707865168537,4,chronological,120,30,64,0.4959018230438232,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,accuracy,0.1666666666666666,4,chronological,120,30,64,0.4959018230438232,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,HighGamma + LDA,balanced_accuracy,0.1788888888888888,4,chronological,120,30,64,0.4959018230438232,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,kappa,-0.0198300283286119,4,chronological,120,30,64,0.5197908878326416,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,accuracy,0.2,4,chronological,120,30,64,0.5197908878326416,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.20555555555555555,4,chronological,120,30,64,0.5197908878326416,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,-0.05633802816901423,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.16666666666666666,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.17222222222222222,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,-0.09704641350210963,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.13333333333333333,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.12777777777777777,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.6756756756756757,0,chronological,48,12,64,0.16471314430236816,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.16471314430236816,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.16471314430236816,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.5263157894736843,0,chronological,48,12,64,0.15974092483520508,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,64,0.15974092483520508,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.7857142857142857,0,chronological,48,12,64,0.15974092483520508,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LDA,balanced_accuracy,0.2055555555555555,4,chronological,120,30,64,0.5197908878326416,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,kappa,-0.0563380281690142,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,accuracy,0.1666666666666666,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.1722222222222222,4,chronological,120,30,64,0.4630110263824463,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,kappa,-0.0970464135021096,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,accuracy,0.1333333333333333,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.1277777777777777,4,chronological,120,30,64,3.2786338329315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.6756756756756757,0,chronological,48,12,64,0.1647131443023681,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.8333333333333334,0,chronological,48,12,64,0.1647131443023681,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.8571428571428572,0,chronological,48,12,64,0.1647131443023681,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.5263157894736843,0,chronological,48,12,64,0.159740924835205,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.75,0,chronological,48,12,64,0.159740924835205,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.7857142857142857,0,chronological,48,12,64,0.159740924835205,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.5263157894736843,0,chronological,48,12,64,0.1461811065673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.75,0,chronological,48,12,64,0.1461811065673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.7857142857142857,0,chronological,48,12,64,0.1461811065673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.37961602210998535,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.37961602210998535,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.9285714285714286,0,chronological,48,12,64,0.37961602210998535,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8235294117647058,1,chronological,48,12,64,0.14201879501342773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.14201879501342773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.9,1,chronological,48,12,64,0.14201879501342773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8235294117647058,1,chronological,48,12,64,0.17455005645751953,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.17455005645751953,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.9,1,chronological,48,12,64,0.17455005645751953,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.8235294117647058,1,chronological,48,12,64,0.14663410186767578,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.14663410186767578,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.9,1,chronological,48,12,64,0.14663410186767578,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.8235294117647058,1,chronological,48,12,64,0.40132927894592285,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.40132927894592285,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.9,1,chronological,48,12,64,0.40132927894592285,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8333333333333334,2,chronological,48,12,64,0.15236711502075195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,2,chronological,48,12,64,0.15236711502075195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.9285714285714286,2,chronological,48,12,64,0.15236711502075195,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.15493416786193848,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.15493416786193848,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.15493416786193848,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.3796160221099853,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.3796160221099853,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.9285714285714286,0,chronological,48,12,64,0.3796160221099853,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8235294117647058,1,chronological,48,12,64,0.1420187950134277,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.1420187950134277,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.9,1,chronological,48,12,64,0.1420187950134277,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8235294117647058,1,chronological,48,12,64,0.1745500564575195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,1,chronological,48,12,64,0.1745500564575195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.9,1,chronological,48,12,64,0.1745500564575195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.8235294117647058,1,chronological,48,12,64,0.1466341018676757,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.1466341018676757,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.9,1,chronological,48,12,64,0.1466341018676757,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.8235294117647058,1,chronological,48,12,64,0.4013292789459228,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.9166666666666666,1,chronological,48,12,64,0.4013292789459228,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.9,1,chronological,48,12,64,0.4013292789459228,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8333333333333334,2,chronological,48,12,64,0.1523671150207519,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,2,chronological,48,12,64,0.1523671150207519,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.9285714285714286,2,chronological,48,12,64,0.1523671150207519,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.1549341678619384,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.1549341678619384,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.1549341678619384,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.1433398723602295,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.1433398723602295,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.1433398723602295,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
@@ -218,109 +218,109 @@ Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,1.0,2,chrono
 Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.1430368423461914,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.1430368423461914,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.1430368423461914,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.16060686111450195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.16060686111450195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.16060686111450195,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8333333333333334,3,chronological,48,12,64,0.1606068611145019,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,3,chronological,48,12,64,0.1606068611145019,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.1606068611145019,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.8333333333333334,3,chronological,48,12,64,0.1507279872894287,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.9166666666666666,3,chronological,48,12,64,0.1507279872894287,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.9285714285714286,3,chronological,48,12,64,0.1507279872894287,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.6571428571428571,3,chronological,48,12,64,0.3832817077636719,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.3832817077636719,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.8285714285714285,3,chronological,48,12,64,0.3832817077636719,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8,4,chronological,48,12,64,0.14394283294677734,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.14394283294677734,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.14394283294677734,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8,4,chronological,48,12,64,0.16608905792236328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.16608905792236328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.16608905792236328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.8,4,chronological,48,12,64,0.14375901222229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.9166666666666666,4,chronological,48,12,64,0.14375901222229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.875,4,chronological,48,12,64,0.14375901222229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.625,4,chronological,48,12,64,0.39095401763916016,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.39095401763916016,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
-Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.8125,4,chronological,48,12,64,0.39095401763916016,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,kappa,0.8,4,chronological,48,12,64,0.1439428329467773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.1439428329467773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,HighGamma + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.1439428329467773,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,kappa,0.8,4,chronological,48,12,64,0.1660890579223632,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,accuracy,0.9166666666666666,4,chronological,48,12,64,0.1660890579223632,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LDA,balanced_accuracy,0.875,4,chronological,48,12,64,0.1660890579223632,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,kappa,0.8,4,chronological,48,12,64,0.14375901222229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,accuracy,0.9166666666666666,4,chronological,48,12,64,0.14375901222229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,LogBandPower + LogReg,balanced_accuracy,0.875,4,chronological,48,12,64,0.14375901222229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,kappa,0.625,4,chronological,48,12,64,0.3909540176391601,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,accuracy,0.8333333333333334,4,chronological,48,12,64,0.3909540176391601,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
+Miller2019-gestures,ca,mot_TH,Riemann TS + LogReg,balanced_accuracy,0.8125,4,chronological,48,12,64,0.3909540176391601,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:32
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,0,chronological,48,12,64,0.1568770408630371,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,0,chronological,48,12,64,0.1568770408630371,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,0,chronological,48,12,64,0.1568770408630371,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,0.8333333333333334,0,chronological,48,12,64,0.1861591339111328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,0.9166666666666666,0,chronological,48,12,64,0.1861591339111328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,0.9166666666666667,0,chronological,48,12,64,0.1861591339111328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.14723801612854004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.14723801612854004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.9166666666666667,0,chronological,48,12,64,0.14723801612854004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,0.9166666666666669,0,chronological,48,12,64,0.1861591339111328,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.14723801612854,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.14723801612854,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.9166666666666669,0,chronological,48,12,64,0.14723801612854,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,0.8333333333333334,0,chronological,48,12,64,0.3798189163208008,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,0.9166666666666666,0,chronological,48,12,64,0.3798189163208008,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.9166666666666667,0,chronological,48,12,64,0.3798189163208008,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,1,chronological,48,12,64,0.15194392204284668,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,64,0.15194392204284668,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.15194392204284668,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.9166666666666669,0,chronological,48,12,64,0.3798189163208008,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,1,chronological,48,12,64,0.1519439220428466,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,1,chronological,48,12,64,0.1519439220428466,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.1519439220428466,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,1,chronological,48,12,64,0.1702117919921875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,1,chronological,48,12,64,0.1702117919921875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,1,chronological,48,12,64,0.1702117919921875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,1,chronological,48,12,64,0.15153217315673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,1,chronological,48,12,64,0.15153217315673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,48,12,64,0.15153217315673828,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,1,chronological,48,12,64,0.1515321731567382,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,1,chronological,48,12,64,0.1515321731567382,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,1,chronological,48,12,64,0.1515321731567382,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,0.5,1,chronological,48,12,64,0.3533213138580322,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,0.75,1,chronological,48,12,64,0.3533213138580322,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.7571428571428571,1,chronological,48,12,64,0.3533213138580322,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,2,chronological,48,12,64,0.1470789909362793,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,2,chronological,48,12,64,0.1470789909362793,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.1470789909362793,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.15288186073303223,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.15288186073303223,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.15288186073303223,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.14025092124938965,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.14025092124938965,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.14025092124938965,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,2,chronological,48,12,64,0.1528818607330322,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,2,chronological,48,12,64,0.1528818607330322,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,2,chronological,48,12,64,0.1528818607330322,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,2,chronological,48,12,64,0.1402509212493896,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,2,chronological,48,12,64,0.1402509212493896,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,48,12,64,0.1402509212493896,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,0.625,2,chronological,48,12,64,0.3564271926879883,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,0.8333333333333334,2,chronological,48,12,64,0.3564271926879883,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.8125,2,chronological,48,12,64,0.3564271926879883,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,3,chronological,48,12,64,0.14548993110656738,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,64,0.14548993110656738,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.14548993110656738,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,64,0.17780518531799316,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,64,0.17780518531799316,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.17780518531799316,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,0.6756756756756757,3,chronological,48,12,64,0.15322184562683105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.15322184562683105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.8571428571428572,3,chronological,48,12,64,0.15322184562683105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,3,chronological,48,12,64,0.1454899311065673,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,3,chronological,48,12,64,0.1454899311065673,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.1454899311065673,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,3,chronological,48,12,64,0.1778051853179931,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,3,chronological,48,12,64,0.1778051853179931,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,3,chronological,48,12,64,0.1778051853179931,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,0.6756756756756757,3,chronological,48,12,64,0.153221845626831,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,0.8333333333333334,3,chronological,48,12,64,0.153221845626831,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.8571428571428572,3,chronological,48,12,64,0.153221845626831,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,1.0,3,chronological,48,12,64,0.3624389171600342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,1.0,3,chronological,48,12,64,0.3624389171600342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,1.0,3,chronological,48,12,64,0.3624389171600342,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,4,chronological,48,12,64,0.15490007400512695,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,4,chronological,48,12,64,0.15490007400512695,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,4,chronological,48,12,64,0.15490007400512695,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,kappa,1.0,4,chronological,48,12,64,0.1549000740051269,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,accuracy,1.0,4,chronological,48,12,64,0.1549000740051269,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,HighGamma + LDA,balanced_accuracy,1.0,4,chronological,48,12,64,0.1549000740051269,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,kappa,1.0,4,chronological,48,12,64,0.1658179759979248,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,accuracy,1.0,4,chronological,48,12,64,0.1658179759979248,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,cc,thumbfore,LogBandPower + LDA,balanced_accuracy,1.0,4,chronological,48,12,64,0.1658179759979248,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,4,chronological,48,12,64,0.15135693550109863,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,4,chronological,48,12,64,0.15135693550109863,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,4,chronological,48,12,64,0.15135693550109863,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,0.33333333333333337,4,chronological,48,12,64,0.38619112968444824,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,64,0.38619112968444824,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
-Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.38619112968444824,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,kappa,1.0,4,chronological,48,12,64,0.1513569355010986,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,accuracy,1.0,4,chronological,48,12,64,0.1513569355010986,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,4,chronological,48,12,64,0.1513569355010986,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,kappa,0.3333333333333333,4,chronological,48,12,64,0.3861911296844482,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,48,12,64,0.3861911296844482,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
+Miller2019-gestures,cc,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.6666666666666667,4,chronological,48,12,64,0.3861911296844482,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:21:38
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.4022140221402214,0,chronological,144,36,86,1.0961740016937256,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.5,0,chronological,144,36,86,1.0961740016937256,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.5147186147186147,0,chronological,144,36,86,1.0961740016937256,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.36431226765799263,0,chronological,144,36,86,0.9678990840911865,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.4722222222222222,0,chronological,144,36,86,0.9678990840911865,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.40649350649350646,0,chronological,144,36,86,0.9678990840911865,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.3643122676579926,0,chronological,144,36,86,0.9678990840911864,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.4722222222222222,0,chronological,144,36,86,0.9678990840911864,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.4064935064935064,0,chronological,144,36,86,0.9678990840911864,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.3904045155221073,0,chronological,144,36,86,0.9341027736663818,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.5,0,chronological,144,36,86,0.9341027736663818,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.4170995670995671,0,chronological,144,36,86,0.9341027736663818,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.15294117647058836,0,chronological,144,36,86,2.41689395904541,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.1529411764705883,0,chronological,144,36,86,2.41689395904541,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,accuracy,0.3333333333333333,0,chronological,144,36,86,2.41689395904541,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.27575757575757576,0,chronological,144,36,86,2.41689395904541,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.2757575757575757,0,chronological,144,36,86,2.41689395904541,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.4103730664240218,1,chronological,144,36,86,0.9544720649719238,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.5,1,chronological,144,36,86,0.9544720649719238,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.48153988868274583,1,chronological,144,36,86,0.9544720649719238,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.3769230769230769,1,chronological,144,36,86,0.9580230712890625,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.5,1,chronological,144,36,86,0.9580230712890625,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.4004329004329004,1,chronological,144,36,86,0.9580230712890625,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.35653809971777983,1,chronological,144,36,86,0.9391539096832275,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.4722222222222222,1,chronological,144,36,86,0.9391539096832275,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.4458874458874459,1,chronological,144,36,86,0.9391539096832275,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.01079489695780178,1,chronological,144,36,86,2.4847941398620605,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.4815398886827458,1,chronological,144,36,86,0.9544720649719238,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.3769230769230769,1,chronological,144,36,86,0.9580230712890624,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.5,1,chronological,144,36,86,0.9580230712890624,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.4004329004329004,1,chronological,144,36,86,0.9580230712890624,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.3565380997177798,1,chronological,144,36,86,0.9391539096832277,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.4722222222222222,1,chronological,144,36,86,0.9391539096832277,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.4458874458874459,1,chronological,144,36,86,0.9391539096832277,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.0107948969578017,1,chronological,144,36,86,2.4847941398620605,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,accuracy,0.2222222222222222,1,chronological,144,36,86,2.4847941398620605,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.1261595547309833,1,chronological,144,36,86,2.4847941398620605,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.2832579185520362,2,chronological,144,36,86,0.9580402374267578,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
@@ -328,154 +328,274 @@ Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.388888888888
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.3795918367346939,2,chronological,144,36,86,0.9580402374267578,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.1869918699186992,2,chronological,144,36,86,0.947502851486206,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.3055555555555556,2,chronological,144,36,86,0.947502851486206,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.29489795918367345,2,chronological,144,36,86,0.947502851486206,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.1567567567567567,2,chronological,144,36,86,0.9572229385375977,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.2777777777777778,2,chronological,144,36,86,0.9572229385375977,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.2673469387755102,2,chronological,144,36,86,0.9572229385375977,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.06839186691312393,2,chronological,144,36,86,2.479179859161377,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.2948979591836734,2,chronological,144,36,86,0.947502851486206,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.1567567567567567,2,chronological,144,36,86,0.9572229385375975,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.2777777777777778,2,chronological,144,36,86,0.9572229385375975,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.2673469387755102,2,chronological,144,36,86,0.9572229385375975,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.0683918669131239,2,chronological,144,36,86,2.479179859161377,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,accuracy,0.2222222222222222,2,chronological,144,36,86,2.479179859161377,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.19489795918367347,2,chronological,144,36,86,2.479179859161377,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.17203311867525306,3,chronological,144,36,86,1.4684817790985107,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.1948979591836734,2,chronological,144,36,86,2.479179859161377,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.172033118675253,3,chronological,144,36,86,1.4684817790985107,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.3055555555555556,3,chronological,144,36,86,1.4684817790985107,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.27800453514739226,3,chronological,144,36,86,1.4684817790985107,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.18404351767905702,3,chronological,144,36,86,0.9715709686279297,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.3055555555555556,3,chronological,144,36,86,0.9715709686279297,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.3299319727891156,3,chronological,144,36,86,0.9715709686279297,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.08363636363636373,3,chronological,144,36,86,0.9204459190368652,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.2780045351473922,3,chronological,144,36,86,1.4684817790985107,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.184043517679057,3,chronological,144,36,86,0.9715709686279296,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.3055555555555556,3,chronological,144,36,86,0.9715709686279296,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.3299319727891156,3,chronological,144,36,86,0.9715709686279296,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.0836363636363637,3,chronological,144,36,86,0.9204459190368652,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.2222222222222222,3,chronological,144,36,86,0.9204459190368652,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.24149659863945577,3,chronological,144,36,86,0.9204459190368652,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.22326454033771093,3,chronological,144,36,86,2.3382041454315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.2414965986394557,3,chronological,144,36,86,0.9204459190368652,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.2232645403377109,3,chronological,144,36,86,2.3382041454315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,accuracy,0.3611111111111111,3,chronological,144,36,86,2.3382041454315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.3435374149659864,3,chronological,144,36,86,2.3382041454315186,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.19298245614035092,4,chronological,144,36,86,0.9616599082946777,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.3611111111111111,4,chronological,144,36,86,0.9616599082946777,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.19084249084249086,4,chronological,144,36,86,0.9616599082946777,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.3247778874629812,4,chronological,144,36,86,0.9889011383056641,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.4722222222222222,4,chronological,144,36,86,0.9889011383056641,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.31410256410256404,4,chronological,144,36,86,0.9889011383056641,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,kappa,0.1929824561403509,4,chronological,144,36,86,0.9616599082946776,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,accuracy,0.3611111111111111,4,chronological,144,36,86,0.9616599082946776,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,HighGamma + LDA,balanced_accuracy,0.1908424908424908,4,chronological,144,36,86,0.9616599082946776,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,kappa,0.3247778874629812,4,chronological,144,36,86,0.988901138305664,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,accuracy,0.4722222222222222,4,chronological,144,36,86,0.988901138305664,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LDA,balanced_accuracy,0.314102564102564,4,chronological,144,36,86,0.988901138305664,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,kappa,0.2941176470588234,4,chronological,144,36,86,0.9352891445159912,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,accuracy,0.4444444444444444,4,chronological,144,36,86,0.9352891445159912,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.29029304029304026,4,chronological,144,36,86,0.9352891445159912,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.09729187562688058,4,chronological,144,36,86,2.3599929809570312,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,LogBandPower + LogReg,balanced_accuracy,0.2902930402930402,4,chronological,144,36,86,0.9352891445159912,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,kappa,0.0972918756268805,4,chronological,144,36,86,2.3599929809570312,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
 Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,accuracy,0.3055555555555556,4,chronological,144,36,86,2.3599929809570312,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.17216117216117216,4,chronological,144,36,86,2.3599929809570312,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.3042168674698795,0,chronological,88,21,80,0.43458008766174316,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.47619047619047616,0,chronological,88,21,80,0.43458008766174316,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.4666666666666666,0,chronological,88,21,80,0.43458008766174316,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.24550898203592808,0,chronological,88,21,80,0.4302821159362793,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.42857142857142855,0,chronological,88,21,80,0.4302821159362793,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,de,glovefingersgrasp,Riemann TS + LogReg,balanced_accuracy,0.1721611721611721,4,chronological,144,36,86,2.3599929809570312,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:13
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.3042168674698795,0,chronological,88,21,80,0.4345800876617431,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.4761904761904761,0,chronological,88,21,80,0.4345800876617431,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.4666666666666666,0,chronological,88,21,80,0.4345800876617431,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.245508982035928,0,chronological,88,21,80,0.4302821159362793,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.4285714285714285,0,chronological,88,21,80,0.4302821159362793,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4,0,chronological,88,21,80,0.4302821159362793,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.23404255319148937,0,chronological,88,21,80,0.4253830909729004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.42857142857142855,0,chronological,88,21,80,0.4253830909729004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.2340425531914893,0,chronological,88,21,80,0.4253830909729004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.4285714285714285,0,chronological,88,21,80,0.4253830909729004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.4,0,chronological,88,21,80,0.4253830909729004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,0.11976047904191622,0,chronological,88,21,80,1.7249977588653564,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,0.1197604790419162,0,chronological,88,21,80,1.7249977588653564,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.3333333333333333,0,chronological,88,21,80,1.7249977588653564,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.34285714285714286,0,chronological,88,21,80,1.7249977588653564,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.37142857142857144,1,chronological,87,22,80,0.408311128616333,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.3428571428571428,0,chronological,88,21,80,1.7249977588653564,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.3714285714285714,1,chronological,87,22,80,0.408311128616333,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.5,1,chronological,87,22,80,0.408311128616333,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.5133333333333333,1,chronological,87,22,80,0.408311128616333,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.25130890052356003,1,chronological,87,22,80,0.43349790573120117,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.4090909090909091,1,chronological,87,22,80,0.43349790573120117,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4133333333333333,1,chronological,87,22,80,0.43349790573120117,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.24736842105263157,1,chronological,87,22,80,0.4188218116760254,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.25130890052356,1,chronological,87,22,80,0.4334979057312011,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.4090909090909091,1,chronological,87,22,80,0.4334979057312011,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4133333333333333,1,chronological,87,22,80,0.4334979057312011,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.2473684210526315,1,chronological,87,22,80,0.4188218116760254,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.4090909090909091,1,chronological,87,22,80,0.4188218116760254,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.4133333333333333,1,chronological,87,22,80,0.4188218116760254,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,0.08333333333333326,1,chronological,87,22,80,1.6376278400421143,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.2727272727272727,1,chronological,87,22,80,1.6376278400421143,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.2733333333333333,1,chronological,87,22,80,1.6376278400421143,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.26478149100257065,2,chronological,87,22,80,0.4009368419647217,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,0.0833333333333332,1,chronological,87,22,80,1.6376278400421145,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.2727272727272727,1,chronological,87,22,80,1.6376278400421145,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.2733333333333333,1,chronological,87,22,80,1.6376278400421145,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.2647814910025706,2,chronological,87,22,80,0.4009368419647217,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.4090909090909091,2,chronological,87,22,80,0.4009368419647217,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.4428571428571428,2,chronological,87,22,80,0.4009368419647217,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.2628865979381444,2,chronological,87,22,80,0.4284329414367676,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.4090909090909091,2,chronological,87,22,80,0.4284329414367676,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4095238095238095,2,chronological,87,22,80,0.4284329414367676,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.1428571428571429,2,chronological,87,22,80,0.40743088722229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.3181818181818182,2,chronological,87,22,80,0.40743088722229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.3142857142857142,2,chronological,87,22,80,0.40743088722229004,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.05263157894736836,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.09090909090909091,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.13333333333333333,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.1428571428571429,2,chronological,87,22,80,0.40743088722229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.3181818181818182,2,chronological,87,22,80,0.40743088722229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.3142857142857142,2,chronological,87,22,80,0.40743088722229,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.0526315789473683,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.0909090909090909,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.1333333333333333,2,chronological,87,22,80,1.6633479595184326,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,0.2432432432432432,3,chronological,87,22,80,0.414870023727417,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.36363636363636365,3,chronological,87,22,80,0.414870023727417,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.44666666666666666,3,chronological,87,22,80,0.414870023727417,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.3636363636363636,3,chronological,87,22,80,0.414870023727417,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.4466666666666666,3,chronological,87,22,80,0.414870023727417,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,0.2222222222222222,3,chronological,87,22,80,0.4419982433319092,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.36363636363636365,3,chronological,87,22,80,0.4419982433319092,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.43666666666666665,3,chronological,87,22,80,0.4419982433319092,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.16243654822335019,3,chronological,87,22,80,0.3958258628845215,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.3636363636363636,3,chronological,87,22,80,0.4419982433319092,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.4366666666666666,3,chronological,87,22,80,0.4419982433319092,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,0.1624365482233501,3,chronological,87,22,80,0.3958258628845215,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.3181818181818182,3,chronological,87,22,80,0.3958258628845215,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.3866666666666666,3,chronological,87,22,80,0.3958258628845215,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.009661835748792313,3,chronological,87,22,80,1.4924471378326416,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.13636363636363635,3,chronological,87,22,80,1.4924471378326416,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.0096618357487923,3,chronological,87,22,80,1.4924471378326416,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.1363636363636363,3,chronological,87,22,80,1.4924471378326416,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.13,3,chronological,87,22,80,1.4924471378326416,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,-0.05025125628140703,4,chronological,87,22,80,0.4093940258026123,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.13636363636363635,4,chronological,87,22,80,0.4093940258026123,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,kappa,-0.050251256281407,4,chronological,87,22,80,0.4093940258026123,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,HighGamma + LDA,accuracy,0.1363636363636363,4,chronological,87,22,80,0.4093940258026123,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,HighGamma + LDA,balanced_accuracy,0.29,4,chronological,87,22,80,0.4093940258026123,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,-0.02857142857142847,4,chronological,87,22,80,0.4263417720794678,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.18181818181818182,4,chronological,87,22,80,0.4263417720794678,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,kappa,-0.0285714285714284,4,chronological,87,22,80,0.4263417720794678,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,accuracy,0.1818181818181818,4,chronological,87,22,80,0.4263417720794678,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,fingerflex,LogBandPower + LDA,balanced_accuracy,0.17,4,chronological,87,22,80,0.4263417720794678,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,-0.09999999999999987,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.13636363636363635,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.12000000000000002,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.09138381201044399,4,chronological,87,22,80,1.5529429912567139,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.13636363636363635,4,chronological,87,22,80,1.5529429912567139,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.12000000000000002,4,chronological,87,22,80,1.5529429912567139,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.3999999999999999,0,chronological,12,3,80,0.05042099952697754,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.6666666666666666,0,chronological,12,3,80,0.05042099952697754,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.75,0,chronological,12,3,80,0.05042099952697754,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,-0.8000000000000003,0,chronological,12,3,80,0.06453800201416016,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.0,0,chronological,12,3,80,0.06453800201416016,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.0,0,chronological,12,3,80,0.06453800201416016,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,0.0,0,chronological,12,3,80,0.04527997970581055,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,0,chronological,12,3,80,0.04527997970581055,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.5,0,chronological,12,3,80,0.04527997970581055,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,kappa,-0.0999999999999998,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,accuracy,0.1363636363636363,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,LogBandPower + LogReg,balanced_accuracy,0.12,4,chronological,87,22,80,0.4291651248931885,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,kappa,-0.0913838120104439,4,chronological,87,22,80,1.552942991256714,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,accuracy,0.1363636363636363,4,chronological,87,22,80,1.552942991256714,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,fingerflex,Riemann TS + LogReg,balanced_accuracy,0.12,4,chronological,87,22,80,1.552942991256714,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.3999999999999999,0,chronological,12,3,80,0.0504209995269775,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.6666666666666666,0,chronological,12,3,80,0.0504209995269775,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.75,0,chronological,12,3,80,0.0504209995269775,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,-0.8000000000000003,0,chronological,12,3,80,0.0645380020141601,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.0,0,chronological,12,3,80,0.0645380020141601,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.0,0,chronological,12,3,80,0.0645380020141601,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,0.0,0,chronological,12,3,80,0.0452799797058105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,0,chronological,12,3,80,0.0452799797058105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.5,0,chronological,12,3,80,0.0452799797058105,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.3999999999999999,0,chronological,12,3,80,0.2639453411102295,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,0,chronological,12,3,80,0.2639453411102295,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.75,0,chronological,12,3,80,0.2639453411102295,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.0,1,chronological,12,3,80,0.0459749698638916,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.3333333333333333,1,chronological,12,3,80,0.0459749698638916,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.5,1,chronological,12,3,80,0.0459749698638916,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,1,chronological,12,3,80,0.061351776123046875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,1,chronological,12,3,80,0.061351776123046875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,1,chronological,12,3,80,0.061351776123046875,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,1,chronological,12,3,80,0.0613517761230468,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,1,chronological,12,3,80,0.0613517761230468,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,1,chronological,12,3,80,0.0613517761230468,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,0.3999999999999999,1,chronological,12,3,80,0.0455927848815918,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.6666666666666666,1,chronological,12,3,80,0.0455927848815918,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.75,1,chronological,12,3,80,0.0455927848815918,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.0,1,chronological,12,3,80,0.2612297534942627,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.3333333333333333,1,chronological,12,3,80,0.2612297534942627,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.5,1,chronological,12,3,80,0.2612297534942627,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.0,2,chronological,12,3,80,0.04568314552307129,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.3333333333333333,2,chronological,12,3,80,0.04568314552307129,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.5,2,chronological,12,3,80,0.04568314552307129,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,2,chronological,12,3,80,0.062174081802368164,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.6666666666666666,2,chronological,12,3,80,0.062174081802368164,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,2,chronological,12,3,80,0.062174081802368164,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,1.0,2,chronological,12,3,80,0.043881893157958984,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,1.0,2,chronological,12,3,80,0.043881893157958984,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,12,3,80,0.043881893157958984,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.0,2,chronological,12,3,80,0.0456831455230712,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.3333333333333333,2,chronological,12,3,80,0.0456831455230712,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.5,2,chronological,12,3,80,0.0456831455230712,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,2,chronological,12,3,80,0.0621740818023681,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.6666666666666666,2,chronological,12,3,80,0.0621740818023681,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,2,chronological,12,3,80,0.0621740818023681,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,1.0,2,chronological,12,3,80,0.0438818931579589,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,1.0,2,chronological,12,3,80,0.0438818931579589,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,1.0,2,chronological,12,3,80,0.0438818931579589,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.0,2,chronological,12,3,80,0.2559659481048584,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,2,chronological,12,3,80,0.2559659481048584,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
 Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.5,2,chronological,12,3,80,0.2559659481048584,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.3999999999999999,3,chronological,12,3,80,0.04588603973388672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.6666666666666666,3,chronological,12,3,80,0.04588603973388672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.75,3,chronological,12,3,80,0.04588603973388672,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,3,chronological,12,3,80,0.062110185623168945,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,3,chronological,12,3,80,0.062110185623168945,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,3,chronological,12,3,80,0.062110185623168945,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,0.0,3,chronological,12,3,80,0.04488015174865723,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,3,chronological,12,3,80,0.04488015174865723,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.5,3,chronological,12,3,80,0.04488015174865723,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.0,3,chronological,12,3,80,0.26407814025878906,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.3333333333333333,3,chronological,12,3,80,0.26407814025878906,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.5,3,chronological,12,3,80,0.26407814025878906,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.0,4,chronological,12,3,80,0.045226097106933594,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.3333333333333333,4,chronological,12,3,80,0.045226097106933594,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.5,4,chronological,12,3,80,0.045226097106933594,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,-0.5,4,chronological,12,3,80,0.06405496597290039,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,4,chronological,12,3,80,0.06405496597290039,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.25,4,chronological,12,3,80,0.06405496597290039,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,-0.5,4,chronological,12,3,80,0.044303178787231445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,4,chronological,12,3,80,0.044303178787231445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.25,4,chronological,12,3,80,0.044303178787231445,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.3999999999999999,4,chronological,12,3,80,0.25522518157958984,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,12,3,80,0.25522518157958984,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
-Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.75,4,chronological,12,3,80,0.25522518157958984,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.3999999999999999,3,chronological,12,3,80,0.0458860397338867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.6666666666666666,3,chronological,12,3,80,0.0458860397338867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.75,3,chronological,12,3,80,0.0458860397338867,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,0.0,3,chronological,12,3,80,0.0621101856231689,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,3,chronological,12,3,80,0.0621101856231689,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.5,3,chronological,12,3,80,0.0621101856231689,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,0.0,3,chronological,12,3,80,0.0448801517486572,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,3,chronological,12,3,80,0.0448801517486572,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.5,3,chronological,12,3,80,0.0448801517486572,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.0,3,chronological,12,3,80,0.264078140258789,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.3333333333333333,3,chronological,12,3,80,0.264078140258789,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.5,3,chronological,12,3,80,0.264078140258789,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,kappa,0.0,4,chronological,12,3,80,0.0452260971069335,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,accuracy,0.3333333333333333,4,chronological,12,3,80,0.0452260971069335,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,HighGamma + LDA,balanced_accuracy,0.5,4,chronological,12,3,80,0.0452260971069335,f0ad027786a9,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,kappa,-0.5,4,chronological,12,3,80,0.0640549659729003,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,accuracy,0.3333333333333333,4,chronological,12,3,80,0.0640549659729003,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LDA,balanced_accuracy,0.25,4,chronological,12,3,80,0.0640549659729003,ad4c2abc31c8,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,kappa,-0.5,4,chronological,12,3,80,0.0443031787872314,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,accuracy,0.3333333333333333,4,chronological,12,3,80,0.0443031787872314,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,LogBandPower + LogReg,balanced_accuracy,0.25,4,chronological,12,3,80,0.0443031787872314,688f919f3ab0,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,kappa,0.3999999999999999,4,chronological,12,3,80,0.2552251815795898,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,accuracy,0.6666666666666666,4,chronological,12,3,80,0.2552251815795898,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,wm,thumbfore,Riemann TS + LogReg,balanced_accuracy,0.75,4,chronological,12,3,80,0.2552251815795898,b4736e60e22e,53c35aeb54c0,within_subject,0.3.0.dev0,2026-09-10T20:22:33
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,kappa,0.2148760330578512,0,chronological,120,30,84,64.03476524353027,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,accuracy,0.36666666666666664,0,chronological,120,30,84,64.03476524353027,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.375,0,chronological,120,30,84,64.03476524353027,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,kappa,0.32773109243697485,1,chronological,120,30,84,64.00316286087036,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,accuracy,0.4666666666666667,1,chronological,120,30,84,64.00316286087036,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.495,1,chronological,120,30,84,64.00316286087036,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,kappa,0.23295454545454553,2,chronological,120,30,84,36826.187896966934,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,accuracy,0.4,2,chronological,120,30,84,36826.187896966934,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.3466666666666666,2,chronological,120,30,84,36826.187896966934,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,kappa,0.18367346938775508,3,chronological,120,30,84,65.95747995376587,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,accuracy,0.3333333333333333,3,chronological,120,30,84,65.95747995376587,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.36095238095238097,3,chronological,120,30,84,65.95747995376587,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,kappa,0.20833333333333337,4,chronological,120,30,84,63.502039194107056,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,accuracy,0.36666666666666664,4,chronological,120,30,84,63.502039194107056,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.3111111111111111,4,chronological,120,30,84,63.502039194107056,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,kappa,0.28712871287128705,0,chronological,52,12,84,34.97198510169983,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,accuracy,0.5,0,chronological,52,12,84,34.97198510169983,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,balanced_accuracy,0.5499999999999999,0,chronological,52,12,84,34.97198510169983,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,kappa,0.2661290322580645,1,chronological,51,13,84,29.49325704574585,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,accuracy,0.46153846153846156,1,chronological,51,13,84,29.49325704574585,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,balanced_accuracy,0.5595238095238095,1,chronological,51,13,84,29.49325704574585,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,kappa,-0.11428571428571432,2,chronological,51,13,84,21.343560218811035,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,accuracy,0.3076923076923077,2,chronological,51,13,84,21.343560218811035,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,balanced_accuracy,0.24444444444444446,2,chronological,51,13,84,21.343560218811035,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,kappa,0.2777777777777777,3,chronological,51,13,84,20.930016040802002,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,accuracy,0.5384615384615384,3,chronological,51,13,84,20.930016040802002,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,balanced_accuracy,0.5555555555555555,3,chronological,51,13,84,20.930016040802002,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,kappa,0.514018691588785,4,chronological,51,13,84,20.203378915786743,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,accuracy,0.6923076923076923,4,chronological,51,13,84,20.203378915786743,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,bp,rh_lh,ShallowFBCSPNet s0,balanced_accuracy,0.6666666666666666,4,chronological,51,13,84,20.203378915786743,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:22:10
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,kappa,-0.10817941952506605,0,chronological,120,30,64,39.4983651638031,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,accuracy,0.06666666666666667,0,chronological,120,30,64,39.4983651638031,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.09523809523809523,0,chronological,120,30,64,39.4983651638031,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,kappa,0.023066485753052923,1,chronological,120,30,64,37.977295875549316,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,accuracy,0.2,1,chronological,120,30,64,37.977295875549316,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.21428571428571427,1,chronological,120,30,64,37.977295875549316,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,kappa,0.07949790794979072,2,chronological,120,30,64,37.292884826660156,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,accuracy,0.26666666666666666,2,chronological,120,30,64,37.292884826660156,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.24126984126984125,2,chronological,120,30,64,37.292884826660156,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,kappa,0.0053050397877983935,3,chronological,120,30,64,37.62505888938904,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,accuracy,0.16666666666666666,3,chronological,120,30,64,37.62505888938904,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.19666666666666666,3,chronological,120,30,64,37.62505888938904,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,kappa,0.013698630136986356,4,chronological,120,30,64,39.598154067993164,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,accuracy,0.2,4,chronological,120,30,64,39.598154067993164,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.21222222222222223,4,chronological,120,30,64,39.598154067993164,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,kappa,0.3846153846153846,0,chronological,48,12,64,18.267913103103638,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,accuracy,0.6666666666666666,0,chronological,48,12,64,18.267913103103638,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,balanced_accuracy,0.7142857142857143,0,chronological,48,12,64,18.267913103103638,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,kappa,0.3513513513513513,1,chronological,48,12,64,16.395710945129395,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,accuracy,0.6666666666666666,1,chronological,48,12,64,16.395710945129395,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,balanced_accuracy,0.6857142857142857,1,chronological,48,12,64,16.395710945129395,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,kappa,0.2727272727272727,2,chronological,48,12,64,16.603987216949463,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,accuracy,0.6666666666666666,2,chronological,48,12,64,16.603987216949463,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,balanced_accuracy,0.6285714285714286,2,chronological,48,12,64,16.603987216949463,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,kappa,-0.10526315789473673,3,chronological,48,12,64,16.578217029571533,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,accuracy,0.4166666666666667,3,chronological,48,12,64,16.578217029571533,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,balanced_accuracy,0.44285714285714284,3,chronological,48,12,64,16.578217029571533,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,kappa,-0.125,4,chronological,48,12,64,16.459824800491333,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,accuracy,0.5,4,chronological,48,12,64,16.459824800491333,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,ca,mot_TH,ShallowFBCSPNet s0,balanced_accuracy,0.4375,4,chronological,48,12,64,16.459824800491333,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:26:55
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,kappa,0.16666666666666663,0,chronological,48,12,64,15.655892133712769,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,accuracy,0.5833333333333334,0,chronological,48,12,64,15.655892133712769,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.5833333333333334,0,chronological,48,12,64,15.655892133712769,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,kappa,-0.23076923076923084,1,chronological,48,12,64,15.900229930877686,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,accuracy,0.3333333333333333,1,chronological,48,12,64,15.900229930877686,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.37142857142857144,1,chronological,48,12,64,15.900229930877686,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,kappa,0.09999999999999987,2,chronological,48,12,64,15.598910808563232,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,accuracy,0.5,2,chronological,48,12,64,15.598910808563232,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.5625,2,chronological,48,12,64,15.598910808563232,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,kappa,-0.37142857142857144,3,chronological,48,12,64,16.265167951583862,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,accuracy,0.3333333333333333,3,chronological,48,12,64,16.265167951583862,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.3142857142857143,3,chronological,48,12,64,16.265167951583862,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,kappa,0.0,4,chronological,48,12,64,15.913558959960938,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,accuracy,0.5,4,chronological,48,12,64,15.913558959960938,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,cc,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.5,4,chronological,48,12,64,15.913558959960938,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:28:17
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,kappa,0.06679960119641071,0,chronological,144,36,86,60.42006230354309,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,accuracy,0.2777777777777778,0,chronological,144,36,86,60.42006230354309,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,balanced_accuracy,0.16341991341991344,0,chronological,144,36,86,60.42006230354309,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,kappa,0.041825095057034245,1,chronological,144,36,86,60.829028844833374,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,accuracy,0.2222222222222222,1,chronological,144,36,86,60.829028844833374,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,balanced_accuracy,0.2504638218923933,1,chronological,144,36,86,60.829028844833374,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,kappa,0.05349048050770633,2,chronological,144,36,86,63.74766778945923,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,accuracy,0.19444444444444445,2,chronological,144,36,86,63.74766778945923,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,balanced_accuracy,0.19081632653061226,2,chronological,144,36,86,63.74766778945923,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,kappa,-0.000926784059314123,3,chronological,144,36,86,62.91321086883545,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,accuracy,0.16666666666666666,3,chronological,144,36,86,62.91321086883545,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,balanced_accuracy,0.11337868480725623,3,chronological,144,36,86,62.91321086883545,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,kappa,0.05996131528046422,4,chronological,144,36,86,63.09190511703491,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,accuracy,0.25,4,chronological,144,36,86,63.09190511703491,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,de,glovefingersgrasp,ShallowFBCSPNet s0,balanced_accuracy,0.14212454212454212,4,chronological,144,36,86,63.09190511703491,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:33:36
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,kappa,0.054054054054053946,0,chronological,88,21,80,32.84822106361389,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,accuracy,0.2857142857142857,0,chronological,88,21,80,32.84822106361389,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.24285714285714283,0,chronological,88,21,80,32.84822106361389,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,kappa,-0.012787723785166127,1,chronological,87,22,80,32.58706879615784,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,accuracy,0.18181818181818182,1,chronological,87,22,80,32.58706879615784,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.19666666666666668,1,chronological,87,22,80,32.58706879615784,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,kappa,0.09278350515463918,2,chronological,87,22,80,32.852232933044434,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,accuracy,0.2727272727272727,2,chronological,87,22,80,32.852232933044434,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.28095238095238095,2,chronological,87,22,80,32.852232933044434,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,kappa,-0.10275689223057638,3,chronological,87,22,80,32.660061836242676,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,accuracy,0.09090909090909091,3,chronological,87,22,80,32.660061836242676,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.08333333333333333,3,chronological,87,22,80,32.660061836242676,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,kappa,-0.03937007874015763,4,chronological,87,22,80,32.692732095718384,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,accuracy,0.18181818181818182,4,chronological,87,22,80,32.692732095718384,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,fingerflex,ShallowFBCSPNet s0,balanced_accuracy,0.13714285714285715,4,chronological,87,22,80,32.692732095718384,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,kappa,-0.8000000000000003,0,chronological,12,3,80,0.045063018798828125,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,accuracy,0.0,0,chronological,12,3,80,0.045063018798828125,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.0,0,chronological,12,3,80,0.045063018798828125,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,kappa,-0.5,1,chronological,12,3,80,0.041500091552734375,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,accuracy,0.3333333333333333,1,chronological,12,3,80,0.041500091552734375,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.25,1,chronological,12,3,80,0.041500091552734375,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,kappa,0.0,2,chronological,12,3,80,0.04486393928527832,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,accuracy,0.3333333333333333,2,chronological,12,3,80,0.04486393928527832,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.5,2,chronological,12,3,80,0.04486393928527832,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,kappa,1.0,3,chronological,12,3,80,0.04288911819458008,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,accuracy,1.0,3,chronological,12,3,80,0.04288911819458008,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,1.0,3,chronological,12,3,80,0.04288911819458008,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,kappa,-0.5,4,chronological,12,3,80,0.042388916015625,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,accuracy,0.3333333333333333,4,chronological,12,3,80,0.042388916015625,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26
+Miller2019-gestures,wm,thumbfore,ShallowFBCSPNet s0,balanced_accuracy,0.25,4,chronological,12,3,80,0.042388916015625,1f0c6e52b117,7fb0769b86d4,within_subject,0.3.0.dev0,2026-09-11T08:36:26

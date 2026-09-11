@@ -33,6 +33,26 @@ pyriemann 0.12); the deep pipeline in a NumPy 1 environment on the same machine 
 for Intel macOS predates NumPy 2. Athene (CPU) reruns the seeds when it is reachable; no GPU is used before
 the PACE camera-ready (2026-09-25).
 
+## Findings so far (2026-09-11, seed 0 of the deep model)
+
+- **Band power with a linear classifier is the reference to beat on small per-patient sets.** With 60 cued trials per
+  patient (motor_basic, imagery_basic) `LogBandPower + LDA` and `HighGamma + LDA` lead every pairwise test;
+  `ShallowFBCSPNet` at 150 epochs reaches kappa 0.44 on motor_basic and 0.21 on imagery against 0.92 and 0.66
+  (d_z above 1.1 in every comparison, permutation p < 0.001 on motor).
+- **The deep model wins where trials are many and the signal is evoked.** faces_basic (300 trials of 400 ms per
+  patient): ShallowFBCSPNet 0.76 against 0.68 for the best band-power pipeline, ahead of every classical pipeline
+  (p between 0.0005 and 0.034, d_z 0.47 to 0.90, Friedman p = 0.003); its median patient reaches 0.84.
+- **Gestures is the hard task**: five patients, several sessions of a few trials, best kappa 0.52 (HighGamma + LDA),
+  the network near chance (0.04).
+- **Riemannian tangent space on raw-epoch covariances trails band power within a session** on every Miller task,
+  but is the only pipeline that survives the week between the BCI III-1 sessions (kappa 0.52 versus 0.00 to 0.36):
+  standardising band power on one session does not transfer, covariance geometry partly does. Tangent space on
+  high-gamma envelopes and per-session alignment are the next chunks (roadmap M2/M3).
+- **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
+  far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.
+
+Seeds 1 and 2 of the deep model are pending; the numbers above will move by a few hundredths, not in rank.
+
 ---
 
 # First classification-tier baselines (2026-09-09, superseded by the reference protocol above)

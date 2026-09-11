@@ -73,11 +73,22 @@ def load_pipelines(path=None, sfreq: float | None = None, paradigm: str | None =
     -------
     dict of str to sklearn.pipeline.Pipeline
     """
+    import warnings
+
     path = CONFIG_DIR if path is None else Path(path)
     files = sorted(path.glob("*.y*ml")) if path.is_dir() else [path]
     out = {}
     for f in files:
-        name, pipe, desc = load_pipeline_file(f, sfreq=sfreq)
+        try:
+            name, pipe, desc = load_pipeline_file(f, sfreq=sfreq)
+        except ImportError as err:
+            # optional dependency (pyriemann, torch, braindecode): report and continue, never fail silently
+            import yaml
+
+            desc = yaml.safe_load(f.read_text()) or {}
+            req = ", ".join(desc.get("requires", [])) or str(err)
+            warnings.warn(f"pipeline {desc.get('name', f.stem)!r} skipped: needs {req} ({err})")
+            continue
         if paradigm and desc.get("paradigms") and paradigm not in desc["paradigms"]:
             continue
         out[name] = pipe

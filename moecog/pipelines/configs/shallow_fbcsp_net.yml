@@ -1,0 +1,9 @@
+name: ShallowFBCSPNet
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+requires: [torch, braindecode]
+citations:
+  - https://doi.org/10.1002/hbm.23730
+pipeline:
+  - name: BraindecodeClassifier
+    from: moecog.pipelines.deep
+    parameters: {model: ShallowFBCSPNet, n_epochs: 40, lr: 0.000625, batch_size: 32, random_state: 0}

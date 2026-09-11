@@ -56,6 +56,9 @@ loaders = [
     "netCDF4>=1.6",
     "hdf5plugin>=4.0",
 ]
+riemann = [
+    "pyriemann>=0.6",
+]
 viz = [
     "matplotlib>=3.7",
     "seaborn>=0.12",
@@ -70,12 +73,12 @@ docs = [
     "mkdocstrings[python]>=0.26",
 ]
 dev = [
-    "moecog[deep,nwb,loaders,viz,anatomy]",
+    "moecog[deep,nwb,loaders,riemann,viz,anatomy]",
     "pytest>=7.4",
     "pytest-cov>=4.1",
     "ruff>=0.1",
 ]
-all = ["moecog[deep,nwb,loaders,viz,anatomy]"]
+all = ["moecog[deep,nwb,loaders,riemann,viz,anatomy]"]
 
 [project.urls]
 Homepage = "https://github.com/yifan-study/MOECoG"

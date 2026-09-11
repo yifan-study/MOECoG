@@ -1,0 +1,15 @@
+name: Riemann TS + LogReg
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+requires: [pyriemann]
+citations:
+  - https://doi.org/10.1016/j.neucom.2012.12.039
+pipeline:
+  - name: Covariances
+    from: pyriemann.estimation
+    parameters: {estimator: oas}
+  - name: TangentSpace
+    from: pyriemann.tangentspace
+    parameters: {metric: riemann}
+  - name: LogisticRegression
+    from: sklearn.linear_model
+    parameters: {max_iter: 2000, C: 1.0}

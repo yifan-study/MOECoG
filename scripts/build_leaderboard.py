@@ -27,11 +27,14 @@ ORDER = ["kappa", "accuracy", "balanced_accuracy", "pearson_r", "r2"]
 def summarise(df):
     if "fold_policy" not in df.columns:
         df = df.assign(fold_policy="chronological (legacy)")
-    keys = ["dataset", "session", "pipeline", "metric", "subject"]
+    if "evaluation" not in df.columns:
+        df = df.assign(evaluation="within_subject")
+    keys = ["dataset", "evaluation", "session", "pipeline", "metric", "subject"]
     per_subject = df.groupby(keys, observed=True)["score"].mean().reset_index()
     rows = []
-    for (dataset, session, pipeline), g in per_subject.groupby(["dataset", "session", "pipeline"]):
-        entry = {"dataset": dataset, "session": session, "pipeline": pipeline,
+    for (dataset, evaluation, session, pipeline), g in per_subject.groupby(["dataset", "evaluation", "session",
+                                                                            "pipeline"]):
+        entry = {"dataset": dataset, "evaluation": evaluation, "session": session, "pipeline": pipeline,
                  "n_subjects": g["subject"].nunique()}
         for metric, gm in g.groupby("metric"):
             entry[metric] = f"{gm['score'].mean():.3f} ± {gm['score'].std(ddof=0):.3f}"
@@ -69,12 +72,12 @@ def main():
         lines.append(f"## {dataset}")
         lines.append("")
         metrics = [m for m in ORDER if m in g.columns and g[m].notna().any()]
-        lines.append("| session | pipeline | n | " + " | ".join(metrics) + " | folds |")
-        lines.append("|---|---|---|" + "---|" * len(metrics) + "---|")
-        for _, r in g.sort_values(["session", "pipeline"]).iterrows():
+        lines.append("| evaluation | session | pipeline | n | " + " | ".join(metrics) + " | folds |")
+        lines.append("|---|---|---|---|" + "---|" * len(metrics) + "---|")
+        for _, r in g.sort_values(["evaluation", "session", "pipeline"]).iterrows():
             vals = " | ".join("" if pd.isna(r.get(m)) else str(r.get(m)) for m in metrics)
             lines.append(
-                f"| {r.session} | {r.pipeline} | {r.n_subjects} | {vals} | {r.fold_policy} |"
+                f"| {r.evaluation} | {r.session} | {r.pipeline} | {r.n_subjects} | {vals} | {r.fold_policy} |"
             )
         lines.append("")
     lines += ["## How to add a row", "",

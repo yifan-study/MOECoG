@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+"""Reference benchmark on the Miller tier (roadmap M2): tasks x pipelines with chronological folds.
+
+    python scripts/run_reference.py --tasks motor_basic faces_basic --pipelines classical
+    python scripts/run_reference.py --tasks motor_basic --pipelines deep --seeds 0 1 2 --resample 250
+
+Results go to ``results/reference_<task>.csv`` (a ResultsStore, so reruns skip finished patients) and the
+leaderboard is regenerated with ``scripts/build_leaderboard.py``. Set ``MOECOG_MILLER_DIR`` to an existing
+copy of the library, otherwise the experiment zips are downloaded.
+"""
+
+from __future__ import annotations
+
+import argparse
+import time
+import warnings
+
+from moecog import benchmark
+from moecog.datasets import MillerLibrary
+from moecog.paradigms import (
+    EpochedClassification,
+    FaceHouseClassification,
+    FingerFlexionRegression,
+    MotorClassification,
+)
+
+TASKS = {
+    "motor_basic": ("MotorClassification", lambda r: MotorClassification(resample=r)),
+    "imagery_basic": ("MotorClassification", lambda r: MotorClassification(resample=r)),
+    "faces_basic": ("FaceHouseClassification", lambda r: FaceHouseClassification(resample=r)),
+    "gestures": ("EpochedClassification", lambda r: EpochedClassification(tmin=0.0, tmax=None, fmin=1.0, fmax=200.0,
+                                                                            resample=r)),
+    "fingerflex": ("FingerFlexionRegression", lambda r: FingerFlexionRegression(resample=r)),
+}
+DEEP = "ShallowFBCSPNet"
+
+
+def build_pipelines(kind, paradigm_name, sfreq, seeds):
+    from moecog.pipelines import load_pipelines
+
+    pipes = load_pipelines(sfreq=sfreq, paradigm=paradigm_name)
+    classical = {k: v for k, v in pipes.items() if k != DEEP}
+    if kind == "classical":
+        return classical
+    deep = {}
+    if DEEP in pipes:
+        for s in seeds:
+            p = pipes[DEEP]
+            from sklearn.base import clone
+
+            q = clone(p)
+            q.set_params(**{f"{q.steps[-1][0]}__random_state": int(s)})
+            deep[f"{DEEP} s{s}"] = q
+    else:
+        warnings.warn("braindecode/torch not installed: no deep pipeline")
+    return deep if kind == "deep" else {**classical, **deep}
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--tasks", nargs="*", default=list(TASKS))
+    ap.add_argument("--pipelines", choices=["classical", "deep", "all"], default="classical")
+    ap.add_argument("--seeds", nargs="*", type=int, default=[0])
+    ap.add_argument("--resample", type=float, default=None, help="paradigm resampling rate (Hz)")
+    ap.add_argument("--subjects", nargs="*", default=None)
+    ap.add_argument("--n-splits", type=int, default=5)
+    ap.add_argument("--overwrite", action="store_true")
+    ap.add_argument("--out-dir", default="results")
+    args = ap.parse_args()
+    for task in args.tasks:
+        pname, make = TASKS[task]
+        paradigm = make(args.resample)
+        ds = MillerLibrary(task)
+        sfreq = args.resample or 1000.0
+        pipes = build_pipelines(args.pipelines, pname, sfreq, args.seeds)
+        if not pipes:
+            print(f"[{task}] no pipelines to run")
+            continue
+        t0 = time.time()
+        df = benchmark(ds, paradigm, pipelines=pipes, n_splits=args.n_splits, subjects=args.subjects,
+                       out=f"{args.out_dir}/reference_{task}.csv", overwrite=args.overwrite, sfreq=sfreq)
+        head = "pearson_r" if task == "fingerflex" else "kappa"
+        summ = df[(df.metric == head) & (df.evaluation == "within_subject")].groupby("pipeline")["score"].agg(
+            ["mean", "std", "count"])
+        print(f"[{task}] {time.time() - t0:.0f} s, {head} per pipeline (mean over folds and patients):")
+        print(summ.round(3).to_string())
+
+
+if __name__ == "__main__":
+    main()

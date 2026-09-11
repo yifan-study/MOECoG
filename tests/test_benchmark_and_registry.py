@@ -95,3 +95,16 @@ def test_results_store_reports_paradigm_mismatch(tmp_path):
     assert store.paradigm_mismatch("D", "within_subject", par) == [paradigm_digest(other)]
     assert store.paradigm_mismatch("D", "within_subject", other) == []
     assert store.paradigm_mismatch("D", "cross_session", par) == []
+
+
+def test_benchmark_defaults_are_the_registry_pipelines_without_optional_deps():
+    from moecog.benchmark import _default_pipelines
+    from moecog.paradigms import EpochedClassification, FingerFlexionRegression
+    from moecog.pipelines import describe_pipelines
+
+    optional = {d["name"] for d in describe_pipelines() if d.get("requires")}
+    clf = _default_pipelines(EpochedClassification(), 250.0)
+    reg = _default_pipelines(FingerFlexionRegression(), 250.0)
+    assert {"LogBandPower + LDA", "LogBandPower + LogReg", "HighGamma + LDA"} <= set(clf)
+    assert {"LogBandPower + Ridge", "HighGamma + Ridge"} <= set(reg)
+    assert not (set(clf) | set(reg)) & optional

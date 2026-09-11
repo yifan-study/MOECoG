@@ -41,12 +41,17 @@ def _resolve_paradigm(paradigm, contexts):
 
 
 def _default_pipelines(paradigm, sfreq):
-    from .paradigms import BaseRegressionParadigm
-    from .pipelines import classification_baselines, regression_baselines
+    """The shipped YAML pipelines for this paradigm that need no optional dependency.
 
-    if isinstance(paradigm, BaseRegressionParadigm):
-        return regression_baselines(sfreq)
-    return classification_baselines(sfreq)
+    One registry, one set of names: what ``benchmark()`` runs by default is exactly what the leaderboard and the
+    reference runs call ``LogBandPower + LDA`` and friends; pipelines with a ``requires:`` line (pyriemann,
+    braindecode) are opt-in through ``pipelines=``.
+    """
+    from .pipelines import describe_pipelines, load_pipelines
+
+    optional = {d["name"] for d in describe_pipelines() if d.get("requires")}
+    pipes = load_pipelines(sfreq=sfreq, paradigm=type(paradigm).__name__)
+    return {name: p for name, p in pipes.items() if name not in optional}
 
 
 def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",), n_splits=5, subjects=None,

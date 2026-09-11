@@ -18,6 +18,10 @@
 - `HilbertEnvelope`: the envelope is floored at zero before the log; zero-phase
   decimation rang below zero on tiny envelopes and produced NaN features.
 - `scripts/run_reference.py --evaluations ...` overrides a task's evaluations.
+- `benchmark()` without `pipelines=` now runs the shipped YAML pipelines that need no
+  optional dependency, under the registry's names (`LogBandPower + LDA`), instead of
+  the programmatic `classification_baselines()` set with its `LogBandPower+LDA` names;
+  one registry, one set of names across leaderboard, analysis and examples.
 - `ResultsStore.merge_from()` and `scripts/merge_results.py` bring rows computed
   elsewhere (a cluster, a contributor's machine) into a store by key without
   recomputing; `benchmark()` warns when a store already holds rows computed under

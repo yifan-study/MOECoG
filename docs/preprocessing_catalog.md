@@ -69,8 +69,8 @@ checked before we cite them.
 | Fixed competition split | BCI-IV (400 k train / 200 k test), BCI-III (two sessions) | `CompetitionSplitEval` planned |
 | Contiguous temporal train/val/test | FingerFlex, TRACE, PACE (70/15/15 or fullsplit) | regression folds are contiguous; purge gap |
 | Stratified shuffled trial CV | MOABB, most classification papers | `shuffle=True` or automatic fallback |
-| Leave-one-session-out | BCI-III, Natraj multi-day, RAM sessions | `CrossSessionEval` (PRSNL-65) |
-| Leave-one-subject-out with alignment | HTNet, Neuroprobe cross-subject, DIVER-1 | `CrossSubjectTransfer` (PRSNL-65) |
+| Leave-one-session-out | BCI-III, Natraj multi-day, RAM sessions | `CrossSessionEval` (BCI-29) |
+| Leave-one-subject-out with alignment | HTNet, Neuroprobe cross-subject, DIVER-1 | `CrossSubjectTransfer` (BCI-29) |
 | Metrics | r (kinematics), accuracy/kappa/AUC (trials), WER/PER/CER (speech), spectrogram r (synthesis), encoding r (podcast) | kappa headline for trials, r for kinematics; speech metrics planned |
 
 ## 7. What MOECoG implements today

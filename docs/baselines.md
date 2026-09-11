@@ -66,7 +66,7 @@ Per patient (accuracy, HighGamma+LDA / LogBandPower+LDA): bp 0.98/0.98, ca
 Patient jf presented its cues in blocks rather than interleaved, so 8 of its
 10 chronological test folds contain a single class (kappa undefined,
 accuracy still valid). This is the concrete case for the fold-policy decision
-(PRSNL-67): chronological folds need a class-balance check or a fallback to
+(BCI-27): chronological folds need a class-balance check or a fallback to
 stratified folds for block-ordered files.
 
 ## faces_basic: face vs house pictures (400 ms), 14 patients, 150 + 150 trials

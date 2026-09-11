@@ -19,7 +19,7 @@ Tiers:
 - **T1 Human ECoG, task-based** (subdural grids/strips, cued or continuous
   behaviour): the core of MOECoG.
 - **T2 Human iEEG task datasets with sEEG or mixed contacts**: same loaders,
-  channel type tagged; inclusion is a scope decision (PRSNL-75).
+  channel type tagged; inclusion is a scope decision (BCI-38).
 - **T3 Naturalistic and long-term human recordings**.
 - **T4 Rest, sleep, stimulation and clinical (seizure) datasets**: controls,
   pretraining corpora, and a possible clinical tier.
@@ -173,7 +173,7 @@ What still cannot be loaded, and why:
 | blocked | ds007703 | snapshot lists sidecars only and refuses HEAD | re-check for a new snapshot |
 | blocked | dandi-000571 | MEF3 stored as directory trees on DANDI; the reader exists, the folder fetcher does not | next loader batch |
 | blocked | dandi-001638, dandi-001613 | dandisets without data assets yet | re-check monthly |
-| blocked | Cogitate, DABI, EBRAINS, Kaggle, MNI atlas (HTTP 401), Neurotycho (download table behind login), ieeg.org, CRCNS, EPILEPSIAE, Metzger 2023 | registration, DUA or committee approval; checked again on 2026-09-10 without credentials | Yifan registers (PRSNL-77) |
+| blocked | Cogitate, DABI, EBRAINS, Kaggle, MNI atlas (HTTP 401), Neurotycho (download table behind login), ieeg.org, CRCNS, EPILEPSIAE, Metzger 2023 | registration, DUA or committee approval; checked again on 2026-09-10 without credentials | Yifan registers (BCI-36) |
 
 Memory note: subjects of the RAM family (ds005489-ds005558) carry several hour-long 1 kHz runs; the smoke sweep loads two runs per session (`--max-runs 2`), and a full-subject evaluation needs a node with more than 48 GB or the lazy-loading path on the roadmap. MEF3 sessions are read with `--max-seconds 600` for the same reason.
 
@@ -192,7 +192,7 @@ Three generic loaders cover most of this catalog:
    figshare (.fif/.nc), Merk (BIDS-like), Verwoert (BIDS-like), Bellier (.npy),
    Brain Treebank (.h5), Du-IN (HF parquet), Neurotycho (.mat).
 
-## Waves (proposal, PRSNL-72)
+## Waves (proposal, BCI-24)
 
 - **Wave 1 (this month, CPU only):** BIDS loader on ds005953 and ds004993;
   Podcast; film iEEG; Visual ECoG; BCI-IV via the PACE loader; BCI-III;
@@ -210,6 +210,6 @@ Three generic loaders cover most of this catalog:
   or a leaderboard.
 - Licence review for the non-commercial and no-ML-training datasets (ds003688
   wording, ds004703 clause) before any pretraining use.
-- Decide the tier policy (PRSNL-75): sEEG/mixed inclusion, non-human primates,
+- Decide the tier policy (BCI-38): sEEG/mixed inclusion, non-human primates,
   clinical seizure sets.
 - iEEG Natural Scenes Dataset and Kuzovkin GIN repository: confirm contents.

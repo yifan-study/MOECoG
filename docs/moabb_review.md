@@ -69,7 +69,7 @@ missing.
 **MOECoG.**
 - Improve: chronological contiguous folds are the default for classification (ECoG is non-stationary within a
   session) with a stratified-shuffled fallback for block-ordered cues, and the fold policy is a result column.
-  Regression folds carry a purge gap. Done (PRSNL-67).
+  Regression folds carry a purge gap. Done (BCI-27).
 - Copy: `CrossSessionEvaluation` (leave-one-session-out per patient, sessions in chronological order) and
   `is_valid` with reasons. This batch.
 - Improve: `CrossSubjectEvaluation` cannot concatenate patients with different grids. It takes an explicit

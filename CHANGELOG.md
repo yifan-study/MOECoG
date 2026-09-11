@@ -6,7 +6,10 @@
   `ShallowFBCSPNet` through `moecog.pipelines.deep.BraindecodeClassifier`;
   `load_pipelines()` reports pipelines skipped for a missing optional
   dependency; `scripts/run_reference.py`, `scripts/build_analysis.py`,
-  leaderboard grouped by evaluation.
+  leaderboard grouped by evaluation. ShallowFBCSPNet budget set to 150 epochs of
+  batch 16 after a probe (40 x 32 gave kappa 0.22 vs 0.40 on three patients).
+- BCI Competition III-1 loads its test session with the published labels;
+  cross-session (train -> test, a week apart) is part of the reference runs.
 
 ## 0.2.0 (2026-09-10)
 

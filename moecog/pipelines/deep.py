@@ -33,7 +33,7 @@ class BraindecodeClassifier(BaseEstimator, ClassifierMixin):
         Extra keyword arguments for the model class.
     """
 
-    def __init__(self, model="ShallowFBCSPNet", n_epochs=40, lr=0.000625, weight_decay=0.0, batch_size=32,
+    def __init__(self, model="ShallowFBCSPNet", n_epochs=150, lr=0.000625, weight_decay=0.0, batch_size=16,
                  random_state=0, device="cpu", model_kwargs=None):
         self.model = model
         self.n_epochs = n_epochs

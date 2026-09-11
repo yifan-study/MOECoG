@@ -1,9 +1,11 @@
 name: ShallowFBCSPNet
 paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
 requires: [torch, braindecode]
+# budget: 150 epochs x 3 batches of 16 on ~48 training trials (about 450 steps); the MOABB-style 40 x 2 steps
+# reached kappa 0.22 on three motor_basic patients, this budget 0.40 (probe of 2026-09-10)
 citations:
   - https://doi.org/10.1002/hbm.23730
 pipeline:
   - name: BraindecodeClassifier
     from: moecog.pipelines.deep
-    parameters: {model: ShallowFBCSPNet, n_epochs: 40, lr: 0.000625, batch_size: 32, random_state: 0}
+    parameters: {model: ShallowFBCSPNet, n_epochs: 150, lr: 0.000625, batch_size: 16, random_state: 0}

@@ -69,7 +69,8 @@ the PACE camera-ready (2026-09-25).
   `LogBandPower + LDA` there). On BCI III-1 the band is low: `LogBandPower + LDA` gives 0.66 from 15 trials and 0.87
   from all, raw-epoch covariances 0.18 and 0.89, the high-gamma pipelines 0.10 to 0.34 at 10 %. Full-data curve
   points sit below the five-fold means because the test block is the last fifth of the session, where drift is
-  largest. Curves and tables: `docs/analysis.md`.
+  largest. Fingerflex behaves the same way: `HighGamma + Ridge` reaches r 0.15 from the first 10 % of a run and 0.27
+  from all of it, `LogBandPower + Ridge` 0.10 and 0.25. Curves and tables: `docs/analysis.md`.
 - **Fingerflex**: HighGamma + Ridge r 0.28 beats LogBandPower + Ridge 0.27 in 9 of 9 patients (p = 0.016); both sit
   far below the 0.74 that FingerFlex's convolutional decoder reports, the M3 target.
 

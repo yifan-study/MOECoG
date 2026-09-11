@@ -77,3 +77,21 @@ def test_results_store_merge_from_adds_only_missing_keys(tmp_path):
     store.merge_from(b, replace=True)
     df = ResultsStore(tmp_path / "a.csv").to_dataframe()
     assert len(df) == 2 and df[df.subject == "s1"]["score"].item() == 0.9
+
+
+def test_results_store_reports_paradigm_mismatch(tmp_path):
+    import pandas as pd
+
+    from moecog.analysis import ResultsStore, paradigm_digest
+    from moecog.paradigms import EpochedClassification
+
+    par = EpochedClassification(tmin=0.0, tmax=1.0, fmin=1.0, fmax=90.0)
+    other = EpochedClassification(tmin=0.0, tmax=1.0, fmin=1.0, fmax=90.0, resample=100.0)
+    rows = pd.DataFrame([{"dataset": "D", "subject": "s1", "session": "0", "pipeline": "P", "pipeline_digest": "p",
+                          "paradigm_digest": paradigm_digest(other), "evaluation": "within_subject",
+                          "metric": "kappa", "score": 0.1, "fold": 0}])
+    rows.to_csv(tmp_path / "r.csv", index=False)
+    store = ResultsStore(tmp_path / "r.csv")
+    assert store.paradigm_mismatch("D", "within_subject", par) == [paradigm_digest(other)]
+    assert store.paradigm_mismatch("D", "within_subject", other) == []
+    assert store.paradigm_mismatch("D", "cross_session", par) == []

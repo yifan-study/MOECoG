@@ -82,6 +82,19 @@ class ResultsStore:
             m &= d["session"].astype(str) == str(session)
         return bool(m.any())
 
+    def paradigm_mismatch(self, dataset_code: str, evaluation: str, paradigm) -> list:
+        """Digests of other paradigms already stored for this (dataset, evaluation).
+
+        A non-empty list means rows computed under a different paradigm (another sampling rate, band or
+        epoch window) sit next to what is about to be computed; tables grouped by pipeline name would mix
+        them. ``benchmark()`` warns on it.
+        """
+        if self.df.empty or "paradigm_digest" not in self.df.columns:
+            return []
+        d = self.df[(self.df["dataset"] == dataset_code) & (self.df["evaluation"] == evaluation)]
+        others = set(d["paradigm_digest"].astype(str)) - {paradigm_digest(paradigm)}
+        return sorted(others)
+
     def not_yet_computed(self, pipelines: dict, dataset_code: str, subject, paradigm, evaluation: str,
                          session=None) -> dict:
         """Subset of ``pipelines`` with no stored rows for this (dataset, subject[, session])."""

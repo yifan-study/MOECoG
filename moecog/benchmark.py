@@ -16,6 +16,7 @@ reported with its reason instead of being dropped silently.
 
 from __future__ import annotations
 
+import warnings
 from pathlib import Path
 
 EVALUATIONS = {"within_subject": "WithinSubjectCV", "cross_session": "CrossSessionEvaluation",
@@ -124,6 +125,11 @@ def benchmark(datasets, paradigm, pipelines=None, evaluations=("within_subject",
         for code, reason in ev.skipped.items():
             skipped.append((ev_name, code, reason))
         for ds in ev.datasets:
+            others = store.paradigm_mismatch(ds.code, ev_name, paradigm)
+            if others:
+                warnings.warn(f"{ds.code} {ev_name}: the store already holds rows computed under another paradigm "
+                              f"(digest(s) {', '.join(others)}, e.g. a different sampling rate); tables grouped by "
+                              "pipeline name would mix protocols. Pass the same paradigm or a fresh --out.")
             subs = ds.subject_list if subjects is None else [s for s in subjects if s in ds.subject_list]
             for subject in subs:
                 todo = pipes if overwrite else store.not_yet_computed(pipes, ds.code, subject, paradigm, ev_name)

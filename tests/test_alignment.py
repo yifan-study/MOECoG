@@ -82,3 +82,23 @@ def test_benchmark_accepts_alignment_suffix(tmp_path):
     assert set(df["evaluation"]) == {"cross_session", "cross_session:ea"}
     with pytest.raises(ValueError):
         benchmark(ds, par, evaluations=("cross_session:nope",), sfreq=200.0, out=tmp_path / "r2.csv", verbose=False)
+
+
+def test_batch_standardizer_uses_the_batch_it_transforms():
+    from moecog.pipelines.features import BatchStandardizer
+
+    rng = np.random.default_rng(5)
+    train = rng.standard_normal((50, 4)) * 3 + 10
+    test = rng.standard_normal((30, 4)) * 0.5 - 7          # a different day: other offset and scale
+    bz = BatchStandardizer(min_batch=8).fit(train)
+    Z = bz.transform(test)
+    assert np.allclose(Z.mean(axis=0), 0, atol=1e-10) and np.allclose(Z.std(axis=0), 1, atol=1e-8)
+    tiny = bz.transform(test[:3])                          # too small a batch: training statistics instead
+    assert np.allclose(tiny, (test[:3] - train.mean(axis=0)) / (train.std(axis=0) + 1e-12))
+
+
+def test_batchz_pipeline_is_in_the_registry():
+    from moecog.pipelines import load_pipelines
+
+    pipes = load_pipelines(sfreq=250.0, paradigm="MotorClassification")
+    assert "LogBandPower + BatchZ + LDA" in pipes

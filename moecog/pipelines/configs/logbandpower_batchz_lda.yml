@@ -1,0 +1,14 @@
+name: LogBandPower + BatchZ + LDA
+paradigms: [EpochedClassification, MotorClassification, FingerClassification, FaceHouseClassification, VisualSearchClassification, NBackTargetClassification]
+citations:
+  - https://doi.org/10.1088/1741-2552/ab5d05
+pipeline:
+  - name: LogBandPower
+    from: moecog.pipelines.features
+    parameters: {sfreq: $sfreq}
+  - name: BatchStandardizer
+    from: moecog.pipelines.features
+    parameters: {min_batch: 8}
+  - name: LinearDiscriminantAnalysis
+    from: sklearn.discriminant_analysis
+    parameters: {solver: lsqr, shrinkage: auto}

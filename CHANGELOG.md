@@ -7,6 +7,9 @@
   standardisation, applied label-free to every (patient, session) before the
   pipelines; every evaluation takes `alignment=`, `benchmark()` spells it
   `evaluations=("cross_session:ea",)` and the rows carry that label.
+- `BatchStandardizer` (`moecog.pipelines.features`): z-scores features over the
+  batch being transformed, i.e. per session in a cross-session evaluation; shipped
+  as `LogBandPower + BatchZ + LDA`, the band-power counterpart of alignment.
 - `LearningCurveEvaluation` (`evaluations=("learning_curve",)` in `benchmark()`):
   train on the first 10/25/50/100 % of a patient's non-test trials in recording
   order, test on the fixed final 20 %; rows carry `train_fraction` and `n_train`;
